@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="zaga">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaga | Case study by David Somadina Obichukwu</title>
+  <meta name="description" content="The website for Zaga, a fashion house that designs, tailors and manufactures clothing: a ready to wear shop, bespoke tailoring and production for other.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/zaga">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="Zaga | Wear the crown.">
+  <meta property="og:description" content="The website for Zaga, a fashion house that designs, tailors and manufactures clothing: a ready to wear shop, bespoke tailoring and production for other.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/zaga">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/img/zaga/home.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/img/zaga/home.webp">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Zaga","url":"https://xtcdev.netlify.app/projects/zaga","creator":{"@type":"Person","name":"David Somadina Obichukwu","url":"https://xtcdev.netlify.app/"}}</script>
+</head>
+<body class="page-case page-zaga">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><span aria-hidden="true">/</span><span aria-current="page">Zaga</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="pj-cats"><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p>
+            <h1 class="pj-title">Zaga</h1>
+            <p class="pj-tagline" data-i18n="c.zaga.tagline">Wear the crown.</p>
+            <p class="pj-status"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span></p>
+            <p class="pj-lede" data-i18n="c.zaga.lede">The website for Zaga, a fashion house that designs, tailors and manufactures clothing: a ready to wear shop, bespoke tailoring and production for other brands. The site is built and waits on the brand&#x27;s prices, contact details and story before launch.</p>
+            <div class="pj-actions"><a class="btn btn--ghost" href="https://github.com/xTcDevs/zaga" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-github"/></svg><span data-i18n="c.zaga.cta0">Source on GitHub</span></a></div>
+          </div>
+          <div class="feature__visual"><figure class="pj-shot"><a class="shot-link frame" href="../assets/img/zaga/home.webp" data-lightbox="zaga"><img src="../assets/img/zaga/home-640.webp" srcset="../assets/img/zaga/home-640.webp 640w, ../assets/img/zaga/home.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Zaga home page: Wear the crown, with a black hoodie carrying the ZA crest" data-i18n-attr="alt:c.zaga.heroAlt"></a></figure></div>
+        </div>
+        <dl class="pj-facts"><div><dt data-i18n="case.fact.type">Type</dt><dd data-i18n="c.zaga.fact0">Client brand website and shop</dd></div><div><dt data-i18n="case.fact.builtwith">Built with</dt><dd data-i18n="c.zaga.fact1">HTML, CSS, JavaScript, Python image tools</dd></div><div><dt data-i18n="case.fact.launch">Launch</dt><dd data-i18n="c.zaga.fact2">After the client adds prices and contact details</dd></div><div><dt data-i18n="case.fact.myrole">My role</dt><dd data-i18n="c.zaga.fact3">Design and development</dd></div></dl>
+      </div>
+    </section>
+<section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s0.h">The brief</h2><div><p class="pj-strong" data-i18n="c.zaga.s0.p0">Zaga does three things: sells its own label, tailors pieces to measure and manufactures for other brands. The site had to present all three clearly and let customers order without a full online checkout.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s1.h">Features</h2><div><ul class="feat-list feat-list--grid"><li><h3><span data-i18n="c.zaga.s1.f0.t">Shop with ten colours per piece</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.zaga.s1.f0.d">Products across categories from tees and hoodies to headwear and bags, each in ten colours. Tap a swatch to see the piece in that colour.</p></li><li><h3><span data-i18n="c.zaga.s1.f1.t">Quick view and ordering</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.zaga.s1.f1.d">Pick a colour and size in a quick view, then order through a ready written WhatsApp message.</p></li><li><h3><span data-i18n="c.zaga.s1.f2.t">Bespoke tailoring</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.zaga.s1.f2.d">A four step flow, consult, measure, craft, fit and deliver, with a booking call to action.</p></li><li><h3><span data-i18n="c.zaga.s1.f3.t">Manufacturing for brands</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.zaga.s1.f3.d">Pattern making, sampling, cut and sew, logo printing, labels and tags, team and event uniforms.</p></li><li><h3><span data-i18n="c.zaga.s1.f4.t">Contact form</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.zaga.s1.f4.d">Orders, fittings and production quotes in one form.</p></li><li><h3><span data-i18n="c.zaga.s1.f5.t">Launch content</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.zaga.s1.f5.d">Prices, the WhatsApp number, studio address, minimum order and the founder&#x27;s story are placeholders until the client supplies them.</p></li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s2.h">One photo, ten colours</h2><div><p data-i18n="c.zaga.s2.p0">Only some colours were photographed. A set of Python tools cuts each garment from its background, finds logos and metal hardware, then renders the other colours from the real photo, keeping the folds, knit and monogram. Rendered colours carry a Preview badge so customers know which ones are photographs.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s3.h">Design direction</h2><div><p data-i18n="c.zaga.s3.p0">Black and gold with large condensed headlines, quiet product photography and a light section for tailoring, so each of the three services has its own room.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s4.h">Stack</h2><div><ul class="pills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>rembg</li><li>Pillow</li></ul></div></div></section><section class="pj-section"><div class="wrap"><h2 data-i18n="c.zaga.s5.h">Screens</h2><p class="pj-note" data-i18n="c.zaga.s5.note">Captured from the finished build. Prices and some contact details are still placeholders until launch.</p><ul class="gallery"><li><a class="shot-link frame" href="../assets/img/zaga/home.webp" data-lightbox="zaga"><img src="../assets/img/zaga/home-640.webp" srcset="../assets/img/zaga/home-640.webp 640w, ../assets/img/zaga/home.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Zaga: Home" data-i18n-attr="alt:c.zaga.s5.alt0"></a><span class="screens__cap" data-i18n="c.zaga.s5.g0">Home</span></li><li><a class="shot-link frame" href="../assets/img/zaga/shop.webp" data-lightbox="zaga"><img src="../assets/img/zaga/shop-640.webp" srcset="../assets/img/zaga/shop-640.webp 640w, ../assets/img/zaga/shop.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Zaga: Shop" data-i18n-attr="alt:c.zaga.s5.alt1"></a><span class="screens__cap" data-i18n="c.zaga.s5.g1">Shop</span></li><li><a class="shot-link frame" href="../assets/img/zaga/bespoke.webp" data-lightbox="zaga"><img src="../assets/img/zaga/bespoke-640.webp" srcset="../assets/img/zaga/bespoke-640.webp 640w, ../assets/img/zaga/bespoke.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Zaga: Bespoke tailoring" data-i18n-attr="alt:c.zaga.s5.alt2"></a><span class="screens__cap" data-i18n="c.zaga.s5.g2">Bespoke tailoring</span></li></ul></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.zaga.s6.h">Status</h2><div><p data-i18n="c.zaga.s6.p0">Built and ready to launch once the client adds prices, contact details and the brand story. There is no public URL yet.</p></div></div></section>
+    <section class="pj-section">
+      <div class="wrap pj-nav"><a class="pj-nav__link" href="../projects/echomind.html"><span data-i18n="case.prev">Previous project</span><b>EchoMind</b></a><a class="pj-nav__link pj-nav__link--next" href="../projects/princess-uc.html"><span data-i18n="case.next">Next project</span><b>Princess UC Crafts</b></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

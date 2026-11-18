@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "Ansatz",
+    "directionD": "PitchIT wachsen lassen, die laufenden Projekte fertigstellen und mit Teams und Kunden arbeiten, die sorgfältig gebaute Produkte wollen.",
+    "directionT": "Richtung",
+    "fBased": "Standort",
+    "fBasedV": "Nigeria. Offen für Umzug und Arbeit aus der Ferne",
+    "fFocus": "Schwerpunkte",
+    "fFocusV": "Software, Produktdesign, KI gestützte Entwicklung, Spiele",
+    "fLang": "Sprachen",
+    "fLangV": "Englisch (fließend), Igbo (Muttersprache)",
+    "interestsD": "Marktplätze und informelle Wirtschaft, ruhige und private Software, Spiele, kreative Werkzeuge und die Systeme dahinter.",
+    "interestsT": "Interessen",
+    "p1": "Ich bin David Somadina Obichukwu, online bekannt als xTc. Ich baue Produkte von Anfang bis Ende: Ich finde die Idee, gestalte, wie sie sich anfühlen soll, und baue sie, bis sie funktioniert.",
+    "quote": "„Ich baue Systeme, die Echos hinterlassen.“"
+  },
+  "badge": {
+    "mvp": "Im MVP",
+    "planned": "Geplant"
+  },
+  "caps": {
+    "aiT": "KI gestützte Entwicklung",
+    "ctD": "Werkzeuge und interaktive Stücke, in denen Code auf Geschmack trifft: ein Schnittstudio, verspielte Oberflächen und diese Website selbst.",
+    "ctT": "Kreative Technologie",
+    "gameD": "Roblox Erlebnisse, gestaltet, geskriptet und veröffentlicht in Roblox Studio mit Luau.",
+    "gameT": "Spieleentwicklung",
+    "lede": "Jede wird von Arbeit auf dieser Seite belegt, verlinkt zum Nachprüfen.",
+    "pdD": "Recherche, Abläufe und Oberflächen, gestaltet rund um die Menschen, die sie nutzen, in Figma und im Code.",
+    "pdT": "Produktdesign",
+    "swD": "Web und Mobile Apps, die echtem Gebrauch standhalten, von einem Flutter Marktplatz mit getesteter Datenbank bis zu einer Firmenwebsite im Live Betrieb.",
+    "swT": "Softwareentwicklung"
+  },
+  "case": {
+    "noVisual": "Für dieses Projekt wurden noch keine Screenshots veröffentlicht. Sie erscheinen hier, sobald es sie gibt. Nichts in dieser Projektakte ist ein Mockup.",
+    "visuals": "Bilder"
+  },
+  "contact": {
+    "email": "Ihre Mailadresse",
+    "err": "Die Nachricht konnte über diese Seite nicht gesendet werden.",
+    "errFields": "Bitte füllen Sie alle Felder aus und geben Sie eine gültige Mailadresse an.",
+    "errMail": "Stattdessen per Mail senden",
+    "lede": "Eine Stelle, ein Produktauftrag oder eine Zusammenarbeit? Schreiben Sie mir, ich antworte per Mail.",
+    "message": "Nachricht",
+    "name": "Ihr Name",
+    "ok": "Nachricht gesendet. Ich antworte bald per Mail.",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "Ansicht Check in von EchoMind mit der Frage, was gerade da ist, und Gefühlen zur Auswahl",
+      "home": "Startansicht von EchoMind mit dem letzten Gefühl, den Buttons Check in again und Write, einer Reihe von Gefühlen und der Frage des Tages",
+      "insights": "Ansicht Insights von EchoMind mit Anzahl der Einträge, notierten Tagen, Ihrem Wochenrhythmus und den erfassten Gefühlen",
+      "journey": "Ansicht Journey von EchoMind: eine Zeitleiste der Gefühle und Texte des Tages, mit Filtern",
+      "mind": "Ansicht Mind Space von EchoMind mit den Momenten, die Sie behalten wollten",
+      "note": "Ansicht Check in von EchoMind mit einem Button für ein neues Gefühl, der Option I'm not sure yet und einem Feld für eine Notiz",
+      "own": "Fenster in EchoMind zum Anlegen eines eigenen Gefühls, mit Name, Emoji, Farbe und der Angabe, ob es eher angenehm, schwierig oder gemischt ist",
+      "settings": "Einstellungen von EchoMind: Designs Dusk, Dawn und Match phone, weniger Bewegung, Ihre Gefühle und ein Hinweis, dass Ihre Daten auf diesem Telefon bleiben"
+    },
+    "cat": "Mobile App · Flutter",
+    "f": {
+      "aiD": "Optionale Funktionen mit KI, die Muster in Ihren Einträgen sichtbar machen. Sie schalten sie selbst ein, und der private Kern funktioniert auch ohne sie.",
+      "aiT": "Reflexionen mit KI",
+      "checkinD": "Wählen Sie jedes Gefühl, das passt, geben Sie an, wie stark es ist, und notieren Sie kurz, was dahintersteckt. Wenn Sie es noch nicht benennen können, wählen Sie „I'm not sure yet“.",
+      "checkinT": "Gefühle festhalten",
+      "insightsD": "Die letzten 7 oder 30 Tage auf einen Blick: wie oft Sie eingecheckt haben, an wie vielen Tagen Sie etwas notiert haben, Ihr Tagesrhythmus und die am häufigsten genannten Gefühle. Muster erscheinen erst, wenn genug Daten da sind.",
+      "insightsT": "Insights",
+      "journeyD": "Alles, was Sie notiert haben, auf einer Zeitleiste in der Reihenfolge des Geschehens, mit Suche und Filtern für Gefühle, Texte und gespeicherte Momente.",
+      "journeyT": "Journey",
+      "mindD": "Markieren Sie die Momente, die Sie behalten wollen, und finden Sie sie gesammelt an einem Ort.",
+      "mindT": "Mind Space",
+      "ownD": "Legen Sie ein Gefühl mit eigenem Namen, Emoji und eigener Farbe an und markieren Sie es als angenehm, schwierig oder gemischt. Jedes Gefühl lässt sich umbenennen, umfärben oder ausblenden.",
+      "ownT": "Eigene Gefühle",
+      "privateD": "Alles wird nur auf Ihrem Telefon gespeichert, im privaten Speicher von EchoMind. Es gibt kein Konto und keine Internetverbindung, und Ihre Texte werden nie irgendwohin gesendet.",
+      "privateT": "Privat von Grund auf",
+      "storeD": "Von der geteilten Testversion zur Veröffentlichung im Store.",
+      "storeT": "Veröffentlichung bei Google Play",
+      "themeD": "Tiefe Abendtöne, warmes helles Papier oder die Einstellung Ihres Telefons. Ein Schalter für weniger Bewegung ist eingebaut, und die Einstellung Ihres Telefons wird ebenfalls beachtet.",
+      "themeT": "Designs Dusk und Dawn",
+      "voiceD": "Erzählen Sie mit Ihrer eigenen Stimme, wie Ihr Tag war, statt ihn aufzuschreiben.",
+      "voiceT": "Sprachtagebuch",
+      "writeD": "Schreiben Sie frei oder beginnen Sie mit einer Frage des Tages wie „What happened today?“.",
+      "writeT": "Schreiben und Fragen des Tages"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Start",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Notiz hinzufügen",
+      "own": "Eigenes Gefühl",
+      "settings": "Einstellungen"
+    },
+    "getApk": "Testversion für Android laden",
+    "kind": "Mobile App · MVP für Android",
+    "p": {
+      "apkNote": "Die Testversion ist eine APK für Android, die über Google Drive geteilt wird. Sie ist noch nicht bei Google Play, daher fragt Android eventuell, ob Installationen aus dieser Quelle erlaubt sind.",
+      "audience1": "Menschen, die einen privaten, einfachen Weg zur Selbstreflexion suchen: Studierende, Berufstätige mit wenig Zeit und alle, die sehen wollen, wie sich ihre Tage über die Zeit wirklich anfühlen.",
+      "audience2": "EchoMind ist ein Werkzeug, um über die eigenen Gefühle nachzudenken. Es ist kein medizinischer, diagnostischer oder therapeutischer Dienst.",
+      "feedback": "Feedback senden",
+      "lede": "EchoMind ist eine App für Tagebuch und Stimmung auf Android. Halten Sie fest, wie Sie sich fühlen, schreiben Sie frei oder mit einer Frage des Tages und schauen Sie in Ihrer Journey auf alles zurück. Alles bleibt auf Ihrem Telefon. Es gibt kein Konto, kein Abo und keine Internetverbindung.",
+      "problem1": "Viele Menschen möchten ihre Stimmungen verstehen, bleiben aber nicht beim Tagebuchschreiben. Schreiben kostet Mühe, und die meisten Apps verlangen ein Konto und speichern Ihre persönlichsten Gedanken in fremden Clouds.",
+      "problem2": "EchoMind senkt beide Hürden. Einchecken dauert nur ein paar Tipps, eine Frage des Tages gibt einen Anfang, und nichts, was Sie festhalten, verlässt jemals Ihr Telefon.",
+      "role": "Produktdesign und Entwicklung",
+      "shotsNote": "Screenshots der aktuellen Version für Android im Design Dusk. Zum Vergrößern einen Screenshot auswählen.",
+      "status": "MVP, in der Testphase"
+    },
+    "s1D": "Der Kern musste offline funktionieren, ohne Konto, ohne Abo und ohne kostenpflichtige API. Jede Designentscheidung wurde an dieser Regel gemessen.",
+    "s1T": "Privatsphäre als Regel, nicht als Slogan",
+    "s2D": "Die Startansicht öffnet mit Ihrem letzten Gefühl, einer Reihe von Gefühlen und der Frage des Tages, damit Sie mit einem einzigen Tipp beginnen.",
+    "s2T": "Einchecken ohne Aufwand",
+    "s3D": "Sanfte Farbblasen, eine tiefe Abendpalette und ruhige Bewegung, mit einfachen Worten überall und einem Schalter für alle, die weniger Animation wollen.",
+    "s3T": "Gestaltet für Ruhe",
+    "s4D": "Mit Flutter gebaut und durchgehend auf einem echten Android Telefon getestet, damit die App auf Alltagsgeräten gut läuft.",
+    "s4T": "Auf echter Hardware bauen und testen",
+    "s5D": "Funktionen mit KI sind als optionale Ebene geplant, sodass das Tagebuch auch ohne sie nützlich und privat bleibt.",
+    "s5T": "KI als Ergänzung, nie als Fundament",
+    "summary": "Halten Sie jedes passende Gefühl fest, schreiben Sie über Ihren Tag und schauen Sie in Ihrer Journey zurück. Alles bleibt auf Ihrem Telefon, ohne Konto und ohne Internetverbindung.",
+    "tagOffline": "Funktioniert offline",
+    "tagline": "Ein privates Tagebuch, das Ihnen hilft zu bemerken, wie Sie sich wirklich fühlen."
+  },
+  "edu": {
+    "afs": {
+      "q": "Sekundarschulbildung"
+    },
+    "title": "Ausbildung"
+  },
+  "exp": {
+    "smile": {
+      "place": "Lagos, Nigeria"
+    },
+    "title": "Berufserfahrung"
+  },
+  "footer": {
+    "line": "Aus Ideen werden digitale Erlebnisse."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Gameplay von Haunting Mother: erkennen, was sich in einem Raum verändert hat, und die Antwort festlegen",
+      "explore": "Gameplay von Haunting Mother: ein Haus erkunden und Gegenstände aufsammeln",
+      "memorize": "Gameplay von Haunting Mother: einen Raum einprägen, bevor sich das Licht ändert"
+    },
+    "cat": "Spieleentwicklung · Roblox",
+    "f": {
+      "atmoD": "Jedes Haus hat seinen eigenen Look, vom abgenutzten Holz des Bauernhauses bis zum roten Schlafzimmer der Mutter, beleuchtet von Laternen und Kerzen.",
+      "atmoT": "Jedes Haus fühlt sich anders an",
+      "coopD": "Runden mit mehreren Spielern und privaten Antworten: Niemand kann abschreiben, und jeder wird gefordert.",
+      "coopT": "Mit Freunden besser",
+      "mobileD": "Große Bedienelemente für Touch und ein klares HUD machen es auf dem Smartphone genauso spielbar wie am Computer.",
+      "mobileT": "Auch fürs Smartphone gebaut",
+      "puzzleD": "Spieler studieren einen Raum und müssen dann bemerken, was anders ist. Leicht zu lernen, spannend zu meistern.",
+      "puzzleT": "Das Gedächtnis ist das Rätsel",
+      "surviveD": "Ein Countdown, eine Kerzenanzeige und begrenzte Power ups wie Revive, Rewind und Tracker machen jeden Tipp entscheidend.",
+      "surviveT": "Druck von allen Seiten"
+    },
+    "kind": "Spiel auf Roblox · Veröffentlicht",
+    "p": {
+      "capNote": "Im Spiel auf einem Smartphone aufgenommen. Zum Vergrößern ein Bild auswählen.",
+      "feedback": "Feedback geben",
+      "game1": "Jedes Haus läuft in drei Phasen ab. Erkunden und aufsammeln, was man findet. Einen Raum einprägen, bevor der Timer abläuft. Dann zurückkehren, antippen, was sich verändert hat, und die Antwort festlegen.",
+      "game2": "Mit mehreren Spielern legt jeder eine private Antwort fest, also muss sich jeder auf sein eigenes Gedächtnis verlassen. Eine Kerzenanzeige, Power ups und ein Shop im Spiel sorgen für Druck und Strategie.",
+      "genre": "Horror, Rätsel, Gedächtnis",
+      "lede": "Haunting Mother ist ein Horror und Rätselspiel für mehrere Spieler auf Roblox. Spieler erkunden drei Spukhäuser, prägen sich jeden Raum gegen die Uhr ein und müssen dann erkennen, was sich verändert hat. Am besten mit Freunden, im Dunkeln und mit lautem Ton.",
+      "playNote": "Öffnet das Erlebnis auf Roblox. Zum Spielen brauchen Sie ein kostenloses Konto bei Roblox.",
+      "role": "Entwickler: Konzept und Umsetzung",
+      "status": "Auf Roblox veröffentlicht"
+    },
+    "phase": {
+      "changed": "Was hat sich verändert?",
+      "changedD": "Den Unterschied antippen, dann die Antwort festlegen.",
+      "explore": "Erkunden",
+      "exploreD": "Das Haus durchsuchen und Gegenstände wie Schlüssel einsammeln.",
+      "memorize": "Einprägen",
+      "memorizeD": "Den Raum studieren, während der Countdown läuft."
+    },
+    "play": "Auf Roblox spielen",
+    "s1D": "Den Ablauf aus Erkunden, Einprägen und Erkennen der Veränderung entworfen, dazu die drei Häuser und wie die Schwierigkeit von Haus zu Haus steigt.",
+    "s1T": "Game Design",
+    "s2D": "Jedes Haus gebaut und eingerichtet und die Beleuchtung auf die Atmosphäre abgestimmt.",
+    "s2T": "Weltenbau in Roblox Studio",
+    "s3D": "Phasen, Timer, Antwortprüfung, Gegenstände und das Verhalten mit mehreren Spielern in Luau programmiert, der Skriptsprache von Roblox.",
+    "s3T": "Programmierung des Gameplays",
+    "s4D": "Im Studio getestet und als öffentliches Erlebnis auf Roblox veröffentlicht.",
+    "s4T": "Testen und Veröffentlichen",
+    "s5D": "Das HUD gestaltet: die Phasenkarte mit Timer und Kerzen, die Plätze für Gegenstände, das Zielpanel, das private Antwortpanel und die Steuerung für Touch.",
+    "s5T": "Gestaltung der Oberfläche",
+    "summary": "Drei Spukhäuser, Gedächtnisrunden auf Zeit, Power ups und ein HUD für Touch. In Roblox Studio konzipiert, programmiert und veröffentlicht.",
+    "tagMulti": "Mehrere Spieler",
+    "tagline": "Ein Horrorspiel fürs Gedächtnis, für mehrere Spieler. Präg dir jeden Raum ein und finde dann, was sich verändert hat."
+  },
+  "hero": {
+    "capRole": "Gründer und Creative Director, PitchIT",
+    "ctaContact": "Kontakt",
+    "ctaCv": "Lebenslauf herunterladen",
+    "ctaWork": "Meine Arbeit ansehen",
+    "handle": "xTc, aus Nigeria. Offen für neue Aufgaben.",
+    "logoAlt": "Logo von xTc Corp: silberne Buchstaben xTc mit den Worten Creating, Building, Operating",
+    "portraitAlt": "Porträt von David Somadina Obichukwu",
+    "r1": "KI gestützter Softwareentwickler",
+    "r2": "Produktentwickler",
+    "r3": "UI/UX Designer",
+    "r4": "Spieleentwickler",
+    "scroll": "Weiter zu den Projekten",
+    "title": "Aus Ideen werden <em>digitale Erlebnisse.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind ist eine private App für Android, um Tagebuch zu führen und Gefühle festzuhalten, gestaltet und mit Flutter entwickelt von David Obichukwu (xTc). Fallstudie, Screenshots und Funktionen.",
+      "title": "EchoMind | Privates Tagebuch und Stimmung von David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother ist ein veröffentlichtes Horror und Rätselspiel für mehrere Spieler auf Roblox, entwickelt in Roblox Studio von David Obichukwu (xTc).",
+      "title": "Haunting Mother | Horrorspiel für mehrere Spieler auf Roblox von David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) ist KI gestützter Softwareentwickler, Produktentwickler, UI/UX Designer und Spieleentwickler aus Nigeria. Zu seinen Projekten gehören PitchIT, EchoMind und Haunting Mother.",
+      "title": "David Somadina Obichukwu (xTc) | Softwareentwickler, Produktentwickler und Designer"
+    },
+    "notfound": {
+      "description": "Diese Seite gibt es im Portfolio von David Obichukwu nicht.",
+      "title": "Seite nicht gefunden | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT ist ein Marktplatz auf Basis von Flutter und Supabase für jede Art von Arbeit in Nigeria, gegründet und gestaltet von David Somadina Obichukwu (xTc). Probiere die interaktive Demo und lies die Fallstudie.",
+      "title": "PitchIT | Ein Marktplatz für jede Art von Arbeit in Nigeria, von David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "Über mich",
+    "capabilities": "Was ich mache",
+    "contact": "Kontakt",
+    "home": "Start",
+    "playground": "Spielplatz",
+    "work": "Projekte"
+  },
+  "nf": {
+    "home": "Zur Startseite",
+    "text": "Der Link ist vielleicht veraltet oder falsch geschrieben. Alles andere ist nur einen Klick entfernt.",
+    "title": "Diese Seite hat kein Echo hinterlassen."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "PitchIT Nachrichten mit einem Gespräch pro Auftrag",
+      "myJobs": "PitchIT Meine Aufträge mit offenen Aufträgen, Angeboten und einem Teamauftrag mit 1 von 3 eingestellten Kräften",
+      "profile": "PitchIT Profil mit dem Umschalter Beauftragen und Arbeiten, Zahlungen und Streitfällen",
+      "setup": "PitchIT Profil einrichten: kein Lebenslauf nötig, wählen zwischen Leute finden, Arbeit finden oder beidem",
+      "signIn": "PitchIT Begrüßung: Anmeldung mit nigerianischer Telefonnummer, E Mail oder Google",
+      "splash": "PitchIT Startbildschirm: Connecting people to real work"
+    },
+    "c1": "Einen Auftrag mit Orientierungspunkten und Fotos einstellen",
+    "c2": "Angebote vergleichen und beauftragen",
+    "c3": "Den Auftrag finanzieren und den Fortschritt verfolgen",
+    "c4": "Die Arbeit bestätigen und eine Bewertung schreiben",
+    "cat": "Digitaler Marktplatz · Produktentwicklung",
+    "demoNote": "Läuft direkt hier. Nur Beispieldaten, Zahlungen sind simuliert, und nichts, was du eingibst, verlässt deinen Browser.",
+    "f": {
+      "adminD": "Nutzer, Aufträge, Streitfälle, Kategorien und Moderation von Bewertungen, jede Admin Aktion wird protokolliert.",
+      "adminT": "Adminbereich",
+      "chatD": "Ein Gespräch pro Auftrag und Arbeitskraft, mit Fotos, Lesebestätigungen und Benachrichtigungen.",
+      "chatT": "Echtzeit Chat",
+      "findD": "Suche, Filter nach Kategorie, Budget, Fernarbeit und Entfernung und eine Karte In der Nähe mit Preisen.",
+      "findT": "Entdecken",
+      "locD": "GPS, eine Markierung auf der Karte oder ein eingegebener Ort, mit dem wichtigsten Orientierungspunkt, Straße oder Kreuzung, Gebäude, schriftlicher Wegbeschreibung und Referenzfotos.",
+      "locT": "Wegbeschreibungen, die man versteht",
+      "offerD": "Arbeitskräfte nennen Preis, Verfügbarkeit und Erfahrung. Kunden vergleichen Angebote nach Empfehlung, niedrigstem Preis oder bester Bewertung, und Teamplätze können nie überbucht werden.",
+      "offerT": "Angebote und Beauftragung",
+      "payD": "Ein klar gekennzeichneter Simulationsmodus sowie Paystack im Test und Live Modus, serverseitig geprüft.",
+      "payT": "Zahlungen",
+      "postD": "13 Branchen und 105 Unterkategorien plus eine eigene Kategorie. Neun Arbeitsformen, von einmalig und stundenweise bis saisonal und Notfall, und Teamaufträge mit mehreren Arbeitskräften.",
+      "postT": "Jede Art von Auftrag einstellen",
+      "privD": "Vor der Finanzierung sehen Arbeitskräfte nur einen ungefähren Bereich. Die genaue Markierung wird für die beauftragte Kraft erst nach der Finanzierung freigeschaltet, und die Datenbank setzt das durch.",
+      "privT": "Standortschutz",
+      "respD": "Eine untere Leiste auf dem Handy, eine Seitenleiste auf Tablet und Desktop und zweispaltige Ansichten für Aufträge und Nachrichten.",
+      "respT": "Jede Bildschirmgröße",
+      "trustD": "Bewertungen erst nach Abschluss, Verifizierungsabzeichen für Telefon und Ausweis, Meldungen und Streitfälle mit Belegen, Entscheidung durch einen Admin und einem Einspruch.",
+      "trustT": "Vertrauen und Sicherheit"
+    },
+    "frameTitle": "Interaktive Demo von PitchIT",
+    "g": {
+      "messages": "Nachrichten",
+      "myJobs": "Meine Aufträge",
+      "profile": "Profil",
+      "setup": "Profil einrichten",
+      "signIn": "Begrüßung",
+      "splash": "Startbildschirm"
+    },
+    "jCustomer": "Weg der Kunden",
+    "jWorker": "Weg der Arbeitskräfte",
+    "launch": "Live Demo ausprobieren",
+    "loadErr": "Die Demo konnte hier nicht starten. Versuche es erneut oder öffne sie im Vollbild.",
+    "loading": "Demo wird gestartet…",
+    "motto": "Arbeit ist überall. Finde sie hier.",
+    "openFull": "Demo im Vollbild öffnen",
+    "p": {
+      "demoNote": "Die Demo ist die echte App im Demomodus: Beispieldaten in deinem Browser und klar gekennzeichnete simulierte Zahlungen. Kein Konto nötig, und nichts wird an einen Server gesendet.",
+      "design1": "Warm, selbstbewusst und klar. Ein kräftiges Orange auf weichem Creme, die runde Schrift Plus Jakarta Sans und große Touchflächen, damit sich die App auch auf einem einfachen Handy in praller Sonne freundlich anfühlt.",
+      "design2": "Worte zählen so viel wie das Visuelle. Die Bildschirme sagen Arbeit finden und Jemanden beauftragen, ohne Fachjargon, und jeder Schritt mit Geld zeigt klar, wann eine Zahlung simuliert ist.",
+      "designT": "Gestaltung",
+      "featNote": "Alles hier ist gebaut und lässt sich in der Demo ausprobieren, außer echten Zahlungen, die ein echtes Backend brauchen.",
+      "journeysD": "Dasselbe Konto kann beauftragen und arbeiten. Ein Umschalter Beauftragen und Arbeiten passt die gesamte Navigation an die Rolle an.",
+      "journeysT": "Zwei Wege, ein Konto",
+      "lede": "PitchIT ist ein Marktplatz für jede Art von Arbeit in Nigeria: Erntehelfer, Fischhändler, Marktaushilfen, Handwerker, Umzugshelfer, Reinigungskräfte, Botengänge und Fachleute. Wer Arbeit braucht, stellt einen Auftrag ein. Wer sie erledigen kann, schickt Angebote. Der Kunde finanziert den vereinbarten Betrag, bevor die Arbeit beginnt.",
+      "opp1": "Die meiste Arbeit in Nigeria taucht nie auf einer Jobbörse auf. Sie entsteht durch Mundpropaganda, auf dem Markt, auf dem Feld und am Straßenrand.",
+      "opp2": "Das hat das Produkt geprägt. Niemand braucht einen Lebenslauf, um sich anzumelden. Orte werden so beschrieben, wie Menschen wirklich den Weg erklären, über Orientierungspunkte, Kreuzungen und Gebäude. Und die App muss leicht genug für einfache Handys und wackelige Verbindungen bleiben.",
+      "oppT": "Die Chance",
+      "platform": "Android und Web, mit Layouts für Handy, Tablet und Desktop",
+      "processT": "Vorgehen und Qualität",
+      "rls": "Zeilenbasierte Sicherheit",
+      "role": "Gründer und Creative Director",
+      "seeJourneys": "So funktioniert es",
+      "shotsNote": "Screenshots der Android Version. Wähle einen aus, um ihn in voller Größe zu sehen.",
+      "src": "Zahlen aus der Arbeitskräfteerhebung des NBS Nigeria für das zweite Quartal 2024, berichtet von",
+      "stackT": "Technologien",
+      "stat1": "der Beschäftigung ist informell",
+      "stat2": "der Erwerbstätigen sind selbstständig",
+      "stat3": "Arbeitsbranchen deckt PitchIT ab, mit 105 Kategorien",
+      "status": "Funktionierende Demo. Noch nicht öffentlich gestartet",
+      "status1": "Ein funktionierendes Produkt im Demomodus, noch nicht öffentlich gestartet.",
+      "status2": "Die nächsten Schritte sind das Produktions Backend, echte Zahlungen und eine erste Gruppe echter Kunden und Arbeitskräfte.",
+      "t1": "Vereinbart",
+      "t2": "Finanziert",
+      "t3": "Begonnen",
+      "t4": "Erledigt",
+      "t5": "Bestätigt",
+      "timeline": "Ablauf eines Auftrags"
+    },
+    "s1D": "Ausgangspunkt war, wie Arbeit in Nigeria gefunden und beschrieben wird. Daraus entstanden die Branchenliste, die Wegbeschreibung über Orientierungspunkte und die Anmeldung ohne Lebenslauf.",
+    "s1T": "Zuerst die Recherche",
+    "s2D": "Datenschutz, Platzgrenzen und Finanzierung werden durch die zeilenbasierte Sicherheit von Postgres durchgesetzt, nicht nur in der Oberfläche versteckt.",
+    "s2T": "Regeln in der Datenbank",
+    "s3D": "Über 50 Sicherheits und Ablaufprüfungen auf einer echten Postgres 16 Datenbank sowie Unit und Widget Tests für Anmeldung, Einstellen, Angebote, Beauftragung und Finanzierung.",
+    "s3T": "Getestet wie ein echtes Produkt",
+    "s4D": "Continuous Integration analysiert den Code, führt die Tests aus, macht Screenshots in vier Größen und baut die Web App und die Android APK.",
+    "s4T": "Bei jeder Änderung gebaut",
+    "s5D": "Ohne Backend Schlüssel läuft die App im Demomodus. Genau diese Version ist auf dieser Seite eingebettet.",
+    "s5T": "Eine Demo, die jeder öffnen kann",
+    "screensLabel": "Bildschirme",
+    "stop": "Demo schließen",
+    "summary": "Ein Marktplatz, der Menschen, die Arbeit brauchen, mit denen verbindet, die sie erledigen, in 13 Branchen, von Landwirtschaft und Fischerei bis zu Handwerk, Botengängen und Fachdiensten. Er ist dafür gebaut, wie Arbeit in Nigeria wirklich läuft: Wegbeschreibung über Orientierungspunkte statt Straßenadressen, und Aufträge werden finanziert, bevor die Arbeit beginnt.",
+    "tagChat": "Echtzeit Chat",
+    "w1": "Aufträge in der Nähe entdecken",
+    "w2": "Ein Angebot senden",
+    "w3": "Chatten und den Weg erhalten",
+    "w4": "Abschließen, bezahlt werden und einen Ruf aufbauen"
+  },
+  "pj": {
+    "approach": "Wie ich es gebaut habe",
+    "audience": "Für wen",
+    "back": "Zurück zu allen Projekten",
+    "builtWith": "Technologie",
+    "contribution": "Mein Beitrag",
+    "features": "Funktionen",
+    "featuresNote": "Was in der aktuellen Version steckt und was als Nächstes geplant ist.",
+    "gameplay": "Gameplay",
+    "genre": "Genre",
+    "nextEcho": "Weiter: EchoMind",
+    "nextHaunt": "Weiter: Haunting Mother",
+    "nextPitchit": "Weiter: PitchIT",
+    "pillars": "Designprinzipien",
+    "platform": "Plattform",
+    "problem": "Das Problem",
+    "role": "Meine Rolle",
+    "screens": "Ansichten",
+    "status": "Status",
+    "theGame": "Das Spiel"
+  },
+  "play": {
+    "board": "Spielfeld",
+    "brands": "Markenidentitäten für Navis, Evergreen, Confess und Amora",
+    "brandsCat": "Branding",
+    "cell": "Feld",
+    "draw": "Unentschieden. Niemand hinterlässt ein Echo.",
+    "draws": "Remis",
+    "earlierT": "Frühere Projekte",
+    "easy": "Leicht",
+    "echoBtn": "Ein Echo senden",
+    "echoD": "Jeder Punkt hinter dieser Seite reagiert auf dich. Klicke auf eine freie Stelle oder sende von hier ein Echo und sieh ihm zu, wie es wandert.",
+    "echoT": "Der Hintergrund hört zu",
+    "hard": "Schwer",
+    "lede": "Kleine Dinge, aus Freude gebaut, und die frühen Arbeiten, die mir die Grundlagen beigebracht haben.",
+    "level": "Schwierigkeit",
+    "lose": "Die Maschine gewinnt diese Runde.",
+    "machine": "Maschine",
+    "new": "Neues Spiel",
+    "thinking": "Die Maschine denkt nach…",
+    "tttD": "Ein kleines Spiel aus der ersten Version dieser Website, neu gebaut. Der leichte Modus macht Fehler. Der schwere verliert nie.",
+    "tttT": "Tic Tac Toe gegen die Maschine",
+    "win": "Du gewinnst. Gut gespielt.",
+    "you": "Du",
+    "yourMove": "Du bist dran. Du spielst X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Software",
+        "title": "Authentifizierung und Benutzerverwaltung"
+      },
+      "real-estate": {
+        "cat": "Webplattform",
+        "title": "Plattform für Immobilieninserate"
+      },
+      "saas-dashboard": {
+        "cat": "Webapp",
+        "title": "Dashboard für SaaS"
+      }
+    }
+  },
+  "skills": {
+    "ai": "KI Systeme und QA",
+    "apps": "Apps und Spiele",
+    "design": "Design und Prototyping",
+    "ds": "Designsysteme",
+    "eval": "Evaluation von KI",
+    "frontend": "Frontendentwicklung",
+    "image": "Bildannotation",
+    "programming": "Programmierung",
+    "proto": "Prototyping",
+    "responsive": "Responsive Design",
+    "text": "Textannotation",
+    "tools": "Werkzeuge und Plattformen",
+    "uiux": "UI und UX Design",
+    "wire": "Wireframing"
+  },
+  "status": {
+    "concept": "Konzept",
+    "demo": "Funktionierende Demo",
+    "dev": "In Entwicklung",
+    "live": "Live",
+    "mvp": "MVP",
+    "mvpTesting": "MVP im Test",
+    "prototype": "Prototyp",
+    "published": "Veröffentlicht"
+  },
+  "ui": {
+    "caseStudy": "Fallstudie lesen",
+    "close": "Schließen",
+    "language": "Sprache",
+    "menu": "Menü",
+    "next": "Nächstes Bild",
+    "noVisual": "Bilder noch nicht veröffentlicht",
+    "prev": "Vorheriges Bild",
+    "skip": "Zum Inhalt springen",
+    "tech": "Technologien",
+    "toTop": "Nach oben",
+    "toggleTheme": "Farbschema wechseln"
+  }
+}

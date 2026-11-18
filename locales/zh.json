@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "方法",
+    "directionD": "把 PitchIT 做大，完成手上的项目，并加入重视用心打磨产品的团队和客户。",
+    "directionT": "方向",
+    "fBased": "所在地",
+    "fBasedV": "尼日利亚。可接受搬迁和远程工作",
+    "fFocus": "专注领域",
+    "fFocusV": "软件、产品设计、AI 辅助开发、游戏",
+    "fLang": "语言",
+    "fLangV": "英语（流利），伊博语（母语）",
+    "interestsD": "交易平台与非正规经济、安静且私密的软件、游戏、创意工具，以及它们背后的系统。",
+    "interestsT": "兴趣",
+    "p1": "我是 David Somadina Obichukwu，网名 xTc。我从头到尾打造产品：找到想法，设计它带给人的感受，然后一直做到它真正可用。",
+    "quote": "“我打造会留下回响的系统。”"
+  },
+  "badge": {
+    "mvp": "已在 MVP 中",
+    "planned": "计划中"
+  },
+  "caps": {
+    "aiT": "AI 辅助开发",
+    "ctD": "代码与品味相遇的工具和互动作品：一个剪辑工作室、有趣的界面，以及这个网站本身。",
+    "ctT": "创意技术",
+    "gameD": "在 Roblox Studio 中用 Luau 设计、编写并发布的 Roblox 体验。",
+    "gameT": "游戏开发",
+    "lede": "每一项都有本页上的作品支撑，并附有链接方便核实。",
+    "pdD": "围绕使用者设计的研究、流程和界面，在 Figma 中，也在代码中。",
+    "pdT": "产品设计",
+    "swD": "经得起真实使用的网页和移动应用，从数据库经过测试的 Flutter 交易平台，到已上线的商业网站。",
+    "swT": "软件开发"
+  },
+  "case": {
+    "noVisual": "这个项目还没有公开截图。截图存在后会显示在这里。本档案中没有任何样图。",
+    "visuals": "图片"
+  },
+  "contact": {
+    "email": "你的邮箱",
+    "err": "无法从此页面发送消息。",
+    "errFields": "请填写所有字段，并输入有效的邮箱地址。",
+    "errMail": "改用邮件发送",
+    "lede": "招聘、委托开发产品，或想要合作？发条消息给我，我会通过邮件回复。",
+    "message": "留言",
+    "name": "你的名字",
+    "ok": "消息已发送。我会尽快通过邮件回复。",
+    "send": "发送消息",
+    "sending": "发送中…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "EchoMind 的 Check in 页面，询问此刻的感受，并提供可选的情绪",
+      "home": "EchoMind 首页，显示上一次的情绪、Check in again 和 Write 按钮、一排情绪以及今日提问",
+      "insights": "EchoMind 的 Insights 页面，显示记录次数、记录天数、一周节奏以及记录过的情绪",
+      "journey": "EchoMind 的 Journey 页面：今天的情绪和文字组成的时间线，附带筛选",
+      "mind": "EchoMind 的 Mind Space 页面，列出你选择保留的时刻",
+      "note": "EchoMind 的 Check in 页面，有新建情绪按钮、I'm not sure yet 选项和备注输入框",
+      "own": "EchoMind 中创建自定义情绪的面板，可设置名称、表情、颜色，以及它通常是愉快、困难还是复杂",
+      "settings": "EchoMind 设置：Dusk、Dawn 和 Match phone 主题，减少动效，你的情绪，以及数据只保存在本机的说明"
+    },
+    "cat": "移动应用 · Flutter",
+    "f": {
+      "aiD": "可选的 AI 功能，帮助你发现日记中的规律。由你决定是否开启，私密核心在没有它们时也照常运行。",
+      "aiT": "AI 反思",
+      "checkinD": "选择所有符合的情绪，标出强度，并简短写下背后的原因。如果还说不清，可以选择“I'm not sure yet”。",
+      "checkinT": "记录你的情绪",
+      "insightsD": "一眼看清最近 7 天或 30 天：记录了多少次、几天有记录、你的每日节奏，以及最常提到的情绪。只有数据足够时才会显示规律。",
+      "insightsT": "Insights",
+      "journeyD": "你记下的一切按发生顺序排在一条时间线上，可搜索，并可按情绪、文字和已收藏的时刻筛选。",
+      "journeyT": "Journey",
+      "mindD": "收藏想要保留的时刻，并在同一个地方找到它们。",
+      "mindT": "Mind Space",
+      "ownD": "用自己的名称、表情和颜色创建情绪，并标记为愉快、困难或复杂。任何情绪都可以重命名、改色或隐藏。",
+      "ownT": "专属于你的情绪",
+      "privateD": "所有内容只保存在你的手机上，存放在 EchoMind 的私有存储中。没有账号，不联网，你写的内容永远不会被发送到任何地方。",
+      "privateT": "从设计上保护隐私",
+      "storeD": "从共享的测试版过渡到应用商店正式发布。",
+      "storeT": "在 Google Play 上架",
+      "themeD": "深沉的夜色、温暖的浅色纸张，或跟随手机设置。内置减少动效开关，也会遵循手机自身的设置。",
+      "themeT": "Dusk 与 Dawn 主题",
+      "voiceD": "用自己的声音讲述这一天，而不是打字。",
+      "voiceT": "语音日记",
+      "writeD": "自由书写，或从今日提问开始，例如“What happened today?”。",
+      "writeT": "书写与每日提问"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "首页",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "添加备注",
+      "own": "自定义情绪",
+      "settings": "设置"
+    },
+    "getApk": "获取 Android 测试版",
+    "kind": "移动应用 · Android MVP",
+    "p": {
+      "apkNote": "测试版是通过 Google Drive 分享的 Android APK。它尚未上架 Google Play，因此 Android 可能会要求你允许从此来源安装。",
+      "audience1": "想用私密而轻松的方式反思自己的人：学生、忙碌的上班族，以及所有想看清自己日子真实感受的人。",
+      "audience2": "EchoMind 是用来反思自身情绪的工具，不是医疗、诊断或治疗服务。",
+      "feedback": "发送反馈",
+      "lede": "EchoMind 是一款 Android 日记与情绪应用。记录你的感受，自由书写或从今日提问开始，并在 Journey 中回顾一切。所有内容都留在你的手机上。没有账号，没有订阅，也不联网。",
+      "problem1": "很多人想了解自己的情绪，却坚持不了写日记。写作很费力，而大多数日记应用要求注册账号，还把你最私密的想法存在别人的云端。",
+      "problem2": "EchoMind 消除了这两道障碍。记录只需轻点几下，今日提问给你一个起点，而你记录的任何内容都不会离开手机。",
+      "role": "产品设计与开发",
+      "shotsNote": "当前 Android 版本在 Dusk 主题下的截图。点击任意一张可查看大图。",
+      "status": "MVP，测试中"
+    },
+    "s1D": "核心功能必须离线可用，不需要账号、订阅或付费 API。每一个设计决定都以这条规则来检验。",
+    "s1T": "隐私是规则，不是口号",
+    "s2D": "首页直接显示你上一次的情绪、一排情绪和今日提问，轻点一下就能开始。",
+    "s2T": "让记录毫不费力",
+    "s3D": "柔和的彩色气泡、深沉的夜色配色和轻柔的动效，处处使用朴素的文字，并为想要更少动画的人提供开关。",
+    "s3T": "为平静而设计",
+    "s4D": "用 Flutter 构建，全程在真实的 Android 手机上测试，确保在日常设备上运行良好。",
+    "s4T": "在真机上构建和测试",
+    "s5D": "AI 功能计划作为可选的附加层，没有它们，日记依然好用且私密。",
+    "s5T": "AI 是锦上添花，而非地基",
+    "summary": "记录每一种符合的情绪，写下你的一天，并在 Journey 中回顾。一切都留在你的手机上，无需账号，也不联网。",
+    "tagOffline": "可离线使用",
+    "tagline": "一本私密日记，帮你察觉自己真正的感受。"
+  },
+  "edu": {
+    "afs": {
+      "q": "中学教育"
+    },
+    "title": "教育经历"
+  },
+  "exp": {
+    "smile": {
+      "place": "尼日利亚拉各斯"
+    },
+    "title": "工作经历"
+  },
+  "footer": {
+    "line": "把想法变成数字体验。"
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Haunting Mother 游戏画面：找出房间里的变化并锁定答案",
+      "explore": "Haunting Mother 游戏画面：探索房屋并拾取物品",
+      "memorize": "Haunting Mother 游戏画面：在灯光变化前记住房间"
+    },
+    "cat": "游戏开发 · Roblox",
+    "f": {
+      "atmoD": "每座房子都有自己的样子，从农舍破旧的木头到母亲的红色卧室，由灯笼和蜡烛照亮。",
+      "atmoT": "每座房子都不一样",
+      "coopD": "多人回合中答案各自保密，谁也抄不了，每位玩家都要接受考验。",
+      "coopT": "和朋友一起更好玩",
+      "mobileD": "大号触控按键和清晰的 HUD，让它在手机和电脑上都能顺畅游玩。",
+      "mobileT": "也为手机打造",
+      "puzzleD": "玩家先观察房间，然后要发现哪里不同。上手容易，精通紧张。",
+      "puzzleT": "记忆就是谜题",
+      "surviveD": "倒计时、蜡烛计量和有限的道具，例如 Revive、Rewind 和 Tracker，让每一次猜测都至关重要。",
+      "surviveT": "四面八方的压力"
+    },
+    "kind": "Roblox 游戏 · 已发布",
+    "p": {
+      "capNote": "在手机上的游戏内截图。点击任意一张可查看大图。",
+      "feedback": "分享反馈",
+      "game1": "每座房子分三个阶段。先探索房子并拾取找到的东西。在计时结束前记住一个房间。然后回来，点出变化之处，并锁定答案。",
+      "game2": "多人模式下，每位玩家锁定自己的私密答案，所以每个人都得相信自己的记忆。蜡烛计量、道具和游戏内商店为每一局增添压力和策略。",
+      "genre": "恐怖、解谜、记忆",
+      "lede": "Haunting Mother 是 Roblox 上的多人恐怖解谜游戏。玩家探索三座闹鬼的房子，争分夺秒记住每个房间，然后找出发生了什么变化。最适合和朋友一起，关上灯，开大音量。",
+      "playNote": "将在 Roblox 中打开。需要一个免费的 Roblox 账号才能游玩。",
+      "role": "创作者：设计与开发",
+      "status": "已在 Roblox 发布"
+    },
+    "phase": {
+      "changed": "哪里变了？",
+      "changedD": "点出不同之处，然后锁定答案。",
+      "explore": "探索",
+      "exploreD": "搜查房子，收集钥匙等物品。",
+      "memorize": "记忆",
+      "memorizeD": "在倒计时期间仔细观察房间。"
+    },
+    "play": "在 Roblox 上玩",
+    "s1D": "设计了探索、记忆、找出变化的循环，三座房子，以及难度如何逐座递增。",
+    "s1T": "游戏设计",
+    "s2D": "搭建并布置每座房子，调整灯光营造氛围。",
+    "s2T": "在 Roblox Studio 中构建世界",
+    "s3D": "使用 Roblox 的脚本语言 Luau 编写阶段、计时器、答案判定、道具和多人行为。",
+    "s3T": "玩法脚本",
+    "s4D": "在 Studio 中测试，并作为公开的 Roblox 体验发布。",
+    "s4T": "测试与发布",
+    "s5D": "设计了 HUD：带计时器和蜡烛的阶段卡片、道具栏、目标面板、私密答案面板以及触控按键。",
+    "s5T": "界面设计",
+    "summary": "三座闹鬼的房子、限时记忆回合、道具和为触控打造的 HUD。在 Roblox Studio 中设计、编写并发布。",
+    "tagMulti": "多人",
+    "tagline": "一款多人恐怖记忆游戏。记住每个房间，再找出哪里变了。"
+  },
+  "hero": {
+    "capRole": "PitchIT 创始人兼创意总监",
+    "ctaContact": "联系我",
+    "ctaCv": "下载简历",
+    "ctaWork": "查看作品",
+    "handle": "xTc，在尼日利亚创作。正在寻找机会。",
+    "logoAlt": "xTc Corp 标志：银色的 xTc 字样，配有 Creating、Building、Operating 字样",
+    "portraitAlt": "David Somadina Obichukwu 的肖像",
+    "r1": "AI 辅助软件开发者",
+    "r2": "产品打造者",
+    "r3": "UI/UX 设计师",
+    "r4": "游戏开发者",
+    "scroll": "向下查看作品",
+    "title": "把想法变成<em>数字体验。</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind 是一款私密的 Android 日记与情绪应用，由 David Obichukwu (xTc) 使用 Flutter 设计和开发。案例研究、截图和功能介绍。",
+      "title": "EchoMind | David Obichukwu 打造的私密日记与情绪应用"
+    },
+    "haunting": {
+      "description": "Haunting Mother 是已在 Roblox 上发布的多人恐怖解谜游戏，由 David Obichukwu (xTc) 在 Roblox Studio 中开发。",
+      "title": "Haunting Mother | David Obichukwu 在 Roblox 上的多人恐怖游戏"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) 是来自尼日利亚的 AI 辅助软件开发者、产品打造者、UI/UX 设计师和游戏开发者。作品包括 PitchIT、EchoMind 和 Haunting Mother。",
+      "title": "David Somadina Obichukwu (xTc) | 软件开发者、产品打造者与设计师"
+    },
+    "notfound": {
+      "description": "David Obichukwu 的作品集中没有这个页面。",
+      "title": "页面未找到 | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT 是一个基于 Flutter 和 Supabase、面向尼日利亚各类工作的交易平台，由 David Somadina Obichukwu (xTc) 创立并设计。试用互动演示并阅读案例研究。",
+      "title": "PitchIT | 面向尼日利亚各类工作的交易平台，作者 David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "关于",
+    "capabilities": "我做什么",
+    "contact": "联系",
+    "home": "首页",
+    "playground": "实验场",
+    "work": "作品"
+  },
+  "nf": {
+    "home": "返回首页",
+    "text": "链接可能已过期或输入有误。所有存在的内容都只需一次点击。",
+    "title": "这个页面没有留下回响。"
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "PitchIT 消息界面，每个工作对应一个对话",
+      "myJobs": "PitchIT 我的工作界面，显示开放的工作、报价，以及一个已雇用 3 人中 1 人的团队工作",
+      "profile": "PitchIT 个人资料界面，含雇人与接活切换、付款和争议",
+      "setup": "PitchIT 设置资料界面：无需简历，可选择找人、找工作或两者都要",
+      "signIn": "PitchIT 欢迎界面：用尼日利亚手机号、邮箱或 Google 登录",
+      "splash": "PitchIT 启动界面：Connecting people to real work"
+    },
+    "c1": "发布带地标和照片的工作",
+    "c2": "比较报价并雇用",
+    "c3": "为工作付款并跟进进度",
+    "c4": "确认完成并留下评价",
+    "cat": "数字交易平台 · 产品开发",
+    "demoNote": "就在这里运行。仅含示例数据，付款为模拟，你输入的内容不会离开浏览器。",
+    "f": {
+      "adminD": "用户、工作、争议、分类和评价审核，每一项管理操作都会被记录。",
+      "adminT": "管理后台",
+      "chatD": "每个工作和每位工人一个对话，支持照片、已读回执和通知。",
+      "chatT": "实时聊天",
+      "findD": "搜索，按分类、预算、远程和距离筛选，以及带价格标记的附近地图。",
+      "findT": "发现",
+      "locD": "GPS、地图上的图钉或手动输入地点，并附上主要地标、街道或路口、建筑、文字路线和参考照片。",
+      "locT": "人人看得懂的路线",
+      "offerD": "工人给出价格、时间和经验。客户可按推荐、最低价或最高评分比较报价，团队名额永远不会超额。",
+      "offerT": "报价与雇用",
+      "payD": "清楚标注的模拟模式，以及在服务器端校验的 Paystack 测试和正式模式。",
+      "payT": "付款",
+      "postD": "13 个行业和 105 个子类别，也可自定义类别。九种工作形式，从一次性和按小时，到季节性和紧急工作，还支持多人团队工作。",
+      "postT": "发布任何类型的工作",
+      "privD": "付款之前，工人只能看到大致区域。付款之后，被雇用的工人才能看到精确位置，这一点由数据库强制执行。",
+      "privT": "位置隐私",
+      "respD": "手机上是底部导航栏，平板和电脑上是侧边导航，工作和消息采用双栏布局。",
+      "respT": "适配所有屏幕",
+      "trustD": "完成后才能评价，手机和身份认证徽章，举报，以及带证据、管理员裁决和一次申诉的争议处理。",
+      "trustT": "信任与安全"
+    },
+    "frameTitle": "PitchIT 互动演示",
+    "g": {
+      "messages": "消息",
+      "myJobs": "我的工作",
+      "profile": "个人资料",
+      "setup": "设置资料",
+      "signIn": "欢迎",
+      "splash": "启动"
+    },
+    "jCustomer": "客户流程",
+    "jWorker": "工人流程",
+    "launch": "试用在线演示",
+    "loadErr": "演示无法在这里启动。请重试，或全屏打开。",
+    "loading": "正在启动演示…",
+    "motto": "工作无处不在。在这里找到它。",
+    "openFull": "全屏打开演示",
+    "p": {
+      "demoNote": "演示就是处于演示模式的真实应用：示例数据保存在你的浏览器中，模拟付款都有清楚标注。无需账户，也不会向服务器发送任何内容。",
+      "design1": "温暖、自信、说话直白。柔和奶油色上的明亮橙色，圆润的 Plus Jakarta Sans 字体和大面积的触控区域，让应用在烈日下的廉价手机上也显得亲切。",
+      "design2": "文字和视觉一样重要。界面上写的是找工作和雇人，没有行话，每个涉及金钱的步骤都会清楚说明何时是模拟付款。",
+      "designT": "设计方向",
+      "featNote": "这里列出的功能都已实现，并可在演示中试用，唯一的例外是真实付款，它需要真正的后端。",
+      "journeysD": "同一个账户既能雇人也能接活。雇人与接活的切换会让整个导航随角色改变。",
+      "journeysT": "两种流程，一个账户",
+      "lede": "PitchIT 是一个面向尼日利亚各类工作的交易平台：农场帮工、鱼贩、市场帮手、手艺人、搬运工、保洁、跑腿和专业人士。需要做事的人发布工作，能做的人发送报价。客户在工作开始前支付约定的金额。",
+      "opp1": "尼日利亚的大部分工作从未出现在招聘网站上。它们发生在口口相传之间，在市场、农场和路边。",
+      "opp2": "这塑造了这个产品。注册不需要简历。地点的描述方式与人们真实指路的方式一致，靠地标、路口和建筑。应用还必须足够轻，适合普通手机和不稳定的网络。",
+      "oppT": "机会",
+      "platform": "Android 和网页，提供手机、平板和电脑布局",
+      "processT": "过程与质量",
+      "rls": "行级安全",
+      "role": "创始人兼创意总监",
+      "seeJourneys": "看看它如何运作",
+      "shotsNote": "来自 Android 版本的截图。选择一张可查看大图。",
+      "src": "数据来自尼日利亚国家统计局 2024 年第二季度劳动力调查，报道来源为",
+      "stackT": "技术栈",
+      "stat1": "的就业属于非正规就业",
+      "stat2": "的劳动者为自雇",
+      "stat3": "个行业由 PitchIT 覆盖，共 105 个类别",
+      "status": "可用演示。尚未向公众发布",
+      "status1": "一个在演示模式下可用的产品，尚未向公众发布。",
+      "status2": "下一步是接入生产后端、真实付款，以及第一批真实的客户和工人。",
+      "t1": "已约定",
+      "t2": "已付款",
+      "t3": "已开始",
+      "t4": "已完成",
+      "t5": "已确认",
+      "timeline": "工作流程"
+    },
+    "s1D": "从尼日利亚人如何找工作、如何描述工作出发，由此得出行业列表、地标式路线和无需简历的注册方式。",
+    "s1T": "先做研究",
+    "s2D": "隐私、名额上限和付款由 Postgres 的行级安全强制执行，而不只是在界面上隐藏。",
+    "s2T": "规则写在数据库里",
+    "s3D": "在真实的 Postgres 16 数据库上进行 50 多项安全与流程检查，并为登录、发布、报价、雇用和付款编写单元测试与组件测试。",
+    "s3T": "像真正的产品一样测试",
+    "s4D": "持续集成会分析代码、运行测试、在四种尺寸下截图，并构建网页应用和 Android APK。",
+    "s4T": "每次改动都会构建",
+    "s5D": "没有后端密钥时，应用会以演示模式运行，本页嵌入的正是这个版本。",
+    "s5T": "人人都能打开的演示",
+    "screensLabel": "界面",
+    "stop": "关闭演示",
+    "summary": "一个连接需要找人做事的人和能做事的人的交易平台，覆盖 13 个行业，从农业和渔业到手艺、跑腿和专业服务。它按照尼日利亚真实的工作方式打造：用地标指路而不是街道地址，工作在开始前就已付款。",
+    "tagChat": "实时聊天",
+    "w1": "发现附近的工作",
+    "w2": "发送报价",
+    "w3": "聊天并获取路线",
+    "w4": "完工、收款并积累口碑"
+  },
+  "pj": {
+    "approach": "我是怎么做的",
+    "audience": "适合谁",
+    "back": "返回全部项目",
+    "builtWith": "技术",
+    "contribution": "我的工作",
+    "features": "功能",
+    "featuresNote": "当前版本已有的功能，以及接下来的计划。",
+    "gameplay": "游戏画面",
+    "genre": "类型",
+    "nextEcho": "下一个：EchoMind",
+    "nextHaunt": "下一个：Haunting Mother",
+    "nextPitchit": "下一个：PitchIT",
+    "pillars": "设计原则",
+    "platform": "平台",
+    "problem": "问题",
+    "role": "我的角色",
+    "screens": "界面",
+    "status": "状态",
+    "theGame": "游戏介绍"
+  },
+  "play": {
+    "board": "棋盘",
+    "brands": "为 Navis、Evergreen、Confess 和 Amora 设计的品牌形象",
+    "brandsCat": "品牌设计",
+    "cell": "格子",
+    "draw": "平局。谁也没留下回声。",
+    "draws": "平局",
+    "earlierT": "早期作品",
+    "easy": "简单",
+    "echoBtn": "发出回声",
+    "echoD": "页面背后的每个点都会回应你。点击任意空白处，或从这里发出一道回声，看它扩散开来。",
+    "echoT": "背景在倾听",
+    "hard": "困难",
+    "lede": "出于乐趣做的小东西，以及教会我基础的早期作品。",
+    "level": "难度",
+    "lose": "这一局机器赢了。",
+    "machine": "机器",
+    "new": "新游戏",
+    "thinking": "机器正在思考…",
+    "tttD": "来自本站第一版的小游戏，重新制作。简单模式会犯错，困难模式从不认输。",
+    "tttT": "与机器下井字棋",
+    "win": "你赢了，漂亮。",
+    "you": "你",
+    "yourMove": "轮到你了，你是 X。"
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "软件",
+        "title": "身份验证与用户管理"
+      },
+      "real-estate": {
+        "cat": "网页平台",
+        "title": "房产信息平台"
+      },
+      "saas-dashboard": {
+        "cat": "网页应用",
+        "title": "SaaS 仪表盘应用"
+      }
+    }
+  },
+  "skills": {
+    "ai": "AI 系统与质量保证",
+    "apps": "应用与游戏",
+    "design": "设计与原型",
+    "ds": "设计系统",
+    "eval": "AI 评估",
+    "frontend": "前端开发",
+    "image": "图像标注",
+    "programming": "编程",
+    "proto": "原型设计",
+    "responsive": "响应式设计",
+    "text": "文本标注",
+    "tools": "工具与平台",
+    "uiux": "UI/UX 设计",
+    "wire": "线框图"
+  },
+  "status": {
+    "concept": "概念",
+    "demo": "可用演示",
+    "dev": "开发中",
+    "live": "已上线",
+    "mvp": "MVP",
+    "mvpTesting": "MVP 测试中",
+    "prototype": "原型",
+    "published": "已发布"
+  },
+  "ui": {
+    "caseStudy": "阅读案例研究",
+    "close": "关闭",
+    "language": "语言",
+    "menu": "菜单",
+    "next": "下一张",
+    "noVisual": "图片尚未公开",
+    "prev": "上一张",
+    "skip": "跳到正文",
+    "tech": "技术",
+    "toTop": "返回顶部",
+    "toggleTheme": "切换配色"
+  }
+}

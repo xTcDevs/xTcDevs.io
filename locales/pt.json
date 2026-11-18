@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "Abordagem",
+    "directionD": "Fazer crescer o PitchIT, entregar os projetos em curso e juntar me a equipas e clientes que querem produtos feitos com cuidado.",
+    "directionT": "Direção",
+    "fBased": "Baseado na",
+    "fBasedV": "Nigéria. Aberto a mudança de país e a trabalho remoto",
+    "fFocus": "Foco",
+    "fFocusV": "Software, design de produto, desenvolvimento assistido por IA, jogos",
+    "fLang": "Idiomas",
+    "fLangV": "Inglês (fluente), igbo (nativo)",
+    "interestsD": "Marketplaces e economia informal, software calmo e privado, jogos, ferramentas criativas e os sistemas por trás deles.",
+    "interestsT": "Interesses",
+    "p1": "Sou David Somadina Obichukwu, conhecido online como xTc. Construo produtos de ponta a ponta: encontro a ideia, desenho como deve ser sentida e construo a até funcionar.",
+    "quote": "“Eu construo sistemas que deixam ecos.”"
+  },
+  "badge": {
+    "mvp": "No MVP",
+    "planned": "Planejado"
+  },
+  "caps": {
+    "aiT": "Desenvolvimento assistido por IA",
+    "ctD": "Ferramentas e peças interativas onde o código encontra o gosto: um estúdio de edição, interfaces lúdicas e este próprio site.",
+    "ctT": "Tecnologia criativa",
+    "gameD": "Experiências Roblox desenhadas, programadas e publicadas no Roblox Studio com Luau.",
+    "gameT": "Desenvolvimento de jogos",
+    "lede": "Cada uma é sustentada por trabalho nesta página, com ligações para confirmar.",
+    "pdD": "Pesquisa, fluxos e interfaces desenhados à volta de quem os usa, no Figma e em código.",
+    "pdT": "Design de produto",
+    "swD": "Apps web e móveis que aguentam o uso real, desde um marketplace em Flutter com uma base de dados testada até um site empresarial online.",
+    "swT": "Desenvolvimento de software"
+  },
+  "case": {
+    "noVisual": "Ainda não foram publicadas capturas deste projeto. Vão aparecer aqui quando existirem. Nada neste dossiê é uma maquete.",
+    "visuals": "Imagens"
+  },
+  "contact": {
+    "email": "Seu email",
+    "err": "Não foi possível enviar a mensagem por esta página.",
+    "errFields": "Preencha todos os campos, com um endereço de email válido.",
+    "errMail": "Envie por email",
+    "lede": "Contratação, um produto para criar ou uma parceria? Mande uma mensagem e eu respondo por email.",
+    "message": "Mensagem",
+    "name": "Seu nome",
+    "ok": "Mensagem enviada. Responderei por email em breve.",
+    "send": "Enviar mensagem",
+    "sending": "Enviando…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "Tela Check in do EchoMind perguntando o que está presente agora, com sentimentos para escolher",
+      "home": "Tela inicial do EchoMind com o último sentimento, os botões Check in again e Write, uma fileira de sentimentos e a pergunta do dia",
+      "insights": "Tela Insights do EchoMind com o número de registros, os dias anotados, seu ritmo da semana e os sentimentos registrados",
+      "journey": "Tela Journey do EchoMind: uma linha do tempo com os sentimentos e textos do dia, com filtros",
+      "mind": "Tela Mind Space do EchoMind com os momentos que você escolheu guardar",
+      "note": "Tela Check in do EchoMind com um botão para novo sentimento, a opção I'm not sure yet e um campo de nota",
+      "own": "Painel do EchoMind para criar um sentimento seu, com nome, emoji, cor e se ele costuma ser agradável, difícil ou misto",
+      "settings": "Configurações do EchoMind: temas Dusk, Dawn e Match phone, redução de animações, seus sentimentos e um aviso de que seus dados ficam neste celular"
+    },
+    "cat": "Aplicação móvel · Flutter",
+    "f": {
+      "aiD": "Recursos de IA opcionais que ajudam você a perceber padrões nas suas entradas. Você escolhe ativar, e o núcleo privado continua funcionando sem eles.",
+      "aiT": "Reflexões com IA",
+      "checkinD": "Escolha todos os sentimentos que combinam, indique a intensidade e adicione uma nota curta sobre o que está por trás. Se ainda não souber dar um nome, escolha “I'm not sure yet”.",
+      "checkinT": "Registre seus sentimentos",
+      "insightsD": "Os últimos 7 ou 30 dias num relance: quantas vezes você registrou, em quantos dias anotou algo, seu ritmo diário e os sentimentos mais citados. Os padrões só aparecem quando há dados suficientes.",
+      "insightsT": "Insights",
+      "journeyD": "Tudo o que você anotou numa só linha do tempo, na ordem em que aconteceu, com busca e filtros para sentimentos, escrita e momentos salvos.",
+      "journeyT": "Journey",
+      "mindD": "Marque os momentos que você quer guardar e encontre todos juntos num só lugar.",
+      "mindT": "Mind Space",
+      "ownD": "Crie um sentimento com seu próprio nome, emoji e cor, e marque se ele é agradável, difícil ou misto. Qualquer sentimento pode ser renomeado, mudar de cor ou ficar oculto.",
+      "ownT": "Sentimentos seus",
+      "privateD": "Tudo fica guardado apenas no seu celular, no armazenamento privado do EchoMind. Não há conta nem conexão com a internet, e o que você escreve nunca é enviado a lugar nenhum.",
+      "privateT": "Privado por natureza",
+      "storeD": "Passar da versão de teste compartilhada para um lançamento na loja.",
+      "storeT": "Lançamento no Google Play",
+      "themeD": "Tons profundos de fim de tarde, papel claro e acolhedor, ou a configuração do seu celular. Há uma opção para reduzir animações, e a configuração do próprio celular também é respeitada.",
+      "themeT": "Temas Dusk e Dawn",
+      "voiceD": "Conte como foi seu dia com a sua voz, em vez de digitar.",
+      "voiceT": "Diário por voz",
+      "writeD": "Escreva livremente ou comece com uma pergunta do dia como “What happened today?”.",
+      "writeT": "Escrita e perguntas do dia"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Início",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Adicionar uma nota",
+      "own": "Seu sentimento",
+      "settings": "Configurações"
+    },
+    "getApk": "Baixar a versão de teste para Android",
+    "kind": "App móvel · MVP para Android",
+    "p": {
+      "apkNote": "A versão de teste é um APK Android compartilhado pelo Google Drive. Ainda não está no Google Play, então o Android pode pedir que você permita instalações desta fonte.",
+      "audience1": "Pessoas que querem um jeito privado e simples de refletir: estudantes, profissionais ocupados e qualquer pessoa que queira ver como seus dias realmente são ao longo do tempo.",
+      "audience2": "O EchoMind é uma ferramenta para refletir sobre os próprios sentimentos. Não é um serviço médico, de diagnóstico ou de terapia.",
+      "feedback": "Enviar feedback",
+      "lede": "O EchoMind é um app de diário e humor para Android. Registre como você se sente, escreva livremente ou a partir de uma pergunta do dia e reveja tudo na sua Journey. Tudo fica no seu celular: sem conta, sem assinatura e sem conexão com a internet.",
+      "problem1": "Muita gente quer entender o próprio humor, mas não consegue manter um diário. Escrever dá trabalho, e a maioria dos apps exige uma conta e guarda seus pensamentos mais pessoais na nuvem de outra pessoa.",
+      "problem2": "O EchoMind reduz as duas barreiras. Registrar leva poucos toques, uma pergunta do dia dá um ponto de partida e nada do que você anota sai do seu celular.",
+      "role": "Design de produto e desenvolvimento",
+      "shotsNote": "Capturas da versão atual para Android com o tema Dusk. Selecione uma para ver em tamanho grande.",
+      "status": "MVP, em testes"
+    },
+    "s1D": "O núcleo precisava funcionar offline, sem conta, sem assinatura e sem API paga. Cada decisão de design foi checada contra essa regra.",
+    "s1T": "Privacidade como regra, não como slogan",
+    "s2D": "A tela inicial abre no seu último sentimento, numa fileira de sentimentos e na pergunta do dia, para você começar com um só toque.",
+    "s2T": "Registrar sem esforço",
+    "s3D": "Bolhas de cores suaves, uma paleta de fim de tarde e animações discretas, com palavras simples em tudo e uma opção para quem quer menos movimento.",
+    "s3T": "Design para a calma",
+    "s4D": "Feito em Flutter e testado num celular Android de verdade durante todo o processo, para funcionar bem nos aparelhos do dia a dia.",
+    "s4T": "Construir e testar em hardware real",
+    "s5D": "Os recursos de IA estão planejados como uma camada opcional, então o diário continua útil e privado sem eles.",
+    "s5T": "IA como complemento, nunca como base",
+    "summary": "Registre cada sentimento que combina com você, escreva sobre o seu dia e reveja tudo na sua Journey. Tudo fica no seu celular, sem conta e sem conexão com a internet.",
+    "tagOffline": "Funciona offline",
+    "tagline": "Um diário privado que ajuda você a perceber como realmente se sente."
+  },
+  "edu": {
+    "afs": {
+      "q": "Ensino secundário"
+    },
+    "title": "Formação"
+  },
+  "exp": {
+    "smile": {
+      "place": "Lagos, Nigéria"
+    },
+    "title": "Experiência"
+  },
+  "footer": {
+    "line": "Transformar ideias em experiências digitais."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Jogabilidade de Haunting Mother: identificar o que mudou num cômodo e confirmar a resposta",
+      "explore": "Jogabilidade de Haunting Mother: explorar uma casa e pegar itens",
+      "memorize": "Jogabilidade de Haunting Mother: memorizar um cômodo antes que a luz mude"
+    },
+    "cat": "Desenvolvimento de jogos · Roblox",
+    "f": {
+      "atmoD": "Cada casa tem seu próprio visual, da madeira gasta da fazenda ao quarto vermelho da Mãe, iluminado por lampiões e velas.",
+      "atmoT": "Cada casa tem seu clima",
+      "coopD": "Rodadas multijogador com respostas privadas: ninguém copia e cada jogador é testado.",
+      "coopT": "Melhor com amigos",
+      "mobileD": "Controles de toque grandes e uma interface clara tornam o jogo jogável no celular e no computador.",
+      "mobileT": "Feito para celular também",
+      "puzzleD": "Os jogadores estudam um cômodo e depois precisam notar o que está diferente. Fácil de aprender, tenso de dominar.",
+      "puzzleT": "A memória é o enigma",
+      "surviveD": "Uma contagem regressiva, um medidor de velas e power ups limitados como Revive, Rewind e Tracker fazem cada palpite contar.",
+      "surviveT": "Pressão por todos os lados"
+    },
+    "kind": "Jogo de Roblox · Publicado",
+    "p": {
+      "capNote": "Capturas feitas dentro do jogo num celular. Selecione uma para ver em tamanho grande.",
+      "feedback": "Enviar feedback",
+      "game1": "Cada casa é jogada em três fases. Explore e pegue o que encontrar. Memorize um cômodo antes que o tempo acabe. Depois volte, toque no que mudou e confirme sua resposta.",
+      "game2": "No multijogador, cada jogador confirma uma resposta privada, então todos precisam confiar na própria memória. Um medidor de velas, power ups e uma loja dentro do jogo trazem pressão e estratégia a cada partida.",
+      "genre": "Terror, enigmas, memória",
+      "lede": "Haunting Mother é um jogo multijogador de terror e enigmas no Roblox. Os jogadores exploram três casas assombradas, memorizam cada cômodo contra o relógio e depois precisam descobrir o que mudou. Melhor com amigos, no escuro, com o som alto.",
+      "playNote": "Abre a experiência no Roblox. É preciso uma conta gratuita do Roblox para jogar.",
+      "role": "Criador: design e desenvolvimento",
+      "status": "Publicado no Roblox"
+    },
+    "phase": {
+      "changed": "O que mudou?",
+      "changedD": "Toque na diferença e confirme sua resposta.",
+      "explore": "Explorar",
+      "exploreD": "Vasculhe a casa e pegue itens, como chaves.",
+      "memorize": "Memorizar",
+      "memorizeD": "Estude o cômodo enquanto a contagem regressiva corre."
+    },
+    "play": "Jogar no Roblox",
+    "s1D": "Projetei o ciclo de explorar, memorizar e identificar a mudança, as três casas e como a dificuldade aumenta de uma para outra.",
+    "s1T": "Game design",
+    "s2D": "Construí e mobiliei cada casa e ajustei a iluminação para criar clima.",
+    "s2T": "Construção do mundo no Roblox Studio",
+    "s3D": "Programei as fases, cronômetros, verificação de respostas, itens e o comportamento multijogador em Luau, a linguagem de scripts do Roblox.",
+    "s3T": "Programação da jogabilidade",
+    "s4D": "Testei no Studio e publiquei o jogo como uma experiência pública no Roblox.",
+    "s4T": "Testes e publicação",
+    "s5D": "Projetei a interface: o cartão de fase com cronômetro e velas, os espaços de itens, o painel de objetivo, o painel de resposta privada e os controles de toque.",
+    "s5T": "Design de interface",
+    "summary": "Três casas assombradas, rodadas de memória cronometradas, power ups e uma interface feita para toque. Projetado, programado e publicado no Roblox Studio.",
+    "tagMulti": "Multijogador",
+    "tagline": "Um jogo multijogador de terror e memória. Estude cada cômodo e depois descubra o que mudou."
+  },
+  "hero": {
+    "capRole": "Fundador e diretor criativo, PitchIT",
+    "ctaContact": "Fale comigo",
+    "ctaCv": "Baixar CV",
+    "ctaWork": "Ver meu trabalho",
+    "handle": "xTc, direto da Nigéria. Disponível.",
+    "logoAlt": "Logotipo da xTc Corp: letras xTc prateadas com as palavras Creating, Building, Operating",
+    "portraitAlt": "Retrato de David Somadina Obichukwu",
+    "r1": "Programador de software assistido por IA",
+    "r2": "Criador de produtos",
+    "r3": "Designer UI/UX",
+    "r4": "Programador de jogos",
+    "scroll": "Descer até aos projetos",
+    "title": "Transformar ideias em <em>experiências digitais.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind é um app Android privado para escrever um diário e acompanhar como você se sente, criado em Flutter por David Obichukwu (xTc). Estudo de caso, capturas e recursos.",
+      "title": "EchoMind | Diário privado e registro de humor por David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother é um jogo multijogador de terror e enigmas publicado no Roblox, criado no Roblox Studio por David Obichukwu (xTc).",
+      "title": "Haunting Mother | Jogo de terror multijogador no Roblox por David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) é programador assistido por IA, criador de produtos, designer UI/UX e programador de jogos na Nigéria. Os seus projetos incluem PitchIT, EchoMind e Haunting Mother.",
+      "title": "David Somadina Obichukwu (xTc) | Programador, criador de produtos e designer"
+    },
+    "notfound": {
+      "description": "Esta página não existe no portfólio de David Obichukwu.",
+      "title": "Página não encontrada | xTc"
+    },
+    "pitchit": {
+      "description": "O PitchIT é um marketplace em Flutter e Supabase para todo o tipo de trabalho na Nigéria, fundado e desenhado por David Somadina Obichukwu (xTc). Experimente a demo interativa e leia o estudo de caso.",
+      "title": "PitchIT | Um marketplace para todo o tipo de trabalho na Nigéria, por David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "Sobre",
+    "capabilities": "O que faço",
+    "contact": "Contato",
+    "home": "Início",
+    "playground": "Experiências",
+    "work": "Projetos"
+  },
+  "nf": {
+    "home": "Ir para a página inicial",
+    "text": "O link pode ser antigo ou ter um erro de digitação. Todo o resto está a um clique.",
+    "title": "Esta página não deixou eco."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "Ecrã Mensagens do PitchIT com uma conversa por trabalho",
+      "myJobs": "Ecrã Os meus trabalhos do PitchIT com trabalhos abertos, propostas e um trabalho de equipa com 1 de 3 trabalhadores contratados",
+      "profile": "Ecrã Perfil do PitchIT com o seletor Contratar e Trabalhar, pagamentos e disputas",
+      "setup": "Ecrã de criação de perfil do PitchIT: sem CV, escolher encontrar pessoas, encontrar trabalho ou ambos",
+      "signIn": "Ecrã de boas vindas do PitchIT: entrar com um número de telefone nigeriano, email ou Google",
+      "splash": "Ecrã de abertura do PitchIT: Connecting people to real work"
+    },
+    "c1": "Publicar um trabalho com pontos de referência e fotos",
+    "c2": "Comparar propostas e contratar",
+    "c3": "Financiar o trabalho e acompanhar o progresso",
+    "c4": "Confirmar o trabalho e deixar uma avaliação",
+    "cat": "Marketplace digital · Desenvolvimento de produto",
+    "demoNote": "Corre aqui mesmo. Só dados de exemplo, pagamentos simulados, e nada do que escreve sai do seu navegador.",
+    "f": {
+      "adminD": "Utilizadores, trabalhos, disputas, categorias e moderação de avaliações, com cada ação de administração registada.",
+      "adminT": "Painel de administração",
+      "chatD": "Uma conversa por trabalho e trabalhador, com fotos, confirmações de leitura e notificações.",
+      "chatT": "Chat em tempo real",
+      "findD": "Pesquisa, filtros por categoria, orçamento, trabalho remoto e distância, e um mapa Perto de si com preços.",
+      "findT": "Descoberta",
+      "locD": "GPS, um pin no mapa ou um local escrito, com o ponto de referência principal, a rua ou o cruzamento, o edifício, indicações escritas e fotos de referência.",
+      "locT": "Indicações que as pessoas entendem",
+      "offerD": "Os trabalhadores propõem preço, disponibilidade e experiência. Os clientes comparam propostas por recomendadas, preço mais baixo ou mais bem avaliadas, e as vagas de equipa nunca transbordam.",
+      "offerT": "Propostas e contratação",
+      "payD": "Um modo simulado claramente identificado, mais os modos de teste e real do Paystack verificados no servidor.",
+      "payT": "Pagamentos",
+      "postD": "13 setores e 105 subcategorias, mais uma categoria própria. Nove modalidades de trabalho, de pontual e à hora a sazonal e de urgência, e trabalhos de equipa com vários trabalhadores.",
+      "postT": "Publicar qualquer tipo de trabalho",
+      "privD": "Antes do financiamento, os trabalhadores só veem uma área aproximada. O pin exato é desbloqueado para o trabalhador contratado depois do financiamento, e a base de dados garante isso.",
+      "privT": "Privacidade da localização",
+      "respD": "Uma barra inferior no telemóvel, uma barra lateral em tablets e computadores, e vistas de dois painéis para trabalhos e mensagens.",
+      "respT": "Todos os tamanhos de ecrã",
+      "trustD": "Avaliações só depois de concluído, selos de verificação de telefone e identidade, denúncias e disputas com provas, decisão de um administrador e um recurso.",
+      "trustT": "Confiança e segurança"
+    },
+    "frameTitle": "Demo interativa do PitchIT",
+    "g": {
+      "messages": "Mensagens",
+      "myJobs": "Os meus trabalhos",
+      "profile": "Perfil",
+      "setup": "Criar perfil",
+      "signIn": "Boas vindas",
+      "splash": "Abertura"
+    },
+    "jCustomer": "Percurso do cliente",
+    "jWorker": "Percurso do trabalhador",
+    "launch": "Experimentar a demo ao vivo",
+    "loadErr": "A demo não conseguiu iniciar aqui. Tente de novo, ou abra a em ecrã inteiro.",
+    "loading": "A iniciar a demo…",
+    "motto": "O trabalho está em todo o lado. Encontre o aqui.",
+    "openFull": "Abrir a demo em ecrã inteiro",
+    "p": {
+      "demoNote": "A demo é a app real em modo demo: dados de exemplo guardados no seu navegador e pagamentos simulados claramente identificados. Não precisa de conta e nada é enviado para um servidor.",
+      "design1": "Calorosa, confiante e direta. Um laranja vivo sobre um creme suave, a tipografia arredondada Plus Jakarta Sans e áreas de toque grandes, para que a app pareça amigável num telemóvel simples ao sol.",
+      "design2": "As palavras importam tanto como o visual. Os ecrãs dizem Encontrar trabalho e Contratar alguém, sem jargão, e cada passo com dinheiro diz claramente quando um pagamento é simulado.",
+      "designT": "Direção de design",
+      "featNote": "Tudo o que está aqui está construído e pode ser experimentado na demo, exceto os pagamentos reais, que precisam de um backend real.",
+      "journeysD": "A mesma conta pode contratar e trabalhar. Um seletor Contratar e Trabalhar muda toda a navegação conforme o papel.",
+      "journeysT": "Dois percursos, uma só conta",
+      "lede": "O PitchIT é um marketplace para todo o tipo de trabalho na Nigéria: trabalhadores agrícolas, comerciantes de peixe, ajuda no mercado, artesãos, mudanças, limpezas, recados e profissionais. Quem precisa de um trabalho publica o. Quem o sabe fazer envia propostas. O cliente financia o valor acordado antes de o trabalho começar.",
+      "opp1": "A maior parte do trabalho na Nigéria nunca aparece num portal de emprego. Acontece de boca em boca, no mercado, na quinta e à beira da estrada.",
+      "opp2": "Isso moldou o produto. Ninguém precisa de CV para se registar. Os locais são descritos como as pessoas dão indicações de verdade, por pontos de referência, cruzamentos e edifícios. E a app tem de ser leve o suficiente para telemóveis comuns e ligações instáveis.",
+      "oppT": "A oportunidade",
+      "platform": "Android e web, com layouts para telemóvel, tablet e computador",
+      "processT": "Processo e qualidade",
+      "rls": "Segurança ao nível da linha",
+      "role": "Fundador e diretor criativo",
+      "seeJourneys": "Ver como funciona",
+      "shotsNote": "Capturas da versão Android. Selecione uma para a ver em tamanho real.",
+      "src": "Números do Inquérito à Força de Trabalho do NBS da Nigéria, segundo trimestre de 2024, divulgados pela",
+      "stackT": "Tecnologias",
+      "stat1": "do emprego é informal",
+      "stat2": "das pessoas que trabalham são trabalhadores por conta própria",
+      "stat3": "setores de trabalho cobertos pelo PitchIT, com 105 categorias",
+      "status": "Demo funcional. Ainda não lançado ao público",
+      "status1": "Um produto funcional em modo demo, ainda não lançado ao público.",
+      "status2": "Os próximos passos são ligar o backend de produção, os pagamentos reais e um primeiro grupo de clientes e trabalhadores reais.",
+      "t1": "Acordado",
+      "t2": "Financiado",
+      "t3": "Iniciado",
+      "t4": "Feito",
+      "t5": "Confirmado",
+      "timeline": "Etapas de um trabalho"
+    },
+    "s1D": "Comecei por como o trabalho é encontrado e descrito na Nigéria, o que levou à lista de setores, às indicações por pontos de referência e ao registo sem CV.",
+    "s1T": "Primeiro, a pesquisa",
+    "s2D": "A privacidade, os limites de vagas e o financiamento são impostos pela segurança ao nível da linha do Postgres, não apenas escondidos na interface.",
+    "s2T": "Regras na base de dados",
+    "s3D": "Mais de 50 verificações de segurança e de fluxo numa base de dados Postgres 16 real, além de testes unitários e de widgets para entrada, publicação, propostas, contratação e financiamento.",
+    "s3T": "Testado como um produto real",
+    "s4D": "A integração contínua analisa o código, corre os testes, tira capturas em quatro tamanhos e compila a app web e o APK Android.",
+    "s4T": "Compilado a cada alteração",
+    "s5D": "Sem chaves de backend, a app corre em modo demo, que é a versão integrada nesta página.",
+    "s5T": "Uma demo que qualquer pessoa pode abrir",
+    "screensLabel": "Ecrãs",
+    "stop": "Fechar a demo",
+    "summary": "Um marketplace que liga quem precisa de um trabalho a quem o faz, em 13 setores, da agricultura e pesca aos ofícios, recados e serviços profissionais. Foi pensado para a forma como o trabalho acontece de facto na Nigéria: indicações por pontos de referência em vez de moradas, e trabalhos financiados antes de começarem.",
+    "tagChat": "Chat em tempo real",
+    "w1": "Descobrir trabalhos por perto",
+    "w2": "Enviar uma proposta",
+    "w3": "Conversar e obter indicações",
+    "w4": "Concluir, receber e ganhar reputação"
+  },
+  "pj": {
+    "approach": "Como eu construí",
+    "audience": "Para quem é",
+    "back": "Voltar aos projetos",
+    "builtWith": "Feito com",
+    "contribution": "Minha contribuição",
+    "features": "Recursos",
+    "featuresNote": "O que está na versão atual e o que vem a seguir.",
+    "gameplay": "Jogabilidade",
+    "genre": "Gênero",
+    "nextEcho": "Próximo: EchoMind",
+    "nextHaunt": "Próximo: Haunting Mother",
+    "nextPitchit": "Seguinte: PitchIT",
+    "pillars": "Pilares de design",
+    "platform": "Plataforma",
+    "problem": "O problema",
+    "role": "Meu papel",
+    "screens": "Telas",
+    "status": "Status",
+    "theGame": "O jogo"
+  },
+  "play": {
+    "board": "Tabuleiro",
+    "brands": "Identidades de marca para Navis, Evergreen, Confess e Amora",
+    "brandsCat": "Marca",
+    "cell": "Casa",
+    "draw": "Empate. Ninguém deixa eco.",
+    "draws": "Empates",
+    "earlierT": "Projetos anteriores",
+    "easy": "Fácil",
+    "echoBtn": "Enviar um eco",
+    "echoD": "Cada ponto atrás desta página reage a si. Clique num espaço vazio, ou envie um eco daqui e veja o viajar.",
+    "echoT": "O fundo está a ouvir",
+    "hard": "Difícil",
+    "lede": "Pequenas coisas feitas por gosto, e os primeiros trabalhos que me ensinaram o básico.",
+    "level": "Dificuldade",
+    "lose": "A máquina ganha esta.",
+    "machine": "Máquina",
+    "new": "Novo jogo",
+    "thinking": "A máquina está a pensar…",
+    "tttD": "Um pequeno jogo da primeira versão deste site, reconstruído. O modo fácil comete erros. O modo difícil nunca perde.",
+    "tttT": "Jogo do galo contra a máquina",
+    "win": "Ganhou. Bem jogado.",
+    "you": "Você",
+    "yourMove": "A sua vez. Joga com X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Software",
+        "title": "Autenticação e gestão de usuários"
+      },
+      "real-estate": {
+        "cat": "Plataforma web",
+        "title": "Plataforma de anúncios imobiliários"
+      },
+      "saas-dashboard": {
+        "cat": "App web",
+        "title": "Painel SaaS"
+      }
+    }
+  },
+  "skills": {
+    "ai": "Sistemas de IA e QA",
+    "apps": "Apps e jogos",
+    "design": "Design e prototipação",
+    "ds": "Design systems",
+    "eval": "Avaliação de IA",
+    "frontend": "Desenvolvimento frontend",
+    "image": "Anotação de imagens",
+    "programming": "Programação",
+    "proto": "Prototipação",
+    "responsive": "Design responsivo",
+    "text": "Rotulagem de texto",
+    "tools": "Ferramentas e plataformas",
+    "uiux": "Design UI/UX",
+    "wire": "Wireframing"
+  },
+  "status": {
+    "concept": "Conceito",
+    "demo": "Demo funcional",
+    "dev": "Em desenvolvimento",
+    "live": "No ar",
+    "mvp": "MVP",
+    "mvpTesting": "MVP em testes",
+    "prototype": "Protótipo",
+    "published": "Publicado"
+  },
+  "ui": {
+    "caseStudy": "Ler o estudo de caso",
+    "close": "Fechar",
+    "language": "Idioma",
+    "menu": "Menu",
+    "next": "Próxima imagem",
+    "noVisual": "Imagens ainda não publicadas",
+    "prev": "Imagem anterior",
+    "skip": "Pular para o conteúdo",
+    "tech": "Tecnologias",
+    "toTop": "Voltar ao topo",
+    "toggleTheme": "Mudar tema de cores"
+  }
+}

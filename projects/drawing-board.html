@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="drawing-board">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Drawing Board | Case study by David Somadina Obichukwu</title>
+  <meta name="description" content="A product concept for a spatial thinking tool for founders. Instead of a long chat thread, ideas live on a canvas where they can be arranged, connected.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/drawing-board">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="AI Drawing Board | Think on a canvas, not in a chat.">
+  <meta property="og:description" content="A product concept for a spatial thinking tool for founders. Instead of a long chat thread, ideas live on a canvas where they can be arranged, connected.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/drawing-board">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"AI Drawing Board","url":"https://xtcdev.netlify.app/projects/drawing-board","creator":{"@type":"Person","name":"David Somadina Obichukwu","url":"https://xtcdev.netlify.app/"}}</script>
+</head>
+<body class="page-case page-drawing-board">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><span aria-hidden="true">/</span><span aria-current="page">AI Drawing Board</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="pj-cats"><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p>
+            <h1 class="pj-title">AI Drawing Board</h1>
+            <p class="pj-tagline" data-i18n="c.drawing-board.tagline">Think on a canvas, not in a chat.</p>
+            <p class="pj-status"><span class="status status--concept" data-i18n="status.concept">Concept</span></p>
+            <p class="pj-lede" data-i18n="c.drawing-board.lede">A product concept for a spatial thinking tool for founders. Instead of a long chat thread, ideas live on a canvas where they can be arranged, connected and worked through with AI.</p>
+            <div class="pj-actions"><a class="btn btn--primary" href="../index.html#contact"><span data-i18n="case.ask">Ask me about this project</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a></div>
+          </div>
+          <div class="feature__visual"><div class="pj-empty"><span class="pj-empty__mark" aria-hidden="true">A</span><p data-i18n="case.noVisualShort">No screenshots yet. Nothing on this page is a mockup.</p></div></div>
+        </div>
+        <dl class="pj-facts"><div><dt data-i18n="case.fact.type">Type</dt><dd data-i18n="c.drawing-board.fact0">Product concept</dd></div><div><dt data-i18n="case.fact.myrole">My role</dt><dd data-i18n="c.drawing-board.fact2">Product owner</dd></div></dl>
+      </div>
+    </section>
+<section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.drawing-board.s0.h">The idea</h2><div><p class="pj-strong" data-i18n="c.drawing-board.s0.p0">Founders think in maps: markets, users, features and risks that all connect. Chat tools force that into a single line of messages. A canvas lets the structure of an idea show.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.drawing-board.s1.h">Directions being weighed</h2><div><ul class="bullets"><li data-i18n="c.drawing-board.s1.i0">A sharp first version for indie founders</li><li data-i18n="c.drawing-board.s1.i1">A canvas built on tldraw</li><li data-i18n="c.drawing-board.s1.i2">Freemium pricing</li><li data-i18n="c.drawing-board.s1.i3">Launching to communities such as Product Hunt and Indie Hackers</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.drawing-board.s2.h">Open questions</h2><div><ul class="bullets bullets--open"><li data-i18n="c.drawing-board.s2.i0">Which single founder task the first version should nail</li><li data-i18n="c.drawing-board.s2.i1">How AI shows up on the canvas without cluttering it</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="case.visuals">Visuals</h2><p class="casefile__missing" data-i18n="case.noVisual">No screenshots have been published for this project yet. They will appear here when they exist. Nothing in this case file is a mockup.</p></div></section>
+    <section class="pj-section">
+      <div class="wrap pj-nav"><a class="pj-nav__link" href="../projects/ai-land.html"><span data-i18n="case.prev">Previous project</span><b>AI Land Development Platform</b></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

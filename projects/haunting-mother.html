@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="haunting">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haunting Mother | Multiplayer horror puzzle game on Roblox by David Obichukwu</title>
+  <meta name="description" content="Haunting Mother is a published multiplayer horror puzzle game on Roblox, designed and built in Roblox Studio by David Obichukwu (xTc). Play it on Roblox and read the development case study.">
+  <meta name="author" content="David Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/haunting-mother">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Obichukwu">
+  <meta property="og:title" content="Haunting Mother | A Roblox horror puzzle game">
+  <meta property="og:description" content="Study every room, then spot what changed. A published multiplayer Roblox horror game by David Obichukwu.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/haunting-mother">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-haunting-mother.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-haunting-mother.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Instrument+Serif&family=Special+Elite&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Haunting Mother",
+    "genre": ["Horror", "Puzzle"],
+    "image": "https://xtcdev.netlify.app/assets/img/haunting-mother/h3-memorize-mothers-bedroom.webp",
+    "playMode": "MultiPlayer",
+    "gamePlatform": "Roblox",
+    "author": { "@type": "Person", "name": "David Obichukwu", "url": "https://xtcdev.netlify.app/" },
+    "url": "https://xtcdev.netlify.app/projects/haunting-mother",
+    "sameAs": "https://www.roblox.com/games/111171456570495/Haunting-Mother"
+  }
+  </script>
+</head>
+<body class="page-haunt">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../index.html#work" data-i18n="nav.work">Work</a><span aria-hidden="true">/</span><span aria-current="page">Haunting Mother</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="feature__kind" style="--f-accent: var(--accent)" data-i18n="haunting.kind">Roblox game · Published</p>
+            <h1 class="pj-title">Haunting Mother</h1>
+            <p class="pj-tagline" data-i18n="haunting.tagline">A multiplayer horror memory game. Study every room, then spot what changed.</p>
+            <p class="pj-lede" data-i18n="haunting.p.lede">Haunting Mother is a multiplayer horror puzzle game on Roblox. Players explore three haunted houses, memorize each room against the clock, then have to spot what changed. Best played with friends, in the dark, with the sound up.</p>
+            <div class="pj-actions">
+              <a class="btn btn--haunt" href="https://www.roblox.com/games/111171456570495/Haunting-Mother" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-play"/></svg><span data-i18n="haunting.play">Play on Roblox</span></a>
+              <a class="btn btn--ghost" href="../index.html#contact" data-i18n="haunting.p.feedback">Share feedback</a>
+            </div>
+            <p class="pj-note" data-i18n="haunting.p.playNote">Opens the experience on Roblox. You'll need a free Roblox account to play.</p>
+          </div>
+          <figure class="haunt-visual haunt-visual--page">
+            <a class="haunt-frame shot-link" href="../assets/img/haunting-mother/h3-memorize-mothers-bedroom.webp" data-lightbox="hero"><img src="../assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp" width="800" height="370" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a>
+            <figcaption class="haunt-cap"><span>House 3 · The Mother's House</span><span data-i18n="haunting.phase.memorize">Memorize</span></figcaption>
+          </figure>
+        </div>
+        <dl class="pj-facts">
+          <div><dt data-i18n="pj.platform">Platform</dt><dd>Roblox</dd></div>
+          <div><dt data-i18n="pj.genre">Genre</dt><dd data-i18n="haunting.p.genre">Horror, puzzle, memory</dd></div>
+          <div><dt data-i18n="pj.status">Status</dt><dd data-i18n="haunting.p.status">Published on Roblox</dd></div>
+          <div><dt data-i18n="pj.role">My role</dt><dd data-i18n="haunting.p.role">Creator: design and development</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.theGame">The game</h2>
+        <div>
+          <p class="pj-strong" data-i18n="haunting.p.game1">Every house plays out in three phases. Explore it and pick up what you find. Memorize a room before the timer runs out. Then come back, tap whatever changed, and lock in your answer.</p>
+          <p data-i18n="haunting.p.game2">In multiplayer, each player locks in a private answer, so everyone has to trust their own memory. A candle meter, power ups and a shop inside the game add pressure and strategy to each run.</p>
+          <ol class="phases">
+            <li><span class="phases__name" data-i18n="haunting.phase.explore">Explore</span><span data-i18n="haunting.phase.exploreD">Search the house and collect items such as keys.</span></li>
+            <li><span class="phases__name" data-i18n="haunting.phase.memorize">Memorize</span><span data-i18n="haunting.phase.memorizeD">Study the room while the countdown runs.</span></li>
+            <li><span class="phases__name" data-i18n="haunting.phase.changed">What changed?</span><span data-i18n="haunting.phase.changedD">Tap the difference, then lock in your answer.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="haunting.p.builtT">What I built</h2>
+        <div>
+          <p data-i18n="haunting.p.builtLede">I designed the game and built it in Roblox Studio with Luau, writing and changing scripts myself and using an AI coding assistant to draft and debug, then testing every round in play sessions.</p>
+          <ul class="bullets">
+            <li data-i18n="haunting.p.b1">Multiplayer rounds where each player locks in a private answer</li>
+            <li data-i18n="haunting.p.b2">Three house environments, with doors and interactive objects to search</li>
+            <li data-i18n="haunting.p.b3">Hunter behaviour that adds pressure while players explore</li>
+            <li data-i18n="haunting.p.b4">Lobby management and match progression from house to house</li>
+            <li data-i18n="haunting.p.b5">Gameplay variations so changes differ between runs</li>
+            <li data-i18n="haunting.p.b6">A player interface built for touch: timers, candle meter, power ups and the shop</li>
+            <li data-i18n="haunting.p.b7">Iterative testing and fixes after each play session</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.pillars">Design pillars</h2>
+        <ul class="feat-list">
+          <li><h3 data-i18n="haunting.f.puzzleT">Memory is the puzzle</h3><p data-i18n="haunting.f.puzzleD">Players study a room, then have to notice what's different. Easy to learn, tense to master.</p></li>
+          <li><h3 data-i18n="haunting.f.atmoT">Every house feels different</h3><p data-i18n="haunting.f.atmoD">Each house has its own look, from the farmhouse's worn timber to the Mother's red bedroom, lit by lanterns and candles.</p></li>
+          <li><h3 data-i18n="haunting.f.surviveT">Pressure from every side</h3><p data-i18n="haunting.f.surviveD">A countdown, a candle meter and limited power ups such as Revive, Rewind and Tracker make every guess count.</p></li>
+          <li><h3 data-i18n="haunting.f.coopT">Better with friends</h3><p data-i18n="haunting.f.coopD">Multiplayer rounds with private answers, so nobody can copy and every player is tested.</p></li>
+          <li><h3 data-i18n="haunting.f.mobileT">Built for phones too</h3><p data-i18n="haunting.f.mobileD">Large touch controls and a clear HUD make it playable on mobile as well as desktop.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <div>
+          <h2 data-i18n="pj.contribution">My contribution</h2>
+          <ul class="tags" style="margin-top:18px"><li>Roblox Studio</li><li>Luau</li><li data-i18n="haunting.tagMulti">Multiplayer</li></ul>
+        </div>
+        <ol class="steps">
+          <li><h3 data-i18n="haunting.s1T">Game design</h3><p data-i18n="haunting.s1D">Designed the loop of exploring, memorizing and spotting the change, the three houses and how difficulty builds from one to the next.</p></li>
+          <li><h3 data-i18n="haunting.s2T">World building in Roblox Studio</h3><p data-i18n="haunting.s2D">Built and furnished each house and tuned its lighting for atmosphere.</p></li>
+          <li><h3 data-i18n="haunting.s3T">Gameplay scripting</h3><p data-i18n="haunting.s3D">Scripted the phases, timers, answer checking, items and multiplayer behaviour in Luau, Roblox's scripting language.</p></li>
+          <li><h3 data-i18n="haunting.s5T">Interface design</h3><p data-i18n="haunting.s5D">Designed the HUD: the phase card with timer and candles, item slots, the objective panel, the private answer panel and touch controls.</p></li>
+          <li><h3 data-i18n="haunting.s4T">Testing and publishing</h3><p data-i18n="haunting.s4D">Playtested in Studio and published the game as a public Roblox experience.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap">
+        <h2 style="margin-bottom:24px" data-i18n="pj.gameplay">Gameplay</h2>
+        <p class="pj-note" style="margin:-12px 0 28px" data-i18n="haunting.p.capNote">Captured inside the game on a phone. Select a shot to view it full size.</p>
+        <section class="house" aria-label="House 1 · The Abandoned Farmhouse">
+          <h3 class="house__name">House 1 · The Abandoned Farmhouse</h3>
+          <ul class="house__shots">
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h1-explore-key.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h1-explore-key-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: exploring a house and picking up items" data-i18n-attr="alt:haunting.alt.explore"></a><span class="house__phase" data-i18n="haunting.phase.explore">Explore</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h1-explore-living-room.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h1-explore-living-room-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: exploring a house and picking up items" data-i18n-attr="alt:haunting.alt.explore"></a><span class="house__phase" data-i18n="haunting.phase.explore">Explore</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h1-memorize-bedroom.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h1-memorize-bedroom-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a><span class="house__phase" data-i18n="haunting.phase.memorize">Memorize</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h1-what-changed-bedroom.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h1-what-changed-bedroom-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: spotting what changed in a room and locking in an answer" data-i18n-attr="alt:haunting.alt.changed"></a><span class="house__phase" data-i18n="haunting.phase.changed">What changed?</span></li>
+          </ul>
+        </section>
+        <section class="house" aria-label="House 2 · The House of Whispers">
+          <h3 class="house__name">House 2 · The House of Whispers</h3>
+          <ul class="house__shots">
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h2-memorize-parlor.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h2-memorize-parlor-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a><span class="house__phase" data-i18n="haunting.phase.memorize">Memorize</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h2-what-changed-parlor.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h2-what-changed-parlor-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: spotting what changed in a room and locking in an answer" data-i18n-attr="alt:haunting.alt.changed"></a><span class="house__phase" data-i18n="haunting.phase.changed">What changed?</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h2-memorize-nursery.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h2-memorize-nursery-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a><span class="house__phase" data-i18n="haunting.phase.memorize">Memorize</span></li>
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h2-what-changed-fireplace.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h2-what-changed-fireplace-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: spotting what changed in a room and locking in an answer" data-i18n-attr="alt:haunting.alt.changed"></a><span class="house__phase" data-i18n="haunting.phase.changed">What changed?</span></li>
+          </ul>
+        </section>
+        <section class="house" aria-label="House 3 · The Mother's House">
+          <h3 class="house__name">House 3 · The Mother's House</h3>
+          <ul class="house__shots">
+            <li><a class="shot-link" href="../assets/img/haunting-mother/h3-memorize-mothers-bedroom.webp" data-lightbox="hm"><img src="../assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a><span class="house__phase" data-i18n="haunting.phase.memorize">Memorize</span></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-next">
+        <a class="btn btn--ghost" href="../index.html#work" data-i18n="pj.back">Back to all projects</a>
+        <a class="btn btn--primary" href="pitchit.html"><span data-i18n="pj.nextPitchit">Next: PitchIT</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

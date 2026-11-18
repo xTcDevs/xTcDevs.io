@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="in-development">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>In development | Projects by David Somadina Obichukwu</title>
+  <meta name="description" content="In development: Products being built right now. Each page separates what exists today from what is planned.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/in-development">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="In development | xTc">
+  <meta property="og:description" content="Products being built right now. Each page separates what exists today from what is planned.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/in-development">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"In development","url":"https://xtcdev.netlify.app/projects/in-development"}</script>
+</head>
+<body class="page-stage page-in-development">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero stage-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><span data-i18n="nav.projects">Projects</span><span aria-hidden="true">/</span><span aria-current="page" data-i18n="stage.dev.title">In development</span></nav>
+        <h1 class="pj-title stage-title"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span></h1>
+        <p class="pj-lede" data-i18n="stage.dev.lede">Products being built right now. Each page separates what exists today from what is planned.</p>
+        <nav class="stage-tabs" aria-label="Project stages" data-i18n-attr="aria-label:work.stages"><a href="completed.html"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span></a><a href="in-development.html" aria-current="page"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span></a><a href="concepts.html"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span></a><a href="../index.html#clients"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span></a></nav>
+      </div>
+    </section>
+    <section class="pj-section">
+      <div class="wrap"><ul class="wgrid"><li class="wcard wcard--c-apps reveal"><a class="wcard__link" href="../projects/pitchit.html"><div class="wcard__thumb wcard__thumb--phone"><img src="../assets/img/pitchit/sign-in-400.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--demo" data-i18n="status.demo">Working demo</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title wcard__title--pitchit">PitchIT</h4><p class="wcard__desc" data-i18n="card.pitchit.desc">A marketplace for every kind of work in Nigeria, with a demo you can use right here.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-apps reveal"><a class="wcard__link" href="../projects/echomind.html"><div class="wcard__thumb wcard__thumb--phone"><img src="../assets/img/echomind/home-400.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--mvp" data-i18n="status.mvpTesting">MVP in testing</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title wcard__title--echo">EchoMind</h4><p class="wcard__desc" data-i18n="card.echomind.desc">A private Android journal for noticing how you really feel. No account, no internet.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="../projects/zaga.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/zaga/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Zaga</h4><p class="wcard__desc" data-i18n="card.zaga.desc">A fashion house website with a shop where every piece comes in ten colours. Built, waiting on the client&#x27;s final details.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="../projects/princess-uc.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/princess-uc/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Princess UC Crafts</h4><p class="wcard__desc" data-i18n="card.princess-uc.desc">A website for a handmade adornments business: fascinators, hats, crowns, beads, hand fans and stoning on clothes.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="../projects/bookverse.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/bookverse/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--dev" data-i18n="status.dev">In development</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">BookVerse</h4><p class="wcard__desc" data-i18n="card.bookverse.desc">A book and comics platform for discovering, reading and later publishing every kind of story. In development, with a live preview.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-games reveal"><a class="wcard__link" href="../projects/steal-the-moon.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/concepts/steal-the-moon-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--dev" data-i18n="status.dev">In development</span><span class="cat cat--games" data-i18n="cat.games">Games</span></p><h4 class="wcard__title">Steal the Moon</h4><p class="wcard__desc" data-i18n="card.steal-the-moon.desc">A multiplayer tycoon and heist game on Roblox: claim a base, collect, defend and rob your way toward the moon.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="../projects/ai-studio.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/concepts/ai-studio-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--prototype" data-i18n="status.prototype">Prototype</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span></p><h4 class="wcard__title wcard__title--mark">xTc Personal AI Studio</h4><p class="wcard__desc" data-i18n="card.ai-studio.desc">A personal creative studio for AI assisted video and photo editing. The Python and FFmpeg engine runs; the full studio is the vision.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li></ul></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

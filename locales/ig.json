@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "Ụzọ m si arụ ọrụ",
+    "directionD": "Ime ka PitchIT too, imecha ọrụ ndị a na arụ, na iso otu na ndị ahịa chọrọ ngwaahịa e ji nlezianya wuo arụ ọrụ.",
+    "directionT": "Ebe m na aga",
+    "fBased": "Ebe m nọ",
+    "fBasedV": "Naịjirịa. Adị m njikere ịkwaga ebe ọzọ maọbụ ịrụ ọrụ site n'ịntanetị",
+    "fFocus": "Ihe m na elekwasị anya",
+    "fFocusV": "Sọftwụ, nhazi ngwaahịa, mmepe AI na enyere aka, egwuregwu",
+    "fLang": "Asụsụ m na asụ",
+    "fLangV": "Bekee (nke ọma), Igbo (asụsụ obodo m)",
+    "interestsD": "Ahịa dijitalụ na akụ na ụba nke ọrụ aka, sọftwụ dị jụụ ma dị nzuzo, egwuregwu, ngwaọrụ okike na usoro dị n'azụ ha.",
+    "interestsT": "Ihe na amasị m",
+    "p1": "Abụ m David Somadina Obichukwu, a maara m n'ịntanetị dịka xTc. Ana m ewu ngwaahịa site na mmalite ruo na njedebe: ana m achọta echiche ahụ, chepụta otu ọ ga adị, ma wuo ya ruo mgbe ọ na arụ ọrụ.",
+    "quote": "“Ana m ewu sistemụ na ahapụ ụda olu na ada ụda.”"
+  },
+  "badge": {
+    "mvp": "Nọ na MVP",
+    "planned": "Ezubere"
+  },
+  "caps": {
+    "aiT": "Mmepe sọftwụ AI na enyere aka",
+    "ctD": "Ngwaọrụ na ihe mmekọrịta ebe koodu na ụtọ zutere: ụlọ ọrụ ndezi vidiyo, ihe ngosi egwuregwu na saịtị a n'onwe ya.",
+    "ctT": "Teknụzụ okike",
+    "gameD": "Egwuregwu Roblox e chepụtara, dee koodu ya ma bipụta ya na Roblox Studio site na Luau.",
+    "gameT": "Mmepe egwuregwu",
+    "lede": "Ọrụ dị na peeji a na akwado nke ọ bụla, ya na njikọ ka ị nwee ike ịlele.",
+    "pdD": "Nchọcha, usoro na ihe ngosi e chepụtara maka onye ga eji ha, na Figma na na koodu.",
+    "pdT": "Nhazi ngwaahịa",
+    "swD": "Ngwa weebụ na ekwentị na eguzosi ike n'ojiji n'ezie, site na ahịa Flutter nwere nchekwa data a nwalere ruo na weebụsaịtị azụmahịa dị ndụ.",
+    "swT": "Mmepe sọftwụ"
+  },
+  "case": {
+    "noVisual": "Ọ dịbeghị foto e bipụtara maka ọrụ a. Ha ga apụta ebe a mgbe ha dị. Ọ dịghị ihe dị na faịlụ a bụ ihe atụ.",
+    "visuals": "Foto"
+  },
+  "contact": {
+    "email": "Email gị",
+    "err": "Enweghị ike iziga ozi ahụ site na ibe a.",
+    "errFields": "Biko jupụta ebe niile, tinye adreesị email ziri ezi.",
+    "errMail": "Ziga ya site na email kama",
+    "lede": "Ị na achọ onye ọrụ, ịchọrọ ka e wuoro gị ngwaahịa, maọbụ ịchọrọ ka anyị rụkọọ ọrụ? Ziga ozi, a ga m azaghachi site na email.",
+    "message": "Ozi",
+    "name": "Aha gị",
+    "ok": "E zigala ozi ahụ. A ga m aza gị site na email n'oge na adịghị anya.",
+    "send": "Ziga ozi",
+    "sending": "Na ezipụ…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "Ihuenyo Check in nke EchoMind na ajụ ihe dị ugbu a, nwere mmetụta ị ga ahọrọ",
+      "home": "Ihuenyo Home nke EchoMind nwere mmetụta ikpeazụ, bọtịnụ Check in again na Write, ahịrị mmetụta na ajụjụ nke ụbọchị",
+      "insights": "Ihuenyo Insights nke EchoMind nwere ọnụọgụ ndekọ, ụbọchị e dere ihe, usoro izu gị na mmetụta i dekọrọ",
+      "journey": "Ihuenyo Journey nke EchoMind: usoro oge nke mmetụta na ihe e dere taa, nwere nhọrọ",
+      "mind": "Ihuenyo Mind Space nke EchoMind na egosi oge ndị ị họọrọ idebe",
+      "note": "Ihuenyo Check in nke EchoMind nwere bọtịnụ mmetụta ọhụrụ, nhọrọ I'm not sure yet na ebe ide ndetu",
+      "own": "Mpempe EchoMind maka imepụta mmetụta nke gị, nwere aha, emoji, agba na ma ọ na atọ ụtọ, siri ike maọbụ agwakọtara",
+      "settings": "Ntọala EchoMind: agba Dusk, Dawn na Match phone, ibelata mmegharị, mmetụta gị, na ndetu na data gị na anọ n'ekwentị a"
+    },
+    "cat": "Ngwa ekwentị · Flutter",
+    "f": {
+      "aiD": "Atụmatụ AI nhọrọ na enyere gị aka ịhụ usoro n'ihe ndekọ gị. Ị ga agbanye ha n'onwe gị, akụkụ nzuzo ya na arụkwa ọrụ na enweghị ha.",
+      "aiT": "Ntụgharị uche AI",
+      "checkinD": "Họrọ mmetụta niile dabara, kaa ka o siri ike ma tinye obere ndetu banyere ihe kpatara ya. Ọ bụrụ na ị maghị aha ya, họrọ \"I'm not sure yet\".",
+      "checkinT": "Dekọọ mmetụta gị",
+      "insightsD": "Ụbọchị 7 maọbụ 30 gara aga n'otu anya: ugboro ole i dekọrọ, ụbọchị ole i dere ihe, usoro ụbọchị gị na mmetụta i kpọrọ aha ugboro ugboro. Usoro na apụta naanị mgbe data zuru ezu.",
+      "insightsT": "Insights",
+      "journeyD": "Ihe niile i dekọrọ n'otu usoro oge, dịka o si mee, ya na ọchụchọ na nhọrọ maka mmetụta, ihe e dere na oge echekwara.",
+      "journeyT": "Journey",
+      "mindD": "Kaa akara oge ndị ịchọrọ idebe ma chọta ha ọnụ n'otu ebe.",
+      "mindT": "Mind Space",
+      "ownD": "Mepụta mmetụta nwere aha, emoji na agba nke gị, ma kaa ma ọ na atọ ụtọ, siri ike maọbụ agwakọtara. Ị nwere ike ịgbanwe aha, agba maọbụ zoo mmetụta ọ bụla.",
+      "ownT": "Mmetụta nke gị",
+      "privateD": "A na echekwa ihe niile naanị n'ekwentị gị, n'ebe nchekwa nzuzo EchoMind. Enweghị akaụntụ na ịntanetị, a dịghịkwa ezipụ ihe i dere ebe ọ bụla.",
+      "privateT": "Nzuzo site na mmalite",
+      "storeD": "Isi na ụdị nnwale e kesara gaa na mbipụta na ụlọ ahịa.",
+      "storeT": "Mbipụta na Google Play",
+      "themeD": "Agba abalị miri emi, akwụkwọ ọcha na ekpo ọkụ, maọbụ soro ekwentị gị. E tinyere bọtịnụ ibelata mmegharị, a na asọpụrụkwa ntọala ekwentị gị.",
+      "themeT": "Agba Dusk na Dawn",
+      "voiceD": "Jiri olu gị kọọ ka ụbọchị gị si gaa kama ịpị ya.",
+      "voiceT": "Ndekọ site n'olu",
+      "writeD": "Dee n'onwe gị, maọbụ malite site n'ajụjụ nke ụbọchị dịka \"What happened today?\".",
+      "writeT": "Ide ihe na ajụjụ nke ụbọchị"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Home",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Tinye ndetu",
+      "own": "Mmetụta nke gị",
+      "settings": "Ntọala"
+    },
+    "getApk": "Nweta ụdị nnwale Android",
+    "kind": "Ngwa ekwentị · MVP Android",
+    "p": {
+      "apkNote": "Ụdị nnwale ahụ bụ APK Android e kesara site na Google Drive. Ọ nọbeghị na Google Play, ya mere Android nwere ike ịjụ gị ma ị ga ekwe ka etinye ihe site n'ebe a.",
+      "audience1": "Ndị chọrọ ụzọ nzuzo na nke dị mfe iji tụgharịa uche: ụmụ akwụkwọ, ndị ọrụ na anaghị enwe oge, na onye ọ bụla chọrọ ịhụ ka ụbọchị ya si adị n'ezie ka oge na aga.",
+      "audience2": "EchoMind bụ ngwaọrụ maka ịtụgharị uche banyere mmetụta gị. Ọ bụghị ọrụ ahụike, nchọpụta ọrịa maọbụ ọgwụgwọ.",
+      "feedback": "Zitere m echiche gị",
+      "lede": "EchoMind bụ ngwa Android maka ide ndekọ na ọnọdụ obi. Dekọọ ka obi dị gị, dee n'onwe gị maọbụ site n'ajụjụ nke ụbọchị, ma lelee ihe niile na Journey gị. Ihe niile na anọ n'ekwentị gị. Enweghị akaụntụ, enweghị ndebanye aha a na akwụ ụgwọ, enweghị ịntanetị.",
+      "problem1": "Ọtụtụ mmadụ chọrọ ịghọta ọnọdụ obi ha mana ha anaghị anọgide n'ide ndekọ. Ide ihe na ewe ike, ọtụtụ ngwa na achọkwa akaụntụ ma na echekwa echiche gị kachasị nzuzo n'igwe ojii onye ọzọ.",
+      "problem2": "EchoMind na ebelata ihe mgbochi abụọ ahụ. Idekọ na ewe naanị ịpị ole na ole, ajụjụ nke ụbọchị na enye gị ebe ị ga amalite, ọ dịghịkwa ihe ị dekọrọ na apụ n'ekwentị gị.",
+      "role": "Imepụta ngwaahịa na mmepe",
+      "shotsNote": "Foto ihuenyo sitere n'ụdị Android ugbu a, n'agba Dusk. Pịa otu iji hụ ya n'ogo zuru ezu.",
+      "status": "MVP, a na anwale ya"
+    },
+    "s1D": "Akụkụ isi ya ga arụrịrị ọrụ na enweghị ịntanetị, akaụntụ, ndebanye aha a na akwụ ụgwọ maọbụ API a na akwụ ụgwọ. E ji iwu a lelee mkpebi ọ bụla.",
+    "s1T": "Nzuzo dịka iwu, ọ bụghị dịka mgbasa ozi",
+    "s2D": "Home na emeghe na mmetụta ikpeazụ gị, ahịrị mmetụta na ajụjụ nke ụbọchị, ka i nwee ike ịmalite n'otu ịpị.",
+    "s2T": "Mee ka idekọ dị mfe",
+    "s3D": "Afụ agba dị nro, agba abalị miri emi na mmegharị dị nwayọọ, ya na okwu dị mfe n'ebe niile na bọtịnụ maka onye chọrọ obere mmegharị.",
+    "s3T": "Imewe maka udo",
+    "s4D": "E wuru ya na Flutter ma nwalee ya n'ezigbo ekwentị Android n'oge niile, ka ọ rụọ ọrụ nke ọma na ekwentị a na eji kwa ụbọchị.",
+    "s4T": "Wuo ma nwalee n'ezigbo ngwa",
+    "s5D": "E zubere atụmatụ AI ka ọ bụrụ akụkụ nhọrọ, ka akwụkwọ ndekọ ahụ nọgide bara uru ma bụrụ nzuzo na enweghị ha.",
+    "s5T": "AI dịka mgbakwunye, ọ bụghị dịka ntọala",
+    "summary": "Dekọọ mmetụta ọ bụla dabara, dee banyere ụbọchị gị ma lelee ihe niile na Journey gị. Ihe niile na anọ n'ekwentị gị, na enweghị akaụntụ na ịntanetị.",
+    "tagOffline": "Na arụ ọrụ na enweghị ịntanetị",
+    "tagline": "Akwụkwọ ndekọ nzuzo na enyere gị aka ịmata ka obi dị gị n'ezie."
+  },
+  "edu": {
+    "afs": {
+      "q": "Agụmakwụkwọ sekọndrị"
+    },
+    "title": "Agụmakwụkwọ"
+  },
+  "exp": {
+    "smile": {
+      "place": "Lagos, Naịjirịa"
+    },
+    "title": "Ahụmahụ ọrụ"
+  },
+  "footer": {
+    "line": "Ime ka echiche ghọọ ahụmahụ dijitalụ."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Egwuregwu Haunting Mother: ịchọpụta ihe gbanwere n'ime ụlọ ma kwado azịza",
+      "explore": "Egwuregwu Haunting Mother: inyocha ụlọ na ịtụtụ ihe",
+      "memorize": "Egwuregwu Haunting Mother: icheta ime ụlọ tupu ìhè agbanwee"
+    },
+    "cat": "Mmepe egwuregwu · Roblox",
+    "f": {
+      "atmoD": "Ụlọ ọ bụla nwere ọdịdị nke ya, site n'osisi ochie nke ụlọ ugbo ruo n'ime ụlọ uhie nke Nne, nke oriọna na kandụl na enye ìhè.",
+      "atmoT": "Ụlọ ọ bụla dị iche",
+      "coopD": "Agba ọtụtụ mmadụ nwere azịza nzuzo, ya mere ọ dịghị onye nwere ike iṅomi, a na anwale onye ọ bụla.",
+      "coopT": "Ọ ka mma ya na ndị enyi",
+      "mobileD": "Njikwa mmetụ buru ibu na HUD doro anya na eme ka a kpọọ ya n'ekwentị dịka na kọmputa.",
+      "mobileT": "E mekwara ya maka ekwentị",
+      "puzzleD": "Ndị egwuregwu na amụ ime ụlọ, wee hụ ihe dị iche. Ọ dị mfe ịmụta, mana ọ na akpali obi ịmata nke ọma.",
+      "puzzleT": "Ncheta bụ ihe mgbagwoju anya",
+      "surviveD": "Oge na agụ ala, ihe ngosi kandụl na ihe enyemaka ole na ole dịka Revive, Rewind na Tracker na eme ka azịza ọ bụla dị mkpa.",
+      "surviveT": "Nrụgide si n'akụkụ niile"
+    },
+    "kind": "Egwuregwu Roblox · Ebipụtara",
+    "p": {
+      "capNote": "E sere foto ndị a n'ime egwuregwu n'ekwentị. Pịa otu iji hụ ya n'ogo zuru ezu.",
+      "feedback": "Kesaa echiche gị",
+      "game1": "A na akpọ ụlọ ọ bụla n'ọkwa atọ. Nyochaa ya ma tụtụ ihe ị hụrụ. Cheta ime ụlọ tupu oge agwụ. Wee laghachi, pịa ihe gbanwere, ma kwado azịza gị.",
+      "game2": "N'egwuregwu ọtụtụ mmadụ, onye egwuregwu ọ bụla na akwado azịza nzuzo, ya mere onye ọ bụla ga atụkwasị ncheta nke ya obi. Ihe ngosi kandụl, ihe enyemaka na ụlọ ahịa n'ime egwuregwu na agbakwunye nrụgide na atụmatụ.",
+      "genre": "Egwu, ihe mgbagwoju anya, ncheta",
+      "lede": "Haunting Mother bụ egwuregwu egwu na ihe mgbagwoju anya maka ọtụtụ mmadụ na Roblox. Ndị egwuregwu na enyocha ụlọ atọ e nwere mmụọ, na echeta ime ụlọ ọ bụla tupu oge agwụ, wee chọpụta ihe gbanwere. Ọ ka mma ya na ndị enyi, n'ọchịchịrị, ụda dị elu.",
+      "playNote": "Na emeghe egwuregwu ahụ na Roblox. Ị ga achọ akaụntụ Roblox n'efu iji kpọọ ya.",
+      "role": "Onye kere ya: imewe na mmepe",
+      "status": "Ebipụtara na Roblox"
+    },
+    "phase": {
+      "changed": "Gịnị gbanwere?",
+      "changedD": "Pịa ihe dị iche, wee kwado azịza gị.",
+      "explore": "Nyochaa",
+      "exploreD": "Chọgharịa ụlọ ahụ ma tụtụ ihe dịka igodo.",
+      "memorize": "Cheta",
+      "memorizeD": "Mụọ ime ụlọ ahụ ka oge na agụ ala."
+    },
+    "play": "Kpọọ na Roblox",
+    "s1D": "Emere m usoro inyocha, icheta na ịchọpụta mgbanwe, ụlọ atọ ahụ, na otu ike egwuregwu si eto site n'otu ruo n'ọzọ.",
+    "s1T": "Imewe egwuregwu",
+    "s2D": "Wuru ma tinye ngwongwo n'ụlọ ọ bụla, ma hazie ìhè ya maka ọnọdụ egwu.",
+    "s2T": "Iwu ụwa na Roblox Studio",
+    "s3D": "Dere koodu maka ọkwa, oge, nlele azịza, ihe na omume ọtụtụ mmadụ na Luau, asụsụ koodu Roblox.",
+    "s3T": "Ide koodu egwuregwu",
+    "s4D": "Nwalere ya na Studio ma bipụta egwuregwu ahụ dịka egwuregwu Roblox onye ọ bụla nwere ike ịkpọ.",
+    "s4T": "Nnwale na mbipụta",
+    "s5D": "Emere m HUD: kaadị ọkwa nwere oge na kandụl, ebe ihe, panel ebumnuche, panel azịza nzuzo na njikwa mmetụ.",
+    "s5T": "Imewe ihu ngwa",
+    "summary": "Ụlọ atọ e nwere mmụọ, agba ncheta nwere oge, ihe enyemaka na HUD emere maka mmetụ. E mere ya, dee koodu ya ma bipụta ya na Roblox Studio.",
+    "tagMulti": "Ọtụtụ mmadụ",
+    "tagline": "Egwuregwu egwu na ncheta maka ọtụtụ mmadụ. Mụọ ime ụlọ ọ bụla, wee chọpụta ihe gbanwere."
+  },
+  "hero": {
+    "capRole": "Onye guzobere na onye ntụzi okike, PitchIT",
+    "ctaContact": "Kpọtụrụ m",
+    "ctaCv": "Budata CV",
+    "ctaWork": "Lee ọrụ m",
+    "handle": "xTc, si Naịjirịa. Adị m njikere ịrụ ọrụ.",
+    "logoAlt": "Logo xTc Corp: mkpụrụ akwụkwọ xTc ọlaọcha ya na okwu Creating, Building, Operating",
+    "portraitAlt": "Foto David Somadina Obichukwu",
+    "r1": "Onye mmepe sọftwụ AI na enyere aka",
+    "r2": "Onye na ewu ngwaahịa",
+    "r3": "Onye nhazi UI/UX",
+    "r4": "Onye mmepe egwuregwu",
+    "scroll": "Rịda gaa n'ọrụ m",
+    "title": "Ime ka echiche ghọọ <em>ahụmahụ dijitalụ.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind bụ ngwa Android nzuzo maka ide ndekọ na ịlekọta ka obi dị gị, nke David Obichukwu (xTc) mere na Flutter. Nkọwa ọrụ, foto na atụmatụ.",
+      "title": "EchoMind | Akwụkwọ ndekọ nzuzo na ọnọdụ obi nke David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother bụ egwuregwu egwu na ihe mgbagwoju anya maka ọtụtụ mmadụ ebipụtara na Roblox, nke David Obichukwu (xTc) wuru na Roblox Studio.",
+      "title": "Haunting Mother | Egwuregwu egwu ọtụtụ mmadụ na Roblox nke David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) bụ onye mmepe sọftwụ AI na enyere aka, onye na ewu ngwaahịa, onye nhazi UI/UX na onye mmepe egwuregwu si Naịjirịa. Ọrụ ya gụnyere PitchIT, EchoMind na Haunting Mother.",
+      "title": "David Somadina Obichukwu (xTc) | Onye mmepe sọftwụ, onye na ewu ngwaahịa na onye nhazi"
+    },
+    "notfound": {
+      "description": "Ibe a adịghị na pọtfolio David Obichukwu.",
+      "title": "Ahụghị ibe a | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT bụ ahịa Flutter na Supabase maka ụdị ọrụ ọ bụla na Naịjirịa, nke David Somadina Obichukwu (xTc) guzobere ma chepụta. Nwalee demo ahụ ma gụọ ọmụmụ ihe ahụ.",
+      "title": "PitchIT | Ahịa maka ụdị ọrụ ọ bụla na Naịjirịa, nke David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "Gbasara m",
+    "capabilities": "Ihe m na eme",
+    "contact": "Kpọtụrụ m",
+    "home": "Ụlọ",
+    "playground": "Ebe egwuregwu",
+    "work": "Ọrụ"
+  },
+  "nf": {
+    "home": "Laghachi n'ibe mbụ",
+    "text": "Njikọ ahụ nwere ike ịbụ nke ochie maọbụ e dehiere ya. Ihe niile dị adị dị naanị otu ịpị anya.",
+    "title": "Ibe a ahapụghị ụda ọ bụla."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "Ihuenyo Ozi nke PitchIT nwere otu mkparịta ụka maka ọrụ ọ bụla",
+      "myJobs": "Ihuenyo Ọrụ m nke PitchIT nwere ọrụ mepere emepe, onyinye na ọrụ otu e goro 1 n'ime ndị ọrụ 3",
+      "profile": "Ihuenyo Profaịlụ nke PitchIT nwere ngbanwe Igo na Ịrụ ọrụ, ịkwụ ụgwọ na esemokwu",
+      "setup": "Ihuenyo ịhazi profaịlụ PitchIT: achọghị CV, họrọ ịchọ ndị mmadụ, ịchọ ọrụ ma ọ bụ ha abụọ",
+      "signIn": "Ihuenyo nnabata PitchIT: banye site na nọmba ekwentị Naịjirịa, email ma ọ bụ Google",
+      "splash": "Ihuenyo mmalite PitchIT: Connecting people to real work"
+    },
+    "c1": "Biputa ọrụ ya na akara ebe na foto",
+    "c2": "Tụlee onyinye ma goo mmadụ",
+    "c3": "Kwụọ ego ọrụ ahụ ma soro ka ọ na aga",
+    "c4": "Kwado ọrụ ahụ ma hapụ nyocha",
+    "cat": "Ahịa dijitalụ · Mmepe ngwaahịa",
+    "demoNote": "Ọ na arụ ọrụ ebe a. Naanị data ihe atụ, ịkwụ ụgwọ bụ nke e mere ka ọ dị, ọ dịghịkwa ihe i dere na apụ na brawụza gị.",
+    "f": {
+      "adminD": "Ndị ọrụ, ọrụ, esemokwu, ụdị ọrụ na nlekọta nyocha, a na edekọ omume nchịkwa ọ bụla.",
+      "adminT": "Ngalaba nchịkwa",
+      "chatD": "Otu mkparịta ụka maka ọrụ na onye ọrụ ọ bụla, ya na foto, akara agụrụ na ọkwa.",
+      "chatT": "Nkata ozugbo",
+      "findD": "Ọchụchọ, nzacha site na ụdị, mmefu ego, ọrụ dị anya na anya ebe, na maapụ Nso gị nwere ọnụ ahịa.",
+      "findT": "Nchọta",
+      "locD": "GPS, ntụtụ na maapụ ma ọ bụ ebe e dere ede, ya na akara ebe bụ isi, okporo ụzọ ma ọ bụ nkwụsị, ụlọ, ntụziaka e dere ede na foto ntụaka.",
+      "locT": "Ntụziaka mmadụ ghọtara",
+      "offerD": "Ndị ọrụ na enye ọnụ ahịa, oge ha nwere na ahụmahụ ha. Ndị ahịa na atụle onyinye site na nke a tụrụ aro, nke kacha ọnụ ala ma ọ bụ nke kacha nwee nyocha ọma, ọnọdụ otu agaghịkwa ejupụta karịa.",
+      "offerT": "Onyinye na igo mmadụ",
+      "payD": "Ọnọdụ ịkwụ ụgwọ ihe atụ e debere aha nke ọma, gbakwunye ọnọdụ nnwale na ezi Paystack a na enyocha na sava.",
+      "payT": "Ịkwụ ụgwọ",
+      "postD": "Ngalaba 13 na obere ụdị 105, gbakwunye ụdị nke gị. Ụdị nhazi ọrụ itoolu, site na otu oge na kwa awa ruo na oge oge na mberede, na ọrụ otu nwere ọtụtụ ndị ọrụ.",
+      "postT": "Ibipụta ụdị ọrụ ọ bụla",
+      "privD": "Tupu a kwụọ ego, ndị ọrụ na ahụ naanị mpaghara dị nso. Ntụtụ ebe ahụ kpọmkwem na emepe maka onye ọrụ e goro mgbe a kwụrụ ego, nchekwa data na amanye ya.",
+      "privT": "Nzuzo ebe",
+      "respD": "Ogwe n'ala na ekwentị, ogwe n'akụkụ na tablet na kọmputa, na nhazi peeji abụọ maka ọrụ na ozi.",
+      "respT": "Nha ihuenyo ọ bụla",
+      "trustD": "Nyocha naanị mgbe ọrụ gwụrụ, baajị nkwenye ekwentị na NJ, mkpesa, na esemokwu nwere ihe akaebe, mkpebi onye nchịkwa na otu mkpesa ọzọ.",
+      "trustT": "Ntụkwasị obi na nchekwa"
+    },
+    "frameTitle": "Demo PitchIT",
+    "g": {
+      "messages": "Ozi",
+      "myJobs": "Ọrụ m",
+      "profile": "Profaịlụ",
+      "setup": "Hazie profaịlụ",
+      "signIn": "Nnabata",
+      "splash": "Mmalite"
+    },
+    "jCustomer": "Njem onye ahịa",
+    "jWorker": "Njem onye ọrụ",
+    "launch": "Nwalee demo dị ndụ",
+    "loadErr": "Demo ahụ enweghị ike ịmalite ebe a. Nwaa ọzọ, ma ọ bụ mepee ya n'ihuenyo zuru oke.",
+    "loading": "Demo na amalite…",
+    "motto": "Ọrụ dị ebe niile. Chọta ya ebe a.",
+    "openFull": "Mepee demo n'ihuenyo zuru oke",
+    "p": {
+      "demoNote": "Demo a bụ ezi ngwa ahụ n'ọnọdụ demo: data ihe atụ dị na brawụza gị na ịkwụ ụgwọ ihe atụ e debere aha nke ọma. Ọ dịghị mkpa akaụntụ, ọ dịghịkwa ihe a na eziga na sava.",
+      "design1": "Ọ dị ọkụ, nwere obi ike ma dị mfe. Oroma na egbuke egbuke n'elu ude dị nro, mkpụrụ akwụkwọ gbara okirikiri Plus Jakarta Sans na ebe mmetụ buru ibu, ka ngwa ahụ dị mma na ekwentị dị ọnụ ala n'anwụ na acha.",
+      "design2": "Okwu dị mkpa dịka ihe ngosi. Ihuenyo na ekwu Chọta ọrụ na Goo mmadụ, n'enweghị okwu siri ike, nzọụkwụ ego ọ bụla na egosi nke ọma mgbe ịkwụ ụgwọ bụ ihe atụ.",
+      "designT": "Ntụziaka nhazi",
+      "featNote": "E wuru ihe niile edepụtara ebe a, a pụkwara ịnwale ha na demo, ma e wezụga ịkwụ ụgwọ n'ezie, nke chọrọ ezi backend.",
+      "journeysD": "Otu akaụntụ nwere ike igo mmadụ ma rụọ ọrụ. Ngbanwe Igo na Ịrụ ọrụ na agbanwe nhazi niile ka o kwekọọ n'ọrụ ahụ.",
+      "journeysT": "Njem abụọ, otu akaụntụ",
+      "lede": "PitchIT bụ ahịa maka ụdị ọrụ ọ bụla na Naịjirịa: ndị ọrụ ugbo, ndị na ere azụ, ndị inyeaka n'ahịa, ndị ọrụ aka, ndị na ebugharị ihe, ndị na ehicha ihe, ozi na ndị ọkachamara. Onye chọrọ ka e mee ọrụ na ebipụta ọrụ. Onye nwere ike ime ya na eziga onyinye. Onye ahịa na akwụ ego e kwekọrịtara tupu ọrụ amalite.",
+      "opp1": "Ọtụtụ ọrụ na Naịjirịa anaghị apụta na saịtị ọrụ. Ọ na eme site n'ọnụ, n'ahịa, n'ugbo na n'akụkụ okporo ụzọ.",
+      "opp2": "Nke ahụ kpụrụ ngwaahịa a. Ọ dịghị onye chọrọ CV iji debanye aha. A na akọwa ebe dịka ndị mmadụ si enye ntụziaka n'ezie, site na akara ebe, nkwụsị na ụlọ. Ngwa ahụ ga adịkwa mfe nke ọma maka ekwentị nkịtị na njikọ na adịghị ike.",
+      "oppT": "Ohere ahụ",
+      "platform": "Android na weebụ, nwere nhazi maka ekwentị, tablet na kọmputa",
+      "processT": "Usoro na ịdị mma",
+      "rls": "Nchekwa n'ahịrị",
+      "role": "Onye guzobere na onye ntụzi okike",
+      "seeJourneys": "Hụ otu o si arụ ọrụ",
+      "shotsNote": "Foto si na ụdị Android. Họrọ otu ka ị hụ ya n'ogo zuru oke.",
+      "src": "Ọnụọgụ si na nyocha ndị ọrụ NBS Naịjirịa, nkeji nke abụọ nke 2024, dịka",
+      "stackT": "Teknụzụ",
+      "stat1": "nke ọrụ bụ ọrụ nkịtị na adịghị n'usoro gọọmentị",
+      "stat2": "nke ndị na arụ ọrụ na arụrụ onwe ha",
+      "stat3": "ngalaba ọrụ PitchIT na ekpuchi, ya na ụdị 105",
+      "status": "Demo na arụ ọrụ. Ewepụtabeghị ya nye ọha",
+      "status1": "Ngwaahịa na arụ ọrụ n'ọnọdụ demo, ewepụtabeghị ya nye ọha.",
+      "status2": "Nzọụkwụ ndị ọzọ bụ ijikọ backend nrụpụta, ịkwụ ụgwọ n'ezie na otu ndị ahịa na ndị ọrụ mbụ n'ezie.",
+      "t1": "Ekwekọrịtara",
+      "t2": "Akwụọla ego",
+      "t3": "Amalitela",
+      "t4": "Emechaala",
+      "t5": "Ekwadoro",
+      "timeline": "Usoro ọrụ"
+    },
+    "s1D": "Ọ malitere site n'otu e si achọta ma kọwaa ọrụ na Naịjirịa, nke duru na ndepụta ngalaba, ntụziaka site na akara ebe na ndebanye aha n'enweghị CV.",
+    "s1T": "Nchọcha na mbụ",
+    "s2D": "Nzuzo, oke ọnọdụ na ịkwụ ego bụ nchekwa n'ahịrị Postgres na amanye ha, ọ bụghị naanị ihe ngosi na ezo ha.",
+    "s2T": "Iwu n'ime nchekwa data",
+    "s3D": "Ihe karịrị nlele nchekwa na usoro 50 na ezi nchekwa data Postgres 16, gbakwunye nnwale unit na widget maka ịbanye, ibipụta, onyinye, igo mmadụ na ịkwụ ego.",
+    "s3T": "E nwalere ya dịka ezi ngwaahịa",
+    "s4D": "Njikọta na aga n'ihu na enyocha koodu, na eme nnwale, na ese foto n'ogo anọ ma na ewu ngwa weebụ na APK Android.",
+    "s4T": "A na ewu ya na mgbanwe ọ bụla",
+    "s5D": "Na enweghị igodo backend, ngwa ahụ na arụ ọrụ n'ọnọdụ demo, nke bụ ụdị etinyere na peeji a.",
+    "s5T": "Demo onye ọ bụla nwere ike imepe",
+    "screensLabel": "Ihuenyo",
+    "stop": "Mechie demo",
+    "summary": "Ahịa na ejikọ ndị chọrọ ka e mee ọrụ na ndị na arụ ya, n'ime ngalaba 13, site na ọrụ ugbo na ịkụ azụ ruo na ọrụ aka, ozi na ọrụ ọkachamara. E wuru ya maka otu ọrụ si eme n'ezie na Naịjirịa: ntụziaka site na akara ebe kama adreesị okporo ụzọ, a na akwụkwa ego ọrụ tupu ọ malite.",
+    "tagChat": "Nkata ozugbo",
+    "w1": "Chọta ọrụ dị nso",
+    "w2": "Ziga onyinye",
+    "w3": "Kparịta ụka ma nweta ntụziaka",
+    "w4": "Mechaa, nweta ụgwọ ma wuo aha ọma"
+  },
+  "pj": {
+    "approach": "Otu m siri wuo ya",
+    "audience": "Onye ọ bụ maka",
+    "back": "Laghachi n'ọrụ niile",
+    "builtWith": "Ihe e ji wuo ya",
+    "contribution": "Ọrụ m rụrụ",
+    "features": "Atụmatụ",
+    "featuresNote": "Ihe dị n'ụdị ugbu a, na ihe ezubere ime ọzọ.",
+    "gameplay": "Otu esi akpọ ya",
+    "genre": "Ụdị",
+    "nextEcho": "Nke ọzọ: EchoMind",
+    "nextHaunt": "Nke ọzọ: Haunting Mother",
+    "nextPitchit": "Nke ọzọ: PitchIT",
+    "pillars": "Ntọala imewe",
+    "platform": "Ikpo okwu",
+    "problem": "Nsogbu ahụ",
+    "role": "Ọrụ m",
+    "screens": "Ihuenyo",
+    "status": "Ọnọdụ",
+    "theGame": "Egwuregwu ahụ"
+  },
+  "play": {
+    "board": "Bọọdụ egwuregwu",
+    "brands": "Njirimara akara maka Navis, Evergreen, Confess na Amora",
+    "brandsCat": "Njirimara akara",
+    "cell": "Igbe",
+    "draw": "Ọ dị nhata. Ọ dịghị onye hapụrụ ụda.",
+    "draws": "Nhata",
+    "earlierT": "Ọrụ ndị gara aga",
+    "easy": "Mfe",
+    "echoBtn": "Ziga ụda",
+    "echoD": "Ntụpọ ọ bụla dị n'azụ peeji a na aza gị. Pịa ebe ọ bụla tọgbọrọ chakoo, ma ọ bụ ziga ụda site ebe a ma lee ka ọ na aga.",
+    "echoT": "Azụ peeji a na ege ntị",
+    "hard": "Siri ike",
+    "lede": "Obere ihe e wuru maka ọṅụ, na ọrụ mbụ ndị kuziri m ihe ndabere.",
+    "level": "Ogo isi ike",
+    "lose": "Igwe meriri nke a.",
+    "machine": "Igwe",
+    "new": "Egwuregwu ọhụrụ",
+    "thinking": "Igwe na eche echiche…",
+    "tttD": "Obere egwuregwu si na ụdị mbụ nke saịtị a, e wughachiri ya. Ọnọdụ mfe na emehie ihe. Ọnọdụ siri ike anaghị ada.",
+    "tttT": "X na O megide igwe",
+    "win": "I meriri. I gbara nke ọma.",
+    "you": "Gị",
+    "yourMove": "Ọ bụ oge gị. Ị bụ X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Sọftụwia",
+        "title": "Nbanye na njikwa ndị ọrụ"
+      },
+      "real-estate": {
+        "cat": "Ikpo okwu weebụ",
+        "title": "Ikpo okwu nkwupụta ụlọ na ala"
+      },
+      "saas-dashboard": {
+        "cat": "Ngwa weebụ",
+        "title": "Dashboard SaaS"
+      }
+    }
+  },
+  "skills": {
+    "ai": "Sistemụ AI na QA",
+    "apps": "Ngwa na egwuregwu",
+    "design": "Imewe na prototype",
+    "ds": "Design system",
+    "eval": "Nyocha AI",
+    "frontend": "Mmepe frontend",
+    "image": "Ịkọwa foto",
+    "programming": "Mmemme kọmputa",
+    "proto": "Prototype",
+    "responsive": "Imewe na agbanwe n'ihuenyo",
+    "text": "Ịkpọ aha ederede",
+    "tools": "Ngwaọrụ na ikpo okwu",
+    "uiux": "Imewe UI/UX",
+    "wire": "Wireframe"
+  },
+  "status": {
+    "concept": "Echiche",
+    "demo": "Demo na arụ ọrụ",
+    "dev": "Na mmepe",
+    "live": "Dị ndụ",
+    "mvp": "MVP",
+    "mvpTesting": "MVP na nnwale",
+    "prototype": "Ihe atụ mbụ",
+    "published": "E bipụtara ya"
+  },
+  "ui": {
+    "caseStudy": "Gụọ nkọwa ọrụ ahụ",
+    "close": "Mechie",
+    "language": "Asụsụ",
+    "menu": "Menu",
+    "next": "Foto ọzọ",
+    "noVisual": "E bipụtabeghị foto",
+    "prev": "Foto gara aga",
+    "skip": "Gaa na ọdịnaya",
+    "tech": "Teknụzụ",
+    "toTop": "Laghachi n'elu",
+    "toggleTheme": "Gbanwee agba ibe"
+  }
+}

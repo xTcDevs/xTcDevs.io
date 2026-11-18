@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "Ọ̀nà mi",
+    "directionD": "Mímú PitchIT dàgbà, píparí àwọn iṣẹ́ tó ń lọ lọ́wọ́, àti dídarapọ̀ mọ́ àwọn ẹgbẹ́ àti oníbàárà tí wọ́n fẹ́ ọjà tí a fi ìṣọ́ra kọ́.",
+    "directionT": "Ibi tí mo ń lọ",
+    "fBased": "Ibùgbé",
+    "fBasedV": "Nàìjíríà. Mo ṣetán láti kó lọ síbòmíràn tàbí ṣiṣẹ́ láti ọ̀nà jíjìn",
+    "fFocus": "Ohun tí mo dojú kọ",
+    "fFocusV": "Sọ́fítíwía, àgbékalẹ̀ ọjà, ìdàgbàsókè tí AI ń ràn lọ́wọ́, eré",
+    "fLang": "Èdè",
+    "fLangV": "Gẹ̀ẹ́sì (dáadáa), Igbo (èdè abínibí)",
+    "interestsD": "Ọjà orí ayélujára àti ọrọ̀ ajé àìṣe ìjọba, sọ́fítíwía tó parọ́rọ́ tó sì jẹ́ àṣírí, eré, irinṣẹ́ ìṣẹ̀dá àti àwọn ètò tó wà lẹ́yìn wọn.",
+    "interestsT": "Ohun tí mo nífẹ̀ẹ́ sí",
+    "p1": "Èmi ni David Somadina Obichukwu, tí a mọ̀ sí xTc lórí ayélujára. Mo ń kọ́ ọjà láti ìbẹ̀rẹ̀ dé òpin: mo ń rí èrò náà, mo ń ṣe àgbékalẹ̀ bí ó ṣe yẹ kí ó rí lára, mo sì ń kọ́ ọ títí yóò fi ṣiṣẹ́.",
+    "quote": "“Mo ń kọ́ sístẹ́mù tó ń fi àrògún sílẹ̀.”"
+  },
+  "badge": {
+    "mvp": "Wà nínú MVP",
+    "planned": "A ti gbèrò rẹ̀"
+  },
+  "caps": {
+    "aiT": "Ìdàgbàsókè tí AI ń ràn lọ́wọ́",
+    "ctD": "Irinṣẹ́ àti nǹkan ìbáṣepọ̀ níbi tí kóòdù ti pàdé ìtọ́wò: ilé iṣẹ́ àtúnṣe fídíò, ojú ìbòjú eré àti ojú òpó yìí fúnra rẹ̀.",
+    "ctT": "Ìmọ̀ ẹ̀rọ ìṣẹ̀dá",
+    "gameD": "Ìrírí Roblox tí a ṣe àgbékalẹ̀, kọ kóòdù rẹ̀, tí a sì tẹ̀ jáde nínú Roblox Studio pẹ̀lú Luau.",
+    "gameT": "Ìdàgbàsókè eré",
+    "lede": "Iṣẹ́ tó wà lójú ìwé yìí ló ń ti ọ̀kọ̀ọ̀kan lẹ́yìn, pẹ̀lú ìjápọ̀ kí o lè ṣàyẹ̀wò.",
+    "pdD": "Ìwádìí, ìṣàn iṣẹ́ àti ojú ìbòjú tí a ṣe yí ẹni tó ń lò wọ́n ká, nínú Figma àti nínú kóòdù.",
+    "pdT": "Àgbékalẹ̀ ọjà",
+    "swD": "Ohun èlò wẹ́ẹ̀bù àti fóònù tó ń dúró nínú lílò gidi, láti ọjà Flutter tí a dán ibùdó dátà rẹ̀ wò dé ojú òpó iṣẹ́ òwò tó wà lórí ayélujára.",
+    "swT": "Ìdàgbàsókè sọ́fítíwía"
+  },
+  "case": {
+    "noVisual": "A kò tíì tẹ àwòrán kankan jáde fún iṣẹ́ yìí. Wọn yóò hàn níbí nígbà tí wọ́n bá wà. Kò sí nǹkan kan nínú fáìlì yìí tó jẹ́ àwòrán àpẹẹrẹ.",
+    "visuals": "Àwòrán"
+  },
+  "contact": {
+    "email": "Ímeèlì rẹ",
+    "err": "A kò lè fi ìránṣẹ́ náà ránṣẹ́ láti ojú ìwé yìí.",
+    "errFields": "Jọ̀wọ́ kún gbogbo àyè, pẹ̀lú àdírẹ́sì ímeèlì tó tọ́.",
+    "errMail": "Fi ránṣẹ́ nípasẹ̀ ímeèlì dípò",
+    "lede": "Ṣé o fẹ́ gbà mí síṣẹ́, o fẹ́ kí n kọ́ ọjà kan fún ọ, tàbí o fẹ́ ká jọ ṣiṣẹ́? Fi ìránṣẹ́ ránṣẹ́, màá sì dáhùn nípasẹ̀ ímeèlì.",
+    "message": "Ìránṣẹ́",
+    "name": "Orúkọ rẹ",
+    "ok": "A ti fi ìránṣẹ́ ránṣẹ́. Màá dáhùn nípasẹ̀ ímeèlì láìpẹ́.",
+    "send": "Fi ìránṣẹ́ ránṣẹ́",
+    "sending": "Ó ń lọ…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "Ojú Check in nínú EchoMind tó ń béèrè ohun tó wà níbẹ̀ báyìí, pẹ̀lú àwọn ìmọ̀lára láti yàn",
+      "home": "Ojú ìbẹ̀rẹ̀ EchoMind pẹ̀lú ìmọ̀lára tó kẹ́yìn, bọ́tìnnì Check in again àti Write, ìlà àwọn ìmọ̀lára àti ìbéèrè òní",
+      "insights": "Ojú Insights nínú EchoMind pẹ̀lú iye ìgbà tí o kọ ìmọ̀lára, ọjọ́ tí o kọ nǹkan, ìlù ọ̀sẹ̀ rẹ àti àwọn ìmọ̀lára tí o kọ sílẹ̀",
+      "journey": "Ojú Journey nínú EchoMind: ìlà àkókò ti àwọn ìmọ̀lára àti ìkọ̀wé òní, pẹ̀lú àlẹ̀mọ́",
+      "mind": "Ojú Mind Space nínú EchoMind tó ń fi àwọn àkókò tí o yàn láti pa mọ́ hàn",
+      "note": "Ojú Check in nínú EchoMind pẹ̀lú bọ́tìnnì ìmọ̀lára tuntun, àṣàyàn I'm not sure yet àti àyè láti kọ àkọsílẹ̀",
+      "own": "Pánẹ́ẹ̀lì EchoMind fún ṣíṣe ìmọ̀lára tìrẹ, pẹ̀lú orúkọ, emoji, àwọ̀ àti bóyá ó máa ń dùn, ó le, tàbí ó dàpọ̀",
+      "settings": "Ètò EchoMind: àwọ̀ Dusk, Dawn àti Match phone, dínkù ìṣípò, àwọn ìmọ̀lára rẹ, àti àkíyèsí pé dátà rẹ wà lórí fóònù yìí nìkan"
+    },
+    "cat": "Ohun èlò fóònù · Flutter",
+    "f": {
+      "aiD": "Àwọn ẹ̀yà AI àṣàyàn tó ń ràn ọ́ lọ́wọ́ láti rí àpẹẹrẹ nínú ohun tí o kọ. Ìwọ lo máa tàn wọ́n, apá àṣírí náà sì ń ṣiṣẹ́ láìsí wọn.",
+      "aiT": "Ìrònú pẹ̀lú AI",
+      "checkinD": "Yan gbogbo ìmọ̀lára tó bá ọ mu, sọ bí ó ṣe lágbára tó, kí o sì kọ àkọsílẹ̀ kúkúrú nípa ohun tó wà lẹ́yìn rẹ̀. Tí o kò bá tíì mọ orúkọ rẹ̀, yan “I'm not sure yet”.",
+      "checkinT": "Kọ ìmọ̀lára rẹ sílẹ̀",
+      "insightsD": "Ọjọ́ 7 tàbí 30 tó kọjá lójú kan: iye ìgbà tí o kọ ìmọ̀lára, ọjọ́ mélòó tí o kọ nǹkan, ìlù ojoojúmọ́ rẹ àti àwọn ìmọ̀lára tí o dárúkọ jùlọ. Àpẹẹrẹ máa ń hàn nígbà tí dátà bá tó nìkan.",
+      "insightsT": "Insights",
+      "journeyD": "Gbogbo ohun tí o kọ sílẹ̀ lórí ìlà àkókò kan, bí ó ṣe ṣẹlẹ̀, pẹ̀lú ìwádìí àti àlẹ̀mọ́ fún ìmọ̀lára, ìkọ̀wé àti àwọn àkókò tí o pa mọ́.",
+      "journeyT": "Journey",
+      "mindD": "Fi àmì sí àwọn àkókò tí o fẹ́ pa mọ́, kí o sì rí wọn pa pọ̀ ní ibì kan.",
+      "mindT": "Mind Space",
+      "ownD": "Ṣe ìmọ̀lára pẹ̀lú orúkọ, emoji àti àwọ̀ tìrẹ, kí o sì sàmì sí i bí ó ṣe dùn, ó le, tàbí ó dàpọ̀. O lè yí orúkọ tàbí àwọ̀ ìmọ̀lára èyíkéyìí padà, tàbí kí o fi pamọ́.",
+      "ownT": "Ìmọ̀lára tìrẹ",
+      "privateD": "Gbogbo nǹkan wà lórí fóònù rẹ nìkan, nínú ibi ìpamọ́ àṣírí EchoMind. Kò sí àkáǹtì, kò sí ayélujára, a kò sì fi ohun tí o kọ ránṣẹ́ síbikíbi.",
+      "privateT": "Àṣírí láti ìbẹ̀rẹ̀",
+      "storeD": "Láti ẹ̀dà ìdánwò tí a pín dé ìtẹ̀jáde lórí store.",
+      "storeT": "Ìtẹ̀jáde lórí Google Play",
+      "themeD": "Àwọ̀ alẹ́ tó jinlẹ̀, bébà ìmọ́lẹ̀ tó gbóná, tàbí bí fóònù rẹ ṣe wà. Bọ́tìnnì láti dínkù ìṣípò wà níbẹ̀, a sì ń bọ̀wọ̀ fún ètò fóònù rẹ pẹ̀lú.",
+      "themeT": "Àwọ̀ Dusk àti Dawn",
+      "voiceD": "Fi ohùn rẹ sọ bí ọjọ́ rẹ ṣe lọ dípò kí o tẹ̀ ẹ́.",
+      "voiceT": "Ìwé ìrántí pẹ̀lú ohùn",
+      "writeD": "Kọ̀wé bí o ṣe fẹ́, tàbí bẹ̀rẹ̀ láti ìbéèrè òní bíi “What happened today?”.",
+      "writeT": "Ìkọ̀wé àti ìbéèrè ojoojúmọ́"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Ìbẹ̀rẹ̀",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Fi àkọsílẹ̀ kún un",
+      "own": "Ìmọ̀lára tìrẹ",
+      "settings": "Ètò"
+    },
+    "getApk": "Gba ẹ̀dà ìdánwò Android",
+    "kind": "Áàpù fóònù · Android MVP",
+    "p": {
+      "apkNote": "Ẹ̀dà ìdánwò náà jẹ́ APK Android tí a pín nípasẹ̀ Google Drive. Kò tíì sí lórí Google Play, nítorí náà Android lè béèrè pé kí o gbà fún fífi sórí ẹ̀rọ láti orísun yìí.",
+      "audience1": "Àwọn tó fẹ́ ọ̀nà àṣírí tó rọrùn láti ronú jinlẹ̀: akẹ́kọ̀ọ́, àwọn òṣìṣẹ́ tí ọwọ́ wọn dí, àti ẹnikẹ́ni tó fẹ́ rí bí ọjọ́ rẹ̀ ṣe ń rí gan an bí àkókò ṣe ń lọ.",
+      "audience2": "EchoMind jẹ́ irinṣẹ́ fún ríronú lórí ìmọ̀lára ara rẹ. Kì í ṣe iṣẹ́ ìlera, àyẹ̀wò àìsàn tàbí ìtọ́jú.",
+      "feedback": "Fi èrò rẹ ránṣẹ́",
+      "lede": "EchoMind jẹ́ áàpù Android fún ìwé ìrántí àti ìmọ̀lára. Kọ bí o ṣe ń rí lára, kọ̀wé bí o ṣe fẹ́ tàbí láti ìbéèrè òní, kí o sì wo gbogbo rẹ̀ padà nínú Journey. Gbogbo rẹ̀ wà lórí fóònù rẹ. Kò sí àkáǹtì, kò sí owó oṣooṣù, kò sì sí ayélujára.",
+      "problem1": "Ọ̀pọ̀ ènìyàn fẹ́ lóye ìmọ̀lára wọn ṣùgbọ́n wọn kì í tẹ̀síwájú nínú kíkọ ìwé ìrántí. Kíkọ̀wé ń gba agbára, ọ̀pọ̀ áàpù sì ń béèrè àkáǹtì, wọ́n sì ń pa èrò rẹ tó jẹ́ àṣírí jùlọ mọ́ sí ìkùukùu ẹlòmíràn.",
+      "problem2": "EchoMind dín ìdènà méjèèjì kù. Kíkọ ìmọ̀lára gba ìfọwọ́kàn díẹ̀, ìbéèrè òní fún ọ ní ibi tí o lè bẹ̀rẹ̀, kò sì sí ohun tí o kọ tó máa kúrò lórí fóònù rẹ.",
+      "role": "Ìṣẹ̀dá ọjà àti ìdàgbàsókè",
+      "shotsNote": "Àwòrán láti ẹ̀dà Android lọ́wọ́lọ́wọ́ ní àwọ̀ Dusk. Yan ọ̀kan láti wò ó ní ìwọ̀n kíkún.",
+      "status": "MVP, a ń dán an wò"
+    },
+    "s1D": "Apá pàtàkì gbọ́dọ̀ ṣiṣẹ́ láìsí ayélujára, láìsí àkáǹtì, owó oṣooṣù tàbí API tí a ń sanwó fún. A fi òfin yìí ṣàyẹ̀wò gbogbo ìpinnu ìṣẹ̀dá.",
+    "s1T": "Àṣírí gẹ́gẹ́ bí òfin, kì í ṣe ọ̀rọ̀ ìpolówó",
+    "s2D": "Ojú ìbẹ̀rẹ̀ ń ṣí sí ìmọ̀lára rẹ tó kẹ́yìn, ìlà àwọn ìmọ̀lára àti ìbéèrè òní, kí o lè bẹ̀rẹ̀ pẹ̀lú ìfọwọ́kàn kan.",
+    "s2T": "Jẹ́ kí kíkọ ìmọ̀lára rọrùn",
+    "s3D": "Àwọn àfẹ́fẹ́ àwọ̀ rírọ̀, àwọ̀ alẹ́ tó jinlẹ̀ àti ìṣípò jẹ́ẹ́jẹ́ẹ́, pẹ̀lú ọ̀rọ̀ tó rọrùn níbi gbogbo àti bọ́tìnnì fún ẹni tó fẹ́ ìṣípò díẹ̀.",
+    "s3T": "Ìṣẹ̀dá fún ìbàlẹ̀ ọkàn",
+    "s4D": "A fi Flutter kọ́ ọ, a sì dán an wò lórí fóònù Android gidi ní gbogbo ìgbà, kí ó lè ṣiṣẹ́ dáadáa lórí ẹ̀rọ ojoojúmọ́.",
+    "s4T": "Kọ́ àti dán wò lórí ẹ̀rọ gidi",
+    "s5D": "A gbèrò àwọn ẹ̀yà AI gẹ́gẹ́ bí ìpele àṣàyàn, kí ìwé ìrántí náà lè wúlò kí ó sì jẹ́ àṣírí láìsí wọn.",
+    "s5T": "AI gẹ́gẹ́ bí àfikún, kì í ṣe ìpìlẹ̀",
+    "summary": "Kọ gbogbo ìmọ̀lára tó bá ọ mu, kọ̀wé nípa ọjọ́ rẹ, kí o sì wo gbogbo rẹ̀ padà nínú Journey. Gbogbo nǹkan wà lórí fóònù rẹ, láìsí àkáǹtì àti ayélujára.",
+    "tagOffline": "Ń ṣiṣẹ́ láìsí ayélujára",
+    "tagline": "Ìwé ìrántí àṣírí tó ń ràn ọ́ lọ́wọ́ láti mọ bí o ṣe ń rí lára gan an."
+  },
+  "edu": {
+    "afs": {
+      "q": "Ẹ̀kọ́ girama"
+    },
+    "title": "Ẹ̀kọ́"
+  },
+  "exp": {
+    "smile": {
+      "place": "Èkó, Nàìjíríà"
+    },
+    "title": "Ìrírí iṣẹ́"
+  },
+  "footer": {
+    "line": "Sísọ èrò di ìrírí oní nọ́ńbà."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Eré Haunting Mother: wíwá ohun tó yí padà nínú yàrá àti dídi ìdáhùn mú",
+      "explore": "Eré Haunting Mother: ṣíṣàwárí ilé àti kíkó nǹkan",
+      "memorize": "Eré Haunting Mother: rírántí yàrá kan kí ìmọ́lẹ̀ tó yí padà"
+    },
+    "cat": "Ìdàgbàsókè eré · Roblox",
+    "f": {
+      "atmoD": "Ilé kọ̀ọ̀kan ní ìrísí tirẹ̀, láti igi tó ti gbó ní ilé oko dé yàrá pupa ti Ìyá, tí fìtílà àti àbẹ́là ń tàn sí.",
+      "atmoT": "Ilé kọ̀ọ̀kan yàtọ̀",
+      "coopD": "Ìpele eré ọ̀pọ̀ ènìyàn pẹ̀lú ìdáhùn àṣírí, kí ẹnikẹ́ni má lè dà kọ, kí a sì dán olúkúlùkù wò.",
+      "coopT": "Ó dára jù pẹ̀lú ọ̀rẹ́",
+      "mobileD": "Bọ́tìnnì ìfọwọ́kàn ńlá àti HUD tó ṣe kedere jẹ́ kí a lè ṣe é lórí fóònù bí lórí kọ̀ǹpútà.",
+      "mobileT": "A ṣe é fún fóònù náà",
+      "puzzleD": "Àwọn olùṣeré ń wo yàrá dáadáa, lẹ́yìn náà wọ́n gbọ́dọ̀ ṣàkíyèsí ohun tó yàtọ̀. Ó rọrùn láti kọ́, ó sì le láti mọ̀ dáadáa.",
+      "puzzleT": "Ìrántí ni àdììtú",
+      "surviveD": "Ìkàsẹ̀yìn àkókò, mítà àbẹ́là àti agbára àfikún díẹ̀ bíi Revive, Rewind àti Tracker jẹ́ kí gbogbo àmọ̀tẹ́lẹ̀ ṣe pàtàkì.",
+      "surviveT": "Ìfúnpá láti gbogbo ẹ̀gbẹ́"
+    },
+    "kind": "Eré Roblox · A ti tẹ̀ ẹ́ jáde",
+    "p": {
+      "capNote": "Àwòrán tí a yà nínú eré lórí fóònù. Yan ọ̀kan láti wò ó ní ìwọ̀n kíkún.",
+      "feedback": "Pín èrò rẹ",
+      "game1": "A máa ń ṣe ilé kọ̀ọ̀kan ní ìpele mẹ́ta. Ṣàwárí ilé náà kí o sì kó ohun tí o bá rí. Rántí yàrá kan kí àkókò tó tán. Lẹ́yìn náà padà wá, fọwọ́ kan ohun tó yí padà, kí o sì di ìdáhùn rẹ mú.",
+      "game2": "Nínú eré ọ̀pọ̀ ènìyàn, olúkúlùkù máa ń di ìdáhùn àṣírí mú, nítorí náà gbogbo ènìyàn gbọ́dọ̀ gbẹ́kẹ̀lé ìrántí ara wọn. Mítà àbẹ́là, agbára àfikún àti ṣọ́ọ̀bù inú eré ń fi ìfúnpá àti ọgbọ́n kún ìpele kọ̀ọ̀kan.",
+      "genre": "Ìbẹ̀rù, àdììtú, ìrántí",
+      "lede": "Haunting Mother jẹ́ eré ìbẹ̀rù àti àdììtú fún ọ̀pọ̀ ènìyàn lórí Roblox. Àwọn olùṣeré ń ṣàwárí ilé ẹ̀mí èṣù mẹ́ta, wọ́n ń rántí yàrá kọ̀ọ̀kan kí àkókò tó tán, lẹ́yìn náà wọ́n gbọ́dọ̀ wá ohun tó yí padà. Ó dára jù pẹ̀lú ọ̀rẹ́, nínú òkùnkùn, pẹ̀lú ohùn tó ga.",
+      "playNote": "Ó ń ṣí eré náà lórí Roblox. O nílò àkáǹtì Roblox ọ̀fẹ́ láti ṣe é.",
+      "role": "Ẹlẹ́dàá: ìṣẹ̀dá àti ìdàgbàsókè",
+      "status": "A ti tẹ̀ ẹ́ jáde lórí Roblox"
+    },
+    "phase": {
+      "changed": "Kí ló yí padà?",
+      "changedD": "Fọwọ́ kan ìyàtọ̀ náà, lẹ́yìn náà di ìdáhùn rẹ mú.",
+      "explore": "Ṣàwárí",
+      "exploreD": "Wá inú ilé náà kí o sì kó nǹkan bíi kọ́kọ́rọ́.",
+      "memorize": "Rántí",
+      "memorizeD": "Wo yàrá náà dáadáa nígbà tí àkókò ń kà sẹ́yìn."
+    },
+    "play": "Ṣeré lórí Roblox",
+    "s1D": "Ṣe ìyípo ṣíṣàwárí, rírántí àti wíwá ìyípadà, àwọn ilé mẹ́ta náà, àti bí ìṣòro ṣe ń pọ̀ sí i láti ilé kan sí òmíràn.",
+    "s1T": "Ìṣẹ̀dá eré",
+    "s2D": "Kọ́ ilé kọ̀ọ̀kan, ṣe ọ̀ṣọ́ rẹ̀, mo sì tún ìmọ́lẹ̀ rẹ̀ ṣe fún ìrísí ìbẹ̀rù.",
+    "s2T": "Kíkọ́ ayé nínú Roblox Studio",
+    "s3D": "Kọ kóòdù fún àwọn ìpele, aago, àyẹ̀wò ìdáhùn, nǹkan inú eré àti ìhùwàsí ọ̀pọ̀ ènìyàn ní Luau, èdè kóòdù Roblox.",
+    "s3T": "Kóòdù eré",
+    "s4D": "Dán an wò nínú Studio, mo sì tẹ̀ ẹ́ jáde gẹ́gẹ́ bí eré Roblox tí gbogbo ènìyàn lè ṣe.",
+    "s4T": "Ìdánwò àti ìtẹ̀jáde",
+    "s5D": "Ṣe HUD náà: káàdì ìpele pẹ̀lú aago àti àbẹ́là, àyè nǹkan, pánẹ́ẹ̀lì ète, pánẹ́ẹ̀lì ìdáhùn àṣírí àti bọ́tìnnì ìfọwọ́kàn.",
+    "s5T": "Ìṣẹ̀dá ojú áàpù",
+    "summary": "Ilé ẹ̀mí èṣù mẹ́ta, ìpele ìrántí tí a fi aago dá, agbára àfikún àti HUD tí a ṣe fún ìfọwọ́kàn. A ṣe é, kọ kóòdù rẹ̀, a sì tẹ̀ ẹ́ jáde nínú Roblox Studio.",
+    "tagMulti": "Ọ̀pọ̀ ènìyàn",
+    "tagline": "Eré ìbẹ̀rù àti ìrántí fún ọ̀pọ̀ ènìyàn. Wo gbogbo yàrá dáadáa, lẹ́yìn náà wá ohun tó yí padà."
+  },
+  "hero": {
+    "capRole": "Olùdásílẹ̀ àti olùdarí ìṣẹ̀dá, PitchIT",
+    "ctaContact": "Kàn sí mi",
+    "ctaCv": "Ṣe ìgbàsílẹ̀ CV",
+    "ctaWork": "Wo iṣẹ́ mi",
+    "handle": "xTc, mo ń kọ́ láti Nàìjíríà. Mo wà fún iṣẹ́.",
+    "logoAlt": "Lógò xTc Corp: lẹ́tà xTc aláwọ̀ fàdákà pẹ̀lú ọ̀rọ̀ Creating, Building, Operating",
+    "portraitAlt": "Àwòrán David Somadina Obichukwu",
+    "r1": "Olùdàgbàsókè sọ́fítíwía tí AI ń ràn lọ́wọ́",
+    "r2": "Olùkọ́ ọjà",
+    "r3": "Apẹ̀rẹ UI/UX",
+    "r4": "Olùdàgbàsókè eré",
+    "scroll": "Sọ̀kalẹ̀ sí iṣẹ́ mi",
+    "title": "Sísọ èrò di <em>ìrírí oní nọ́ńbà.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind jẹ́ áàpù Android àṣírí fún ìwé ìrántí àti ìmọ̀lára, tí David Obichukwu (xTc) ṣe nínú Flutter. Àlàyé iṣẹ́, àwòrán àti àwọn ẹ̀yà rẹ̀.",
+      "title": "EchoMind | Ìwé ìrántí àṣírí àti ìmọ̀lára láti ọwọ́ David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother jẹ́ eré ìbẹ̀rù àti àdììtú fún ọ̀pọ̀ ènìyàn tí a tẹ̀jáde lórí Roblox, tí David Obichukwu (xTc) kọ́ nínú Roblox Studio.",
+      "title": "Haunting Mother | Eré ìbẹ̀rù ọ̀pọ̀ ènìyàn lórí Roblox láti ọwọ́ David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) jẹ́ olùdàgbàsókè sọ́fítíwía tí AI ń ràn lọ́wọ́, olùkọ́ ọjà, apẹ̀rẹ UI/UX àti olùdàgbàsókè eré láti Nàìjíríà. Iṣẹ́ rẹ̀ ní PitchIT, EchoMind àti Haunting Mother nínú.",
+      "title": "David Somadina Obichukwu (xTc) | Olùdàgbàsókè sọ́fítíwía, olùkọ́ ọjà àti apẹ̀rẹ"
+    },
+    "notfound": {
+      "description": "Ojú ìwé yìí kò sí nínú pọ́tífóliò David Obichukwu.",
+      "title": "A kò rí ojú ìwé náà | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT jẹ́ ọjà Flutter àti Supabase fún gbogbo irú iṣẹ́ ní Nàìjíríà, tí David Somadina Obichukwu (xTc) dá sílẹ̀ tí ó sì ṣe àgbékalẹ̀ rẹ̀. Gbìyànjú dẹ́mò náà kí o sì ka ìwádìí iṣẹ́ náà.",
+      "title": "PitchIT | Ọjà fún gbogbo irú iṣẹ́ ní Nàìjíríà, láti ọwọ́ David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "Nípa mi",
+    "capabilities": "Ohun tí mo ń ṣe",
+    "contact": "Kàn sí mi",
+    "home": "Ìbẹ̀rẹ̀",
+    "playground": "Ibi eré",
+    "work": "Iṣẹ́"
+  },
+  "nf": {
+    "home": "Lọ sí ojú ìwé ìbẹ̀rẹ̀",
+    "text": "Ó lè jẹ́ pé ìjápọ̀ náà ti gbó tàbí a kọ ọ́ ní àṣìṣe. Gbogbo ohun tó wà kò ju ìtẹ̀ kan lọ.",
+    "title": "Ojú ìwé yìí kò fi àrògún kankan sílẹ̀."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "Ojú ìbòjú Ìfiránṣẹ́ PitchIT pẹ̀lú ìjíròrò kan fún iṣẹ́ kọ̀ọ̀kan",
+      "myJobs": "Ojú ìbòjú Àwọn iṣẹ́ mi PitchIT pẹ̀lú iṣẹ́ tó ṣí sílẹ̀, ìfilọ̀ àti iṣẹ́ ẹgbẹ́ tí a ti gba òṣìṣẹ́ 1 nínú 3",
+      "profile": "Ojú ìbòjú Profaili PitchIT pẹ̀lú ìyípadà Gbígbà síṣẹ́ àti Ṣíṣiṣẹ́, ìsanwó àti àríyànjiyàn",
+      "setup": "Ojú ìbòjú ìṣètò profaili PitchIT: kò nílò CV, yan láti wá èèyàn, wá iṣẹ́ tàbí méjèèjì",
+      "signIn": "Ojú ìbòjú ìkíni PitchIT: wọlé pẹ̀lú nọ́ńbà fóònù Nàìjíríà, ímeèlì tàbí Google",
+      "splash": "Ojú ìbòjú ìbẹ̀rẹ̀ PitchIT: Connecting people to real work"
+    },
+    "c1": "Gbé iṣẹ́ jáde pẹ̀lú àmì ìdánimọ̀ ibi àti àwòrán",
+    "c2": "Fi àwọn ìfilọ̀ wéra kí o sì gba ẹnìkan",
+    "c3": "Sanwó iṣẹ́ náà kí o sì tẹ̀lé bí ó ṣe ń lọ",
+    "c4": "Jẹ́rìí iṣẹ́ náà kí o sì fi àyẹ̀wò sílẹ̀",
+    "cat": "Ọjà oní nọ́ńbà · Ìdàgbàsókè ọjà",
+    "demoNote": "Ó ń ṣiṣẹ́ níbí gan an. Dátà àpẹẹrẹ nìkan, ìsanwó jẹ́ àfarawé, kò sì sí ohun tí o tẹ̀ tó ń kúrò nínú aṣàwákiri rẹ.",
+    "f": {
+      "adminD": "Àwọn olùlò, iṣẹ́, àríyànjiyàn, ẹ̀ka àti ìṣàkóso àyẹ̀wò, a sì ń kọ gbogbo ìgbésẹ̀ alákòóso sílẹ̀.",
+      "adminT": "Pátákó alákòóso",
+      "chatD": "Ìjíròrò kan fún iṣẹ́ àti òṣìṣẹ́ kọ̀ọ̀kan, pẹ̀lú àwòrán, àmì kíkà àti ìfitónilétí.",
+      "chatT": "Ìjíròrò lẹ́sẹ̀kẹsẹ̀",
+      "findD": "Ìwádìí, àlẹ̀mọ́ fún ẹ̀ka, ìnáwó, iṣẹ́ láti ọ̀nà jíjìn àti ìjìnnà, àti máàpù Nítòsí pẹ̀lú iye owó.",
+      "findT": "Ìṣàwárí",
+      "locD": "GPS, pinni lórí máàpù tàbí ibi tí a tẹ̀, pẹ̀lú àmì ìdánimọ̀ pàtàkì, òpópónà tàbí oríta, ilé, ìtọ́sọ́nà tí a kọ àti àwòrán ìtọ́kasí.",
+      "locT": "Ìtọ́sọ́nà tí èèyàn lóye",
+      "offerD": "Àwọn òṣìṣẹ́ ń sọ iye owó, àkókò tí wọ́n wà àti ìrírí wọn. Àwọn oníbàárà ń fi ìfilọ̀ wéra nípa èyí tí a dámọ̀ràn, èyí tó kéré jù tàbí èyí tó ní àyẹ̀wò tó dára jù, ààyè ẹgbẹ́ kò sì lè kún ju bó ṣe yẹ lọ.",
+      "offerT": "Ìfilọ̀ àti gbígbà síṣẹ́",
+      "payD": "Ipò àfarawé tí a sàmì sí kedere, pẹ̀lú ipò ìdánwò àti gidi Paystack tí a ń ṣàyẹ̀wò lórí sáfà.",
+      "payT": "Ìsanwó",
+      "postD": "Ẹ̀ka 13 àti ẹ̀ka kékeré 105, pẹ̀lú ẹ̀ka ti ara rẹ. Ọ̀nà iṣẹ́ mẹ́sàn án, láti ẹ̀ẹ̀kan àti ní wákàtí dé ti ìgbà àti pàjáwìrì, àti iṣẹ́ ẹgbẹ́ pẹ̀lú ọ̀pọ̀ òṣìṣẹ́.",
+      "postT": "Gbígbé irú iṣẹ́ èyíkéyìí jáde",
+      "privD": "Kí a tó sanwó, àwọn òṣìṣẹ́ máa ń rí agbègbè tó súnmọ́ nìkan. Pinni gangan máa ń ṣí fún òṣìṣẹ́ tí a gbà lẹ́yìn ìsanwó, ibùdó dátà sì ń fipá mú un.",
+      "privT": "Àṣírí ibi",
+      "respD": "Ọ̀pá ìsàlẹ̀ lórí fóònù, ọ̀pá ẹ̀gbẹ́ lórí tábúlẹ́ẹ̀tì àti kọ̀mpútà, àti ìṣètò ojú ìwé méjì fún iṣẹ́ àti ìfiránṣẹ́.",
+      "respT": "Gbogbo ìwọ̀n ojú ìbòjú",
+      "trustD": "Àyẹ̀wò lẹ́yìn ìparí nìkan, àmì ìjẹ́rìí fóònù àti káàdì ìdánimọ̀, ìròyìn, àti àríyànjiyàn pẹ̀lú ẹ̀rí, ìpinnu alákòóso àti ẹ̀bẹ̀ kan.",
+      "trustT": "Ìgbẹ́kẹ̀lé àti ààbò"
+    },
+    "frameTitle": "Dẹ́mò PitchIT",
+    "g": {
+      "messages": "Ìfiránṣẹ́",
+      "myJobs": "Àwọn iṣẹ́ mi",
+      "profile": "Profaili",
+      "setup": "Ṣètò profaili",
+      "signIn": "Ìkíni",
+      "splash": "Ìbẹ̀rẹ̀"
+    },
+    "jCustomer": "Ìrìn àjò oníbàárà",
+    "jWorker": "Ìrìn àjò òṣìṣẹ́",
+    "launch": "Gbìyànjú dẹ́mò náà",
+    "loadErr": "Dẹ́mò náà kò lè bẹ̀rẹ̀ níbí. Gbìyànjú lẹ́ẹ̀kan sí i, tàbí ṣí i ní ojú ìbòjú kíkún.",
+    "loading": "Dẹ́mò ń bẹ̀rẹ̀…",
+    "motto": "Iṣẹ́ wà níbi gbogbo. Wá a níbí.",
+    "openFull": "Ṣí dẹ́mò ní ojú ìbòjú kíkún",
+    "p": {
+      "demoNote": "Dẹ́mò yìí ni ohun èlò gidi ní ipò dẹ́mò: dátà àpẹẹrẹ tó wà nínú aṣàwákiri rẹ àti ìsanwó àfarawé tí a sàmì sí kedere. O kò nílò àkáǹtì, a kò sì fi nǹkankan ránṣẹ́ sí sáfà.",
+      "design1": "Ó ní ìgbóná, ìgboyà àti ọ̀rọ̀ tààrà. Ọsàn tó mọ́lẹ̀ lórí àwọ̀ ọ̀rá rírọ̀, lẹ́tà yíyípo Plus Jakarta Sans àti ibi ìfọwọ́kàn ńlá, kí ohun èlò náà lè rọrùn lórí fóònù olówó pọ́ọ́kú nínú oòrùn tó mọ́lẹ̀.",
+      "design2": "Ọ̀rọ̀ ṣe pàtàkì bí àwòrán. Àwọn ojú ìbòjú ń sọ Wá iṣẹ́ àti Gba ẹnìkan síṣẹ́, láìsí ọ̀rọ̀ àwọn amọ̀ràn, gbogbo ìgbésẹ̀ owó sì ń sọ kedere nígbà tí ìsanwó jẹ́ àfarawé.",
+      "designT": "Ìtọ́sọ́nà àgbékalẹ̀",
+      "featNote": "Gbogbo ohun tó wà níbí ni a ti kọ́, a sì lè gbìyànjú wọn nínú dẹ́mò, àyàfi ìsanwó gidi, tó nílò backend gidi.",
+      "journeysD": "Àkáǹtì kan náà lè gba èèyàn síṣẹ́ kí ó sì ṣiṣẹ́. Ìyípadà Gbígbà síṣẹ́ àti Ṣíṣiṣẹ́ ń yí gbogbo ìtọ́sọ́nà padà láti bá ipa náà mu.",
+      "journeysT": "Ìrìn àjò méjì, àkáǹtì kan",
+      "lede": "PitchIT jẹ́ ọjà fún gbogbo irú iṣẹ́ ní Nàìjíríà: òṣìṣẹ́ oko, oníṣòwò ẹja, olùrànlọ́wọ́ ọjà, oníṣẹ́ ọwọ́, akẹ́rù, olùfọ̀mọ́, iṣẹ́ ìránṣẹ́ àti àwọn akọ́ṣẹ́mọṣẹ́. Ẹni tó nílò iṣẹ́ máa ń gbé iṣẹ́ jáde. Ẹni tó lè ṣe é máa ń fi ìfilọ̀ ránṣẹ́. Oníbàárà máa ń san iye tí wọ́n gbà kí iṣẹ́ tó bẹ̀rẹ̀.",
+      "opp1": "Ọ̀pọ̀ jùlọ iṣẹ́ ní Nàìjíríà kì í hàn lórí ojú òpó iṣẹ́. Ó ń ṣẹlẹ̀ láti ẹnu sí ẹnu, ní ọjà, ní oko àti lẹ́gbẹ̀ẹ́ ọ̀nà.",
+      "opp2": "Ìyẹn ló ṣe ọjà náà. Kò sí ẹni tó nílò CV láti forúkọ sílẹ̀. A ń ṣàpèjúwe ibi bí àwọn èèyàn ṣe ń júwe ọ̀nà gan an, pẹ̀lú àmì ìdánimọ̀, oríta àti ilé. Ohun èlò náà sì gbọ́dọ̀ fúyẹ́ tó fún fóònù lásán àti ìsopọ̀ tí kò dúró.",
+      "oppT": "Àǹfààní náà",
+      "platform": "Android àti wẹ́ẹ̀bù, pẹ̀lú ìṣètò fún fóònù, tábúlẹ́ẹ̀tì àti kọ̀mpútà",
+      "processT": "Ìlànà àti dídára",
+      "rls": "Ààbò ní ìlà kọ̀ọ̀kan",
+      "role": "Olùdásílẹ̀ àti olùdarí ìṣẹ̀dá",
+      "seeJourneys": "Wo bí ó ṣe ń ṣiṣẹ́",
+      "shotsNote": "Àwòrán láti ẹ̀dà Android. Yan ọ̀kan láti rí i ní ìwọ̀n kíkún.",
+      "src": "Nọ́ńbà láti inú ìwádìí òṣìṣẹ́ NBS Nàìjíríà, ìdámẹ́rin kejì 2024, gẹ́gẹ́ bí",
+      "stackT": "Ìmọ̀ ẹ̀rọ",
+      "stat1": "iṣẹ́ jẹ́ iṣẹ́ àìṣe ìjọba",
+      "stat2": "àwọn òṣìṣẹ́ ló ń ṣiṣẹ́ fún ara wọn",
+      "stat3": "ẹ̀ka iṣẹ́ tí PitchIT bò, pẹ̀lú ẹ̀ka kékeré 105",
+      "status": "Dẹ́mò tó ń ṣiṣẹ́. A kò tíì ṣí i fún gbogbo èèyàn",
+      "status1": "Ọjà tó ń ṣiṣẹ́ ní ipò dẹ́mò, tí a kò tíì ṣí fún gbogbo èèyàn.",
+      "status2": "Ìgbésẹ̀ tó kàn ni sísopọ̀ backend gidi, ìsanwó gidi àti ẹgbẹ́ àkọ́kọ́ ti oníbàárà àti òṣìṣẹ́ gidi.",
+      "t1": "Wọ́n gbà",
+      "t2": "A ti sanwó",
+      "t3": "Ó ti bẹ̀rẹ̀",
+      "t4": "Ó ti parí",
+      "t5": "A ti jẹ́rìí",
+      "timeline": "Ìlà àkókò iṣẹ́"
+    },
+    "s1D": "Ó bẹ̀rẹ̀ láti bí a ṣe ń rí iṣẹ́ àti ṣàpèjúwe rẹ̀ ní Nàìjíríà, èyí tó mú wá àkójọ ẹ̀ka, ìtọ́sọ́nà pẹ̀lú àmì ìdánimọ̀ àti ìforúkọsílẹ̀ láìsí CV.",
+    "s1T": "Ìwádìí lákọ̀ọ́kọ́",
+    "s2D": "Ààbò ìpamọ́, ààlà ààyè àti ìsanwó ni ààbò ìlà kọ̀ọ̀kan Postgres ń fipá mú, kì í ṣe pé a kàn fi wọ́n pamọ́ sí ojú ìbòjú.",
+    "s2T": "Òfin nínú ibùdó dátà",
+    "s3D": "Ju àyẹ̀wò ààbò àti ìṣàn iṣẹ́ 50 lọ lórí ibùdó dátà Postgres 16 gidi, pẹ̀lú ìdánwò unit àti widget fún wíwọlé, gbígbé iṣẹ́ jáde, ìfilọ̀, gbígbà síṣẹ́ àti ìsanwó.",
+    "s3T": "A dán an wò bí ọjà gidi",
+    "s4D": "Ìṣọ̀kan tó ń bá a lọ ń ṣàyẹ̀wò kóòdù, ń ṣe ìdánwò, ń ya àwòrán ní ìwọ̀n mẹ́rin, ó sì ń kọ́ ohun èlò wẹ́ẹ̀bù àti APK Android.",
+    "s4T": "A ń kọ́ ọ ní gbogbo ìyípadà",
+    "s5D": "Láìsí kọ́kọ́rọ́ backend, ohun èlò náà ń ṣiṣẹ́ ní ipò dẹ́mò, èyí sì ni ẹ̀dà tó wà lójú ìwé yìí.",
+    "s5T": "Dẹ́mò tí ẹnikẹ́ni lè ṣí",
+    "screensLabel": "Ojú ìbòjú",
+    "stop": "Pa dẹ́mò dé",
+    "summary": "Ọjà tó ń so àwọn tó nílò iṣẹ́ pọ̀ mọ́ àwọn tó ń ṣe é, nínú ẹ̀ka 13, láti iṣẹ́ àgbẹ̀ àti ẹja pípa dé iṣẹ́ ọwọ́, iṣẹ́ ìránṣẹ́ àti iṣẹ́ amọ̀ràn. A kọ́ ọ fún bí iṣẹ́ ṣe ń ṣẹlẹ̀ gan an ní Nàìjíríà: ìtọ́sọ́nà pẹ̀lú àmì ìdánimọ̀ dípò àdírẹ́sì òpópónà, a sì ń san owó iṣẹ́ kí ó tó bẹ̀rẹ̀.",
+    "tagChat": "Ìjíròrò lẹ́sẹ̀kẹsẹ̀",
+    "w1": "Ṣàwárí iṣẹ́ tó wà nítòsí",
+    "w2": "Fi ìfilọ̀ ránṣẹ́",
+    "w3": "Bá a sọ̀rọ̀ kí o sì gba ìtọ́sọ́nà",
+    "w4": "Parí, gba owó kí o sì kọ́ orúkọ rere"
+  },
+  "pj": {
+    "approach": "Bí mo ṣe kọ́ ọ",
+    "audience": "Ta ni ó wà fún",
+    "back": "Padà sí gbogbo iṣẹ́",
+    "builtWith": "A fi kọ́ ọ",
+    "contribution": "Ipa tí mo kó",
+    "features": "Àwọn ẹ̀yà",
+    "featuresNote": "Ohun tó wà nínú ẹ̀dà yìí, àti ohun tí a gbèrò tẹ̀lé e.",
+    "gameplay": "Bí a ṣe ń ṣe eré náà",
+    "genre": "Irú",
+    "nextEcho": "Èyí tó kàn: EchoMind",
+    "nextHaunt": "Èyí tó kàn: Haunting Mother",
+    "nextPitchit": "Èyí tó kàn: PitchIT",
+    "pillars": "Ìpìlẹ̀ ìṣẹ̀dá",
+    "platform": "Ìtàgé",
+    "problem": "Ìṣòro náà",
+    "role": "Ipa mi",
+    "screens": "Àwọn ojú áàpù",
+    "status": "Ipò",
+    "theGame": "Eré náà"
+  },
+  "play": {
+    "board": "Pátákó eré",
+    "brands": "Ìdánimọ̀ àmì ìdánimọ̀ fún Navis, Evergreen, Confess àti Amora",
+    "brandsCat": "Àmì ìdánimọ̀",
+    "cell": "Àpótí",
+    "draw": "Ọ̀mì ni. Kò sí ẹni tó fi ìró sílẹ̀.",
+    "draws": "Ọ̀mì",
+    "earlierT": "Iṣẹ́ àtijọ́",
+    "easy": "Rọrùn",
+    "echoBtn": "Fi ìró ránṣẹ́",
+    "echoD": "Gbogbo àmì tó wà lẹ́yìn ojú ìwé yìí ń dá ọ lóhùn. Tẹ ibi òfìfo kankan, tàbí fi ìró ránṣẹ́ láti ibí kí o sì wò ó bí ó ṣe ń rìn.",
+    "echoT": "Ẹ̀yìn ojú ìwé ń gbọ́",
+    "hard": "Le",
+    "lede": "Àwọn nǹkan kékeré tí a kọ́ fún ayọ̀, àti iṣẹ́ àkọ́kọ́ tó kọ́ mi ní ìpìlẹ̀.",
+    "level": "Ìṣòro",
+    "lose": "Ẹ̀rọ borí lọ́tẹ̀ yìí.",
+    "machine": "Ẹ̀rọ",
+    "new": "Eré tuntun",
+    "thinking": "Ẹ̀rọ ń ronú…",
+    "tttD": "Eré kékeré láti ẹ̀dà àkọ́kọ́ ojú òpó yìí, tí a tún kọ́. Ipò rọrùn máa ń ṣàṣìṣe. Ipò líle kì í pàdánù rí.",
+    "tttT": "X àti O pẹ̀lú ẹ̀rọ",
+    "win": "O borí. O ṣe dáadáa.",
+    "you": "Ìwọ",
+    "yourMove": "Ìwọ ló kàn. Ìwọ ni X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Sọ́fítíwọ̀ọ̀",
+        "title": "Ìwọlé àti ìṣàkóso olùlò"
+      },
+      "real-estate": {
+        "cat": "Ìtàgé wẹ́ẹ̀bù",
+        "title": "Ìtàgé ìpolówó ilé àti ilẹ̀"
+      },
+      "saas-dashboard": {
+        "cat": "Áàpù wẹ́ẹ̀bù",
+        "title": "Áàpù dashboard SaaS"
+      }
+    }
+  },
+  "skills": {
+    "ai": "Sístẹ́mù AI àti QA",
+    "apps": "Áàpù àti eré",
+    "design": "Ìṣẹ̀dá àti prototype",
+    "ds": "Design system",
+    "eval": "Àyẹ̀wò AI",
+    "frontend": "Ìdàgbàsókè frontend",
+    "image": "Fífi àmì sí àwòrán",
+    "programming": "Ètò kọ̀ǹpútà",
+    "proto": "Prototype",
+    "responsive": "Ìṣẹ̀dá tó bá gbogbo ojú mu",
+    "text": "Fífi àmì sí ọ̀rọ̀",
+    "tools": "Irinṣẹ́ àti ìtàgé",
+    "uiux": "Ìṣẹ̀dá UI/UX",
+    "wire": "Wireframe"
+  },
+  "status": {
+    "concept": "Èrò",
+    "demo": "Dẹ́mò tó ń ṣiṣẹ́",
+    "dev": "Ní ìdàgbàsókè",
+    "live": "Ó wà lórí ayélujára",
+    "mvp": "MVP",
+    "mvpTesting": "MVP nínú ìdánwò",
+    "prototype": "Àpẹẹrẹ àkọ́kọ́",
+    "published": "A ti tẹ̀ ẹ́ jáde"
+  },
+  "ui": {
+    "caseStudy": "Ka àlàyé iṣẹ́ náà",
+    "close": "Pa á dé",
+    "language": "Èdè",
+    "menu": "Àkójọ",
+    "next": "Àwòrán tó kàn",
+    "noVisual": "A kò tíì tẹ àwòrán jáde",
+    "prev": "Àwòrán tó ṣáájú",
+    "skip": "Lọ sí àkóónú",
+    "tech": "Ìmọ̀ ẹ̀rọ",
+    "toTop": "Padà sí òkè",
+    "toggleTheme": "Yí àwọ̀ ojú ìwé padà"
+  }
+}

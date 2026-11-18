@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en" data-root="./" data-page="home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Somadina Obichukwu (xTc) | Software Developer, Product Builder and Designer</title>
+  <meta name="description" content="David Somadina Obichukwu (xTc) is an AI assisted software developer, product builder, UI/UX designer and game developer from Nigeria. Work includes Toilet Wars, PitchIT, EchoMind, Haunting Mother and client websites.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/">
+  <meta name="theme-color" content="#0a0e1a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3eee3" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="David Somadina Obichukwu (xTc) | Building ideas into digital experiences">
+  <meta property="og:description" content="Software developer, product builder, designer and game developer. Featured work: Toilet Wars, PitchIT, EchoMind and Haunting Mother.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="David Somadina Obichukwu, xTc. Building ideas into digital experiences.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xtcDev01">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" as="image" href="assets/img/portrait/david-640.webp" imagesrcset="assets/img/portrait/david-640.webp 640w, assets/img/portrait/david-1000.webp 1000w" imagesizes="(min-width: 1600px) 500px, (min-width: 680px) 440px, 320px">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=Instrument+Serif&family=Special+Elite&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+        if (sessionStorage.getItem('xtc-seen') || matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('no-loader');
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David Somadina Obichukwu",
+    "alternateName": ["xTc", "David Obichukwu"],
+    "url": "https://xtcdev.netlify.app/",
+    "image": "https://xtcdev.netlify.app/assets/img/portrait/david-1000.jpg",
+    "email": "mailto:obichukwudavid15@gmail.com",
+    "jobTitle": "AI Assisted Software Developer, Product Builder, UI/UX Designer and Game Developer",
+    "address": { "@type": "PostalAddress", "addressCountry": "NG" },
+    "knowsLanguage": ["English", "Igbo"],
+    "sameAs": ["https://github.com/xTcDevs", "https://x.com/xtcDev01"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#home" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="hero__handle"><span class="pulse" aria-hidden="true"></span><span data-i18n="hero.handle">xTc, building from Nigeria. Open to work.</span></p>
+          <h1 class="hero__title" id="hero-title" data-i18n-html="hero.title">Building ideas into <em>digital experiences.</em></h1>
+          <p class="hero__lede" data-i18n="hero.lede2">I'm David Somadina Obichukwu. I design and build websites, apps and Roblox games, writing code myself and using AI coding assistants to move faster. Two of my games are live on Roblox, and I build websites for clients.</p>
+          <p class="hero__roles"><span data-i18n="hero.r1">AI Assisted Software Developer</span><span data-i18n="hero.r2">Product Builder</span><span data-i18n="hero.r3">UI/UX Designer</span><span data-i18n="hero.r4">Game Developer</span></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#work"><span data-i18n="hero.ctaWork">Explore my work</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.ctaContact">Contact me</a>
+            <a class="btn btn--quiet" href="cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link><svg aria-hidden="true"><use href="assets/img/icons.svg#i-download"/></svg><span data-i18n="hero.ctaCv">Download CV</span></a>
+          </div>
+          <ul class="socials" aria-label="Profiles">
+            <li><a href="https://github.com/xTcDevs" target="_blank" rel="noopener" aria-label="GitHub (xTcDevs)"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-github"/></svg><span>GitHub</span></a></li>
+            <li><a href="https://x.com/xtcDev01" target="_blank" rel="noopener" aria-label="X (@xtcDev01)"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-x"/></svg><span>@xtcDev01</span></a></li>
+            <li><a href="mailto:obichukwudavid15@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-mail"/></svg><span>obichukwudavid15@gmail.com</span></a></li>
+          </ul>
+          <a class="hero__scroll" href="#work"><i aria-hidden="true"></i><span data-i18n="hero.scroll">Scroll to the work</span></a>
+        </div>
+        <figure class="portrait">
+          <div class="portrait__frame">
+            <img src="assets/img/portrait/david-640.webp" srcset="assets/img/portrait/david-640.webp 640w, assets/img/portrait/david-1000.webp 1000w" sizes="(min-width: 1600px) 500px, (min-width: 680px) 440px, 320px" width="640" height="960" fetchpriority="high" decoding="async" alt="Portrait of David Somadina Obichukwu" data-i18n-attr="alt:hero.portraitAlt">
+          </div>
+          <figcaption class="portrait__cap"><b>David S. Obichukwu</b><span data-i18n="hero.capRole">Founder and creative director, PitchIT</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section section--tight" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="work-title" data-i18n="work.titleFeatured3">Four products you can play or try today</h2>
+          <p class="section__lede" data-i18n="work.ledeFeatured2">Two games live on Roblox, a marketplace with a demo that runs on this page, and a private journal in testing on Android.</p>
+        </header>
+        <!-- 01 Toilet Wars -->
+        <article class="showcase showcase--toilet reveal" aria-labelledby="tw-title">
+          <div class="showcase__copy">
+            <img class="tw-icon" src="assets/img/toilet-wars/icon-256.webp" width="64" height="64" alt="" loading="lazy">
+            <p class="showcase__kind"><span data-i18n="toilet.cat">Game development · Roblox</span><span class="status status--live" data-i18n="status.liveRoblox">Live on Roblox</span></p>
+            <h3 class="showcase__title" id="tw-title">Toilet <span>Wars</span></h3>
+            <p class="showcase__tagline" data-i18n="toilet.tagline">Flush or be flushed. A team knockback brawler, from 1v1 up to 4v4.</p>
+            <p class="showcase__desc" data-i18n="toilet.summary">The Red Plungers and the Blue Scrubbers soak each other with plungers, toilet paper launchers and flush bombs, then knock their rivals off the map. Three modes, five maps, chaos events and a Super Flush, with rewards that are cosmetic only and never pay to win.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:ui.tech"><li>Roblox Studio</li><li>Luau</li><li data-i18n="haunting.tagMulti">Multiplayer</li><li data-i18n="toilet.tagAi">AI assisted development</li></ul>
+            <div class="showcase__actions">
+              <a class="btn btn--toilet btn--lg" href="https://www.roblox.com/games/111542210820745/Toilet-Wars" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-play"/></svg><span data-i18n="ui.playRoblox">Play on Roblox</span></a>
+              <a class="btn btn--ghost" href="projects/toilet-wars.html"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <figure class="showcase__visual tw-visual">
+            <a class="tw-frame tw-frame--main" href="projects/toilet-wars.html"><img src="assets/img/toilet-wars/action-640.webp" srcset="assets/img/toilet-wars/action-640.webp 640w, assets/img/toilet-wars/action.webp 1440w" sizes="(min-width: 960px) 50vw, 92vw" width="640" height="360" loading="lazy" decoding="async" alt="Toilet Wars: a player with a golden plunger knocks a soaked rival at 187 percent toward the bowl" data-i18n-attr="alt:toilet.alt.action"></a>
+            <div class="tw-pair">
+              <a class="tw-frame" href="projects/toilet-wars.html"><img src="assets/img/toilet-wars/maps-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Toilet Wars maps: The Bowl, Spin Cycle, Shower Tower and the Plumbing Gauntlet, pick your battle from 1v1 to 4v4" data-i18n-attr="alt:toilet.alt.maps"></a>
+              <a class="tw-frame" href="projects/toilet-wars.html"><img src="assets/img/toilet-wars/cosmetics-640.webp" width="640" height="360" loading="lazy" decoding="async" alt="Toilet Wars cosmetic plungers: emotes, trails, hats and flush effects, cosmetics only and never pay to win" data-i18n-attr="alt:toilet.alt.cosmetics"></a>
+            </div>
+            <figcaption class="tw-cap" data-i18n="toilet.cap">Roblox store images made from in game scenes</figcaption>
+          </figure>
+        </article>
+
+        <!-- 02 PitchIT -->
+        <article class="showcase showcase--pitchit reveal" aria-labelledby="pi-title">
+          <div class="showcase__copy">
+            <img class="pitchit-icon" src="assets/img/pitchit/icon.png" width="56" height="56" alt="" loading="lazy">
+            
+            <p class="showcase__kind"><span data-i18n="pitchit.cat">Digital marketplace · Product development</span><span class="status status--demo" data-i18n="status.demo">Working demo</span></p>
+            <h3 class="showcase__title" id="pi-title">Pitch<span>IT</span></h3>
+            <p class="showcase__tagline" data-i18n="pitchit.motto">Work is everywhere. Find it here.</p>
+            <p class="showcase__desc" data-i18n="pitchit.summary">A marketplace that connects people who need work done with the people who do it, across 13 sectors, from farming and fishing to trades, errands and professional services. It is built for how work really happens in Nigeria: directions from landmarks instead of street addresses, and jobs funded before the work begins.</p>
+            <div class="journeys">
+              <div><h4 data-i18n="pitchit.jCustomer">Customer journey</h4>
+                <ol><li data-i18n="pitchit.c1">Post a job with landmarks and photos</li><li data-i18n="pitchit.c2">Compare offers and hire</li><li data-i18n="pitchit.c3">Fund the job and follow its progress</li><li data-i18n="pitchit.c4">Confirm the work and leave a review</li></ol></div>
+              <div><h4 data-i18n="pitchit.jWorker">Worker journey</h4>
+                <ol><li data-i18n="pitchit.w1">Discover jobs nearby</li><li data-i18n="pitchit.w2">Send an offer</li><li data-i18n="pitchit.w3">Chat and get directions</li><li data-i18n="pitchit.w4">Finish, get paid and build a reputation</li></ol></div>
+            </div>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:ui.tech"><li>Flutter</li><li>Supabase</li><li>Paystack</li><li data-i18n="pitchit.tagChat">Realtime chat</li></ul>
+            <div class="showcase__actions">
+              <a class="btn btn--pitchit" href="projects/pitchit.html"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+              <a class="btn btn--ghost" href="demo/pitchit/index.html" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-external"/></svg><span data-i18n="pitchit.openFull">Open the demo full screen</span></a>
+            </div>
+          </div>
+          <div class="showcase__visual">
+            <div class="demo-wrap" data-demo="demo/pitchit/index.html">
+              <div class="demo">
+                <div class="demo__screen">
+                  <img class="is-on" src="assets/img/pitchit/sign-in-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT welcome screen: sign in with a Nigerian phone number, email or Google" data-i18n-attr="alt:pitchit.alt.signIn">
+                  <img src="assets/img/pitchit/my-jobs-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT My jobs screen with open jobs, offers and a team job with 1 of 3 workers hired" data-i18n-attr="alt:pitchit.alt.myJobs">
+                  <img src="assets/img/pitchit/messages-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT Messages screen with one conversation per job" data-i18n-attr="alt:pitchit.alt.messages">
+                  <img src="assets/img/pitchit/profile-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT Profile screen with the Hiring and Working switch, payments and disputes" data-i18n-attr="alt:pitchit.alt.profile">
+                  <div class="demo__loading" data-i18n="pitchit.loading">Starting the demo…</div>
+                  <div class="demo__launch">
+                    <button class="btn btn--pitchit demo__start" type="button"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-play"/></svg><span data-i18n="pitchit.launch">Try the live demo</span></button>
+                    <small data-i18n="pitchit.demoNote">Runs right here. Sample data only, payments are simulated and nothing you type leaves your browser.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="demo__dots" role="group" aria-label="Screens" data-i18n-attr="aria-label:pitchit.screensLabel"></div>
+              <div class="demo__bar"><button type="button" class="demo__stop" data-i18n="pitchit.stop">Close the demo</button><a href="demo/pitchit/index.html" target="_blank" rel="noopener" data-i18n="pitchit.openFull">Open the demo full screen</a></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 EchoMind -->
+        <article class="showcase showcase--echo showcase--flip reveal" aria-labelledby="em-title">
+          <div class="showcase__copy">
+            
+            <p class="showcase__kind"><span data-i18n="echomind.cat">Mobile application · Flutter</span><span class="status status--mvp" data-i18n="status.mvpTesting">MVP in testing</span></p>
+            <h3 class="showcase__title" id="em-title">EchoMind</h3>
+            <p class="showcase__tagline" data-i18n="echomind.tagline">A private journal that helps you notice how you really feel.</p>
+            <p class="showcase__desc" data-i18n="echomind.summary">Check in with every feeling that fits, write about your day and look back on your Journey. Everything stays on your phone, with no account and no internet connection.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:ui.tech"><li>Flutter</li><li>Dart</li><li>Android</li><li data-i18n="echomind.tagOffline">Works offline</li></ul>
+            <div class="showcase__actions">
+              <a class="btn btn--echo" href="projects/echomind.html"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+              <a class="btn btn--ghost" href="https://drive.google.com/file/d/11pOpnL2KPW6oT8HNIXUb8hxgN_xKMRUb/view?usp=drive_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-android"/></svg><span data-i18n="echomind.getApk">Get the Android test build</span></a>
+            </div>
+          </div>
+          <div class="showcase__visual echo-visual">
+            <div class="phone phone--back"><img src="assets/img/echomind/insights-400.webp" width="400" height="780" loading="lazy" decoding="async" alt="EchoMind Insights screen with check in counts, days noted, your rhythm across the week and the feelings you recorded" data-i18n-attr="alt:echomind.alt.insights"></div>
+            <div class="phone"><img src="assets/img/echomind/home-400.webp" width="400" height="781" loading="lazy" decoding="async" alt="EchoMind Home screen with the last feeling, Check in again and Write buttons, a row of feelings and today's prompt" data-i18n-attr="alt:echomind.alt.home"></div>
+          </div>
+        </article>
+
+        <!-- 03 Haunting Mother -->
+        <article class="showcase showcase--haunt reveal" aria-labelledby="hm-title">
+          <div class="showcase__copy">
+            
+            <p class="showcase__kind"><span data-i18n="haunting.cat">Game development · Roblox</span><span class="status status--published" data-i18n="status.published">Published</span></p>
+            <h3 class="showcase__title" id="hm-title">Haunting Mother</h3>
+            <p class="showcase__tagline" data-i18n="haunting.tagline">A multiplayer horror memory game. Study every room, then spot what changed.</p>
+            <p class="showcase__desc" data-i18n="haunting.summary">Three haunted houses, timed memory rounds, power ups and a HUD built for touch. Designed, scripted and published in Roblox Studio.</p>
+            <ul class="tags" aria-label="Technologies" data-i18n-attr="aria-label:ui.tech"><li>Roblox Studio</li><li>Luau</li><li data-i18n="haunting.tagMulti">Multiplayer</li></ul>
+            <div class="showcase__actions">
+              <a class="btn btn--haunt" href="https://www.roblox.com/games/111171456570495/Haunting-Mother" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-play"/></svg><span data-i18n="haunting.play">Play on Roblox</span></a>
+              <a class="btn btn--ghost" href="projects/haunting-mother.html"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </div>
+          <figure class="showcase__visual haunt-visual">
+            <div class="haunt-strip">
+              <a class="haunt-frame" href="projects/haunting-mother.html"><img src="assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: memorizing a room before the lights change" data-i18n-attr="alt:haunting.alt.memorize"></a>
+              <div>
+                <a class="haunt-frame" href="projects/haunting-mother.html"><img src="assets/img/haunting-mother/h1-explore-living-room-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: exploring a house and picking up items" data-i18n-attr="alt:haunting.alt.explore"></a>
+                <a class="haunt-frame" href="projects/haunting-mother.html"><img src="assets/img/haunting-mother/h1-what-changed-bedroom-800.webp" width="800" height="370" loading="lazy" decoding="async" alt="Haunting Mother gameplay: spotting what changed in a room and locking in an answer" data-i18n-attr="alt:haunting.alt.changed"></a>
+              </div>
+            </div>
+            <figcaption class="haunt-cap"><span>House 3 · The Mother's House</span><span data-i18n="haunting.phase.memorize">Memorize</span></figcaption>
+          </figure>
+        </article>
+      
+        <header class="section__head section__head--all" id="clients">
+          <h2 class="section__title section__title--sm" data-i18n="clients.title">Client websites</h2>
+          <p class="section__lede" data-i18n="clients.lede">Websites I have designed and built for businesses, from a live recording studio site to two shops waiting on their owners' final details.</p>
+        </header>
+        <!-- clients:start -->
+<ul class="wgrid wgrid--clients"><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/anthony-studios.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/anthony/index-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--live" data-i18n="status.live">Live</span><span class="cat cat--web" data-i18n="cat.web">Websites</span></p><h4 class="wcard__title">Macreamy Anthony Studios</h4><p class="wcard__desc" data-i18n="card.anthony-studios.desc">The live website of Macreamy Studios, a music recording studio in Awka, Nigeria.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/zaga.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/zaga/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Zaga</h4><p class="wcard__desc" data-i18n="card.zaga.desc">A fashion house website with a shop where every piece comes in ten colours. Built, waiting on the client&#x27;s final details.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/princess-uc.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/princess-uc/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Princess UC Crafts</h4><p class="wcard__desc" data-i18n="card.princess-uc.desc">A website for a handmade adornments business: fascinators, hats, crowns, beads, hand fans and stoning on clothes.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li></ul>
+        <!-- clients:end -->
+
+        <header class="section__head section__head--all" id="all-work">
+          <h2 class="section__title section__title--sm" data-i18n="work.titleStages">Every project, by how far along it is</h2>
+          <p class="section__lede" data-i18n="work.ledeStages">Completed work first, then products in development, then concepts. Each card says what kind of project it is.</p>
+        </header>
+        <!-- work:start -->
+<nav class="groupnav" aria-label="Project stages" data-i18n-attr="aria-label:work.stages"><ul>
+<li><a href="#stage-completed"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="groupnav__n">3</span></a></li>
+<li><a href="#stage-dev"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="groupnav__n">7</span></a></li>
+<li><a href="#stage-concepts"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="groupnav__n">4</span></a></li>
+</ul></nav>
+<section class="group group--completed" id="stage-completed" aria-labelledby="stage-completed-t"><header class="group__head"><h3 id="stage-completed-t" data-i18n="stage.completed.title">Completed projects</h3><p data-i18n="stage.completed.lede">Finished work that people can use or play today.</p><a class="group__more" href="projects/completed.html"><span data-i18n="stage.open">Open this list on its own page</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a></header><ul class="wgrid">
+<li class="wcard wcard--c-games reveal wcard--has-play"><a class="wcard__link" href="projects/toilet-wars.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/toilet-wars/action-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--live" data-i18n="status.live">Live</span><span class="cat cat--games" data-i18n="cat.games">Games</span></p><h4 class="wcard__title wcard__title--toilet">Toilet Wars</h4><p class="wcard__desc" data-i18n="card.toilet-wars.desc">A competitive multiplayer knockback brawler on Roblox: Red Plungers against Blue Scrubbers, 1v1 up to 4v4.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a><a class="btn btn--primary btn--sm wcard__play" href="https://www.roblox.com/games/111542210820745/Toilet-Wars" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-play"/></svg><span data-i18n="ui.playRoblox">Play on Roblox</span></a></li>
+<li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/anthony-studios.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/anthony/index-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--live" data-i18n="status.live">Live</span><span class="cat cat--web" data-i18n="cat.web">Websites</span></p><h4 class="wcard__title">Macreamy Anthony Studios</h4><p class="wcard__desc" data-i18n="card.anthony-studios.desc">The live website of Macreamy Studios, a music recording studio in Awka, Nigeria.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-games reveal"><a class="wcard__link" href="projects/haunting-mother.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--published" data-i18n="status.published">Published</span><span class="cat cat--games" data-i18n="cat.games">Games</span></p><h4 class="wcard__title wcard__title--hud">Haunting Mother</h4><p class="wcard__desc" data-i18n="card.haunting-mother.desc">A published multiplayer horror memory game on Roblox. Study every room, then spot what changed.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+</ul></section>
+<section class="group group--dev" id="stage-dev" aria-labelledby="stage-dev-t"><header class="group__head"><h3 id="stage-dev-t" data-i18n="stage.dev.title">In development</h3><p data-i18n="stage.dev.lede">Products being built right now. Each page separates what exists today from what is planned.</p><a class="group__more" href="projects/in-development.html"><span data-i18n="stage.open">Open this list on its own page</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a></header><ul class="wgrid">
+<li class="wcard wcard--c-apps reveal"><a class="wcard__link" href="projects/pitchit.html"><div class="wcard__thumb wcard__thumb--phone"><img src="assets/img/pitchit/sign-in-400.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--demo" data-i18n="status.demo">Working demo</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title wcard__title--pitchit">PitchIT</h4><p class="wcard__desc" data-i18n="card.pitchit.desc">A marketplace for every kind of work in Nigeria, with a demo you can use right here.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-apps reveal"><a class="wcard__link" href="projects/echomind.html"><div class="wcard__thumb wcard__thumb--phone"><img src="assets/img/echomind/home-400.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--mvp" data-i18n="status.mvpTesting">MVP in testing</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title wcard__title--echo">EchoMind</h4><p class="wcard__desc" data-i18n="card.echomind.desc">A private Android journal for noticing how you really feel. No account, no internet.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/zaga.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/zaga/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Zaga</h4><p class="wcard__desc" data-i18n="card.zaga.desc">A fashion house website with a shop where every piece comes in ten colours. Built, waiting on the client&#x27;s final details.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/princess-uc.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/princess-uc/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--ready" data-i18n="status.ready">Ready to launch</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">Princess UC Crafts</h4><p class="wcard__desc" data-i18n="card.princess-uc.desc">A website for a handmade adornments business: fascinators, hats, crowns, beads, hand fans and stoning on clothes.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-web reveal"><a class="wcard__link" href="projects/bookverse.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/bookverse/home-640.webp" alt="" loading="lazy" decoding="async"></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--dev" data-i18n="status.dev">In development</span><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p><h4 class="wcard__title">BookVerse</h4><p class="wcard__desc" data-i18n="card.bookverse.desc">A book and comics platform for discovering, reading and later publishing every kind of story. In development, with a live preview.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-games reveal"><a class="wcard__link" href="projects/steal-the-moon.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/concepts/steal-the-moon-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--dev" data-i18n="status.dev">In development</span><span class="cat cat--games" data-i18n="cat.games">Games</span></p><h4 class="wcard__title">Steal the Moon</h4><p class="wcard__desc" data-i18n="card.steal-the-moon.desc">A multiplayer tycoon and heist game on Roblox: claim a base, collect, defend and rob your way toward the moon.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="projects/ai-studio.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/concepts/ai-studio-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--prototype" data-i18n="status.prototype">Prototype</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span></p><h4 class="wcard__title wcard__title--mark">xTc Personal AI Studio</h4><p class="wcard__desc" data-i18n="card.ai-studio.desc">A personal creative studio for AI assisted video and photo editing. The Python and FFmpeg engine runs; the full studio is the vision.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+</ul></section>
+<section class="group group--concepts" id="stage-concepts" aria-labelledby="stage-concepts-t"><header class="group__head"><h3 id="stage-concepts-t" data-i18n="stage.concepts.title">Concepts and explorations</h3><p data-i18n="stage.concepts.lede">Ideas, design studies and early thinking. Nothing here is presented as a working product.</p><a class="group__more" href="projects/concepts.html"><span data-i18n="stage.open">Open this list on its own page</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></a></header><ul class="wgrid">
+<li class="wcard wcard--c-uiux reveal"><a class="wcard__link" href="projects/fintech.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">F</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--explore" data-i18n="status.explore">UI/UX exploration</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span></p><h4 class="wcard__title" data-i18n="c.fintech.title">FinTech and Banking Interfaces</h4><p class="wcard__desc" data-i18n="card.fintech.desc">UI/UX explorations for money products: dashboards, transactions, accounts, authentication and alerts.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="projects/personal-ai.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">X</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title wcard__title--mark">xTc Personal AI System</h4><p class="wcard__desc" data-i18n="card.personal-ai.desc">A local first AI that works as coder, designer, researcher and assistant, on terms I control.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="projects/ai-land.html"><div class="wcard__thumb wcard__thumb--wide"><img src="assets/img/concepts/ai-land-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title">AI Land Development Platform</h4><p class="wcard__desc" data-i18n="card.ai-land.desc">A concept for planning land in an interactive 3D space: add, move and remove structures, then compare scenarios.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+<li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="projects/drawing-board.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">A</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title">AI Drawing Board</h4><p class="wcard__desc" data-i18n="card.drawing-board.desc">A spatial thinking tool for founders: lay out an idea on a canvas and think it through with AI.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="assets/img/icons.svg#i-arrow"/></svg></span></div></a></li>
+</ul></section>
+        <!-- work:end -->
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section" id="capabilities" aria-labelledby="caps-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="caps-title" data-i18n="caps.title2">Five things I can build for you</h2>
+          <p class="section__lede" data-i18n="caps.lede">Each one is backed by work on this page, linked so you can check.</p>
+        </header>
+        <ol class="caps reveal">
+          <li class="cap"><h3 data-i18n="caps.swT">Software development</h3><p data-i18n="caps.swD">Web and mobile apps that hold up in real use, from a Flutter marketplace with a tested database to a live business website.</p><p class="cap__seen"><a href="projects/pitchit.html">PitchIT</a><a href="projects/echomind.html">EchoMind</a><a href="projects/anthony-studios.html">Macreamy Studios</a><a href="projects/princess-uc.html">Princess UC Crafts</a></p></li>
+          <li class="cap"><h3 data-i18n="caps.pdT">Product design</h3><p data-i18n="caps.pdD">Research, flows and interfaces designed around the person using them, in Figma and in code.</p><p class="cap__seen"><a href="projects/pitchit.html">PitchIT</a><a href="projects/echomind.html">EchoMind</a><a href="projects/fintech.html">FinTech</a></p></li>
+          <li class="cap"><h3 data-i18n="caps.aiT">AI assisted development</h3><p data-i18n="caps.aiD2">I write and change code myself and use AI coding assistants to move faster: drafting, debugging and reviewing. I read what they produce, fix it and test it. I also evaluate AI output professionally: RLHF, response evaluation and data annotation.</p><p class="cap__seen"><a href="projects/ai-studio.html">xTc AI Studio</a><a href="projects/toilet-wars.html">Toilet Wars</a><a href="projects/pitchit.html">PitchIT</a></p></li>
+          <li class="cap"><h3 data-i18n="caps.gameT">Game development</h3><p data-i18n="caps.gameD">Roblox experiences designed, scripted and published in Roblox Studio with Luau.</p><p class="cap__seen"><a href="projects/toilet-wars.html">Toilet Wars</a><a href="projects/haunting-mother.html">Haunting Mother</a><a href="projects/steal-the-moon.html">Steal the Moon</a></p></li>
+          <li class="cap"><h3 data-i18n="caps.ctT">Creative technology</h3><p data-i18n="caps.ctD">Tools and interactive pieces where code meets taste: an editing studio, playful interfaces and this site itself.</p><p class="cap__seen"><a href="projects/ai-studio.html">xTc AI Studio</a><a href="#playground" data-i18n="nav.playground">Playground</a></p></li>
+        </ol>
+        <div class="toolkit">
+          <div class="reveal"><h3 data-i18n="skills.frontend">Frontend development</h3><ul class="pills"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li><li>Responsive web design</li><li>Component based development</li></ul></div>
+          <div class="reveal"><h3 data-i18n="skills.mobile">Mobile development</h3><ul class="pills"><li>Flutter</li><li>Dart</li><li>Mobile UI</li><li>Application architecture</li><li>Authentication</li><li>State management</li></ul></div>
+          <div class="reveal"><h3 data-i18n="skills.design">Product design &amp; UI/UX</h3><ul class="pills"><li>UI/UX design</li><li>Figma</li><li>Wireframing</li><li>Prototyping</li><li>Design systems</li><li>User journey mapping</li><li>Interface design</li><li>Product conceptualisation</li></ul></div>
+          <div class="reveal"><h3 data-i18n="skills.ai2">AI &amp; automation</h3><ul class="pills"><li>AI assisted development</li><li>AI integration and workflows</li><li>AI response evaluation</li><li>RLHF</li><li>Dataset validation</li><li>Text labelling</li><li>Image annotation</li><li>AI enhanced creative workflows</li></ul></div>
+          <div class="reveal"><h3 data-i18n="skills.games">Game development</h3><ul class="pills"><li>Roblox Studio</li><li>Luau</li><li>Multiplayer systems</li><li>Gameplay mechanics</li><li>Game economy</li><li>Player progression</li><li>Interactive environments</li></ul></div>
+          <div class="reveal"><h3 data-i18n="skills.tools2">Tools &amp; more</h3><ul class="pills"><li>Git</li><li>GitHub</li><li>Firebase</li><li>Supabase</li><li>Jira</li><li>VS Code</li><li>Python</li><li>FFmpeg</li><li>Quality assurance</li><li>Troubleshooting</li><li>Technical documentation</li><li>Customer support</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYGROUND -->
+    <section class="section" id="playground" aria-labelledby="play-title">
+      <div class="wrap">
+        <header class="section__head">
+          <h2 class="section__title" id="play-title" data-i18n="play.title2">Small experiments you can try on this page</h2>
+          <p class="section__lede" data-i18n="play.lede">Small things built for the joy of it, and the earlier work that taught me the basics.</p>
+        </header>
+        <div class="play">
+          <div class="play__card reveal">
+            <h3 data-i18n="play.tttT">Noughts and crosses against the machine</h3>
+            <p data-i18n="play.tttD">A small game from the first version of this site, rebuilt. Easy mode makes mistakes. Hard mode never loses.</p>
+            <div class="ttt" id="ttt">
+              <div class="ttt__board" role="grid" aria-label="Game board" data-i18n-attr="aria-label:play.board"></div>
+              <div class="ttt__side">
+                <p class="ttt__status" aria-live="polite"></p>
+                <p class="ttt__score"><span><span data-i18n="play.you">You</span> <b data-score="x">0</b></span><span><span data-i18n="play.machine">Machine</span> <b data-score="o">0</b></span><span><span data-i18n="play.draws">Draws</span> <b data-score="d">0</b></span></p>
+                <div class="ttt__controls">
+                  <div class="seg" role="group" aria-label="Difficulty" data-i18n-attr="aria-label:play.level"><button type="button" data-level="easy" aria-pressed="true" data-i18n="play.easy">Easy</button><button type="button" data-level="hard" aria-pressed="false" data-i18n="play.hard">Hard</button></div>
+                  <button class="btn btn--ghost btn--sm" type="button" data-ttt-reset data-i18n="play.new">New game</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="play__side">
+            <div class="play__card reveal">
+              <h3 data-i18n="play.echoT">The background is listening</h3>
+              <p data-i18n="play.echoD">Every dot behind this page reacts to you. Click any empty space, or send an echo from here and watch it travel.</p>
+              <button class="btn btn--ghost btn--sm" type="button" id="send-echo" data-i18n="play.echoBtn">Send an echo</button>
+            </div>
+            <div class="play__card reveal">
+              <h3 data-i18n="play.earlierT">Earlier builds</h3>
+              <ul class="earlier">
+                <li><span data-i18n="projects.items.saas-dashboard.title">SaaS dashboard application</span><span data-i18n="projects.items.saas-dashboard.cat">Web app</span></li>
+                <li><span data-i18n="projects.items.real-estate.title">Real estate listing platform</span><span data-i18n="projects.items.real-estate.cat">Web platform</span></li>
+                <li><span data-i18n="projects.items.auth.title">Authentication and user management</span><span data-i18n="projects.items.auth.cat">Software</span></li>
+                <li><span data-i18n="play.brands">Brand identities for Navis, Evergreen, Confess and Amora</span><span data-i18n="play.brandsCat">Branding</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__aside">
+          <h2 class="section__title" id="about-title" data-i18n="about.title2">From fixing systems to building products</h2>
+          <blockquote class="about__quote reveal" data-i18n="about.quote">“I build systems that leave echoes.”</blockquote>
+          <figure class="about__mark reveal">
+            <img src="assets/img/brand/xtc-corp-600.webp" width="600" height="600" loading="lazy" decoding="async" alt="xTc Corp logo: silver xTc lettering with the words Creating, Building, Operating" data-i18n-attr="alt:hero.logoAlt">
+          </figure>
+        </div>
+        <div class="about__body">
+          <p class="about__lead reveal" data-i18n="about.p1">I'm David Somadina Obichukwu, known online as xTc. I build products from end to end: I find the idea, design how it should feel, and build it until it works.</p>
+          <p class="reveal" data-i18n="about.p2b">My route into building started on the practical side of technology. Installing systems, deploying products and supporting customers at Smile Tech taught me to start from the person using the product, and to make things that keep working when nobody is watching. Today I also evaluate AI output as an AI Data Annotation Specialist at Elevate Labs.</p>
+          <p class="reveal" data-i18n="about.p3b">I work across software, product design and games. I can read, write and debug code on my own, and I use AI coding assistants as tools, not as a replacement for understanding what ships. Toilet Wars, PitchIT, EchoMind and the client sites are very different products, but they come from the same habit: take an idea seriously enough to finish it.</p>
+          <div class="about__cols reveal">
+            <div><h3 data-i18n="about.approachT">Approach</h3><p data-i18n="about.approachD2">Start from a real problem, design the experience, then build and test until it holds up. AI speeds up drafting and debugging; I review, change and test what it produces.</p></div>
+            <div><h3 data-i18n="about.interestsT">Interests</h3><p data-i18n="about.interestsD">Marketplaces and the informal economy, calm and private software, games, creative tools and the systems behind them.</p></div>
+            <div><h3 data-i18n="about.directionT">Direction</h3><p data-i18n="about.directionD">Growing PitchIT, shipping the projects in progress, and joining teams and clients who want products built with care.</p></div>
+          </div>
+          <dl class="facts reveal">
+            <div><dt data-i18n="about.fBased">Based in</dt><dd data-i18n="about.fBasedV">Nigeria. Open to relocation and remote work</dd></div>
+            <div><dt data-i18n="about.fLang">Speaks</dt><dd data-i18n="about.fLangV">English (fluent), Igbo (native)</dd></div>
+            <div><dt data-i18n="about.fFocus">Focus</dt><dd data-i18n="about.fFocusV">Software, product design, AI assisted development, games</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <section class="section section--tight" id="experience" aria-labelledby="exp-title">
+      <div class="wrap exp__grid">
+        <div>
+          <h2 class="section__title section__title--sm" id="exp-title" data-i18n="exp.title">Experience</h2>
+          <ol class="timeline">
+            <li class="tl reveal">
+              <div class="tl__when" data-i18n="exp.free.when2">Aug 2026 to present</div>
+              <div class="tl__body">
+                <h3 data-i18n="exp.free.role2">Freelance Software Developer &amp; Product Designer</h3>
+                <p class="tl__org" data-i18n="exp.free.org2">Self employed, paid client work</p>
+                <ul>
+                  <li data-i18n="exp.free.c1">Designed and built client websites end to end: Macreamy Studios (live), Zaga and Princess UC Crafts (built, awaiting client content).</li>
+                  <li data-i18n="exp.free.c2">Responsive front end implementation in HTML, CSS and JavaScript, from layout and motion to ordering flows over WhatsApp.</li>
+                  <li data-i18n="exp.free.c3">UI/UX design, prototyping, testing and refinement with clients, plus Python image tooling for product photos.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <div class="tl__when" data-i18n="exp.elevate.when">Jan 2026 to present</div>
+              <div class="tl__body">
+                <h3 data-i18n="exp.elevate.role">AI Data Annotation Specialist</h3>
+                <p class="tl__org">Elevate Labs</p>
+                <ul>
+                  <li data-i18n="exp.elevate.b1">Evaluate AI generated responses for accuracy, safety, relevance and quality.</li>
+                  <li data-i18n="exp.elevate.b2">Validate datasets, label text and annotate images to annotation guidelines and quality standards.</li>
+                  <li data-i18n="exp.elevate.b3">Identify inconsistencies and give feedback that supports AI model evaluation and improvement.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="tl reveal">
+              <div class="tl__when" data-i18n="exp.smile.when2">Jul 2018 to Dec 2020</div>
+              <div class="tl__body">
+                <h3 data-i18n="exp.smile.role2">IT &amp; Product Technician</h3>
+                <p class="tl__org">Smile Tech <span class="tl__place" data-i18n="exp.smile.place">Lagos, Nigeria</span></p>
+                <ul>
+                  <li data-i18n="exp.smile.n1">Provided software and hardware support, troubleshooting technical issues for users and clients.</li>
+                  <li data-i18n="exp.smile.n2">Supported product deployment and user onboarding.</li>
+                  <li data-i18n="exp.smile.n3">Wrote technical documentation and supported customer facing systems and internal workflows.</li>
+                  <li data-i18n="exp.smile.n4">Resolved user issues and improved the user experience through technical support and guidance.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="edu">
+          <h2 class="section__title section__title--sm" data-i18n="edu.title">Education</h2>
+          <ul class="edu__list">
+            <li class="reveal"><span class="edu__when" data-i18n="edu.unizik.when">In progress</span><h3 data-i18n="edu.unizik.q">Undergraduate studies</h3><p>Nnamdi Azikiwe University</p></li>
+            <li class="reveal"><span class="edu__when" data-i18n="edu.ipmc.when2">Apr 2021 to Nov 2025</span><h3 data-i18n="edu.ipmc.q2">Higher Diploma in Software Engineering</h3><p>IPMC Ghana</p></li>
+            <li class="reveal"><span class="edu__when" data-i18n="edu.afs.when">Mar 2018 to Jan 2020</span><h3 data-i18n="edu.afs.q">Secondary education</h3><p>Anchorage Field Schools, Lagos</p></li>
+          </ul>
+          <a class="btn btn--ghost" href="cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link><svg aria-hidden="true"><use href="assets/img/icons.svg#i-download"/></svg><span data-i18n="edu.cv2">Download the full CV (PDF)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div>
+          <h2 class="contact__title" id="contact-title" data-i18n="contact.title2">Tell me what you want to build</h2>
+          <p class="section__lede" data-i18n="contact.lede">Hiring, commissioning a product, or want to collaborate? Send a message and I will reply by email.</p>
+          <p class="contact__mail"><a class="contact__email" href="mailto:obichukwudavid15@gmail.com">obichukwudavid15@gmail.com</a><button class="copy-btn" type="button" data-copy="obichukwudavid15@gmail.com"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-mail"/></svg><span data-i18n="contact.copy">Copy email</span></button></p>
+          <ul class="contact__links">
+            <li><a href="https://github.com/xTcDevs" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-github"/></svg>github.com/xTcDevs</a></li>
+            <li><a href="https://x.com/xtcDev01" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-x"/></svg>x.com/xtcDev01</a></li>
+            <li><a href="https://xtcdev.netlify.app/"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-globe"/></svg>xtcdev.netlify.app</a></li>
+          </ul>
+        </div>
+        <form class="form reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><label for="f-name" data-i18n="contact.name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-email" data-i18n="contact.email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-msg" data-i18n="contact.message">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
+          <button class="btn btn--primary form__submit" type="submit"><span data-i18n="contact.send">Send message</span></button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="#clients" data-i18n="nav.clients">Client work</a><a href="cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+
+  <div class="preview" id="preview" aria-hidden="true"></div>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/echo-field.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

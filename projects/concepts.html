@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="concepts">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Concepts and explorations | Projects by David Somadina Obichukwu</title>
+  <meta name="description" content="Concepts and explorations: Ideas, design studies and early thinking. Nothing here is presented as a working product.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/concepts">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="Concepts and explorations | xTc">
+  <meta property="og:description" content="Ideas, design studies and early thinking. Nothing here is presented as a working product.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/concepts">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-home.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Concepts and explorations","url":"https://xtcdev.netlify.app/projects/concepts"}</script>
+</head>
+<body class="page-stage page-concepts">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero stage-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><span data-i18n="nav.projects">Projects</span><span aria-hidden="true">/</span><span aria-current="page" data-i18n="stage.concepts.title">Concepts and explorations</span></nav>
+        <h1 class="pj-title stage-title"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span></h1>
+        <p class="pj-lede" data-i18n="stage.concepts.lede">Ideas, design studies and early thinking. Nothing here is presented as a working product.</p>
+        <nav class="stage-tabs" aria-label="Project stages" data-i18n-attr="aria-label:work.stages"><a href="completed.html"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span></a><a href="in-development.html"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span></a><a href="concepts.html" aria-current="page"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span></a><a href="../index.html#clients"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span></a></nav>
+      </div>
+    </section>
+    <section class="pj-section">
+      <div class="wrap"><ul class="wgrid"><li class="wcard wcard--c-uiux reveal"><a class="wcard__link" href="../projects/fintech.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">F</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--explore" data-i18n="status.explore">UI/UX exploration</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span></p><h4 class="wcard__title" data-i18n="c.fintech.title">FinTech and Banking Interfaces</h4><p class="wcard__desc" data-i18n="card.fintech.desc">UI/UX explorations for money products: dashboards, transactions, accounts, authentication and alerts.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="../projects/personal-ai.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">X</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title wcard__title--mark">xTc Personal AI System</h4><p class="wcard__desc" data-i18n="card.personal-ai.desc">A local first AI that works as coder, designer, researcher and assistant, on terms I control.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="../projects/ai-land.html"><div class="wcard__thumb wcard__thumb--wide"><img src="../assets/img/concepts/ai-land-640.webp" alt="" loading="lazy" decoding="async"><span class="wcard__concept" data-i18n="ui.conceptArt">Concept artwork</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title">AI Land Development Platform</h4><p class="wcard__desc" data-i18n="card.ai-land.desc">A concept for planning land in an interactive 3D space: add, move and remove structures, then compare scenarios.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li><li class="wcard wcard--c-ai reveal"><a class="wcard__link" href="../projects/drawing-board.html"><div class="wcard__thumb wcard__thumb--none"><span class="wcard__mono">A</span><span data-i18n="ui.noVisual">Visuals not published yet</span></div><div class="wcard__body"><p class="wcard__meta"><span class="status status--concept" data-i18n="status.concept">Concept</span><span class="cat cat--ai" data-i18n="cat.ai">AI</span><span class="cat cat--concepts" data-i18n="cat.concepts">Concepts</span></p><h4 class="wcard__title">AI Drawing Board</h4><p class="wcard__desc" data-i18n="card.drawing-board.desc">A spatial thinking tool for founders: lay out an idea on a canvas and think it through with AI.</p><span class="wcard__go"><span data-i18n="ui.caseStudy">Read the case study</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></span></div></a></li></ul></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

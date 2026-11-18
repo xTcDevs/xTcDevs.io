@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="echomind">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoMind | Private journaling and mood app by David Obichukwu</title>
+  <meta name="description" content="EchoMind is a private Android app for journaling and tracking how you feel, designed and built in Flutter by David Obichukwu (xTc). Case study, screenshots, features and MVP status.">
+  <meta name="author" content="David Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/echomind">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Obichukwu">
+  <meta property="og:title" content="EchoMind | A private journal for how you feel">
+  <meta property="og:description" content="Case study: a private Flutter app for journaling and tracking how you feel. Android MVP by David Obichukwu.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/echomind">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-echomind.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-echomind.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Instrument+Serif&family=Special+Elite&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "EchoMind",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "Android",
+    "description": "A private journaling and mood app that works offline. MVP in testing.",
+    "screenshot": "https://xtcdev.netlify.app/assets/img/echomind/home.webp",
+    "author": { "@type": "Person", "name": "David Obichukwu", "url": "https://xtcdev.netlify.app/" },
+    "url": "https://xtcdev.netlify.app/projects/echomind"
+  }
+  </script>
+</head>
+<body class="page-echo">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../index.html#work" data-i18n="nav.work">Work</a><span aria-hidden="true">/</span><span aria-current="page">EchoMind</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="feature__kind" style="--f-accent: var(--accent)" data-i18n="echomind.kind">Mobile app · Android MVP</p>
+            <h1 class="pj-title pj-title--echo">EchoMind</h1>
+            <p class="pj-tagline" data-i18n="echomind.tagline">A private journal that helps you notice how you really feel.</p>
+            <p class="pj-lede" data-i18n="echomind.p.lede">EchoMind is a journaling and mood app for Android. Check in with how you feel, write freely or from a daily prompt, and look back on everything in your Journey. All of it stays on your phone. There is no account, no subscription and no internet connection.</p>
+            <div class="pj-actions">
+              <a class="btn btn--echo" href="https://drive.google.com/file/d/11pOpnL2KPW6oT8HNIXUb8hxgN_xKMRUb/view?usp=drive_link" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-android"/></svg><span data-i18n="echomind.getApk">Get the Android test build</span></a>
+              <a class="btn btn--ghost" href="https://echomind-journal.netlify.app/" target="_blank" rel="noopener"><span data-i18n="echomind.p.site">Visit the EchoMind website</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-external"/></svg></a>
+              <a class="btn btn--quiet" href="../index.html#contact" data-i18n="echomind.p.feedback">Send feedback</a>
+            </div>
+            <p class="pj-note" data-i18n="echomind.p.apkNote">The test build is an Android APK shared through Google Drive. It is not on Google Play yet, so Android may ask you to allow installs from this source.</p>
+          </div>
+          <div class="feature__visual echo-visual echo-visual--page">
+            <div class="phone phone--back"><img src="../assets/img/echomind/journey-400.webp" width="400" height="780" decoding="async" alt="EchoMind Journey screen: a timeline of today's feelings and writing, with filters for feelings, writing and saved moments" data-i18n-attr="alt:echomind.alt.journey"></div>
+            <div class="phone"><img src="../assets/img/echomind/home-400.webp" width="400" height="781" decoding="async" alt="EchoMind Home screen with the last feeling, Check in again and Write buttons, a row of feelings and today's prompt" data-i18n-attr="alt:echomind.alt.home"></div>
+          </div>
+        </div>
+        <dl class="pj-facts">
+          <div><dt data-i18n="pj.platform">Platform</dt><dd>Android</dd></div>
+          <div><dt data-i18n="pj.builtWith">Built with</dt><dd>Flutter, Dart</dd></div>
+          <div><dt data-i18n="pj.status">Status</dt><dd data-i18n="echomind.p.status">MVP, in testing</dd></div>
+          <div><dt data-i18n="pj.role">My role</dt><dd data-i18n="echomind.p.role">Product design and development</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.problem">The problem</h2>
+        <div>
+          <p class="pj-strong" data-i18n="echomind.p.problem1">Many people want to understand their moods but don't keep up with journaling. Writing takes effort, and most journaling apps want an account and keep your most personal thoughts in someone else's cloud.</p>
+          <p data-i18n="echomind.p.problem2">EchoMind lowers both barriers. Checking in takes a few taps, a daily prompt gives you somewhere to start, and nothing you record ever leaves your phone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.audience">Who it's for</h2>
+        <div>
+          <p class="pj-strong" data-i18n="echomind.p.audience1">People who want a private, easy way to reflect: students, busy professionals, and anyone who wants to see how their days really feel over time.</p>
+          <p data-i18n="echomind.p.audience2">EchoMind is a tool for reflecting on your own feelings. It is not a medical, diagnostic or therapy service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <div>
+          <h2 data-i18n="pj.features">Features</h2>
+          <p data-i18n="pj.featuresNote">What's in the current build, and what's planned next.</p>
+        </div>
+        <ul class="feat-list">
+          <li><h3><span data-i18n="echomind.f.checkinT">Check in with your feelings</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.checkinD">Choose every feeling that fits, rate how strong it is and add a short note about what's behind it. If you can't name it yet, choose "I'm not sure yet".</p></li>
+          <li><h3><span data-i18n="echomind.f.ownT">Feelings of your own</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.ownD">Create a feeling with your own name, emoji and colour, and mark it as pleasant, difficult or mixed. Any feeling can be renamed, recoloured or hidden.</p></li>
+          <li><h3><span data-i18n="echomind.f.writeT">Writing and daily prompts</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.writeD">Write freely, or start from a daily prompt such as "What happened today?".</p></li>
+          <li><h3><span data-i18n="echomind.f.voiceT">Voice journaling</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.voiceD2">Record up to 30 minutes with pause and resume, then listen back, add a title, note or feeling, and save or discard it. Interrupted recordings are recovered, and audio never leaves the phone.</p></li>
+          <li><h3><span data-i18n="echomind.f.journeyT">Journey</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.journeyD">Everything you noted on one timeline, as it happened, with search and filters for feelings, writing and saved moments.</p></li>
+          <li><h3><span data-i18n="echomind.f.insightsT">Insights</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.insightsD">The last 7 or 30 days at a glance: how often you checked in, how many days you noted something, your daily rhythm and the feelings you named most. Patterns only appear once there is enough to show.</p></li>
+          <li><h3><span data-i18n="echomind.f.mindT">Mind Space</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.mindD">Bookmark the moments you want to keep and find them together in one place.</p></li>
+          <li><h3><span data-i18n="echomind.f.themeT">Dusk and Dawn themes</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.themeD">Deep evening tones, warm light paper, or match your phone. A Reduce motion switch is built in, and your phone's own setting is respected too.</p></li>
+          <li><h3><span data-i18n="echomind.f.privateT">Private by design</span><span class="badge badge--done" data-i18n="badge.mvp">In MVP</span></h3><p data-i18n="echomind.f.privateD">Everything is stored only on your phone, in EchoMind's private storage. There is no account and no internet connection, and your writing is never sent anywhere.</p></li>
+          <li><h3><span data-i18n="echomind.f.aiT">AI reflections</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="echomind.f.aiD">Optional AI features that help you spot patterns in your entries. You choose to turn them on, and the private core keeps working without them.</p></li>
+          <li><h3><span data-i18n="echomind.f.storeT">Release on Google Play</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="echomind.f.storeD">Moving from the shared test build to a store release.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.approach">How I built it</h2>
+        <ol class="steps">
+          <li><h3 data-i18n="echomind.s1T">Privacy as a rule, not a slogan</h3><p data-i18n="echomind.s1D">The core had to work offline, with no account, no subscription and no paid API. Every design decision was checked against that rule.</p></li>
+          <li><h3 data-i18n="echomind.s2T">Make checking in effortless</h3><p data-i18n="echomind.s2D">Home opens on your last feeling, a row of feelings and today's prompt, so you can start with a single tap.</p></li>
+          <li><h3 data-i18n="echomind.s3T">Design for calm</h3><p data-i18n="echomind.s3D">Soft colour bubbles, a deep evening palette and gentle motion, with plain words throughout and a switch for anyone who wants less animation.</p></li>
+          <li><h3 data-i18n="echomind.s4T">Build and test on real hardware</h3><p data-i18n="echomind.s4D">Built in Flutter and tested on a physical Android phone throughout, so it works well on everyday devices.</p></li>
+          <li><h3 data-i18n="echomind.s5T">Add AI on top, never underneath</h3><p data-i18n="echomind.s5D">AI features are planned as an optional layer, so the journal stays useful and private even without them.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap">
+        <h2 style="margin-bottom:24px" data-i18n="pj.screens">Screens</h2>
+        <p class="pj-note" style="margin:-12px 0 24px" data-i18n="echomind.p.shotsNote">Screenshots from the current Android build in the Dusk theme. Select one to view it full size.</p>
+        <ul class="screens">
+          <li><a class="shot-link" href="../assets/img/echomind/home.webp" data-lightbox="em"><img src="../assets/img/echomind/home-400.webp" width="400" height="781" loading="lazy" decoding="async" alt="EchoMind Home screen with the last feeling, Check in again and Write buttons, a row of feelings and today&#39;s prompt" data-i18n-attr="alt:echomind.alt.home"></a><span class="screens__cap" data-i18n="echomind.g.home">Home</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/check-in.webp" data-lightbox="em"><img src="../assets/img/echomind/check-in-400.webp" width="400" height="782" loading="lazy" decoding="async" alt="EchoMind Check in screen asking what&#39;s here right now, with feelings to choose from" data-i18n-attr="alt:echomind.alt.checkin"></a><span class="screens__cap" data-i18n="echomind.g.checkin">Check in</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/check-in-note.webp" data-lightbox="em"><img src="../assets/img/echomind/check-in-note-400.webp" width="400" height="790" loading="lazy" decoding="async" alt="EchoMind Check in screen with a New feeling button, an I&#39;m not sure yet option and a note field asking what&#39;s behind this" data-i18n-attr="alt:echomind.alt.note"></a><span class="screens__cap" data-i18n="echomind.g.note">Add a note</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/own-feeling.webp" data-lightbox="em"><img src="../assets/img/echomind/own-feeling-400.webp" width="400" height="768" loading="lazy" decoding="async" alt="EchoMind sheet for creating a feeling of your own, with a name, an emoji, a colour and whether it usually feels pleasant, difficult or mixed" data-i18n-attr="alt:echomind.alt.own"></a><span class="screens__cap" data-i18n="echomind.g.own">Your own feeling</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/journey.webp" data-lightbox="em"><img src="../assets/img/echomind/journey-400.webp" width="400" height="780" loading="lazy" decoding="async" alt="EchoMind Journey screen: a timeline of today&#39;s feelings and writing, with filters for feelings, writing and saved moments" data-i18n-attr="alt:echomind.alt.journey"></a><span class="screens__cap" data-i18n="echomind.g.journey">Journey</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/insights.webp" data-lightbox="em"><img src="../assets/img/echomind/insights-400.webp" width="400" height="780" loading="lazy" decoding="async" alt="EchoMind Insights screen with check in counts, days noted, your rhythm across the week and the feelings you recorded" data-i18n-attr="alt:echomind.alt.insights"></a><span class="screens__cap" data-i18n="echomind.g.insights">Insights</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/mind-space.webp" data-lightbox="em"><img src="../assets/img/echomind/mind-space-400.webp" width="400" height="788" loading="lazy" decoding="async" alt="EchoMind Mind Space screen listing the moments you chose to keep" data-i18n-attr="alt:echomind.alt.mind"></a><span class="screens__cap" data-i18n="echomind.g.mind">Mind Space</span></li>
+          <li><a class="shot-link" href="../assets/img/echomind/settings.webp" data-lightbox="em"><img src="../assets/img/echomind/settings-400.webp" width="400" height="790" loading="lazy" decoding="async" alt="EchoMind Settings: Dusk, Dawn and Match phone themes, Reduce motion, your feelings, and a note that your data stays on this phone" data-i18n-attr="alt:echomind.alt.settings"></a><span class="screens__cap" data-i18n="echomind.g.settings">Settings</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-next">
+        <a class="btn btn--ghost" href="../index.html#work" data-i18n="pj.back">Back to all projects</a>
+        <a class="btn btn--primary" href="haunting-mother.html"><span data-i18n="pj.nextHaunt">Next: Haunting Mother</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

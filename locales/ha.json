@@ -1,0 +1,448 @@
+{
+  "about": {
+    "approachT": "Hanyata",
+    "directionD": "Haɓaka PitchIT, kammala ayyukan da ake yi, da shiga ƙungiyoyi da abokan ciniki masu son kayayyakin da aka gina da kulawa.",
+    "directionT": "Inda zan nufa",
+    "fBased": "Wurin zama",
+    "fBasedV": "Najeriya. A shirye nake in koma wani wuri ko in yi aiki daga nesa",
+    "fFocus": "Abin da na fi mayar da hankali",
+    "fFocusV": "Manhaja, tsara kaya, haɓakawa da taimakon AI, wasanni",
+    "fLang": "Harsuna",
+    "fLangV": "Turanci (sosai), Igbo (harshen uwa)",
+    "interestsD": "Kasuwannin intanet da tattalin arzikin da ba na hukuma ba, manhajoji masu natsuwa da sirri, wasanni, kayan aikin ƙirƙira da tsarin da ke bayansu.",
+    "interestsT": "Abubuwan da nake so",
+    "p1": "Ni ne David Somadina Obichukwu, ana kirana xTc a intanet. Ina gina kayayyaki daga farko har ƙarshe: ina samun ra'ayin, in tsara yadda ya kamata a ji shi, in gina shi har ya yi aiki.",
+    "quote": "“Ina gina tsare tsaren da ke barin amo.”"
+  },
+  "badge": {
+    "mvp": "Yana cikin MVP",
+    "planned": "An tsara"
+  },
+  "caps": {
+    "aiT": "Haɓakawa da taimakon AI",
+    "ctD": "Kayan aiki da abubuwan mu'amala inda lamba ke haɗuwa da ɗanɗano: ɗakin gyaran bidiyo, shafuka masu wasa da wannan shafin kansa.",
+    "ctT": "Fasahar ƙirƙira",
+    "gameD": "Wasannin Roblox da aka tsara, aka rubuta lambarsu kuma aka wallafa a Roblox Studio da Luau.",
+    "gameT": "Haɓaka wasanni",
+    "lede": "Kowanne yana da goyon bayan aiki a wannan shafi, da haɗin yanar gizo don ka duba.",
+    "pdD": "Bincike, matakai da shafuka da aka tsara game da mutumin da zai yi amfani da su, a Figma da cikin lamba.",
+    "pdT": "Tsara kaya",
+    "swD": "Manhajojin yanar gizo da waya da ke jure amfani na gaske, daga kasuwar Flutter mai rumbun bayanai da aka gwada zuwa shafin kasuwanci da ke aiki.",
+    "swT": "Haɓaka manhaja"
+  },
+  "case": {
+    "noVisual": "Ba a wallafa hotunan allo na wannan aiki ba tukuna. Za su bayyana a nan idan sun wanzu. Babu abin da ke cikin wannan fayil da yake samfurin hoto.",
+    "visuals": "Hotuna"
+  },
+  "contact": {
+    "email": "Imel ɗinka",
+    "err": "Ba a iya aika saƙon daga wannan shafin ba.",
+    "errFields": "Da fatan za a cike dukkan wurare, da adireshin imel daidai.",
+    "errMail": "Aika ta imel a maimakon haka",
+    "lede": "Kana neman ma'aikaci, kana so a gina maka kaya, ko kana son mu yi aiki tare? Aika saƙo, zan amsa ta imel.",
+    "message": "Saƙo",
+    "name": "Sunanka",
+    "ok": "An aika saƙon. Zan amsa ta imel nan ba da jimawa ba.",
+    "send": "Aika saƙo",
+    "sending": "Ana aikawa…"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "Allon Check in na EchoMind da ke tambayar abin da ke nan yanzu, da jin daɗi da ɓacin rai da za a zaɓa",
+      "home": "Allon farko na EchoMind da yanayin ji na ƙarshe, maɓallan Check in again da Write, jerin yanayin ji da tambayar yau",
+      "insights": "Allon Insights na EchoMind da adadin rajista, ranakun da aka rubuta, yanayin makonka da yanayin ji da ka rubuta",
+      "journey": "Allon Journey na EchoMind: layin lokaci na yanayin ji da rubuce rubucen yau, tare da tacewa",
+      "mind": "Allon Mind Space na EchoMind da ke nuna lokutan da ka zaɓa ka ajiye",
+      "note": "Allon Check in na EchoMind da maɓallin sabon yanayin ji, zaɓin I'm not sure yet da wurin rubuta bayani",
+      "own": "Fannin EchoMind na ƙirƙirar yanayin ji naka, da suna, emoji, launi da ko yana da daɗi, wuya ko gauraye",
+      "settings": "Saitunan EchoMind: launukan Dusk, Dawn da Match phone, rage motsi, yanayin jinka, da sanarwa cewa bayananka suna kan wannan wayar"
+    },
+    "cat": "Manhajar waya · Flutter",
+    "f": {
+      "aiD": "Fasalolin AI na zaɓi da ke taimaka maka ganin tsari a rubuce rubucenka. Kai ne za ka kunna su, kuma ɓangaren sirri yana ci gaba da aiki ba tare da su ba.",
+      "aiT": "Tunani tare da AI",
+      "checkinD": "Zaɓi kowane yanayin ji da ya dace, ka nuna ƙarfinsa, ka kuma rubuta gajeren bayani game da abin da ke bayansa. Idan ba ka iya sanya masa suna ba tukuna, zaɓi “I'm not sure yet”.",
+      "checkinT": "Rubuta yadda kake ji",
+      "insightsD": "Kwanaki 7 ko 30 na ƙarshe a kallo ɗaya: sau nawa ka yi rajista, kwanaki nawa ka rubuta wani abu, yanayin kwanakinka da yanayin ji da ka fi ambata. Tsari yana bayyana ne kawai idan bayanai sun isa.",
+      "insightsT": "Insights",
+      "journeyD": "Duk abin da ka rubuta a kan layin lokaci ɗaya, kamar yadda ya faru, tare da bincike da tacewa don yanayin ji, rubutu da lokutan da aka ajiye.",
+      "journeyT": "Journey",
+      "mindD": "Sanya alama a lokutan da kake son ajiyewa, ka kuma same su tare a wuri ɗaya.",
+      "mindT": "Mind Space",
+      "ownD": "Ƙirƙiri yanayin ji da sunanka, emoji da launinka, ka kuma nuna ko yana da daɗi, wuya ko gauraye. Za a iya canza suna ko launin kowane yanayin ji, ko a ɓoye shi.",
+      "ownT": "Yanayin ji naka",
+      "privateD": "Ana ajiye komai a wayarka kaɗai, a cikin ma'ajiyar sirri ta EchoMind. Babu asusu, babu intanet, kuma ba a taɓa aika rubutunka ko'ina ba.",
+      "privateT": "Sirri tun daga tushe",
+      "storeD": "Daga sigar gwaji da aka raba zuwa fitarwa a kan store.",
+      "storeT": "Fitarwa a Google Play",
+      "themeD": "Launukan dare masu zurfi, takarda mai haske da ɗumi, ko bin saitin wayarka. Akwai maɓallin rage motsi, kuma ana mutunta saitin wayarka ma.",
+      "themeT": "Launukan Dusk da Dawn",
+      "voiceD": "Faɗi yadda ranarka ta kasance da muryarka maimakon rubutawa.",
+      "voiceT": "Rubutun tunawa da murya",
+      "writeD": "Rubuta yadda kake so, ko ka fara daga tambayar yau kamar “What happened today?”.",
+      "writeT": "Rubutu da tambayoyin yau da kullum"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Farko",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Ƙara bayani",
+      "own": "Yanayin ji naka",
+      "settings": "Saituna"
+    },
+    "getApk": "Sami sigar gwaji ta Android",
+    "kind": "Manhajar waya · Android MVP",
+    "p": {
+      "apkNote": "Sigar gwajin APK ce ta Android da aka raba ta Google Drive. Ba ta kan Google Play tukuna, don haka Android na iya tambayarka ka ba da izinin girkawa daga wannan tushen.",
+      "audience1": "Mutanen da ke son hanyar sirri mai sauƙi don yin tunani: ɗalibai, ma'aikata masu yawan aiki, da duk wanda ke son ganin yadda kwanakinsa suke ji da gaske a tsawon lokaci.",
+      "audience2": "EchoMind kayan aiki ne na tunani a kan yadda kake ji. Ba sabis ne na lafiya, gano cuta ko jinya ba.",
+      "feedback": "Aika ra'ayinka",
+      "lede": "EchoMind manhajar Android ce ta littafin tunawa da yanayin ji. Rubuta yadda kake ji, ka rubuta yadda kake so ko daga tambayar yau, ka kuma sake duba komai a Journey. Duk yana kan wayarka. Babu asusu, babu biyan wata wata, babu intanet.",
+      "problem1": "Mutane da yawa suna son fahimtar yanayin zuciyarsu amma ba sa ci gaba da rubuta littafin tunawa. Rubutu yana da wahala, kuma yawancin manhajoji suna buƙatar asusu kuma suna ajiye tunaninka mafi sirri a gajimaren wani.",
+      "problem2": "EchoMind ya rage dukkan matsalolin biyu. Rajista tana ɗaukar taɓawa kaɗan, tambayar yau tana ba ka wurin farawa, kuma babu abin da ka rubuta da ke barin wayarka.",
+      "role": "Ƙirar kaya da haɓakawa",
+      "shotsNote": "Hotunan allo daga sigar Android ta yanzu a launin Dusk. Zaɓi ɗaya don ganinsa babba.",
+      "status": "MVP, ana gwaji"
+    },
+    "s1D": "Dole ne ɓangaren tushe ya yi aiki ba tare da intanet, asusu, biyan wata wata ko API na biya ba. An auna kowane shawarar ƙira da wannan doka.",
+    "s1T": "Sirri a matsayin doka, ba take ba",
+    "s2D": "Allon farko yana buɗewa da yanayin jinka na ƙarshe, jerin yanayin ji da tambayar yau, don ka fara da taɓawa ɗaya.",
+    "s2T": "Sauƙaƙa rajista",
+    "s3D": "Kumfa masu launuka masu laushi, launukan dare masu zurfi da motsi a hankali, da kalmomi masu sauƙi ko'ina da maɓalli ga mai son rage motsi.",
+    "s3T": "Ƙira domin natsuwa",
+    "s4D": "An gina shi da Flutter kuma an gwada shi a wayar Android ta gaske a duk lokacin, domin ya yi aiki da kyau a wayoyin yau da kullum.",
+    "s4T": "Gini da gwaji a kan na'ura ta gaske",
+    "s5D": "An tsara fasalolin AI a matsayin ƙari na zaɓi, don littafin tunawa ya ci gaba da amfani da sirri ba tare da su ba.",
+    "s5T": "AI a matsayin ƙari, ba tushe ba",
+    "summary": "Rubuta kowane yanayin ji da ya dace, ka rubuta game da ranarka, ka kuma sake duba komai a Journey. Komai yana kan wayarka, ba tare da asusu ko intanet ba.",
+    "tagOffline": "Yana aiki ba tare da intanet ba",
+    "tagline": "Littafin tunawa na sirri da ke taimaka maka gane yadda kake ji da gaske."
+  },
+  "edu": {
+    "afs": {
+      "q": "Karatun sakandare"
+    },
+    "title": "Ilimi"
+  },
+  "exp": {
+    "smile": {
+      "place": "Legas, Najeriya"
+    },
+    "title": "Ƙwarewar aiki"
+  },
+  "footer": {
+    "line": "Mayar da ra'ayoyi zuwa abubuwan dijital."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Wasan Haunting Mother: gano abin da ya canza a ɗaki da tabbatar da amsa",
+      "explore": "Wasan Haunting Mother: binciken gida da ɗaukar kaya",
+      "memorize": "Wasan Haunting Mother: haddace ɗaki kafin haske ya canza"
+    },
+    "cat": "Haɓaka wasanni · Roblox",
+    "f": {
+      "atmoD": "Kowane gida yana da yanayinsa, daga tsofaffin itatuwan gidan gona zuwa ɗakin kwana ja na Uwa, da fitilu da kyandirori ke haskakawa.",
+      "atmoT": "Kowane gida daban ne",
+      "coopD": "Zagaye na mutane da yawa tare da amsoshi na sirri, don kada wani ya kwafa kuma a gwada kowane ɗan wasa.",
+      "coopT": "Ya fi daɗi tare da abokai",
+      "mobileD": "Manyan maɓallan taɓawa da HUD mai bayyane suna sa a iya buga shi a waya kamar a kwamfuta.",
+      "mobileT": "An yi shi domin waya ma",
+      "puzzleD": "'Yan wasa suna nazarin ɗaki, sannan dole su lura da abin da ya bambanta. Mai sauƙin koyo, mai ban tsoro wajen ƙwarewa.",
+      "puzzleT": "Tunawa ita ce wasan wasa",
+      "surviveD": "Ƙidayar lokaci, mitar kyandir da ƙarfafawa kaɗan kamar Revive, Rewind da Tracker suna sa kowane hasashe ya zama muhimmi.",
+      "surviveT": "Matsi daga kowane ɓangare"
+    },
+    "kind": "Wasan Roblox · An wallafa",
+    "p": {
+      "capNote": "An ɗauki hotunan a cikin wasan a waya. Zaɓi ɗaya don ganinsa babba.",
+      "feedback": "Raba ra'ayinka",
+      "game1": "Ana buga kowane gida a matakai uku. Bincika gidan ka ɗauki abin da ka samu. Haddace ɗaki kafin lokaci ya ƙare. Sannan ka dawo, ka taɓa abin da ya canza, ka tabbatar da amsarka.",
+      "game2": "A wasan mutane da yawa, kowane ɗan wasa yana tabbatar da amsa ta sirri, don haka kowa dole ya amince da tunawarsa. Mitar kyandir, ƙarfafawa da shago a cikin wasan suna ƙara matsi da dabara ga kowane zagaye.",
+      "genre": "Tsoro, wasan wasa, tunawa",
+      "lede": "Haunting Mother wasan tsoro ne da wasan wasa na mutane da yawa a Roblox. 'Yan wasa suna bincika gidaje uku masu aljanu, suna haddace kowane ɗaki kafin lokaci ya ƙare, sannan dole su gano abin da ya canza. Ya fi daɗi tare da abokai, cikin duhu, da ƙara mai ƙarfi.",
+      "playNote": "Yana buɗe wasan a Roblox. Kana buƙatar asusun Roblox kyauta don yin wasa.",
+      "role": "Mai ƙirƙira: ƙira da haɓakawa",
+      "status": "An wallafa a Roblox"
+    },
+    "phase": {
+      "changed": "Me ya canza?",
+      "changedD": "Taɓa bambancin, sannan ka tabbatar da amsarka.",
+      "explore": "Bincika",
+      "exploreD": "Bincika gidan ka tattara kaya kamar makullai.",
+      "memorize": "Haddace",
+      "memorizeD": "Nazarci ɗakin yayin da lokaci ke ƙidaya."
+    },
+    "play": "Yi wasa a Roblox",
+    "s1D": "Na tsara zagayen bincike, haddacewa da gano canji, gidaje uku, da yadda wahala ke ƙaruwa daga gida zuwa gida.",
+    "s1T": "Ƙirar wasa",
+    "s2D": "Na gina kuma na ƙawata kowane gida, na kuma daidaita haskensa don yanayin tsoro.",
+    "s2T": "Gina duniya a Roblox Studio",
+    "s3D": "Na rubuta lambar matakai, agogo, duba amsoshi, kaya da halayen mutane da yawa a Luau, harshen lamba na Roblox.",
+    "s3T": "Lambar wasa",
+    "s4D": "Na gwada shi a Studio kuma na wallafa wasan a matsayin wasan Roblox na jama'a.",
+    "s4T": "Gwaji da wallafawa",
+    "s5D": "Na tsara HUD: katin mataki da agogo da kyandirori, wuraren kaya, fannin manufa, fannin amsa ta sirri da maɓallan taɓawa.",
+    "s5T": "Ƙirar fuskar wasa",
+    "summary": "Gidaje uku masu aljanu, zagayen tunawa masu ƙayyadaddun lokaci, ƙarfafawa da HUD da aka yi domin taɓawa. An tsara, an rubuta lamba kuma an wallafa a Roblox Studio.",
+    "tagMulti": "Mutane da yawa",
+    "tagline": "Wasan tsoro da tunawa na mutane da yawa. Nazarci kowane ɗaki, sannan ka gano abin da ya canza."
+  },
+  "hero": {
+    "capRole": "Wanda ya kafa kuma daraktan ƙirƙira, PitchIT",
+    "ctaContact": "Tuntuɓe ni",
+    "ctaCv": "Sauke CV",
+    "ctaWork": "Duba aikina",
+    "handle": "xTc, ina gini daga Najeriya. A shirye nake don aiki.",
+    "logoAlt": "Tambarin xTc Corp: harufan xTc masu launin azurfa tare da kalmomin Creating, Building, Operating",
+    "portraitAlt": "Hoton David Somadina Obichukwu",
+    "r1": "Mai haɓaka manhaja da taimakon AI",
+    "r2": "Mai gina kayayyaki",
+    "r3": "Mai zane UI/UX",
+    "r4": "Mai haɓaka wasanni",
+    "scroll": "Sauka zuwa ayyukana",
+    "title": "Mayar da ra'ayoyi zuwa <em>abubuwan dijital.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind manhajar Android ce ta sirri don littafin tunawa da bin yadda kake ji, wanda David Obichukwu (xTc) ya tsara kuma ya gina da Flutter. Bayanin aiki, hotuna da fasaloli.",
+      "title": "EchoMind | Littafin tunawa na sirri da yanayin ji daga David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother wasan tsoro da wasan wasa ne na mutane da yawa da aka wallafa a Roblox, wanda David Obichukwu (xTc) ya gina a Roblox Studio.",
+      "title": "Haunting Mother | Wasan tsoro na mutane da yawa a Roblox daga David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) mai haɓaka manhaja ne da taimakon AI, mai gina kayayyaki, mai zane UI/UX kuma mai haɓaka wasanni daga Najeriya. Ayyukansa sun haɗa da PitchIT, EchoMind da Haunting Mother.",
+      "title": "David Somadina Obichukwu (xTc) | Mai haɓaka manhaja, mai gina kayayyaki kuma mai zane"
+    },
+    "notfound": {
+      "description": "Wannan shafin babu shi a cikin fayil ɗin aikin David Obichukwu.",
+      "title": "Ba a sami shafin ba | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT kasuwa ce ta Flutter da Supabase don kowane irin aiki a Najeriya, wanda David Somadina Obichukwu (xTc) ya kafa kuma ya tsara. Gwada demo kuma ka karanta nazarin aikin.",
+      "title": "PitchIT | Kasuwa don kowane irin aiki a Najeriya, daga David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "Game da ni",
+    "capabilities": "Abin da nake yi",
+    "contact": "Tuntuɓa",
+    "home": "Farko",
+    "playground": "Filin wasa",
+    "work": "Ayyuka"
+  },
+  "nf": {
+    "home": "Je zuwa shafin farko",
+    "text": "Wataƙila hanyar haɗin ta tsufa ko an rubuta ta ba daidai ba. Duk abin da ke akwai yana nan bayan danna ɗaya.",
+    "title": "Wannan shafin bai bar wani amo ba."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "Allon Saƙonni na PitchIT da tattaunawa ɗaya ga kowane aiki",
+      "myJobs": "Allon Ayyukana na PitchIT da ayyuka a buɗe, tayi da aikin ƙungiya da aka ɗauki ma'aikaci 1 cikin 3",
+      "profile": "Allon Bayanan martaba na PitchIT da maɓallin Ɗaukar aiki da Yin aiki, biyan kuɗi da rikice rikice",
+      "setup": "Allon saita bayanan martaba na PitchIT: ba a buƙatar CV, zaɓi neman mutane, neman aiki ko duka biyun",
+      "signIn": "Allon maraba na PitchIT: shiga da lambar wayar Najeriya, imel ko Google",
+      "splash": "Allon farawa na PitchIT: Connecting people to real work"
+    },
+    "c1": "Saka aiki tare da alamomin wuri da hotuna",
+    "c2": "Kwatanta tayi ka ɗauki mutum",
+    "c3": "Biya kuɗin aikin ka bi yadda yake tafiya",
+    "c4": "Tabbatar da aikin ka bar ra'ayi",
+    "cat": "Kasuwar dijital · Haɓaka kaya",
+    "demoNote": "Yana aiki a nan. Bayanan misali kawai, biyan kuɗi na kwaikwayo ne, kuma babu abin da ka rubuta da ke barin burauzarka.",
+    "f": {
+      "adminD": "Masu amfani, ayyuka, rikice rikice, rukunoni da sa ido kan ra'ayoyi, ana kuma rubuta kowane matakin mai gudanarwa.",
+      "adminT": "Shafin mai gudanarwa",
+      "chatD": "Tattaunawa ɗaya ga kowane aiki da ma'aikaci, tare da hotuna, alamar karantawa da sanarwa.",
+      "chatT": "Hira kai tsaye",
+      "findD": "Bincike, tacewa ta rukuni, kasafin kuɗi, aiki daga nesa da nisa, da taswirar Kusa da kai mai farashi.",
+      "findT": "Ganowa",
+      "locD": "GPS, fil a kan taswira ko wurin da aka rubuta, tare da babbar alamar wuri, titi ko mararraba, gini, kwatance a rubuce da hotunan nuni.",
+      "locT": "Kwatancen da mutane ke fahimta",
+      "offerD": "Ma'aikata suna bayar da farashi, lokacin da suke da shi da ƙwarewarsu. Abokan ciniki suna kwatanta tayi ta wanda aka ba da shawara, mafi arha ko mafi kyawun ra'ayi, kuma gurbin ƙungiya ba zai taɓa cika fiye da kima ba.",
+      "offerT": "Tayi da ɗaukar aiki",
+      "payD": "Yanayin kwaikwayo da aka yiwa alama a fili, da yanayin gwaji da na gaske na Paystack da ake tabbatarwa a sabar.",
+      "payT": "Biyan kuɗi",
+      "postD": "Fannoni 13 da ƙananan rukunoni 105, da rukuninka na kanka. Nau'o'in aiki tara, daga na lokaci ɗaya da na sa'a zuwa na lokaci lokaci da na gaggawa, da ayyukan ƙungiya masu ma'aikata da yawa.",
+      "postT": "Saka kowane irin aiki",
+      "privD": "Kafin a biya, ma'aikata suna ganin yanki na kusa kawai. Ainihin fil yana buɗewa ga ma'aikacin da aka ɗauka bayan biya, kuma rumbun bayanai ne ke tilasta hakan.",
+      "privT": "Sirrin wuri",
+      "respD": "Sandar ƙasa a waya, sandar gefe a tablet da kwamfuta, da tsarin shafi biyu don ayyuka da saƙonni.",
+      "respT": "Kowane girman allo",
+      "trustD": "Ra'ayoyi bayan kammalawa kawai, alamomin tabbatar da waya da shaidar ɗan ƙasa, rahotanni, da rikice rikice tare da shaida, hukuncin mai gudanarwa da ɗaukaka ƙara ɗaya.",
+      "trustT": "Amana da tsaro"
+    },
+    "frameTitle": "Demo na PitchIT",
+    "g": {
+      "messages": "Saƙonni",
+      "myJobs": "Ayyukana",
+      "profile": "Bayanan martaba",
+      "setup": "Saita bayanan martaba",
+      "signIn": "Maraba",
+      "splash": "Farawa"
+    },
+    "jCustomer": "Tafiyar abokin ciniki",
+    "jWorker": "Tafiyar ma'aikaci",
+    "launch": "Gwada demo kai tsaye",
+    "loadErr": "Demo bai iya farawa a nan ba. Sake gwadawa, ko buɗe shi a cikakken allo.",
+    "loading": "Ana fara demo…",
+    "motto": "Aiki yana ko'ina. Nemo shi a nan.",
+    "openFull": "Buɗe demo a cikakken allo",
+    "p": {
+      "demoNote": "Demo shi ne ainihin manhajar a yanayin demo: bayanan misali da ke cikin burauzarka da biyan kuɗi na kwaikwayo da aka yiwa alama a fili. Ba a buƙatar asusu, kuma ba a aika komai zuwa sabar.",
+      "design1": "Mai ɗumi, mai ƙarfin gwiwa kuma mai sauƙin magana. Lemu mai haske a kan launin kirim mai laushi, rubutun Plus Jakarta Sans mai zagaye da manyan wuraren taɓawa, don manhajar ta yi daɗi a wayar mai arha a cikin hasken rana.",
+      "design2": "Kalmomi suna da muhimmanci kamar hoto. Allon na cewa Nemi aiki da Ɗauki wani, ba tare da kalmomin masana ba, kuma kowane mataki na kuɗi yana bayyana a fili lokacin da biyan kuɗi na kwaikwayo ne.",
+      "designT": "Jagorancin zane",
+      "featNote": "Duk abin da ke nan an gina shi kuma za a iya gwada shi a demo, sai dai biyan kuɗi na gaske, wanda ke buƙatar backend na gaske.",
+      "journeysD": "Asusu ɗaya na iya ɗaukar ma'aikata ya kuma yi aiki. Maɓallin Ɗaukar aiki da Yin aiki na canza dukan kewayawa don dacewa da rawar.",
+      "journeysT": "Tafiya biyu, asusu ɗaya",
+      "lede": "PitchIT kasuwa ce don kowane irin aiki a Najeriya: ma'aikatan gona, masu sayar da kifi, masu taimako a kasuwa, masu sana'a, masu jigilar kaya, masu share gida, aike aike da ƙwararru. Wanda ke buƙatar aiki yana saka aiki. Wanda zai iya yinsa yana aika tayi. Abokin ciniki yana biyan adadin da aka amince kafin aikin ya fara.",
+      "opp1": "Yawancin aiki a Najeriya ba ya bayyana a shafukan neman aiki. Yana faruwa ta baki da baki, a kasuwa, a gona da gefen hanya.",
+      "opp2": "Wannan ne ya tsara kayan. Babu wanda ke buƙatar CV don yin rajista. Ana bayyana wurare kamar yadda mutane ke ba da kwatance da gaske, ta alamomin wuri, mararraba da gine gine. Kuma dole manhajar ta kasance mai sauƙi isasshe ga wayoyin yau da kullum da haɗin intanet mara ƙarfi.",
+      "oppT": "Damar",
+      "platform": "Android da yanar gizo, tare da tsari don waya, tablet da kwamfuta",
+      "processT": "Tsari da inganci",
+      "rls": "Tsaro a matakin layi",
+      "role": "Wanda ya kafa kuma daraktan ƙirƙira",
+      "seeJourneys": "Duba yadda yake aiki",
+      "shotsNote": "Hotunan allo daga sigar Android. Zaɓi ɗaya don ganinsa a cikakken girma.",
+      "src": "Alƙaluma daga binciken ma'aikata na NBS Najeriya, kwata na biyu na 2024, kamar yadda",
+      "stackT": "Fasahohi",
+      "stat1": "na ayyukan yi ba na hukuma ba ne",
+      "stat2": "na masu aiki suna yi wa kansu aiki",
+      "stat3": "fannonin aiki da PitchIT ya ƙunsa, da rukunoni 105",
+      "status": "Demo mai aiki. Ba a ƙaddamar da shi ga jama'a ba tukuna",
+      "status1": "Kaya mai aiki a yanayin demo, ba a ƙaddamar da shi ga jama'a ba tukuna.",
+      "status2": "Matakai na gaba sune haɗa backend na gaske, biyan kuɗi na gaske da rukunin farko na abokan ciniki da ma'aikata na gaske.",
+      "t1": "An amince",
+      "t2": "An biya",
+      "t3": "An fara",
+      "t4": "An gama",
+      "t5": "An tabbatar",
+      "timeline": "Matakan aiki"
+    },
+    "s1D": "Ya fara daga yadda ake samun aiki da bayyana shi a Najeriya, wanda ya kawo jerin fannoni, kwatance ta alamomin wuri da rajista ba tare da CV ba.",
+    "s1T": "Bincike da farko",
+    "s2D": "Sirri, iyakar gurbi da biyan kuɗi tsaron Postgres a matakin layi ne ke tilasta su, ba ɓoye su kawai a shafin amfani ba.",
+    "s2T": "Ƙa'idoji a cikin rumbun bayanai",
+    "s3D": "Fiye da binciken tsaro da na tsari 50 a kan ainihin rumbun bayanan Postgres 16, da gwaje gwajen unit da widget don shiga, saka aiki, tayi, ɗaukar aiki da biyan kuɗi.",
+    "s3T": "An gwada shi kamar kaya na gaske",
+    "s4D": "Haɗin kai mai ci gaba yana nazarin lamba, yana gudanar da gwaje gwaje, yana ɗaukar hotunan allo a girma huɗu kuma yana gina manhajar yanar gizo da APK na Android.",
+    "s4T": "Ana gina shi a kowane canji",
+    "s5D": "Ba tare da mabuɗan backend ba, manhajar tana aiki a yanayin demo, wanda shi ne sigar da ke cikin wannan shafi.",
+    "s5T": "Demo da kowa zai iya buɗewa",
+    "screensLabel": "Allo",
+    "stop": "Rufe demo",
+    "summary": "Kasuwa da ke haɗa masu buƙatar aiki da masu yinsa, a fannoni 13, daga noma da kamun kifi zuwa sana'o'i, aike aike da ayyukan ƙwararru. An gina ta don yadda aiki ke faruwa da gaske a Najeriya: kwatance ta alamomin wuri maimakon adireshin titi, kuma ana biyan kuɗin aiki kafin a fara.",
+    "tagChat": "Hira kai tsaye",
+    "w1": "Gano ayyuka a kusa",
+    "w2": "Aika tayi",
+    "w3": "Yi hira ka sami kwatance",
+    "w4": "Gama, karɓi kuɗi ka gina suna"
+  },
+  "pj": {
+    "approach": "Yadda na gina shi",
+    "audience": "Ga wa aka yi shi",
+    "back": "Koma ga dukkan ayyuka",
+    "builtWith": "An gina da",
+    "contribution": "Gudummawata",
+    "features": "Fasaloli",
+    "featuresNote": "Abin da ke cikin sigar yanzu, da abin da aka tsara na gaba.",
+    "gameplay": "Yadda ake wasa",
+    "genre": "Nau'i",
+    "nextEcho": "Na gaba: EchoMind",
+    "nextHaunt": "Na gaba: Haunting Mother",
+    "nextPitchit": "Na gaba: PitchIT",
+    "pillars": "Ginshiƙan ƙira",
+    "platform": "Dandali",
+    "problem": "Matsalar",
+    "role": "Matsayina",
+    "screens": "Allunan manhaja",
+    "status": "Matsayi",
+    "theGame": "Wasan"
+  },
+  "play": {
+    "board": "Allon wasa",
+    "brands": "Shaidar alama ga Navis, Evergreen, Confess da Amora",
+    "brandsCat": "Alama",
+    "cell": "Akwati",
+    "draw": "Kunnen doki. Babu wanda ya bar amo.",
+    "draws": "Kunnen doki",
+    "earlierT": "Ayyukan baya",
+    "easy": "Mai sauƙi",
+    "echoBtn": "Aika amo",
+    "echoD": "Kowane ɗigo a bayan wannan shafi yana amsa maka. Danna kowane wuri mara komai, ko aika amo daga nan ka kalli yadda yake tafiya.",
+    "echoT": "Bayan shafin yana sauraro",
+    "hard": "Mai wuya",
+    "lede": "Ƙananan abubuwa da aka gina don nishaɗi, da ayyukan farko da suka koya mini tushe.",
+    "level": "Matakin wahala",
+    "lose": "Na'ura ta ci wannan.",
+    "machine": "Na'ura",
+    "new": "Sabon wasa",
+    "thinking": "Na'ura na tunani…",
+    "tttD": "Ƙaramin wasa daga sigar farko ta wannan shafi, an sake gina shi. Yanayi mai sauƙi yana kuskure. Mai wuya ba ya taɓa faɗuwa.",
+    "tttT": "X da O da na'ura",
+    "win": "Ka ci. Ka yi kyau.",
+    "you": "Kai",
+    "yourMove": "Lokacinka ne. Kai ne X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Manhaja",
+        "title": "Shiga asusu da sarrafa masu amfani"
+      },
+      "real-estate": {
+        "cat": "Dandalin yanar gizo",
+        "title": "Dandalin tallan gidaje"
+      },
+      "saas-dashboard": {
+        "cat": "Manhajar yanar gizo",
+        "title": "Manhajar dashboard ta SaaS"
+      }
+    }
+  },
+  "skills": {
+    "ai": "Tsarin AI da QA",
+    "apps": "Manhajoji da wasanni",
+    "design": "Ƙira da prototype",
+    "ds": "Design system",
+    "eval": "Tantance AI",
+    "frontend": "Haɓaka frontend",
+    "image": "Sanya alama a hotuna",
+    "programming": "Shirye shiryen kwamfuta",
+    "proto": "Prototype",
+    "responsive": "Ƙirar da ta dace da kowane allo",
+    "text": "Sanya alama a rubutu",
+    "tools": "Kayan aiki da dandali",
+    "uiux": "Ƙirar UI/UX",
+    "wire": "Wireframe"
+  },
+  "status": {
+    "concept": "Ra'ayi",
+    "demo": "Demo mai aiki",
+    "dev": "Ana haɓakawa",
+    "live": "Yana aiki",
+    "mvp": "MVP",
+    "mvpTesting": "MVP ana gwadawa",
+    "prototype": "Samfurin farko",
+    "published": "An wallafa"
+  },
+  "ui": {
+    "caseStudy": "Karanta bayanin aikin",
+    "close": "Rufe",
+    "language": "Harshe",
+    "menu": "Menu",
+    "next": "Hoto na gaba",
+    "noVisual": "Ba a wallafa hotuna ba tukuna",
+    "prev": "Hoton baya",
+    "skip": "Je zuwa abun ciki",
+    "tech": "Fasahohi",
+    "toTop": "Koma sama",
+    "toggleTheme": "Canja launin shafi"
+  }
+}

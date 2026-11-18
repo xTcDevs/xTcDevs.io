@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="bookverse">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookVerse | Case study by David Somadina Obichukwu</title>
+  <meta name="description" content="BookVerse is a digital book platform for readers who move between formats: novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web and light.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/bookverse">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="BookVerse | One place for every kind of story.">
+  <meta property="og:description" content="BookVerse is a digital book platform for readers who move between formats: novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web and light.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/bookverse">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/img/bookverse/home.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/img/bookverse/home.webp">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"BookVerse","url":"https://xtcdev.netlify.app/projects/bookverse","creator":{"@type":"Person","name":"David Somadina Obichukwu","url":"https://xtcdev.netlify.app/"}}</script>
+</head>
+<body class="page-case page-bookverse">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><span aria-hidden="true">/</span><span aria-current="page">BookVerse</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="pj-cats"><span class="cat cat--web" data-i18n="cat.web">Websites</span><span class="cat cat--apps" data-i18n="cat.apps">Apps</span><span class="cat cat--uiux" data-i18n="cat.uiux">UI/UX</span></p>
+            <h1 class="pj-title">BookVerse</h1>
+            <p class="pj-tagline" data-i18n="c.bookverse.tagline">One place for every kind of story.</p>
+            <p class="pj-status"><span class="status status--dev" data-i18n="status.dev">In development</span></p>
+            <p class="pj-lede" data-i18n="c.bookverse.lede">BookVerse is a digital book platform for readers who move between formats: novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web and light novels, audiobooks, poetry and non fiction. A first release is live as a preview. The reader, the full catalogue, Top Books and the writer studio are still being built.</p>
+            <div class="pj-actions"><a class="btn btn--primary" href="https://bookverse-1.netlify.app/" target="_blank" rel="noopener"><span data-i18n="c.bookverse.cta0">Open the live preview</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-external"/></svg></a><a class="btn btn--ghost" href="https://github.com/xTcDevs/BookVerse" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-github"/></svg><span data-i18n="c.bookverse.cta1">Source on GitHub</span></a></div>
+          </div>
+          <div class="feature__visual"><figure class="pj-shot"><a class="shot-link frame" href="../assets/img/bookverse/home.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/home-640.webp" srcset="../assets/img/bookverse/home-640.webp 640w, ../assets/img/bookverse/home.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse home page: Editor&#x27;s pick, Frankenstein by Mary Shelley, free to read, with Read free online and Download free buttons" data-i18n-attr="alt:c.bookverse.heroAlt"></a></figure></div>
+        </div>
+        <dl class="pj-facts"><div><dt data-i18n="case.fact.type">Type</dt><dd data-i18n="c.bookverse.fact0">Web platform</dd></div><div><dt data-i18n="case.fact.builtwith">Built with</dt><dd data-i18n="c.bookverse.fact1">React 19, React Router 7, TypeScript, Supabase</dd></div><div><dt data-i18n="case.fact.livepreview">Live preview</dt><dd data-i18n="c.bookverse.fact2">Hosted on Netlify</dd></div><div><dt data-i18n="case.fact.myrole">My role</dt><dd data-i18n="c.bookverse.fact3">Product owner, design direction and development</dd></div></dl>
+      </div>
+    </section>
+<section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s0.h">The problem</h2><div><p class="pj-strong" data-i18n="c.bookverse.s0.p0">Readers no longer stay in one format. The same person reads a classic novel, follows a webtoon and listens to an audiobook, but each lives on a different site with its own account and its own way of keeping a library. Writers face the same split when they want to publish.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s1.h">The vision</h2><div><p data-i18n="c.bookverse.s1.p0">One structured place to discover books, keep a personal library and, later, write and publish next to the classics. Discovery is organised by format and genre, every book is honestly labelled with where it can be read, and readership numbers will only ever come from real readers.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s2.h">Intended experience</h2><div><ol class="steps"><li><h3 data-i18n="c.bookverse.s2.t0">Discover</h3><p data-i18n="c.bookverse.s2.d0">Browse by format, genre or author, or search, and open a book page that says plainly what you can read here, borrow or buy elsewhere.</p></li><li><h3 data-i18n="c.bookverse.s2.t1">Read</h3><p data-i18n="c.bookverse.s2.d1">Read free editions on BookVerse itself with reading settings for text, comics and audio.</p></li><li><h3 data-i18n="c.bookverse.s2.t2">Keep a library</h3><p data-i18n="c.bookverse.s2.d2">Save books to a personal library and organise it.</p></li><li><h3 data-i18n="c.bookverse.s2.t3">Write</h3><p data-i18n="c.bookverse.s2.d3">Writers publish books, serials, poetry and comics from one author profile, with a name and handle that are theirs.</p></li></ol></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s3.h">What exists today and what is planned</h2><div><ul class="feat-list feat-list--grid"><li><h3><span data-i18n="c.bookverse.s3.f0.t">Explore menu by format</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f0.d">Novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web novels, light novels, audiobooks, poetry and non fiction, plus ways to read such as Free to read now.</p></li><li><h3><span data-i18n="c.bookverse.s3.f1.t">Genre pages</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f1.d">Fiction and non fiction genres with short descriptions and sub genres such as epic fantasy, dystopian, crime and gothic.</p></li><li><h3><span data-i18n="c.bookverse.s3.f2.t">Book pages with free editions</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f2.d">Public domain books list where to read or download them free, from sources such as Standard Ebooks and Project Gutenberg.</p></li><li><h3><span data-i18n="c.bookverse.s3.f3.t">Themes and reading settings</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f3.d">Eight colour themes, accent colours and separate settings for text, comics and audio, with accessible reading fonts.</p></li><li><h3><span data-i18n="c.bookverse.s3.f4.t">Accounts</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f4.d">Sign in with Supabase, with preferences saved to your account. Creating an account now reserves your name and handle for the writer studio.</p></li><li><h3><span data-i18n="c.bookverse.s3.f5.t">Write page</span><span class="badge badge--done" data-i18n="badge.built">Built</span></h3><p data-i18n="c.bookverse.s3.f5.d">A page describing what the writer studio will do. It is a description, not a working editor.</p></li><li><h3><span data-i18n="c.bookverse.s3.f6.t">Top Books</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.bookverse.s3.f6.d">Rankings will only use real reading data, so this section is not implemented yet.</p></li><li><h3><span data-i18n="c.bookverse.s3.f7.t">Full catalogue and discovery</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.bookverse.s3.f7.d">The starter shelf grows into a full catalogue with richer discovery.</p></li><li><h3><span data-i18n="c.bookverse.s3.f8.t">Built in reader</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.bookverse.s3.f8.d">Read on BookVerse itself, using your reading settings.</p></li><li><h3><span data-i18n="c.bookverse.s3.f9.t">Personal library organisation</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.bookverse.s3.f9.d">Saving and organising books into a personal library.</p></li><li><h3><span data-i18n="c.bookverse.s3.f10.t">Writer studio and author spaces</span><span class="badge badge--next" data-i18n="badge.planned">Planned</span></h3><p data-i18n="c.bookverse.s3.f10.d">Books and serials, comics and webtoons, drafts and scheduling, book pages, author profiles and readership.</p></li></ul><p class="pj-note" data-i18n="c.bookverse.s3.note">Built means it works in the live preview today. Planned items come in later milestones; the writer studio is planned for Milestone 5.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s4.h">How it is built</h2><div><ol class="steps"><li><h3 data-i18n="c.bookverse.s4.t0">Milestone by milestone</h3><p data-i18n="c.bookverse.s4.d0">Each milestone has to work on its own before the next starts, and pages for future features describe them without faking them.</p></li><li><h3 data-i18n="c.bookverse.s4.t1">Static and fast</h3><p data-i18n="c.bookverse.s4.d1">The app is pre rendered into a static site on Netlify, so pages load without an application server.</p></li><li><h3 data-i18n="c.bookverse.s4.t2">Tested</h3><p data-i18n="c.bookverse.s4.d2">Unit tests with Vitest, browser tests with Playwright and accessibility checks with axe.</p></li><li><h3 data-i18n="c.bookverse.s4.t3">Secure by default</h3><p data-i18n="c.bookverse.s4.d3">A content security policy on every page, and a build check that stops secrets from reaching the browser.</p></li></ol></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s5.h">Stack</h2><div><ul class="pills"><li>React 19</li><li>React Router 7</li><li>TypeScript</li><li>Supabase</li><li>Netlify</li><li>Vitest</li><li>Playwright</li><li>axe</li></ul></div></div></section><section class="pj-section"><div class="wrap"><h2 data-i18n="c.bookverse.s6.h">Screens</h2><p class="pj-note" data-i18n="c.bookverse.s6.note">Screenshots of the live preview.</p><ul class="gallery"><li><a class="shot-link frame" href="../assets/img/bookverse/home.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/home-640.webp" srcset="../assets/img/bookverse/home-640.webp 640w, ../assets/img/bookverse/home.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Home with the editor&#x27;s pick" data-i18n-attr="alt:c.bookverse.s6.alt0"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g0">Home with the editor&#x27;s pick</span></li><li><a class="shot-link frame" href="../assets/img/bookverse/explore.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/explore-640.webp" srcset="../assets/img/bookverse/explore-640.webp 640w, ../assets/img/bookverse/explore.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Explore menu: formats, ways to read and genres" data-i18n-attr="alt:c.bookverse.s6.alt1"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g1">Explore menu: formats, ways to read and genres</span></li><li><a class="shot-link frame" href="../assets/img/bookverse/genres.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/genres-640.webp" srcset="../assets/img/bookverse/genres-640.webp 640w, ../assets/img/bookverse/genres.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Fiction genres" data-i18n-attr="alt:c.bookverse.s6.alt2"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g2">Fiction genres</span></li><li><a class="shot-link frame" href="../assets/img/bookverse/nonfiction.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/nonfiction-640.webp" srcset="../assets/img/bookverse/nonfiction-640.webp 640w, ../assets/img/bookverse/nonfiction.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Non fiction genres" data-i18n-attr="alt:c.bookverse.s6.alt3"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g3">Non fiction genres</span></li><li><a class="shot-link frame" href="../assets/img/bookverse/write.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/write-640.webp" srcset="../assets/img/bookverse/write-640.webp 640w, ../assets/img/bookverse/write.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Write: what the studio will do" data-i18n-attr="alt:c.bookverse.s6.alt4"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g4">Write: what the studio will do</span></li><li><a class="shot-link frame" href="../assets/img/bookverse/book.webp" data-lightbox="bookverse"><img src="../assets/img/bookverse/book-640.webp" srcset="../assets/img/bookverse/book-640.webp 640w, ../assets/img/bookverse/book.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="BookVerse: Book page" data-i18n-attr="alt:c.bookverse.s6.alt5"></a><span class="screens__cap" data-i18n="c.bookverse.s6.g5">Book page</span></li></ul></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.bookverse.s7.h">Status</h2><div><p data-i18n="c.bookverse.s7.p0">In development. The preview is live; the full catalogue, the reader, Top Books, library organisation and the writer studio come next, in that order of milestones.</p></div></div></section>
+    <section class="pj-section">
+      <div class="wrap pj-nav"><a class="pj-nav__link" href="../projects/princess-uc.html"><span data-i18n="case.prev">Previous project</span><b>Princess UC Crafts</b></a><a class="pj-nav__link pj-nav__link--next" href="../projects/steal-the-moon.html"><span data-i18n="case.next">Next project</span><b>Steal the Moon</b></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

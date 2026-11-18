@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="toilet-wars">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toilet Wars | Case study by David Somadina Obichukwu</title>
+  <meta name="description" content="Toilet Wars is a team based multiplayer arena game on Roblox. Two teams, the Red Plungers and the Blue Scrubbers, soak each other with plungers, toilet.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/toilet-wars">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="Toilet Wars | Flush or be flushed.">
+  <meta property="og:description" content="Toilet Wars is a team based multiplayer arena game on Roblox. Two teams, the Red Plungers and the Blue Scrubbers, soak each other with plungers, toilet.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/toilet-wars">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/img/toilet-wars/action.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/img/toilet-wars/action.webp">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","name":"Toilet Wars","url":"https://xtcdev.netlify.app/projects/toilet-wars","creator":{"@type":"Person","name":"David Somadina Obichukwu","url":"https://xtcdev.netlify.app/"}}</script>
+</head>
+<body class="page-case page-toilet-wars">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><span aria-hidden="true">/</span><span aria-current="page">Toilet Wars</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="pj-cats"><span class="cat cat--games" data-i18n="cat.games">Games</span></p>
+            <h1 class="pj-title pj-title--toilet">Toilet <span>Wars</span></h1>
+            <p class="pj-tagline" data-i18n="c.toilet-wars.tagline">Flush or be flushed.</p>
+            <p class="pj-status"><span class="status status--live" data-i18n="status.live">Live</span></p>
+            <p class="pj-lede" data-i18n="c.toilet-wars.lede">Toilet Wars is a team based multiplayer arena game on Roblox. Two teams, the Red Plungers and the Blue Scrubbers, soak each other with plungers, toilet paper launchers and flush bombs, then knock their rivals off the map. It is public on Roblox and I keep developing it.</p>
+            <div class="pj-actions"><a class="btn btn--primary btn--lg" href="https://www.roblox.com/games/111542210820745/Toilet-Wars" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-play"/></svg><span data-i18n="c.toilet-wars.cta0">Play on Roblox</span></a></div>
+          </div>
+          <div class="feature__visual"><figure class="pj-shot"><a class="shot-link frame" href="../assets/img/toilet-wars/action.webp" data-lightbox="toilet-wars"><img src="../assets/img/toilet-wars/action-640.webp" srcset="../assets/img/toilet-wars/action-640.webp 640w, ../assets/img/toilet-wars/action.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Toilet Wars gameplay scene: a player with a golden plunger knocks a soaked rival at 187 percent toward the bowl, under the Plunger Brawler title" data-i18n-attr="alt:c.toilet-wars.heroAlt"></a></figure></div>
+        </div>
+        <dl class="pj-facts"><div><dt data-i18n="case.fact.type">Type</dt><dd data-i18n="c.toilet-wars.fact0">Multiplayer arena game on Roblox</dd></div><div><dt data-i18n="case.fact.builtwith">Built with</dt><dd data-i18n="c.toilet-wars.fact1">Roblox Studio, Luau</dd></div><div><dt data-i18n="case.fact.teams">Teams</dt><dd data-i18n="c.toilet-wars.fact2">1v1 up to 4v4, bots fill empty slots</dd></div><div><dt data-i18n="case.fact.myrole">My role</dt><dd data-i18n="c.toilet-wars.fact3">Concept, game direction, design and development</dd></div></dl>
+      </div>
+    </section>
+<section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s0.h">What it is</h2><div><p data-i18n="c.toilet-wars.s0.p0">Roblox is a platform where millions of people play games made by independent creators, on phones, computers, tablets and consoles. Toilet Wars is one of those games, and anyone can join it from the Roblox app or website.</p><p data-i18n="c.toilet-wars.s0.p1">It is a knockback brawler: instead of losing health, players get soaked, and the aim is to send rivals flying off the arena or into the bowl. Matches are short, loud and team based, built for playing with friends.</p></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s1.h">The core loop</h2><div><ol class="steps"><li><h3 data-i18n="c.toilet-wars.s1.t0">Pick a battle</h3><p data-i18n="c.toilet-wars.s1.d0">Press Play, choose a map and a team size from 1v1 to 4v4. Bots fill any empty slots so a match can always start.</p></li><li><h3 data-i18n="c.toilet-wars.s1.t1">Soak your rivals</h3><p data-i18n="c.toilet-wars.s1.d1">Every hit with a plunger, a toilet paper roll or a flush bomb raises a rival&#x27;s soak percentage, shown above their head.</p></li><li><h3 data-i18n="c.toilet-wars.s1.t2">Knock them out</h3><p data-i18n="c.toilet-wars.s1.d2">Soaked players are easier to send flying. Push them off the map or into the bowl, while your team holds the objective.</p></li><li><h3 data-i18n="c.toilet-wars.s1.t3">Charge the Super Flush</h3><p data-i18n="c.toilet-wars.s1.d3">Build up your Super Flush and release it for a blast that can turn a round.</p></li><li><h3 data-i18n="c.toilet-wars.s1.t4">Earn and unlock</h3><p data-i18n="c.toilet-wars.s1.d4">Rounds feed daily rewards, quests, challenges and the Flush Pass, which unlock cosmetics.</p></li></ol></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s2.h">Game modes</h2><div><ul class="bullets"><li data-i18n="c.toilet-wars.s2.i0">Throne Control</li><li data-i18n="c.toilet-wars.s2.i1">Flush Frenzy</li><li data-i18n="c.toilet-wars.s2.i2">Sinking Bowl</li><li data-i18n="c.toilet-wars.s2.i3">A Practice Range for new players</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s3.h">Weapons and abilities</h2><div><ul class="bullets"><li data-i18n="c.toilet-wars.s3.i0">Plunger weapons for close range hits</li><li data-i18n="c.toilet-wars.s3.i1">Toilet paper launcher for range</li><li data-i18n="c.toilet-wars.s3.i2">Flush Bomb</li><li data-i18n="c.toilet-wars.s3.i3">Super Flush, a charged special ability</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s4.h">Chaos events</h2><div><ul class="bullets"><li data-i18n="c.toilet-wars.s4.i0">Mega Flush</li><li data-i18n="c.toilet-wars.s4.i1">Low Gravity</li><li data-i18n="c.toilet-wars.s4.i2">Golden Plunger</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s5.h">Five maps</h2><div><ul class="bullets"><li data-i18n="c.toilet-wars.s5.i0">The Bowl</li><li data-i18n="c.toilet-wars.s5.i1">Spin Cycle</li><li data-i18n="c.toilet-wars.s5.i2">Sewer Run</li><li data-i18n="c.toilet-wars.s5.i3">Shower Tower</li><li data-i18n="c.toilet-wars.s5.i4">The Gauntlet</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s6.h">Progression without pay to win</h2><div><ul class="bullets"><li data-i18n="c.toilet-wars.s6.i0">Free daily rewards and login streaks</li><li data-i18n="c.toilet-wars.s6.i1">Daily quests, weekly challenges and achievements</li><li data-i18n="c.toilet-wars.s6.i2">Season 1 Flush Pass with 15 tiers of rewards</li><li data-i18n="c.toilet-wars.s6.i3">A daily featured shop with skins, hats, trails, titles, emotes and victory animations</li><li data-i18n="c.toilet-wars.s6.i4">Cosmetics never affect gameplay</li><li data-i18n="c.toilet-wars.s6.i5">Parties so friends can play together</li></ul></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s7.h">How I built it</h2><div><ol class="steps"><li><h3 data-i18n="c.toilet-wars.s7.t0">Concept and direction</h3><p data-i18n="c.toilet-wars.s7.d0">The idea, the tone and the rules are mine: a silly theme with a competitive core, readable for younger players and deep enough to keep playing.</p></li><li><h3 data-i18n="c.toilet-wars.s7.t1">Systems design</h3><p data-i18n="c.toilet-wars.s7.d1">I planned the soak and knockback rules, the three modes, the chaos events, team sizes from 1v1 to 4v4 and how rewards should feel fair.</p></li><li><h3 data-i18n="c.toilet-wars.s7.t2">Building in Roblox Studio</h3><p data-i18n="c.toilet-wars.s7.d2">The game is scripted in Luau. I write and change code myself and use an AI coding assistant heavily to draft systems, debug and review, then I read, adjust and decide what ships.</p></li><li><h3 data-i18n="c.toilet-wars.s7.t3">Arenas and interface</h3><p data-i18n="c.toilet-wars.s7.d3">Five obstacle course maps, a lobby with map and team size selection, and a HUD that shows soak percentages clearly on phones and computers.</p></li><li><h3 data-i18n="c.toilet-wars.s7.t4">Test and refine</h3><p data-i18n="c.toilet-wars.s7.d4">Play sessions in Studio and on Roblox after each change, then balance passes on knockback, events and rewards.</p></li></ol></div></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s8.h">Tools</h2><div><ul class="pills"><li>Roblox Studio</li><li>Luau</li><li>AI coding assistant</li><li>Roblox experience settings</li></ul></div></div></section><section class="pj-section"><div class="wrap"><h2 data-i18n="c.toilet-wars.s9.h">Gallery</h2><p class="pj-note" data-i18n="c.toilet-wars.s9.note">These are the game&#x27;s Roblox store images, made from in game scenes with title text added on top.</p><ul class="gallery"><li><a class="shot-link frame" href="../assets/img/toilet-wars/action.webp" data-lightbox="toilet-wars"><img src="../assets/img/toilet-wars/action-640.webp" srcset="../assets/img/toilet-wars/action-640.webp 640w, ../assets/img/toilet-wars/action.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Toilet Wars: Knockback in action" data-i18n-attr="alt:c.toilet-wars.s9.alt0"></a><span class="screens__cap" data-i18n="c.toilet-wars.s9.g0">Knockback in action</span></li><li><a class="shot-link frame" href="../assets/img/toilet-wars/maps.webp" data-lightbox="toilet-wars"><img src="../assets/img/toilet-wars/maps-640.webp" srcset="../assets/img/toilet-wars/maps-640.webp 640w, ../assets/img/toilet-wars/maps.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Toilet Wars: The maps and team sizes" data-i18n-attr="alt:c.toilet-wars.s9.alt1"></a><span class="screens__cap" data-i18n="c.toilet-wars.s9.g1">The maps and team sizes</span></li><li><a class="shot-link frame" href="../assets/img/toilet-wars/cosmetics.webp" data-lightbox="toilet-wars"><img src="../assets/img/toilet-wars/cosmetics-640.webp" srcset="../assets/img/toilet-wars/cosmetics-640.webp 640w, ../assets/img/toilet-wars/cosmetics.webp 1440w" sizes="(min-width: 960px) 45vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Toilet Wars: Cosmetic plungers, never pay to win" data-i18n-attr="alt:c.toilet-wars.s9.alt2"></a><span class="screens__cap" data-i18n="c.toilet-wars.s9.g2">Cosmetic plungers, never pay to win</span></li></ul></div></section><section class="pj-section"><div class="wrap pj-section__grid"><h2 data-i18n="c.toilet-wars.s10.h">Status</h2><div><p data-i18n="c.toilet-wars.s10.p0">Public on Roblox since November 2026 and actively developed: new balance passes, content and fixes follow play testing.</p></div></div></section>
+    <section class="pj-section">
+      <div class="wrap pj-nav"><a class="pj-nav__link pj-nav__link--next" href="../projects/anthony-studios.html"><span data-i18n="case.next">Next project</span><b>Macreamy Anthony Studios</b></a></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

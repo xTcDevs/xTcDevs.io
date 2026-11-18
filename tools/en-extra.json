@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "home": {
+      "title": "David Somadina Obichukwu (xTc) | Software Developer, Product Builder and Designer",
+      "description": "David Somadina Obichukwu (xTc) is an AI assisted software developer, product builder, UI/UX designer and game developer from Nigeria. Work includes PitchIT, EchoMind and Haunting Mother."
+    },
+    "pitchit": {
+      "title": "PitchIT | A marketplace for every kind of work in Nigeria, by David Somadina Obichukwu",
+      "description": "PitchIT is a Flutter and Supabase marketplace for every kind of work in Nigeria, founded and designed by David Somadina Obichukwu (xTc). Try the interactive demo and read the case study."
+    },
+    "echomind": {
+      "title": "EchoMind | Private journaling and mood app by David Obichukwu",
+      "description": "EchoMind is a private Android app for journaling and tracking how you feel, designed and built in Flutter by David Obichukwu (xTc). Case study, screenshots, features and MVP status."
+    },
+    "haunting": {
+      "title": "Haunting Mother | Multiplayer horror puzzle game on Roblox by David Obichukwu",
+      "description": "Haunting Mother is a published multiplayer horror puzzle game on Roblox, designed and built in Roblox Studio by David Obichukwu (xTc). Play it on Roblox and read the development case study."
+    },
+    "notfound": {
+      "title": "Page not found | xTc",
+      "description": "This page doesn't exist on David Obichukwu's portfolio."
+    }
+  },
+  "ui": {
+    "close": "Close",
+    "prev": "Previous image",
+    "next": "Next image",
+    "noVisual": "Visuals not published yet"
+  },
+  "pitchit": {
+    "frameTitle": "PitchIT interactive demo",
+    "loadErr": "The demo could not start here. Try again, or open it full screen."
+  },
+  "play": {
+    "yourMove": "Your move. You are X.",
+    "thinking": "The machine is thinking…",
+    "win": "You win. Nicely played.",
+    "lose": "The machine wins this one.",
+    "draw": "A draw. Nobody leaves an echo.",
+    "cell": "Square"
+  },
+  "contact": {
+    "errFields": "Please fill in every field, with a valid email address.",
+    "sending": "Sending…",
+    "ok": "Message sent. I'll reply by email soon.",
+    "err": "The message couldn't be sent from this page.",
+    "errMail": "Send it by email instead",
+    "copy": "Copy email",
+    "copied": "Copied"
+  },
+  "hero": {
+    "title": "Building ideas into <em>digital experiences.</em>"
+  },
+  "status": {
+    "ready": "Ready to launch",
+    "live": "Live",
+    "mvp": "MVP"
+  },
+  "cat": {
+    "web": "Websites",
+    "apps": "Apps",
+    "games": "Games",
+    "ai": "AI",
+    "uiux": "UI/UX",
+    "concepts": "Concepts"
+  }
+}

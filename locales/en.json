@@ -1,0 +1,1271 @@
+{
+  "about": {
+    "approachD2": "Start from a real problem, design the experience, then build and test until it holds up. AI speeds up drafting and debugging; I review, change and test what it produces.",
+    "approachT": "Approach",
+    "directionD": "Growing PitchIT, shipping the projects in progress, and joining teams and clients who want products built with care.",
+    "directionT": "Direction",
+    "fBased": "Based in",
+    "fBasedV": "Nigeria. Open to relocation and remote work",
+    "fFocus": "Focus",
+    "fFocusV": "Software, product design, AI assisted development, games",
+    "fLang": "Speaks",
+    "fLangV": "English (fluent), Igbo (native)",
+    "interestsD": "Marketplaces and the informal economy, calm and private software, games, creative tools and the systems behind them.",
+    "interestsT": "Interests",
+    "p1": "I'm David Somadina Obichukwu, known online as xTc. I build products from end to end: I find the idea, design how it should feel, and build it until it works.",
+    "p2b": "My route into building started on the practical side of technology. Installing systems, deploying products and supporting customers at Smile Tech taught me to start from the person using the product, and to make things that keep working when nobody is watching. Today I also evaluate AI output as an AI Data Annotation Specialist at Elevate Labs.",
+    "p3b": "I work across software, product design and games. I can read, write and debug code on my own, and I use AI coding assistants as tools, not as a replacement for understanding what ships. Toilet Wars, PitchIT, EchoMind and the client sites are very different products, but they come from the same habit: take an idea seriously enough to finish it.",
+    "quote": "“I build systems that leave echoes.”",
+    "title2": "From fixing systems to building products"
+  },
+  "badge": {
+    "built": "Built",
+    "mvp": "In MVP",
+    "planned": "Planned"
+  },
+  "c": {
+    "ai-land": {
+      "fact0": "AI and real estate technology, product concept",
+      "fact1": "Nothing yet",
+      "fact2": "Concept and product design",
+      "heroAlt": "Concept artwork: an isometric land plot with roads and buildings, a new structure being placed, a tools panel and scenario comparisons",
+      "lede": "A product concept for AI assisted land planning. Users would work with a virtual model of a piece of land, add, remove and reposition structures, and compare different development scenarios before anything is built. Nothing has been implemented yet; this is a concept I am learning toward.",
+      "s0": {
+        "h": "The problem and the opportunity",
+        "p0": "Plans on paper and static drawings are hard to imagine, and changing them is slow and expensive. Owners and small developers often decide what to build on a plot without seeing the alternatives side by side."
+      },
+      "s1": {
+        "h": "The concept",
+        "p0": "Put the land into an interactive 3D environment where ideas can be tried directly: place a structure, move it, remove it, and see the result immediately. Save each arrangement as a scenario and compare them."
+      },
+      "s2": {
+        "h": "Intended users",
+        "i0": "Land owners deciding what to do with a plot",
+        "i1": "Small developers comparing layouts",
+        "i2": "Designers presenting options to clients"
+      },
+      "s3": {
+        "d0": "Start from the plot's shape and size.",
+        "d1": "Drop in buildings, roads and green space from a library.",
+        "d2": "Move, rotate and remove elements, and see the layout change in 3D.",
+        "d3": "Save alternatives and compare them side by side.",
+        "h": "Proposed experience",
+        "t0": "Load the land",
+        "t1": "Add structures",
+        "t2": "Rearrange",
+        "t3": "Compare scenarios"
+      },
+      "s4": {
+        "f0": {
+          "d": "A navigable model of the plot.",
+          "t": "Interactive 3D land environment"
+        },
+        "f1": {
+          "d": "Direct manipulation of every element.",
+          "t": "Add, remove and reposition structures"
+        },
+        "f2": {
+          "d": "Saved layouts to compare.",
+          "t": "Development scenarios"
+        },
+        "f3": {
+          "d": "Clear views of what each scenario would look like.",
+          "t": "Visualising proposed arrangements"
+        },
+        "h": "Intended functionality",
+        "note": "None of these exist yet. They describe the concept."
+      },
+      "s5": {
+        "h": "Potential AI integration",
+        "i0": "Suggesting layouts that fit the plot",
+        "i1": "Checking a layout against simple rules such as access and spacing",
+        "i2": "Simulations that help compare scenarios"
+      },
+      "s6": {
+        "h": "Current learning and direction",
+        "p0": "I am learning the 3D and simulation side needed to prototype this, starting with interactive environments, which I already work with in Roblox Studio."
+      },
+      "s7": {
+        "h": "Future possibilities",
+        "i0": "Cost and material estimates per scenario",
+        "i1": "Sharing scenarios with clients",
+        "i2": "Use for estates and community planning"
+      },
+      "s8": {
+        "h": "About the image",
+        "p0": "The image at the top is concept artwork. There is no working platform or AI planning engine."
+      },
+      "tagline": "Try a plan before you build it."
+    },
+    "ai-studio": {
+      "fact0": "Creative technology, AI tools",
+      "fact1": "Python, FFmpeg",
+      "fact2": "Experimental processing engine",
+      "fact3": "Creative direction, product design and development",
+      "heroAlt": "Concept artwork of the studio: a footage bin, a cinematic preview, creative direction and style options, detected moments and a timeline synced to the beat",
+      "lede": "A personal AI powered creative studio that brings video editing, photo editing and audio work into one place. I give it footage and a creative direction, and it makes editing decisions with an understanding of what happens in the clip. Today an experimental Python and FFmpeg engine exists; the studio around it is still the plan.",
+      "s0": {
+        "h": "The problem",
+        "p0": "I want edits with taste and intention, from gaming montages and football highlights to cinematic, vlog, travel and promo cuts, without cutting every frame by hand and without depending on expensive AI subscriptions."
+      },
+      "s1": {
+        "f0": {
+          "d": "A Python and FFmpeg pipeline that cuts, sequences and renders clips automatically.",
+          "t": "Video processing engine"
+        },
+        "f1": {
+          "d": "Cuts that follow what actually happens, such as a kill or a goal, instead of random cuts.",
+          "t": "Event understanding"
+        },
+        "f2": {
+          "d": "Gaming montages, cinematic, vlog, promo, travel and football highlight edits.",
+          "t": "Edit styles"
+        },
+        "f3": {
+          "d": "Transitions and effects only where they help, with cuts placed on the beat of the music.",
+          "t": "Effects, transitions and music sync"
+        },
+        "f4": {
+          "d": "Audio placement, voiceover integration, and original audio kept by default.",
+          "t": "Voice and audio"
+        },
+        "f5": {
+          "d": "Photo edits in the same studio and the same visual styles.",
+          "t": "Photo editing"
+        },
+        "f6": {
+          "d": "A visual studio on top of the engine, deliberately left until the engine is right.",
+          "t": "Desktop interface"
+        },
+        "h": "Existing prototype and product vision",
+        "note": "Built means it runs today in the experimental engine. Everything else is the direction of the product."
+      },
+      "s2": {
+        "h": "Ground rules",
+        "i0": "Local first: it has to run on an everyday laptop",
+        "i1": "Outside AI only where it truly helps",
+        "i2": "Original audio stays unless I say otherwise",
+        "i3": "Built for my own creative work first"
+      },
+      "s3": {
+        "h": "What testing taught me",
+        "p0": "The first real test, a 30 second gaming clip with two kills, produced random cuts, effects that were not needed and missing original audio. That result set the direction: the studio has to understand events before it decides where to cut, and the original sound stays by default."
+      },
+      "s4": {
+        "h": "Stack"
+      },
+      "s5": {
+        "h": "About the image",
+        "p0": "The image at the top is concept artwork of the intended studio. No interface has been built yet."
+      },
+      "tagline": "Footage in, a considered edit out."
+    },
+    "anthony-studios": {
+      "cta0": "Visit the live site",
+      "cta1": "Source on GitHub",
+      "fact0": "Client business website",
+      "fact1": "HTML, CSS, JavaScript, GSAP",
+      "fact2": "macreamystudios.com",
+      "fact3": "Design and development",
+      "heroAlt": "The studio website home page with the studio name, Professional Music Recording Studio, and Our Services and Get Started buttons",
+      "lede": "A responsive business website for Macreamy Studios, the recording studio of Macreamy Anthony Studios in Awka, Anambra. It presents the studio, its services and its media, and it is live at macreamystudios.com.",
+      "s0": {
+        "h": "The brief",
+        "p0": "A recording studio sells a feeling before it sells hours in a booth. The site had to look as polished as the music, explain what the studio offers and make it easy to get in touch."
+      },
+      "s1": {
+        "h": "What the live site covers",
+        "i0": "A home page with the studio name, a one line promise and two clear calls to action",
+        "i1": "Services: professional recording, music production, mixing and mastering, session musicians, audio post production and music lessons",
+        "i2": "A media page with a studio gallery and the studio's music",
+        "i3": "About, contact and support pages with email, phone and the studio's location"
+      },
+      "s2": {
+        "h": "Design and build",
+        "p0": "A dark stage with warm accents and soft glows, like studio lights in a dim room. I built it with semantic HTML, responsive CSS and JavaScript, with GSAP for the motion so headings and sections arrive smoothly without slowing the page down."
+      },
+      "s3": {
+        "h": "Stack"
+      },
+      "s4": {
+        "alt0": "Macreamy Anthony Studios: Home",
+        "alt1": "Macreamy Anthony Studios: Services",
+        "alt2": "Macreamy Anthony Studios: Media and studio gallery",
+        "g0": "Home",
+        "g1": "Services",
+        "g2": "Media and studio gallery",
+        "h": "Screens",
+        "note": "Captured from an earlier build in the site's GitHub repository, which used the macAnthony Global name. The live site now carries the Macreamy Studios name."
+      },
+      "s5": {
+        "h": "Status",
+        "p0": "Completed and live at macreamystudios.com. I checked it on 14 November 2026."
+      },
+      "tagline": "A studio website that sounds like the studio."
+    },
+    "bookverse": {
+      "cta0": "Open the live preview",
+      "cta1": "Source on GitHub",
+      "fact0": "Web platform",
+      "fact1": "React 19, React Router 7, TypeScript, Supabase",
+      "fact2": "Hosted on Netlify",
+      "fact3": "Product owner, design direction and development",
+      "heroAlt": "BookVerse home page: Editor's pick, Frankenstein by Mary Shelley, free to read, with Read free online and Download free buttons",
+      "lede": "BookVerse is a digital book platform for readers who move between formats: novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web and light novels, audiobooks, poetry and non fiction. A first release is live as a preview. The reader, the full catalogue, Top Books and the writer studio are still being built.",
+      "s0": {
+        "h": "The problem",
+        "p0": "Readers no longer stay in one format. The same person reads a classic novel, follows a webtoon and listens to an audiobook, but each lives on a different site with its own account and its own way of keeping a library. Writers face the same split when they want to publish."
+      },
+      "s1": {
+        "h": "The vision",
+        "p0": "One structured place to discover books, keep a personal library and, later, write and publish next to the classics. Discovery is organised by format and genre, every book is honestly labelled with where it can be read, and readership numbers will only ever come from real readers."
+      },
+      "s2": {
+        "d0": "Browse by format, genre or author, or search, and open a book page that says plainly what you can read here, borrow or buy elsewhere.",
+        "d1": "Read free editions on BookVerse itself with reading settings for text, comics and audio.",
+        "d2": "Save books to a personal library and organise it.",
+        "d3": "Writers publish books, serials, poetry and comics from one author profile, with a name and handle that are theirs.",
+        "h": "Intended experience",
+        "t0": "Discover",
+        "t1": "Read",
+        "t2": "Keep a library",
+        "t3": "Write"
+      },
+      "s3": {
+        "f0": {
+          "d": "Novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web novels, light novels, audiobooks, poetry and non fiction, plus ways to read such as Free to read now.",
+          "t": "Explore menu by format"
+        },
+        "f1": {
+          "d": "Fiction and non fiction genres with short descriptions and sub genres such as epic fantasy, dystopian, crime and gothic.",
+          "t": "Genre pages"
+        },
+        "f10": {
+          "d": "Books and serials, comics and webtoons, drafts and scheduling, book pages, author profiles and readership.",
+          "t": "Writer studio and author spaces"
+        },
+        "f2": {
+          "d": "Public domain books list where to read or download them free, from sources such as Standard Ebooks and Project Gutenberg.",
+          "t": "Book pages with free editions"
+        },
+        "f3": {
+          "d": "Eight colour themes, accent colours and separate settings for text, comics and audio, with accessible reading fonts.",
+          "t": "Themes and reading settings"
+        },
+        "f4": {
+          "d": "Sign in with Supabase, with preferences saved to your account. Creating an account now reserves your name and handle for the writer studio.",
+          "t": "Accounts"
+        },
+        "f5": {
+          "d": "A page describing what the writer studio will do. It is a description, not a working editor.",
+          "t": "Write page"
+        },
+        "f6": {
+          "d": "Rankings will only use real reading data, so this section is not implemented yet.",
+          "t": "Top Books"
+        },
+        "f7": {
+          "d": "The starter shelf grows into a full catalogue with richer discovery.",
+          "t": "Full catalogue and discovery"
+        },
+        "f8": {
+          "d": "Read on BookVerse itself, using your reading settings.",
+          "t": "Built in reader"
+        },
+        "f9": {
+          "d": "Saving and organising books into a personal library.",
+          "t": "Personal library organisation"
+        },
+        "h": "What exists today and what is planned",
+        "note": "Built means it works in the live preview today. Planned items come in later milestones; the writer studio is planned for Milestone 5."
+      },
+      "s4": {
+        "d0": "Each milestone has to work on its own before the next starts, and pages for future features describe them without faking them.",
+        "d1": "The app is pre rendered into a static site on Netlify, so pages load without an application server.",
+        "d2": "Unit tests with Vitest, browser tests with Playwright and accessibility checks with axe.",
+        "d3": "A content security policy on every page, and a build check that stops secrets from reaching the browser.",
+        "h": "How it is built",
+        "t0": "Milestone by milestone",
+        "t1": "Static and fast",
+        "t2": "Tested",
+        "t3": "Secure by default"
+      },
+      "s5": {
+        "h": "Stack"
+      },
+      "s6": {
+        "alt0": "BookVerse: Home with the editor's pick",
+        "alt1": "BookVerse: Explore menu: formats, ways to read and genres",
+        "alt2": "BookVerse: Fiction genres",
+        "alt3": "BookVerse: Non fiction genres",
+        "alt4": "BookVerse: Write: what the studio will do",
+        "alt5": "BookVerse: Book page",
+        "g0": "Home with the editor's pick",
+        "g1": "Explore menu: formats, ways to read and genres",
+        "g2": "Fiction genres",
+        "g3": "Non fiction genres",
+        "g4": "Write: what the studio will do",
+        "g5": "Book page",
+        "h": "Screens",
+        "note": "Screenshots of the live preview."
+      },
+      "s7": {
+        "h": "Status",
+        "p0": "In development. The preview is live; the full catalogue, the reader, Top Books, library organisation and the writer studio come next, in that order of milestones."
+      },
+      "tagline": "One place for every kind of story."
+    },
+    "drawing-board": {
+      "fact0": "Product concept",
+      "fact2": "Product owner",
+      "lede": "A product concept for a spatial thinking tool for founders. Instead of a long chat thread, ideas live on a canvas where they can be arranged, connected and worked through with AI.",
+      "s0": {
+        "h": "The idea",
+        "p0": "Founders think in maps: markets, users, features and risks that all connect. Chat tools force that into a single line of messages. A canvas lets the structure of an idea show."
+      },
+      "s1": {
+        "h": "Directions being weighed",
+        "i0": "A sharp first version for indie founders",
+        "i1": "A canvas built on tldraw",
+        "i2": "Freemium pricing",
+        "i3": "Launching to communities such as Product Hunt and Indie Hackers"
+      },
+      "s2": {
+        "h": "Open questions",
+        "i0": "Which single founder task the first version should nail",
+        "i1": "How AI shows up on the canvas without cluttering it"
+      },
+      "tagline": "Think on a canvas, not in a chat."
+    },
+    "fintech": {
+      "fact0": "UI/UX and product exploration",
+      "fact1": "UI/UX design and front end, built with AI assistance",
+      "lede": "A series of interface explorations for financial products: banking dashboards, transaction layouts, account management, authentication and everyday workflows, built with AI assistance and designed for Nigerian users first. These are design and front end studies. I have not built a bank, a payment processor or production banking infrastructure.",
+      "s0": {
+        "h": "Why it matters",
+        "p0": "Money interfaces have to earn trust quickly. These studies are where I practise clear hierarchy, careful states, form validation and honest numbers."
+      },
+      "s1": {
+        "h": "What I explored",
+        "i0": "Banking dashboards and financial data presentation",
+        "i1": "Transaction layouts and histories",
+        "i2": "Account management",
+        "i3": "Authentication and user management interfaces",
+        "i4": "Form validation",
+        "i5": "Financial product UI/UX"
+      },
+      "s2": {
+        "f0": {
+          "d": "A deposit notification interface with separate user and admin panels, Naira formatting and simulated SMS alerts.",
+          "t": "Vault+ balance platform"
+        },
+        "f1": {
+          "d": "A Korean and English banking app mockup with sign in, a dashboard, alerts and a profile picture picker.",
+          "t": "Bilingual banking app"
+        },
+        "f2": {
+          "d": "No real money moves anywhere. A backend for Vault+ has not been built.",
+          "t": "Real backend"
+        },
+        "h": "The studies"
+      },
+      "tagline": "Interfaces that earn trust with money.",
+      "title": "FinTech and Banking Interfaces"
+    },
+    "personal-ai": {
+      "fact0": "Personal AI system",
+      "fact2": "Product owner and creative director",
+      "lede": "A personal AI system that acts as one central intelligence: coder, designer, researcher and email and productivity assistant, with its own animated desktop interface and voice, and later a mobile companion. It runs on my own laptop first and is built so that I stay in control of what it learns and what it can do.",
+      "s0": {
+        "h": "Why build it",
+        "p0": "Paid AI subscriptions add up, and each tool knows only a slice of my work. I want one system that knows my projects, runs locally where it can, and is not tied to a single provider."
+      },
+      "s1": {
+        "h": "Principles",
+        "i0": "Runs locally on my laptop first, using open weight and local models where practical",
+        "i1": "Modular, so any model or provider can be swapped",
+        "i2": "Learns only from sources I explicitly authorise",
+        "i3": "Every memory can be inspected, edited and deleted, and follows my approval rules",
+        "i4": "It can never expand its own permissions"
+      },
+      "s2": {
+        "h": "What it should do",
+        "i0": "Write and review code",
+        "i1": "Help with design work",
+        "i2": "Research",
+        "i3": "Handle email and day to day productivity",
+        "i4": "Talk by voice through its own animated desktop interface",
+        "i5": "Later, a mobile companion",
+        "i6": "Host the xTc Personal AI Studio for photo and video editing"
+      },
+      "s3": {
+        "d0": "How the system looks and feels before anything else.",
+        "d1": "The desktop command centre and how voice, chat and tools fit together.",
+        "d2": "Models, memory, permissions and how modules plug in.",
+        "d3": "Then built milestone by milestone, not as a rushed prototype.",
+        "h": "How it will be built",
+        "t0": "Visual identity",
+        "t1": "Interface architecture",
+        "t2": "Core system design",
+        "t3": "Milestones"
+      },
+      "tagline": "One assistant, on my machine, on my terms."
+    },
+    "princess-uc": {
+      "fact0": "Client small business website",
+      "fact1": "HTML, CSS, JavaScript",
+      "fact2": "After the client adds contact details and photos",
+      "fact3": "Design and development",
+      "heroAlt": "Princess UC Crafts home page: Adornments made for the day everyone remembers, with a gold fascinator in an arched frame",
+      "lede": "A website for Princess UC Crafts, Princess Uche Charity's handcraft studio: beaded necklaces and bridal sets, fascinators, hats, crowns, hand fans and stone work on clothing, all made to order. The site is built and waits on the business details and more photos before launch.",
+      "s0": {
+        "h": "The brief",
+        "p0": "Handmade work sells on detail: the beads, the shaping of a hat, the sparkle of stones on fabric. The site's job is to show that detail properly, explain how custom orders work and make it easy to start an order on WhatsApp."
+      },
+      "s1": {
+        "f0": {
+          "d": "Six collections, from beaded necklaces and bridal sets to stoning on clothes, each with a cover photo or a bead pattern until photos arrive.",
+          "t": "Collections"
+        },
+        "f1": {
+          "d": "Filter recent pieces by collection and open them in a full screen viewer with keyboard and swipe support.",
+          "t": "Filterable gallery with a viewer"
+        },
+        "f2": {
+          "d": "Featured pieces rotate in an arched frame, and stop rotating for visitors who prefer reduced motion.",
+          "t": "Hero slideshow"
+        },
+        "f3": {
+          "d": "Three levels of stone work and a four step order process, from sending inspiration to pickup or delivery.",
+          "t": "Stoning levels and ordering steps"
+        },
+        "f4": {
+          "d": "Every order button opens a ready written WhatsApp message, including the piece being viewed.",
+          "t": "WhatsApp ordering"
+        },
+        "f5": {
+          "d": "All business details, collections and photos live in one data file, so the owner can add pieces without touching the layout.",
+          "t": "One file to update"
+        },
+        "f6": {
+          "d": "The WhatsApp number, location, delivery areas, her story and more photos are still to be supplied.",
+          "t": "Launch content"
+        },
+        "h": "Features"
+      },
+      "s2": {
+        "h": "Stack"
+      },
+      "s3": {
+        "alt0": "Princess UC Crafts: Home",
+        "alt1": "Princess UC Crafts: Collections",
+        "alt2": "Princess UC Crafts: Gallery with filters",
+        "alt3": "Princess UC Crafts: Stone work levels",
+        "g0": "Home",
+        "g1": "Collections",
+        "g2": "Gallery with filters",
+        "g3": "Stone work levels",
+        "h": "Screens",
+        "note": "Captured from the finished build with the client's own product photos."
+      },
+      "s4": {
+        "h": "Status",
+        "p0": "Built and ready to launch once the client adds contact details, delivery areas and more photos. There is no public URL yet."
+      },
+      "tagline": "Handmade pieces, finally online."
+    },
+    "steal-the-moon": {
+      "fact0": "Multiplayer tycoon and heist game on Roblox",
+      "fact1": "Roblox Studio, Luau",
+      "fact2": "Concept, game design and development",
+      "heroAlt": "Concept artwork: floating player bases with team flags, a portal and a rocket heading for a huge moon",
+      "lede": "Steal the Moon is a multiplayer tycoon and heist game in development on Roblox. Players claim a base, collect resources, upgrade, defend what they have and rob other players, on the way to the biggest heist imaginable: the moon itself.",
+      "s0": {
+        "h": "The idea",
+        "p0": "Tycoon games are about growth: start small, build up, unlock more. Steal the Moon gives that growth a goal worth chasing and adds risk: what you collect can be stolen, so you have to defend as well as build."
+      },
+      "s1": {
+        "d0": "Each player claims a base of their own when they join.",
+        "d1": "Gather resources around the world and from your base to power the economy.",
+        "d2": "Spend what you collect on upgrades that make your base produce and protect more.",
+        "d3": "Protect your base from other players, or travel to theirs and take what you can.",
+        "d4": "Daily rewards and long term goals bring players back to repeat the loop.",
+        "h": "The gameplay loop",
+        "t0": "Claim a base",
+        "t1": "Collect",
+        "t2": "Upgrade",
+        "t3": "Defend and rob",
+        "t4": "Come back"
+      },
+      "s2": {
+        "h": "Systems being built",
+        "i0": "Claimable player bases and base ownership",
+        "i1": "Resource collection and a farm",
+        "i2": "Robbery and defence mechanics",
+        "i3": "Transport and portals between areas",
+        "i4": "A HUD, inventory and shops",
+        "i5": "A daily spin, a rarity mixer, the Moonlog and upgrades",
+        "i6": "Progression that rewards repeat play"
+      },
+      "s3": {
+        "h": "Monetisation principles",
+        "p0": "Robux products have to be things players genuinely want. No pay to win, no fake scarcity and no pressure tactics, and existing player data and balances are always preserved through updates."
+      },
+      "s4": {
+        "h": "Tools"
+      },
+      "s5": {
+        "h": "Visuals",
+        "p0": "There are no gameplay screenshots to publish yet. The image at the top is concept artwork made for this page to show the game's identity. It is not a screenshot and not gameplay."
+      },
+      "s6": {
+        "h": "Status",
+        "p0": "In development in Roblox Studio and not yet released."
+      },
+      "tagline": "Build up. Then take the moon."
+    },
+    "toilet-wars": {
+      "cta0": "Play on Roblox",
+      "fact0": "Multiplayer arena game on Roblox",
+      "fact1": "Roblox Studio, Luau",
+      "fact2": "1v1 up to 4v4, bots fill empty slots",
+      "fact3": "Concept, game direction, design and development",
+      "heroAlt": "Toilet Wars gameplay scene: a player with a golden plunger knocks a soaked rival at 187 percent toward the bowl, under the Plunger Brawler title",
+      "lede": "Toilet Wars is a team based multiplayer arena game on Roblox. Two teams, the Red Plungers and the Blue Scrubbers, soak each other with plungers, toilet paper launchers and flush bombs, then knock their rivals off the map. It is public on Roblox and I keep developing it.",
+      "s0": {
+        "h": "What it is",
+        "p0": "Roblox is a platform where millions of people play games made by independent creators, on phones, computers, tablets and consoles. Toilet Wars is one of those games, and anyone can join it from the Roblox app or website.",
+        "p1": "It is a knockback brawler: instead of losing health, players get soaked, and the aim is to send rivals flying off the arena or into the bowl. Matches are short, loud and team based, built for playing with friends."
+      },
+      "s1": {
+        "d0": "Press Play, choose a map and a team size from 1v1 to 4v4. Bots fill any empty slots so a match can always start.",
+        "d1": "Every hit with a plunger, a toilet paper roll or a flush bomb raises a rival's soak percentage, shown above their head.",
+        "d2": "Soaked players are easier to send flying. Push them off the map or into the bowl, while your team holds the objective.",
+        "d3": "Build up your Super Flush and release it for a blast that can turn a round.",
+        "d4": "Rounds feed daily rewards, quests, challenges and the Flush Pass, which unlock cosmetics.",
+        "h": "The core loop",
+        "t0": "Pick a battle",
+        "t1": "Soak your rivals",
+        "t2": "Knock them out",
+        "t3": "Charge the Super Flush",
+        "t4": "Earn and unlock"
+      },
+      "s10": {
+        "h": "Status",
+        "p0": "Public on Roblox since November 2026 and actively developed: new balance passes, content and fixes follow play testing."
+      },
+      "s2": {
+        "h": "Game modes",
+        "i0": "Throne Control",
+        "i1": "Flush Frenzy",
+        "i2": "Sinking Bowl",
+        "i3": "A Practice Range for new players"
+      },
+      "s3": {
+        "h": "Weapons and abilities",
+        "i0": "Plunger weapons for close range hits",
+        "i1": "Toilet paper launcher for range",
+        "i2": "Flush Bomb",
+        "i3": "Super Flush, a charged special ability"
+      },
+      "s4": {
+        "h": "Chaos events",
+        "i0": "Mega Flush",
+        "i1": "Low Gravity",
+        "i2": "Golden Plunger"
+      },
+      "s5": {
+        "h": "Five maps",
+        "i0": "The Bowl",
+        "i1": "Spin Cycle",
+        "i2": "Sewer Run",
+        "i3": "Shower Tower",
+        "i4": "The Gauntlet"
+      },
+      "s6": {
+        "h": "Progression without pay to win",
+        "i0": "Free daily rewards and login streaks",
+        "i1": "Daily quests, weekly challenges and achievements",
+        "i2": "Season 1 Flush Pass with 15 tiers of rewards",
+        "i3": "A daily featured shop with skins, hats, trails, titles, emotes and victory animations",
+        "i4": "Cosmetics never affect gameplay",
+        "i5": "Parties so friends can play together"
+      },
+      "s7": {
+        "d0": "The idea, the tone and the rules are mine: a silly theme with a competitive core, readable for younger players and deep enough to keep playing.",
+        "d1": "I planned the soak and knockback rules, the three modes, the chaos events, team sizes from 1v1 to 4v4 and how rewards should feel fair.",
+        "d2": "The game is scripted in Luau. I write and change code myself and use an AI coding assistant heavily to draft systems, debug and review, then I read, adjust and decide what ships.",
+        "d3": "Five obstacle course maps, a lobby with map and team size selection, and a HUD that shows soak percentages clearly on phones and computers.",
+        "d4": "Play sessions in Studio and on Roblox after each change, then balance passes on knockback, events and rewards.",
+        "h": "How I built it",
+        "t0": "Concept and direction",
+        "t1": "Systems design",
+        "t2": "Building in Roblox Studio",
+        "t3": "Arenas and interface",
+        "t4": "Test and refine"
+      },
+      "s8": {
+        "h": "Tools"
+      },
+      "s9": {
+        "alt0": "Toilet Wars: Knockback in action",
+        "alt1": "Toilet Wars: The maps and team sizes",
+        "alt2": "Toilet Wars: Cosmetic plungers, never pay to win",
+        "g0": "Knockback in action",
+        "g1": "The maps and team sizes",
+        "g2": "Cosmetic plungers, never pay to win",
+        "h": "Gallery",
+        "note": "These are the game's Roblox store images, made from in game scenes with title text added on top."
+      },
+      "tagline": "Flush or be flushed."
+    },
+    "zaga": {
+      "cta0": "Source on GitHub",
+      "fact0": "Client brand website and shop",
+      "fact1": "HTML, CSS, JavaScript, Python image tools",
+      "fact2": "After the client adds prices and contact details",
+      "fact3": "Design and development",
+      "heroAlt": "Zaga home page: Wear the crown, with a black hoodie carrying the ZA crest",
+      "lede": "The website for Zaga, a fashion house that designs, tailors and manufactures clothing: a ready to wear shop, bespoke tailoring and production for other brands. The site is built and waits on the brand's prices, contact details and story before launch.",
+      "s0": {
+        "h": "The brief",
+        "p0": "Zaga does three things: sells its own label, tailors pieces to measure and manufactures for other brands. The site had to present all three clearly and let customers order without a full online checkout."
+      },
+      "s1": {
+        "f0": {
+          "d": "Products across categories from tees and hoodies to headwear and bags, each in ten colours. Tap a swatch to see the piece in that colour.",
+          "t": "Shop with ten colours per piece"
+        },
+        "f1": {
+          "d": "Pick a colour and size in a quick view, then order through a ready written WhatsApp message.",
+          "t": "Quick view and ordering"
+        },
+        "f2": {
+          "d": "A four step flow, consult, measure, craft, fit and deliver, with a booking call to action.",
+          "t": "Bespoke tailoring"
+        },
+        "f3": {
+          "d": "Pattern making, sampling, cut and sew, logo printing, labels and tags, team and event uniforms.",
+          "t": "Manufacturing for brands"
+        },
+        "f4": {
+          "d": "Orders, fittings and production quotes in one form.",
+          "t": "Contact form"
+        },
+        "f5": {
+          "d": "Prices, the WhatsApp number, studio address, minimum order and the founder's story are placeholders until the client supplies them.",
+          "t": "Launch content"
+        },
+        "h": "Features"
+      },
+      "s2": {
+        "h": "One photo, ten colours",
+        "p0": "Only some colours were photographed. A set of Python tools cuts each garment from its background, finds logos and metal hardware, then renders the other colours from the real photo, keeping the folds, knit and monogram. Rendered colours carry a Preview badge so customers know which ones are photographs."
+      },
+      "s3": {
+        "h": "Design direction",
+        "p0": "Black and gold with large condensed headlines, quiet product photography and a light section for tailoring, so each of the three services has its own room."
+      },
+      "s4": {
+        "h": "Stack"
+      },
+      "s5": {
+        "alt0": "Zaga: Home",
+        "alt1": "Zaga: Shop",
+        "alt2": "Zaga: Bespoke tailoring",
+        "g0": "Home",
+        "g1": "Shop",
+        "g2": "Bespoke tailoring",
+        "h": "Screens",
+        "note": "Captured from the finished build. Prices and some contact details are still placeholders until launch."
+      },
+      "s6": {
+        "h": "Status",
+        "p0": "Built and ready to launch once the client adds prices, contact details and the brand story. There is no public URL yet."
+      },
+      "tagline": "Wear the crown."
+    }
+  },
+  "caps": {
+    "aiD2": "I write and change code myself and use AI coding assistants to move faster: drafting, debugging and reviewing. I read what they produce, fix it and test it. I also evaluate AI output professionally: RLHF, response evaluation and data annotation.",
+    "aiT": "AI assisted development",
+    "ctD": "Tools and interactive pieces where code meets taste: an editing studio, playful interfaces and this site itself.",
+    "ctT": "Creative technology",
+    "gameD": "Roblox experiences designed, scripted and published in Roblox Studio with Luau.",
+    "gameT": "Game development",
+    "lede": "Each one is backed by work on this page, linked so you can check.",
+    "pdD": "Research, flows and interfaces designed around the person using them, in Figma and in code.",
+    "pdT": "Product design",
+    "swD": "Web and mobile apps that hold up in real use, from a Flutter marketplace with a tested database to a live business website.",
+    "swT": "Software development",
+    "title2": "Five things I can build for you"
+  },
+  "card": {
+    "ai-land": {
+      "desc": "A concept for planning land in an interactive 3D space: add, move and remove structures, then compare scenarios."
+    },
+    "ai-studio": {
+      "desc": "A personal creative studio for AI assisted video and photo editing. The Python and FFmpeg engine runs; the full studio is the vision."
+    },
+    "anthony-studios": {
+      "desc": "The live website of Macreamy Studios, a music recording studio in Awka, Nigeria."
+    },
+    "bookverse": {
+      "desc": "A book and comics platform for discovering, reading and later publishing every kind of story. In development, with a live preview."
+    },
+    "drawing-board": {
+      "desc": "A spatial thinking tool for founders: lay out an idea on a canvas and think it through with AI."
+    },
+    "echomind": {
+      "desc": "A private Android journal for noticing how you really feel. No account, no internet."
+    },
+    "fintech": {
+      "desc": "UI/UX explorations for money products: dashboards, transactions, accounts, authentication and alerts."
+    },
+    "haunting-mother": {
+      "desc": "A published multiplayer horror memory game on Roblox. Study every room, then spot what changed."
+    },
+    "personal-ai": {
+      "desc": "A local first AI that works as coder, designer, researcher and assistant, on terms I control."
+    },
+    "pitchit": {
+      "desc": "A marketplace for every kind of work in Nigeria, with a demo you can use right here."
+    },
+    "princess-uc": {
+      "desc": "A website for a handmade adornments business: fascinators, hats, crowns, beads, hand fans and stoning on clothes."
+    },
+    "steal-the-moon": {
+      "desc": "A multiplayer tycoon and heist game on Roblox: claim a base, collect, defend and rob your way toward the moon."
+    },
+    "toilet-wars": {
+      "desc": "A competitive multiplayer knockback brawler on Roblox: Red Plungers against Blue Scrubbers, 1v1 up to 4v4."
+    },
+    "zaga": {
+      "desc": "A fashion house website with a shop where every piece comes in ten colours. Built, waiting on the client's final details."
+    }
+  },
+  "case": {
+    "ask": "Ask me about this project",
+    "conceptNote": "made for this page, not a screenshot",
+    "fact": {
+      "builtwith": "Built with",
+      "implemented": "Implemented",
+      "launch": "Launch",
+      "liveat": "Live at",
+      "livepreview": "Live preview",
+      "myrole": "My role",
+      "teams": "Teams",
+      "today": "Today",
+      "type": "Type"
+    },
+    "next": "Next project",
+    "noVisual": "No screenshots have been published for this project yet. They will appear here when they exist. Nothing in this case file is a mockup.",
+    "noVisualShort": "No screenshots yet. Nothing on this page is a mockup.",
+    "prev": "Previous project",
+    "visuals": "Visuals"
+  },
+  "cat": {
+    "ai": "AI",
+    "apps": "Apps",
+    "concepts": "Concepts",
+    "games": "Games",
+    "uiux": "UI/UX",
+    "web": "Websites"
+  },
+  "clients": {
+    "lede": "Websites I have designed and built for businesses, from a live recording studio site to two shops waiting on their owners' final details.",
+    "title": "Client websites"
+  },
+  "contact": {
+    "copied": "Copied",
+    "copy": "Copy email",
+    "email": "Your email",
+    "err": "The message couldn't be sent from this page.",
+    "errFields": "Please fill in every field, with a valid email address.",
+    "errMail": "Send it by email instead",
+    "lede": "Hiring, commissioning a product, or want to collaborate? Send a message and I will reply by email.",
+    "message": "Message",
+    "name": "Your name",
+    "ok": "Message sent. I'll reply by email soon.",
+    "send": "Send message",
+    "sending": "Sending…",
+    "title2": "Tell me what you want to build"
+  },
+  "echomind": {
+    "alt": {
+      "checkin": "EchoMind Check in screen asking what's here right now, with feelings to choose from",
+      "home": "EchoMind Home screen with the last feeling, Check in again and Write buttons, a row of feelings and today's prompt",
+      "insights": "EchoMind Insights screen with check in counts, days noted, your rhythm across the week and the feelings you recorded",
+      "journey": "EchoMind Journey screen: a timeline of today's feelings and writing, with filters for feelings, writing and saved moments",
+      "mind": "EchoMind Mind Space screen listing the moments you chose to keep",
+      "note": "EchoMind Check in screen with a New feeling button, an I'm not sure yet option and a note field asking what's behind this",
+      "own": "EchoMind sheet for creating a feeling of your own, with a name, an emoji, a colour and whether it usually feels pleasant, difficult or mixed",
+      "settings": "EchoMind Settings: Dusk, Dawn and Match phone themes, Reduce motion, your feelings, and a note that your data stays on this phone"
+    },
+    "cat": "Mobile application · Flutter",
+    "f": {
+      "aiD": "Optional AI features that help you spot patterns in your entries. You choose to turn them on, and the private core keeps working without them.",
+      "aiT": "AI reflections",
+      "checkinD": "Choose every feeling that fits, rate how strong it is and add a short note about what's behind it. If you can't name it yet, choose \"I'm not sure yet\".",
+      "checkinT": "Check in with your feelings",
+      "insightsD": "The last 7 or 30 days at a glance: how often you checked in, how many days you noted something, your daily rhythm and the feelings you named most. Patterns only appear once there is enough to show.",
+      "insightsT": "Insights",
+      "journeyD": "Everything you noted on one timeline, as it happened, with search and filters for feelings, writing and saved moments.",
+      "journeyT": "Journey",
+      "mindD": "Bookmark the moments you want to keep and find them together in one place.",
+      "mindT": "Mind Space",
+      "ownD": "Create a feeling with your own name, emoji and colour, and mark it as pleasant, difficult or mixed. Any feeling can be renamed, recoloured or hidden.",
+      "ownT": "Feelings of your own",
+      "privateD": "Everything is stored only on your phone, in EchoMind's private storage. There is no account and no internet connection, and your writing is never sent anywhere.",
+      "privateT": "Private by design",
+      "storeD": "Moving from the shared test build to a store release.",
+      "storeT": "Release on Google Play",
+      "themeD": "Deep evening tones, warm light paper, or match your phone. A Reduce motion switch is built in, and your phone's own setting is respected too.",
+      "themeT": "Dusk and Dawn themes",
+      "voiceD2": "Record up to 30 minutes with pause and resume, then listen back, add a title, note or feeling, and save or discard it. Interrupted recordings are recovered, and audio never leaves the phone.",
+      "voiceT": "Voice journaling",
+      "writeD": "Write freely, or start from a daily prompt such as \"What happened today?\".",
+      "writeT": "Writing and daily prompts"
+    },
+    "g": {
+      "checkin": "Check in",
+      "home": "Home",
+      "insights": "Insights",
+      "journey": "Journey",
+      "mind": "Mind Space",
+      "note": "Add a note",
+      "own": "Your own feeling",
+      "settings": "Settings"
+    },
+    "getApk": "Get the Android test build",
+    "kind": "Mobile app · Android MVP",
+    "p": {
+      "apkNote": "The test build is an Android APK shared through Google Drive. It is not on Google Play yet, so Android may ask you to allow installs from this source.",
+      "audience1": "People who want a private, easy way to reflect: students, busy professionals, and anyone who wants to see how their days really feel over time.",
+      "audience2": "EchoMind is a tool for reflecting on your own feelings. It is not a medical, diagnostic or therapy service.",
+      "feedback": "Send feedback",
+      "lede": "EchoMind is a journaling and mood app for Android. Check in with how you feel, write freely or from a daily prompt, and look back on everything in your Journey. All of it stays on your phone. There is no account, no subscription and no internet connection.",
+      "problem1": "Many people want to understand their moods but don't keep up with journaling. Writing takes effort, and most journaling apps want an account and keep your most personal thoughts in someone else's cloud.",
+      "problem2": "EchoMind lowers both barriers. Checking in takes a few taps, a daily prompt gives you somewhere to start, and nothing you record ever leaves your phone.",
+      "role": "Product design and development",
+      "shotsNote": "Screenshots from the current Android build in the Dusk theme. Select one to view it full size.",
+      "site": "Visit the EchoMind website",
+      "status": "MVP, in testing"
+    },
+    "s1D": "The core had to work offline, with no account, no subscription and no paid API. Every design decision was checked against that rule.",
+    "s1T": "Privacy as a rule, not a slogan",
+    "s2D": "Home opens on your last feeling, a row of feelings and today's prompt, so you can start with a single tap.",
+    "s2T": "Make checking in effortless",
+    "s3D": "Soft colour bubbles, a deep evening palette and gentle motion, with plain words throughout and a switch for anyone who wants less animation.",
+    "s3T": "Design for calm",
+    "s4D": "Built in Flutter and tested on a physical Android phone throughout, so it works well on everyday devices.",
+    "s4T": "Build and test on real hardware",
+    "s5D": "AI features are planned as an optional layer, so the journal stays useful and private even without them.",
+    "s5T": "Add AI on top, never underneath",
+    "summary": "Check in with every feeling that fits, write about your day and look back on your Journey. Everything stays on your phone, with no account and no internet connection.",
+    "tagOffline": "Works offline",
+    "tagline": "A private journal that helps you notice how you really feel."
+  },
+  "edu": {
+    "afs": {
+      "q": "Secondary education",
+      "when": "Mar 2018 to Jan 2020"
+    },
+    "cv2": "Download the full CV (PDF)",
+    "ipmc": {
+      "q2": "Higher Diploma in Software Engineering",
+      "when2": "Apr 2021 to Nov 2025"
+    },
+    "title": "Education",
+    "unizik": {
+      "q": "Undergraduate studies",
+      "when": "In progress"
+    }
+  },
+  "exp": {
+    "elevate": {
+      "b1": "Evaluate AI generated responses for accuracy, safety, relevance and quality.",
+      "b2": "Validate datasets, label text and annotate images to annotation guidelines and quality standards.",
+      "b3": "Identify inconsistencies and give feedback that supports AI model evaluation and improvement.",
+      "role": "AI Data Annotation Specialist",
+      "when": "Jan 2026 to present"
+    },
+    "free": {
+      "c1": "Designed and built client websites end to end: Macreamy Studios (live), Zaga and Princess UC Crafts (built, awaiting client content).",
+      "c2": "Responsive front end implementation in HTML, CSS and JavaScript, from layout and motion to ordering flows over WhatsApp.",
+      "c3": "UI/UX design, prototyping, testing and refinement with clients, plus Python image tooling for product photos.",
+      "org2": "Self employed, paid client work",
+      "role2": "Freelance Software Developer & Product Designer",
+      "when2": "Aug 2026 to present"
+    },
+    "smile": {
+      "n1": "Provided software and hardware support, troubleshooting technical issues for users and clients.",
+      "n2": "Supported product deployment and user onboarding.",
+      "n3": "Wrote technical documentation and supported customer facing systems and internal workflows.",
+      "n4": "Resolved user issues and improved the user experience through technical support and guidance.",
+      "place": "Lagos, Nigeria",
+      "role2": "IT & Product Technician",
+      "when2": "Jul 2018 to Dec 2020"
+    },
+    "title": "Experience"
+  },
+  "footer": {
+    "line": "Building ideas into digital experiences."
+  },
+  "haunting": {
+    "alt": {
+      "changed": "Haunting Mother gameplay: spotting what changed in a room and locking in an answer",
+      "explore": "Haunting Mother gameplay: exploring a house and picking up items",
+      "memorize": "Haunting Mother gameplay: memorizing a room before the lights change"
+    },
+    "cat": "Game development · Roblox",
+    "f": {
+      "atmoD": "Each house has its own look, from the farmhouse's worn timber to the Mother's red bedroom, lit by lanterns and candles.",
+      "atmoT": "Every house feels different",
+      "coopD": "Multiplayer rounds with private answers, so nobody can copy and every player is tested.",
+      "coopT": "Better with friends",
+      "mobileD": "Large touch controls and a clear HUD make it playable on mobile as well as desktop.",
+      "mobileT": "Built for phones too",
+      "puzzleD": "Players study a room, then have to notice what's different. Easy to learn, tense to master.",
+      "puzzleT": "Memory is the puzzle",
+      "surviveD": "A countdown, a candle meter and limited power ups such as Revive, Rewind and Tracker make every guess count.",
+      "surviveT": "Pressure from every side"
+    },
+    "kind": "Roblox game · Published",
+    "p": {
+      "b1": "Multiplayer rounds where each player locks in a private answer",
+      "b2": "Three house environments, with doors and interactive objects to search",
+      "b3": "Hunter behaviour that adds pressure while players explore",
+      "b4": "Lobby management and match progression from house to house",
+      "b5": "Gameplay variations so changes differ between runs",
+      "b6": "A player interface built for touch: timers, candle meter, power ups and the shop",
+      "b7": "Iterative testing and fixes after each play session",
+      "builtLede": "I designed the game and built it in Roblox Studio with Luau, writing and changing scripts myself and using an AI coding assistant to draft and debug, then testing every round in play sessions.",
+      "builtT": "What I built",
+      "capNote": "Captured inside the game on a phone. Select a shot to view it full size.",
+      "feedback": "Share feedback",
+      "game1": "Every house plays out in three phases. Explore it and pick up what you find. Memorize a room before the timer runs out. Then come back, tap whatever changed, and lock in your answer.",
+      "game2": "In multiplayer, each player locks in a private answer, so everyone has to trust their own memory. A candle meter, power ups and a shop inside the game add pressure and strategy to each run.",
+      "genre": "Horror, puzzle, memory",
+      "lede": "Haunting Mother is a multiplayer horror puzzle game on Roblox. Players explore three haunted houses, memorize each room against the clock, then have to spot what changed. Best played with friends, in the dark, with the sound up.",
+      "playNote": "Opens the experience on Roblox. You'll need a free Roblox account to play.",
+      "role": "Creator: design and development",
+      "status": "Published on Roblox"
+    },
+    "phase": {
+      "changed": "What changed?",
+      "changedD": "Tap the difference, then lock in your answer.",
+      "explore": "Explore",
+      "exploreD": "Search the house and collect items such as keys.",
+      "memorize": "Memorize",
+      "memorizeD": "Study the room while the countdown runs."
+    },
+    "play": "Play on Roblox",
+    "s1D": "Designed the loop of exploring, memorizing and spotting the change, the three houses and how difficulty builds from one to the next.",
+    "s1T": "Game design",
+    "s2D": "Built and furnished each house and tuned its lighting for atmosphere.",
+    "s2T": "World building in Roblox Studio",
+    "s3D": "Scripted the phases, timers, answer checking, items and multiplayer behaviour in Luau, Roblox's scripting language.",
+    "s3T": "Gameplay scripting",
+    "s4D": "Playtested in Studio and published the game as a public Roblox experience.",
+    "s4T": "Testing and publishing",
+    "s5D": "Designed the HUD: the phase card with timer and candles, item slots, the objective panel, the private answer panel and touch controls.",
+    "s5T": "Interface design",
+    "summary": "Three haunted houses, timed memory rounds, power ups and a HUD built for touch. Designed, scripted and published in Roblox Studio.",
+    "tagMulti": "Multiplayer",
+    "tagline": "A multiplayer horror memory game. Study every room, then spot what changed."
+  },
+  "hero": {
+    "capRole": "Founder and creative director, PitchIT",
+    "ctaContact": "Contact me",
+    "ctaCv": "Download CV",
+    "ctaWork": "Explore my work",
+    "handle": "xTc, building from Nigeria. Open to work.",
+    "lede2": "I'm David Somadina Obichukwu. I design and build websites, apps and Roblox games, writing code myself and using AI coding assistants to move faster. Two of my games are live on Roblox, and I build websites for clients.",
+    "logoAlt": "xTc Corp logo: silver xTc lettering with the words Creating, Building, Operating",
+    "portraitAlt": "Portrait of David Somadina Obichukwu",
+    "r1": "AI Assisted Software Developer",
+    "r2": "Product Builder",
+    "r3": "UI/UX Designer",
+    "r4": "Game Developer",
+    "scroll": "Scroll to the work",
+    "title": "Building ideas into <em>digital experiences.</em>"
+  },
+  "meta": {
+    "echomind": {
+      "description": "EchoMind is a private Android app for journaling and tracking how you feel, designed and built in Flutter by David Obichukwu (xTc). Case study, screenshots, features and MVP status.",
+      "title": "EchoMind | Private journaling and mood app by David Obichukwu"
+    },
+    "haunting": {
+      "description": "Haunting Mother is a published multiplayer horror puzzle game on Roblox, designed and built in Roblox Studio by David Obichukwu (xTc). Play it on Roblox and read the development case study.",
+      "title": "Haunting Mother | Multiplayer horror puzzle game on Roblox by David Obichukwu"
+    },
+    "home": {
+      "description": "David Somadina Obichukwu (xTc) is an AI assisted software developer, product builder, UI/UX designer and game developer from Nigeria. Work includes PitchIT, EchoMind and Haunting Mother.",
+      "title": "David Somadina Obichukwu (xTc) | Software Developer, Product Builder and Designer"
+    },
+    "notfound": {
+      "description": "This page doesn't exist on David Obichukwu's portfolio.",
+      "title": "Page not found | xTc"
+    },
+    "pitchit": {
+      "description": "PitchIT is a Flutter and Supabase marketplace for every kind of work in Nigeria, founded and designed by David Somadina Obichukwu (xTc). Try the interactive demo and read the case study.",
+      "title": "PitchIT | A marketplace for every kind of work in Nigeria, by David Somadina Obichukwu"
+    }
+  },
+  "nav": {
+    "about": "About",
+    "capabilities": "What I do",
+    "clients": "Client work",
+    "contact": "Contact",
+    "cv": "CV",
+    "home": "Home",
+    "playground": "Playground",
+    "projects": "Projects",
+    "work": "Work"
+  },
+  "nf": {
+    "home": "Go to the homepage",
+    "text": "The link may be old or mistyped. Everything that exists is one click away.",
+    "title": "This page left no echo."
+  },
+  "pitchit": {
+    "alt": {
+      "messages": "PitchIT Messages screen with one conversation per job",
+      "myJobs": "PitchIT My jobs screen with open jobs, offers and a team job with 1 of 3 workers hired",
+      "profile": "PitchIT Profile screen with the Hiring and Working switch, payments and disputes",
+      "setup": "PitchIT Set up your profile screen: no CV needed, choose to find people, find work or both",
+      "signIn": "PitchIT welcome screen: sign in with a Nigerian phone number, email or Google",
+      "splash": "PitchIT splash screen: Connecting people to real work"
+    },
+    "c1": "Post a job with landmarks and photos",
+    "c2": "Compare offers and hire",
+    "c3": "Fund the job and follow its progress",
+    "c4": "Confirm the work and leave a review",
+    "cat": "Digital marketplace · Product development",
+    "demoNote": "Runs right here. Sample data only, payments are simulated and nothing you type leaves your browser.",
+    "f": {
+      "adminD": "Users, jobs, disputes, categories and review moderation, with every admin action recorded.",
+      "adminT": "Admin panel",
+      "chatD": "One conversation per job and worker, with photos, read receipts and notifications.",
+      "chatT": "Realtime chat",
+      "findD": "Search, filters for category, budget, remote work and distance, and a Nearby map with price pins.",
+      "findT": "Discovery",
+      "locD": "GPS, a pin on the map or a typed place, with the main landmark, street or junction, building, written directions and reference photos.",
+      "locT": "Directions people understand",
+      "offerD": "Workers offer a price, availability and experience. Customers compare offers by recommended, lowest price or top rated, and team slots can never overfill.",
+      "offerT": "Offers and hiring",
+      "payD": "A clearly labelled simulated mode, plus Paystack test and live modes verified on the server.",
+      "payT": "Payments",
+      "postD": "13 sectors and 105 subcategories, plus your own category. Nine work arrangements, from one time and hourly to seasonal and emergency, and team jobs with several workers.",
+      "postT": "Posting any kind of job",
+      "privD": "Before funding, workers only see an approximate area. The exact pin unlocks for the hired worker after funding, and the database enforces it.",
+      "privT": "Location privacy",
+      "respD": "A bottom bar on phones, a side rail on tablets and desktops, and two pane layouts for jobs and messages.",
+      "respT": "Every screen size",
+      "trustD": "Reviews only after completion, phone and ID verification badges, reports, and disputes with evidence, an admin decision and one appeal.",
+      "trustT": "Trust and safety"
+    },
+    "frameTitle": "PitchIT interactive demo",
+    "g": {
+      "messages": "Messages",
+      "myJobs": "My jobs",
+      "profile": "Profile",
+      "setup": "Set up profile",
+      "signIn": "Welcome",
+      "splash": "Splash"
+    },
+    "jCustomer": "Customer journey",
+    "jWorker": "Worker journey",
+    "launch": "Try the live demo",
+    "loadErr": "The demo could not start here. Try again, or open it full screen.",
+    "loading": "Starting the demo…",
+    "motto": "Work is everywhere. Find it here.",
+    "openFull": "Open the demo full screen",
+    "p": {
+      "demoNote": "The demo is the real app running in demo mode: sample data held in your browser and clearly labelled simulated payments. No account is needed and nothing is sent to a server.",
+      "design1": "Warm, confident and plain spoken. A bright orange on soft cream, rounded Plus Jakarta Sans type and large touch targets, so the app feels friendly on a cheap phone in bright sunlight.",
+      "design2": "The words matter as much as the visuals. Screens say Find work and Hire someone, not marketplace jargon, and every money step says clearly when a payment is simulated.",
+      "designT": "Design direction",
+      "featNote": "Everything listed here is built and can be tried in the demo, except live payments, which need a real backend.",
+      "journeysD": "The same account can hire and work. A Hiring and Working switch changes the whole navigation to fit the role.",
+      "journeysT": "Two journeys, one account",
+      "lede": "PitchIT is a marketplace for every kind of work in Nigeria: farm hands, fish traders, market help, artisans, movers, cleaners, errands and professionals. People who need work done post a job. People who can do it send offers. The customer funds the agreed amount before the work starts.",
+      "opp1": "Most work in Nigeria never appears on a job board. It happens through word of mouth, at the market, on the farm and by the roadside.",
+      "opp2": "That shaped the product. Nobody needs a CV to sign up. Locations are described the way people actually give directions, by landmark, junction and building. And the app has to stay light enough for everyday phones and patchy connections.",
+      "oppT": "The opportunity",
+      "platform": "Android and web, with layouts for phone, tablet and desktop",
+      "processT": "Process and quality",
+      "rls": "Row level security",
+      "role": "Founder and creative director",
+      "seeJourneys": "See how it works",
+      "shotsNote": "Screenshots from the Android build. Select one to view it full size.",
+      "site": "Visit the PitchIT website",
+      "src": "Figures from the NBS Nigeria Labour Force Survey for Q2 2024, as reported by",
+      "stackT": "Stack",
+      "stat1": "of employment is informal",
+      "stat2": "of working people are self employed",
+      "stat3": "sectors of work covered by PitchIT, with 105 categories",
+      "status": "Working demo. Not yet launched to the public",
+      "status1": "A working product in demo mode, not yet launched to the public.",
+      "status2": "The next steps are connecting the production backend, live payments and a first group of real customers and workers.",
+      "t1": "Agreed",
+      "t2": "Funded",
+      "t3": "Started",
+      "t4": "Done",
+      "t5": "Confirmed",
+      "timeline": "Job timeline"
+    },
+    "s1D": "Started from how work is found and described in Nigeria, which led to the sector list, landmark directions and the no CV sign up.",
+    "s1T": "Research first",
+    "s2D": "Privacy, slot limits and funding are enforced by Postgres row level security, not just hidden in the interface.",
+    "s2T": "Rules in the database",
+    "s3D": "More than 50 security and workflow checks on a real Postgres 16 database, plus unit and widget tests for sign in, posting, offers, hiring and funding.",
+    "s3T": "Tested like a real product",
+    "s4D": "Continuous integration analyses the code, runs the tests, takes screenshots at four sizes and builds the web app and the Android APK.",
+    "s4T": "Built on every change",
+    "s5D": "Without backend keys the app runs in demo mode, which is the version embedded on this page.",
+    "s5T": "A demo anyone can open",
+    "screensLabel": "Screens",
+    "stop": "Close the demo",
+    "summary": "A marketplace that connects people who need work done with the people who do it, across 13 sectors, from farming and fishing to trades, errands and professional services. It is built for how work really happens in Nigeria: directions from landmarks instead of street addresses, and jobs funded before the work begins.",
+    "tagChat": "Realtime chat",
+    "w1": "Discover jobs nearby",
+    "w2": "Send an offer",
+    "w3": "Chat and get directions",
+    "w4": "Finish, get paid and build a reputation"
+  },
+  "pj": {
+    "approach": "How I built it",
+    "audience": "Who it's for",
+    "back": "Back to all projects",
+    "builtWith": "Built with",
+    "contribution": "My contribution",
+    "features": "Features",
+    "featuresNote": "What's in the current build, and what's planned next.",
+    "gameplay": "Gameplay",
+    "genre": "Genre",
+    "nextEcho": "Next: EchoMind",
+    "nextHaunt": "Next: Haunting Mother",
+    "nextPitchit": "Next: PitchIT",
+    "pillars": "Design pillars",
+    "platform": "Platform",
+    "problem": "The problem",
+    "role": "My role",
+    "screens": "Screens",
+    "status": "Status",
+    "theGame": "The game"
+  },
+  "play": {
+    "board": "Game board",
+    "brands": "Brand identities for Navis, Evergreen, Confess and Amora",
+    "brandsCat": "Branding",
+    "cell": "Square",
+    "draw": "A draw. Nobody leaves an echo.",
+    "draws": "Draws",
+    "earlierT": "Earlier builds",
+    "easy": "Easy",
+    "echoBtn": "Send an echo",
+    "echoD": "Every dot behind this page reacts to you. Click any empty space, or send an echo from here and watch it travel.",
+    "echoT": "The background is listening",
+    "hard": "Hard",
+    "lede": "Small things built for the joy of it, and the earlier work that taught me the basics.",
+    "level": "Difficulty",
+    "lose": "The machine wins this one.",
+    "machine": "Machine",
+    "new": "New game",
+    "thinking": "The machine is thinking…",
+    "title2": "Small experiments you can try on this page",
+    "tttD": "A small game from the first version of this site, rebuilt. Easy mode makes mistakes. Hard mode never loses.",
+    "tttT": "Noughts and crosses against the machine",
+    "win": "You win. Nicely played.",
+    "you": "You",
+    "yourMove": "Your move. You are X."
+  },
+  "projects": {
+    "items": {
+      "auth": {
+        "cat": "Software",
+        "title": "Authentication and user management"
+      },
+      "real-estate": {
+        "cat": "Web platform",
+        "title": "Real estate listing platform"
+      },
+      "saas-dashboard": {
+        "cat": "Web app",
+        "title": "SaaS dashboard application"
+      }
+    }
+  },
+  "skills": {
+    "ai2": "AI & automation",
+    "design": "Product design & UI/UX",
+    "frontend": "Frontend development",
+    "games": "Game development",
+    "mobile": "Mobile development",
+    "tools2": "Tools & more"
+  },
+  "stage": {
+    "completed": {
+      "lede": "Finished work that people can use or play today.",
+      "title": "Completed projects"
+    },
+    "concepts": {
+      "lede": "Ideas, design studies and early thinking. Nothing here is presented as a working product.",
+      "title": "Concepts and explorations"
+    },
+    "dev": {
+      "lede": "Products being built right now. Each page separates what exists today from what is planned.",
+      "title": "In development"
+    },
+    "open": "Open this list on its own page"
+  },
+  "status": {
+    "concept": "Concept",
+    "demo": "Working demo",
+    "dev": "In development",
+    "explore": "UI/UX exploration",
+    "live": "Live",
+    "liveRoblox": "Live on Roblox",
+    "mvp": "MVP",
+    "mvpTesting": "MVP in testing",
+    "prototype": "Prototype",
+    "published": "Published",
+    "ready": "Ready to launch"
+  },
+  "toilet": {
+    "alt": {
+      "action": "Toilet Wars: a player with a golden plunger knocks a soaked rival at 187 percent toward the bowl",
+      "cosmetics": "Toilet Wars cosmetic plungers: emotes, trails, hats and flush effects, cosmetics only and never pay to win",
+      "maps": "Toilet Wars maps: The Bowl, Spin Cycle, Shower Tower and the Plumbing Gauntlet, pick your battle from 1v1 to 4v4"
+    },
+    "cap": "Roblox store images made from in game scenes",
+    "cat": "Game development · Roblox",
+    "summary": "The Red Plungers and the Blue Scrubbers soak each other with plungers, toilet paper launchers and flush bombs, then knock their rivals off the map. Three modes, five maps, chaos events and a Super Flush, with rewards that are cosmetic only and never pay to win.",
+    "tagAi": "AI assisted development",
+    "tagline": "Flush or be flushed. A team knockback brawler, from 1v1 up to 4v4."
+  },
+  "ui": {
+    "caseStudy": "Read the case study",
+    "close": "Close",
+    "conceptArt": "Concept artwork",
+    "language": "Language",
+    "menu": "Menu",
+    "next": "Next image",
+    "noVisual": "Visuals not published yet",
+    "playRoblox": "Play on Roblox",
+    "prev": "Previous image",
+    "skip": "Skip to content",
+    "tech": "Technologies",
+    "toTop": "Back to top",
+    "toggleTheme": "Switch colour theme"
+  },
+  "work": {
+    "ledeFeatured2": "Two games live on Roblox, a marketplace with a demo that runs on this page, and a private journal in testing on Android.",
+    "ledeStages": "Completed work first, then products in development, then concepts. Each card says what kind of project it is.",
+    "stages": "Project stages",
+    "titleFeatured3": "Four products you can play or try today",
+    "titleStages": "Every project, by how far along it is"
+  }
+}

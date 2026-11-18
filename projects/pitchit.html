@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="pitchit">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PitchIT | A marketplace for every kind of work in Nigeria, by David Somadina Obichukwu</title>
+  <meta name="description" content="PitchIT is a Flutter and Supabase marketplace for every kind of work in Nigeria, founded and designed by David Somadina Obichukwu (xTc). Try the interactive demo and read the case study.">
+  <meta name="author" content="David Somadina Obichukwu">
+  <link rel="canonical" href="https://xtcdev.netlify.app/projects/pitchit">
+  <meta name="theme-color" content="#0a0e1a">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="xTc | David Somadina Obichukwu">
+  <meta property="og:title" content="PitchIT | Work is everywhere. Find it here.">
+  <meta property="og:description" content="Case study and interactive demo: a marketplace for every kind of work in Nigeria, built with Flutter, Supabase and Paystack.">
+  <meta property="og:url" content="https://xtcdev.netlify.app/projects/pitchit">
+  <meta property="og:image" content="https://xtcdev.netlify.app/assets/og/og-pitchit.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xtcdev.netlify.app/assets/og/og-pitchit.png">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Manrope:wght@400;500;600;700&family=Tektur:wght@700;800&family=Plus+Jakarta+Sans:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js', 'no-loader');
+      try {
+        var t = localStorage.getItem('xtc-theme');
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        d.setAttribute('data-theme', t);
+      } catch (e) { d.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PitchIT",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Android, Web",
+    "description": "A marketplace for every kind of work in Nigeria. Working demo with sample data and simulated payments.",
+    "screenshot": "https://xtcdev.netlify.app/assets/img/pitchit/sign-in.webp",
+    "author": { "@type": "Person", "name": "David Somadina Obichukwu", "url": "https://xtcdev.netlify.app/" },
+    "url": "https://xtcdev.netlify.app/projects/pitchit"
+  }
+  </script>
+</head>
+<body class="page-pitchit">
+  <a class="skip" href="#main" data-i18n="ui.skip">Skip to content</a>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <canvas class="echo-field" id="echo-field" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="../index.html" aria-label="xTc, home">
+        <span class="brand__mark" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <span class="brand__name">David Obichukwu</span>
+      </a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <div class="navdd">
+          <button class="navdd__btn is-active" type="button" aria-expanded="false" aria-controls="navdd-menu" aria-haspopup="true"><span data-i18n="nav.projects">Projects</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-chevron"/></svg></button>
+          <ul class="navdd__menu" id="navdd-menu" role="menu"><li><a href="../projects/completed.html" role="menuitem"><span class="stage-dot stage-dot--completed" aria-hidden="true"></span><span data-i18n="stage.completed.title">Completed projects</span><span class="navdd__n">3</span></a></li><li><a href="../projects/in-development.html" role="menuitem"><span class="stage-dot stage-dot--dev" aria-hidden="true"></span><span data-i18n="stage.dev.title">In development</span><span class="navdd__n">7</span></a></li><li><a href="../projects/concepts.html" role="menuitem"><span class="stage-dot stage-dot--concepts" aria-hidden="true"></span><span data-i18n="stage.concepts.title">Concepts and explorations</span><span class="navdd__n">4</span></a></li><li><a href="../index.html#clients" role="menuitem"><span class="stage-dot stage-dot--client" aria-hidden="true"></span><span data-i18n="nav.clients">Client work</span><span class="navdd__n">3</span></a></li></ul>
+        </div>
+        <a href="../index.html#capabilities" data-i18n="nav.capabilities">What I do</a>
+        <a href="../index.html#about" data-i18n="nav.about">About</a>
+        <a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a>
+        <a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <div class="lang">
+          <label class="sr-only" for="lang-select" data-i18n="ui.language">Language</label>
+          <svg class="lang__icon" aria-hidden="true"><use href="../assets/img/icons.svg#i-globe"/></svg>
+          <select id="lang-select" class="lang__select"></select>
+        </div>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" data-i18n-attr="aria-label:ui.toggleTheme" aria-label="Switch colour theme">
+          <svg class="i-sun" aria-hidden="true"><use href="../assets/img/icons.svg#i-sun"/></svg>
+          <svg class="i-moon" aria-hidden="true"><use href="../assets/img/icons.svg#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-attr="aria-label:ui.menu" aria-label="Menu">
+          <svg class="i-menu" aria-hidden="true"><use href="../assets/img/icons.svg#i-menu"/></svg>
+          <svg class="i-close" aria-hidden="true"><use href="../assets/img/icons.svg#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="pj-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><a href="../index.html#work" data-i18n="nav.work">Work</a><span aria-hidden="true">/</span><span aria-current="page">PitchIT</span></nav>
+        <div class="pj-hero__grid">
+          <div>
+            <p class="feature__kind" data-i18n="pitchit.cat">Digital marketplace · Product development</p>
+            <h1 class="pj-title pj-title--pitchit">Pitch<span>IT</span></h1>
+            <p class="pj-tagline" data-i18n="pitchit.motto">Work is everywhere. Find it here.</p>
+            <p class="pj-lede" data-i18n="pitchit.p.lede">PitchIT is a marketplace for every kind of work in Nigeria: farm hands, fish traders, market help, artisans, movers, cleaners, errands and professionals. People who need work done post a job. People who can do it send offers. The customer funds the agreed amount before the work starts.</p>
+            <div class="pj-actions">
+              <a class="btn btn--pitchit" href="../demo/pitchit/index.html" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-external"/></svg><span data-i18n="pitchit.openFull">Open the demo full screen</span></a>
+              <a class="btn btn--ghost" href="https://pitchit-ng.netlify.app/" target="_blank" rel="noopener"><span data-i18n="pitchit.p.site">Visit the PitchIT website</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-external"/></svg></a>
+              <a class="btn btn--quiet" href="#journeys" data-i18n="pitchit.p.seeJourneys">See how it works</a>
+            </div>
+            <p class="pj-note" data-i18n="pitchit.p.demoNote">The demo is the real app running in demo mode: sample data held in your browser and clearly labelled simulated payments. No account is needed and nothing is sent to a server.</p>
+          </div>
+          <div class="feature__visual">
+            <div class="demo-wrap" data-demo="../demo/pitchit/index.html">
+              <div class="demo">
+                <div class="demo__screen">
+                  <img class="is-on" src="../assets/img/pitchit/splash-400.webp" width="400" height="783" decoding="async" alt="PitchIT splash screen: Connecting people to real work" data-i18n-attr="alt:pitchit.alt.splash">
+                  <img src="../assets/img/pitchit/sign-in-400.webp" width="400" height="783" decoding="async" alt="PitchIT welcome screen: sign in with a Nigerian phone number, email or Google" data-i18n-attr="alt:pitchit.alt.signIn">
+                  <img src="../assets/img/pitchit/my-jobs-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT My jobs screen with open jobs, offers and a team job with 1 of 3 workers hired" data-i18n-attr="alt:pitchit.alt.myJobs">
+                  <div class="demo__loading" data-i18n="pitchit.loading">Starting the demo…</div>
+                  <div class="demo__launch">
+                    <button class="btn btn--pitchit demo__start" type="button"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-play"/></svg><span data-i18n="pitchit.launch">Try the live demo</span></button>
+                    <small data-i18n="pitchit.demoNote">Runs right here. Sample data only, payments are simulated and nothing you type leaves your browser.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="demo__dots" role="group" aria-label="Screens" data-i18n-attr="aria-label:pitchit.screensLabel"></div>
+              <div class="demo__bar"><button type="button" class="demo__stop" data-i18n="pitchit.stop">Close the demo</button><a href="../demo/pitchit/index.html" target="_blank" rel="noopener" data-i18n="pitchit.openFull">Open the demo full screen</a></div>
+            </div>
+          </div>
+        </div>
+        <dl class="pj-facts">
+          <div><dt data-i18n="pj.platform">Platform</dt><dd data-i18n="pitchit.p.platform">Android and web, with layouts for phone, tablet and desktop</dd></div>
+          <div><dt data-i18n="pj.builtWith">Built with</dt><dd>Flutter, Supabase, Paystack</dd></div>
+          <div><dt data-i18n="pj.status">Status</dt><dd data-i18n="pitchit.p.status">Working demo. Not yet launched to the public</dd></div>
+          <div><dt data-i18n="pj.role">My role</dt><dd data-i18n="pitchit.p.role">Founder and creative director</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pitchit.p.oppT">The opportunity</h2>
+        <div>
+          <p class="pj-strong" data-i18n="pitchit.p.opp1">Most work in Nigeria never appears on a job board. It happens through word of mouth, at the market, on the farm and by the roadside.</p>
+          <div class="stats">
+            <div><b>93%</b><span data-i18n="pitchit.p.stat1">of employment is informal</span></div>
+            <div><b>85.6%</b><span data-i18n="pitchit.p.stat2">of working people are self employed</span></div>
+            <div><b>13</b><span data-i18n="pitchit.p.stat3">sectors of work covered by PitchIT, with 105 categories</span></div>
+          </div>
+          <p class="pj-src"><span data-i18n="pitchit.p.src">Figures from the NBS Nigeria Labour Force Survey for Q2 2024, as reported by</span> <a href="https://nairametrics.com/2024/11/26/nbs-says-85-6-of-working-class-nigerians-are-self-employed/" target="_blank" rel="noopener">Nairametrics</a>.</p>
+          <p data-i18n="pitchit.p.opp2">That shaped the product. Nobody needs a CV to sign up. Locations are described the way people actually give directions, by landmark, junction and building. And the app has to stay light enough for everyday phones and patchy connections.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section" id="journeys">
+      <div class="wrap pj-section__grid">
+        <div>
+          <h2 data-i18n="pitchit.p.journeysT">Two journeys, one account</h2>
+          <p data-i18n="pitchit.p.journeysD">The same account can hire and work. A Hiring and Working switch changes the whole navigation to fit the role.</p>
+        </div>
+        <div>
+          <div class="two-col">
+            <div class="journey-card">
+              <h3 data-i18n="pitchit.jCustomer">Customer journey</h3>
+              <ol><li data-i18n="pitchit.c1">Post a job with landmarks and photos</li><li data-i18n="pitchit.c2">Compare offers and hire</li><li data-i18n="pitchit.c3">Fund the job and follow its progress</li><li data-i18n="pitchit.c4">Confirm the work and leave a review</li></ol>
+            </div>
+            <div class="journey-card">
+              <h3 data-i18n="pitchit.jWorker">Worker journey</h3>
+              <ol><li data-i18n="pitchit.w1">Discover jobs nearby</li><li data-i18n="pitchit.w2">Send an offer</li><li data-i18n="pitchit.w3">Chat and get directions</li><li data-i18n="pitchit.w4">Finish, get paid and build a reputation</li></ol>
+            </div>
+          </div>
+          <ol class="flow" aria-label="Job timeline" data-i18n-attr="aria-label:pitchit.p.timeline"><li data-i18n="pitchit.p.t1">Agreed</li><li data-i18n="pitchit.p.t2">Funded</li><li data-i18n="pitchit.p.t3">Started</li><li data-i18n="pitchit.p.t4">Done</li><li data-i18n="pitchit.p.t5">Confirmed</li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <div>
+          <h2 data-i18n="pj.features">Features</h2>
+          <p data-i18n="pitchit.p.featNote">Everything listed here is built and can be tried in the demo, except live payments, which need a real backend.</p>
+        </div>
+        <ul class="feat-list feat-list--grid">
+          <li><h3 data-i18n="pitchit.f.postT">Posting any kind of job</h3><p data-i18n="pitchit.f.postD">13 sectors and 105 subcategories, plus your own category. Nine work arrangements, from one time and hourly to seasonal and emergency, and team jobs with several workers.</p></li>
+          <li><h3 data-i18n="pitchit.f.locT">Directions people understand</h3><p data-i18n="pitchit.f.locD">GPS, a pin on the map or a typed place, with the main landmark, street or junction, building, written directions and reference photos.</p></li>
+          <li><h3 data-i18n="pitchit.f.privT">Location privacy</h3><p data-i18n="pitchit.f.privD">Before funding, workers only see an approximate area. The exact pin unlocks for the hired worker after funding, and the database enforces it.</p></li>
+          <li><h3 data-i18n="pitchit.f.findT">Discovery</h3><p data-i18n="pitchit.f.findD">Search, filters for category, budget, remote work and distance, and a Nearby map with price pins.</p></li>
+          <li><h3 data-i18n="pitchit.f.offerT">Offers and hiring</h3><p data-i18n="pitchit.f.offerD">Workers offer a price, availability and experience. Customers compare offers by recommended, lowest price or top rated, and team slots can never overfill.</p></li>
+          <li><h3 data-i18n="pitchit.f.payT">Payments</h3><p data-i18n="pitchit.f.payD">A clearly labelled simulated mode, plus Paystack test and live modes verified on the server.</p></li>
+          <li><h3 data-i18n="pitchit.f.chatT">Realtime chat</h3><p data-i18n="pitchit.f.chatD">One conversation per job and worker, with photos, read receipts and notifications.</p></li>
+          <li><h3 data-i18n="pitchit.f.trustT">Trust and safety</h3><p data-i18n="pitchit.f.trustD">Reviews only after completion, phone and ID verification badges, reports, and disputes with evidence, an admin decision and one appeal.</p></li>
+          <li><h3 data-i18n="pitchit.f.adminT">Admin panel</h3><p data-i18n="pitchit.f.adminD">Users, jobs, disputes, categories and review moderation, with every admin action recorded.</p></li>
+          <li><h3 data-i18n="pitchit.f.respT">Every screen size</h3><p data-i18n="pitchit.f.respD">A bottom bar on phones, a side rail on tablets and desktops, and two pane layouts for jobs and messages.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pitchit.p.designT">Design direction</h2>
+        <div>
+          <p class="pj-strong" data-i18n="pitchit.p.design1">Warm, confident and plain spoken. A bright orange on soft cream, rounded Plus Jakarta Sans type and large touch targets, so the app feels friendly on a cheap phone in bright sunlight.</p>
+          <p data-i18n="pitchit.p.design2">The words matter as much as the visuals. Screens say Find work and Hire someone, not marketplace jargon, and every money step says clearly when a payment is simulated.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pitchit.p.processT">Process and quality</h2>
+        <ol class="steps">
+          <li><h3 data-i18n="pitchit.s1T">Research first</h3><p data-i18n="pitchit.s1D">Started from how work is found and described in Nigeria, which led to the sector list, landmark directions and the no CV sign up.</p></li>
+          <li><h3 data-i18n="pitchit.s2T">Rules in the database</h3><p data-i18n="pitchit.s2D">Privacy, slot limits and funding are enforced by Postgres row level security, not just hidden in the interface.</p></li>
+          <li><h3 data-i18n="pitchit.s3T">Tested like a real product</h3><p data-i18n="pitchit.s3D">More than 50 security and workflow checks on a real Postgres 16 database, plus unit and widget tests for sign in, posting, offers, hiring and funding.</p></li>
+          <li><h3 data-i18n="pitchit.s4T">Built on every change</h3><p data-i18n="pitchit.s4D">Continuous integration analyses the code, runs the tests, takes screenshots at four sizes and builds the web app and the Android APK.</p></li>
+          <li><h3 data-i18n="pitchit.s5T">A demo anyone can open</h3><p data-i18n="pitchit.s5D">Without backend keys the app runs in demo mode, which is the version embedded on this page.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pitchit.p.stackT">Stack</h2>
+        <div>
+          <ul class="pills"><li>Flutter</li><li>Dart</li><li>Supabase</li><li>PostgreSQL</li><li data-i18n="pitchit.p.rls">Row level security</li><li>Edge Functions</li><li>Paystack</li><li>OpenStreetMap</li><li>GitHub Actions</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap">
+        <h2 style="margin-bottom:24px" data-i18n="pj.screens">Screens</h2>
+        <p class="pj-note" style="margin:-12px 0 24px" data-i18n="pitchit.p.shotsNote">Screenshots from the Android build. Select one to view it full size.</p>
+        <ul class="screens screens--6">
+          <li><a class="shot-link" href="../assets/img/pitchit/splash.webp" data-lightbox="pi"><img src="../assets/img/pitchit/splash-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT splash screen: Connecting people to real work" data-i18n-attr="alt:pitchit.alt.splash"></a><span class="screens__cap" data-i18n="pitchit.g.splash">Splash</span></li>
+          <li><a class="shot-link" href="../assets/img/pitchit/sign-in.webp" data-lightbox="pi"><img src="../assets/img/pitchit/sign-in-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT welcome screen: sign in with a Nigerian phone number, email or Google" data-i18n-attr="alt:pitchit.alt.signIn"></a><span class="screens__cap" data-i18n="pitchit.g.signIn">Welcome</span></li>
+          <li><a class="shot-link" href="../assets/img/pitchit/profile-setup.webp" data-lightbox="pi"><img src="../assets/img/pitchit/profile-setup-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT Set up your profile screen: no CV needed, choose to find people, find work or both" data-i18n-attr="alt:pitchit.alt.setup"></a><span class="screens__cap" data-i18n="pitchit.g.setup">Set up profile</span></li>
+          <li><a class="shot-link" href="../assets/img/pitchit/my-jobs.webp" data-lightbox="pi"><img src="../assets/img/pitchit/my-jobs-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT My jobs screen with open jobs, offers and a team job with 1 of 3 workers hired" data-i18n-attr="alt:pitchit.alt.myJobs"></a><span class="screens__cap" data-i18n="pitchit.g.myJobs">My jobs</span></li>
+          <li><a class="shot-link" href="../assets/img/pitchit/messages.webp" data-lightbox="pi"><img src="../assets/img/pitchit/messages-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT Messages screen with one conversation per job" data-i18n-attr="alt:pitchit.alt.messages"></a><span class="screens__cap" data-i18n="pitchit.g.messages">Messages</span></li>
+          <li><a class="shot-link" href="../assets/img/pitchit/profile.webp" data-lightbox="pi"><img src="../assets/img/pitchit/profile-400.webp" width="400" height="783" loading="lazy" decoding="async" alt="PitchIT Profile screen with the Hiring and Working switch, payments and disputes" data-i18n-attr="alt:pitchit.alt.profile"></a><span class="screens__cap" data-i18n="pitchit.g.profile">Profile</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-section__grid">
+        <h2 data-i18n="pj.status">Status</h2>
+        <div>
+          <p class="pj-strong" data-i18n="pitchit.p.status1">A working product in demo mode, not yet launched to the public.</p>
+          <p data-i18n="pitchit.p.status2">The next steps are connecting the production backend, live payments and a first group of real customers and workers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pj-section">
+      <div class="wrap pj-next">
+        <a class="btn btn--ghost" href="../index.html#work" data-i18n="pj.back">Back to all projects</a>
+        <a class="btn btn--primary" href="echomind.html"><span data-i18n="pj.nextEcho">Next: EchoMind</span><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark brand__mark--lg" aria-hidden="true"><b>x</b>T<b>c</b></span>
+        <p data-i18n="footer.line">Building ideas into digital experiences.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer"><a href="../projects/completed.html" data-i18n="stage.completed.title">Completed projects</a><a href="../projects/in-development.html" data-i18n="stage.dev.title">In development</a><a href="../projects/concepts.html" data-i18n="stage.concepts.title">Concepts and explorations</a><a href="../index.html#clients" data-i18n="nav.clients">Client work</a><a href="../cv/David_Somadina_Obichukwu_CV.pdf" download data-cv-link data-i18n="nav.cv">CV</a><a href="https://github.com/xTcDevs" target="_blank" rel="noopener">GitHub</a><a class="nav__cta" href="../index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <p class="footer__copy">© <span data-year>2026</span> David Somadina Obichukwu · xTc</p>
+    </div>
+  </footer>
+  <button class="to-top icon-btn" id="to-top" type="button" data-i18n-attr="aria-label:ui.toTop" aria-label="Back to top"><svg aria-hidden="true"><use href="../assets/img/icons.svg#i-up"/></svg></button>
+
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/echo-field.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>
