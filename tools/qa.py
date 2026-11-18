@@ -190,16 +190,24 @@ with sync_playwright() as p:
         pg.click(".hero__cta a[data-cv-link]")
     d = dl.value
     if d.suggested_filename != "David_Somadina_Obichukwu_CV.pdf": note(f"CV downloads as {d.suggested_filename}")
-    pdf = pathlib.Path(d.path()).read_bytes()
-    if not pdf.startswith(b"%PDF"): note("CV download is not a PDF")
     from pypdf import PdfReader
-    rd = PdfReader(d.path()); text = " ".join(pg_.extract_text() for pg_ in rd.pages)
-    print(f"  CV: {len(rd.pages)} pages, {len(text)} characters of selectable text, author={rd.metadata.get('/Author')}")
-    if "David Somadina Obichukwu" not in text or rd.metadata.get("/Author") != "David Somadina Obichukwu": note("CV name or metadata wrong")
-    if len(rd.pages) != 2: note("CV is not two pages")
+    pages, meta, text = 0, {}, ""
+    try:
+        pdf = pathlib.Path(d.path()).read_bytes()
+        if not pdf.startswith(b"%PDF"): note("CV download is not a PDF")
+        rd = PdfReader(d.path()); pages, meta = len(rd.pages), (rd.metadata or {})
+        text = " ".join(pg_.extract_text() for pg_ in rd.pages)
+    except (OSError, ValueError) as err:  # download missing or not a readable PDF
+        note(f"CV download could not be read: {err}")
+    print(f"  CV: {pages} pages, {len(text)} characters of selectable text, author={meta.get('/Author')}")
+    if "David Somadina Obichukwu" not in text or meta.get("/Author") != "David Somadina Obichukwu": note("CV name or metadata wrong")
+    if pages != 2: note("CV is not two pages")
     for bad in ("Martina", "Obitriku", "Bachelor"):
         if bad.lower() in text.lower(): note(f"CV contains {bad}")
-    site_text = " ".join(f.read_text(errors="ignore") for f in list(ROOT.glob("*.html")) + list((ROOT / "projects").glob("*.html")) + list((ROOT / "locales").glob("*.json")))
+    def read_or_note(f):
+        try: return f.read_text(errors="ignore")
+        except OSError as err: note(f"could not read {f}: {err}"); return ""
+    site_text = " ".join(read_or_note(f) for f in list(ROOT.glob("*.html")) + list((ROOT / "projects").glob("*.html")) + list((ROOT / "locales").glob("*.json")))
     for bad in ("Martina", "Obitriku", "Obuchukwu"):
         if bad in site_text: note(f"site contains incorrect name variant {bad}")
 
