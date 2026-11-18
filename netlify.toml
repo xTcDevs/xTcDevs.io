@@ -38,9 +38,21 @@
     Content-Disposition = "attachment; filename=\"David_Somadina_Obichukwu_CV.pdf\""
     Cache-Control = "public, max-age=0, must-revalidate"
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/assets/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
 [[headers]]
   for = "/locales/*"
   [headers.values]
