@@ -3,6 +3,7 @@
 import * as THREE from "three";
 import { SPOTS, ROOMS } from "./layout.js";
 import { textTexture, imageTexture, noiseTexture, IVORY, EMBER, MUTED, BLUE } from "./textures.js";
+import { mergeStatic } from "./world.js";
 
 const ROOT = "../";
 const GOLD = new THREE.MeshStandardMaterial({ color: 0xd8a63a, roughness: 0.28, metalness: 1, envMapIntensity: 1.2 });
@@ -371,6 +372,7 @@ export function buildExhibits(scene, mats, data, t) {
     }
     built.group.add(bi.group);
     const plaqueRedraw = plaque.redraw; plaque.redraw = () => { plaqueRedraw(); bi.redraw(); };
+    mergeStatic(built.group); // pedestals, frames and stands: one draw call per material
     const ex = place(p.id, built, plaque);
     ex.project = p;
     ex.kind = "project";

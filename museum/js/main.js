@@ -234,6 +234,8 @@ function loop() {
 // ------------------------------------------------------------------ entering and leaving
 async function enterMuseum({ tour = false, skipIntro = false, restore = null } = {}) {
   if (!app.webgl) { qualityNote(true); return showGallery(); }
+  // after a lost 3D context the old renderer is gone for good: start the museum afresh
+  if (app.dead) { setHash({ room: (restore && restore.room) || app.room || "entrance" }); location.reload(); return; }
   app.audio.tick();
   const ent = $("#entrance");
   ent.classList.add("is-leaving");

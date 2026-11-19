@@ -28,7 +28,8 @@ export function createControls(camera, canvas, opts) {
   // ------------------------------------------------------------------ keyboard
   const KEYMAP = { KeyW: "f", ArrowUp: "f", KeyS: "b", ArrowDown: "b", KeyA: "l", KeyD: "r", ArrowLeft: "tl", ArrowRight: "tr", ShiftLeft: "run", ShiftRight: "run", KeyQ: "tl", KeyE2: "" };
   function onKey(e, down) {
-    if (e.target && /INPUT|SELECT|TEXTAREA|BUTTON/.test(e.target.tagName) && e.code !== "Escape") return;
+    // typing in a field or choosing in a dropdown is not walking; a focused button is no reason to stop
+    if (e.target && /INPUT|SELECT|TEXTAREA/.test(e.target.tagName) && e.code !== "Escape") return;
     const k = KEYMAP[e.code];
     if (!k) return;
     if (!state.enabled) return;
@@ -62,7 +63,7 @@ export function createControls(camera, canvas, opts) {
   canvas.addEventListener("pointerdown", (e) => {
     if (!state.enabled || document.pointerLockElement === canvas) return;
     drag = { id: e.pointerId, x: e.clientX, y: e.clientY, moved: 0 };
-    canvas.setPointerCapture(e.pointerId);
+    try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* capture is a nicety; dragging still works */ }
   });
   canvas.addEventListener("pointermove", (e) => {
     if (!drag || drag.id !== e.pointerId) return;
@@ -88,7 +89,8 @@ export function createControls(camera, canvas, opts) {
       state.joy.x = (x * k) / R; state.joy.y = (y * k) / R;
     };
     base.addEventListener("pointerdown", (e) => {
-      id = e.pointerId; base.setPointerCapture(id);
+      id = e.pointerId;
+      try { base.setPointerCapture(id); } catch (err) { /* capture is a nicety; the joystick still works */ }
       const r = base.getBoundingClientRect(); cx = r.left + r.width / 2; cy = r.top + r.height / 2;
       state.joy.active = true; set(e.clientX - cx, e.clientY - cy); e.preventDefault();
     });

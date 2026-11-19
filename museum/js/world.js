@@ -9,6 +9,7 @@
 // Geometry is plain boxes and planes with world scaled UVs, so a handful of shared materials
 // cover the whole building and the scene stays light enough for phones.
 import * as THREE from "three";
+import { mergeGeometries } from "../vendor/BufferGeometryUtils.js";
 import { ROOMS, CORRIDORS } from "./layout.js";
 import { textTexture, imageTexture, IVORY, MUTED } from "./textures.js";
 
@@ -106,7 +107,30 @@ export function buildWorld(scene, mats, quality) {
     if (u) updaters.push(u);
   }
   for (const c of CORRIDORS) corridor(world, c, mats, byId);
+  for (const g of world.children) mergeStatic(g);
   return { group: world, update: (dt, time, still) => updaters.forEach((u) => u(dt, time, still)) };
+}
+
+// The architecture is hundreds of boxes and planes but only a handful of materials. Merging the
+// static ones into one mesh per material per room turns hundreds of draw calls into a few dozen,
+// which is what keeps phones smooth. Animated parts live in sub groups and are left alone.
+export function mergeStatic(group) {
+  const buckets = new Map();
+  for (const m of [...group.children]) {
+    if (!m.isMesh || !m.geometry.index) continue;
+    m.updateMatrix();
+    const geo = m.geometry.clone().applyMatrix4(m.matrix);
+    for (const name of Object.keys(geo.attributes)) if (!["position", "normal", "uv"].includes(name)) geo.deleteAttribute(name);
+    if (!buckets.has(m.material)) buckets.set(m.material, []);
+    buckets.get(m.material).push(geo);
+    group.remove(m); m.geometry.dispose();
+  }
+  for (const [mat, geos] of buckets) {
+    const merged = mergeGeometries(geos, false);
+    geos.forEach((gg) => gg.dispose());
+    if (!merged) continue;
+    const mesh = new THREE.Mesh(merged, mat); mesh.name = `${group.name}-merged`; group.add(mesh);
+  }
 }
 
 function corridor(world, c, mats) {
@@ -190,10 +214,13 @@ const ROOM = {
     const vaultGeo = new THREE.CylinderGeometry(span / 2, span / 2, len, 48, 1, true, -Math.PI / 2, Math.PI);
     const uv = vaultGeo.attributes.uv; for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) * 10, uv.getY(i) * len / 3);
     const vault = new THREE.Mesh(vaultGeo, new THREE.MeshStandardMaterial({ map: mats.ceilingPlaster.map, color: 0xf3ece0, roughness: 1, side: THREE.DoubleSide, emissive: 0x6b5a45, emissiveIntensity: 0.45 })); // skylight bounce
-    vault.rotation.x = Math.PI / 2; vault.scale.set(1, 1, r.vault / (span / 2)); vault.position.set(0, r.h, cz); g.add(vault);
-    // fill the half moons at both ends of the vault
+    // the half cylinder is built on the +z side of its axis; turning it by -90 degrees about x
+    // makes that half rise above the springing line (a vault), then it is flattened to r.vault
+    vault.rotation.x = -Math.PI / 2; vault.scale.set(1, 1, r.vault / (span / 2)); vault.position.set(0, r.h, cz); g.add(vault);
+    // fill the half moons at both ends of the vault (two sided: they are seen from the entrance too)
+    const lunetteMat = mats.plaster.clone(); lunetteMat.side = THREE.DoubleSide;
     for (const [z, rot] of [[r.z0 - 0.01, Math.PI], [r.z1 + 0.01, 0]]) {
-      const lun = new THREE.Mesh(new THREE.CircleGeometry(span / 2, 48, 0, Math.PI), mats.plaster); lun.scale.set(1, r.vault / (span / 2), 1); lun.position.set(0, r.h, z); lun.rotation.y = rot; g.add(lun);
+      const lun = new THREE.Mesh(new THREE.CircleGeometry(span / 2, 48, 0, Math.PI), lunetteMat); lun.scale.set(1, r.vault / (span / 2), 1); lun.position.set(0, r.h, z); lun.rotation.y = rot; g.add(lun);
     }
     // skylight along the crown, bronze ribs across the vault every bay
     add(g, 2.4, 0.04, len - 1, mats.warmLight, 0, r.h + r.vault - 0.06, cz);
