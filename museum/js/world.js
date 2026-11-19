@@ -183,16 +183,16 @@ export function buildSigns(scene, t) {
     signs.push({ redraw: () => tex.redraw(lines()) });
   };
   wall(5.6, 3.3, () => [
-    { text: t("entrance.kicker"), size: 0.095, weight: 700, color: "#ff6a3d", tracking: 0.18, upper: true, gap: 0.12, lh: 1.3 },
-    { text: t("opening.line"), size: 0.36, weight: 500, font: "serif", color: IVORY, gap: 0.16, lh: 1.08 },
-    { text: t("entrance.intro"), size: 0.13, weight: 500, color: MUTED, lh: 1.45 },
-  ], -8.93, -9, Math.PI / 2);
+    { text: t("entrance.kicker"), size: 0.12, weight: 700, color: "#ff6a3d", tracking: 0.18, upper: true, gap: 0.12, lh: 1.3 },
+    { text: t("opening.line"), size: 0.46, weight: 500, font: "serif", color: IVORY, gap: 0.16, lh: 1.08 },
+    { text: t("entrance.intro"), size: 0.17, weight: 500, color: MUTED, lh: 1.45 },
+  ], -8.7, -9, Math.PI / 2);
   wall(5.6, 3.3, () => [
-    { text: t("entrance.roomsT"), size: 0.095, weight: 700, color: "#ff6a3d", tracking: 0.18, upper: true, gap: 0.12 },
-    ...ROOMS.map((r) => ({ text: `${r.area}   ${t(`rooms.${r.id}.name`)}`, size: 0.17, weight: 500, font: "serif", color: IVORY, gap: 0.05 })),
+    { text: t("entrance.roomsT"), size: 0.12, weight: 700, color: "#ff6a3d", tracking: 0.18, upper: true, gap: 0.12 },
+    ...ROOMS.map((r) => ({ text: `${r.area}   ${t(`rooms.${r.id}.name`)}`, size: 0.24, weight: 500, font: "serif", color: IVORY, gap: 0.08 })),
     { text: "", size: 0.06, gap: 0.04 },
-    { text: t("entrance.help"), size: 0.105, weight: 500, color: MUTED, lh: 1.45 },
-  ], 8.93, -9, -Math.PI / 2);
+    { text: t("entrance.help"), size: 0.15, weight: 500, color: MUTED, lh: 1.45 },
+  ], 8.7, -9, -Math.PI / 2);
   // The way on: a small sign over each threshold, readable from the room before it.
   for (const c of CORRIDORS) {
     const l = () => [{ text: `→  ${t(`rooms.${c.to}.name`)}`, size: 0.13, weight: 600, color: IVORY, tracking: 0.05 }];

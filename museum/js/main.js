@@ -705,6 +705,12 @@ function wireUi() {
     const h = parseHash();
     if (h.view === "list" && app.mode !== "gallery") { closePanel(true); endTour(); closeSheets(); return showGallery(); }
     if (app.mode === "gallery" && (h.room || h.exhibit) && app.webgl) { closePanel(true); $("#gallery").hidden = true; document.body.classList.remove("is-gallery"); return enterMuseum({ skipIntro: true, restore: h }); }
+    if (!h.exhibit && (h.p || h.room) && app.ready && app.mode === "explore" && !app.tour) {
+      // A pasted room or position link: walk there (the address is rewritten as the visitor moves, which fires no event).
+      const r = ROOMS.find((q) => q.id === h.room);
+      const [x, z, yaw] = h.p || (r ? r.entry : [null]);
+      if (x != null) return travel(x, z, yaw || 0);
+    }
     if (h.exhibit && app.ready && app.mode === "explore") { const ex = app.exhibits.find((x) => x.id === h.exhibit); if (ex && app.inspecting !== ex) travel(ex.eye.x, ex.eye.z, 0, () => inspect(ex, { instant: true })); }
   });
 }
