@@ -25,7 +25,8 @@
     "conceptArt": "Concept artwork, not screenshots of a finished product.",
     "noImages": "No images yet.",
     "links": "Links",
-    "screenshotOf": "Image from {title}"
+    "screenshotOf": "Image from {title}",
+    "touchHint": "Drag to look around · use the joystick to walk · tap an exhibit to open it"
   },
   "entrance": {
     "museumName": "Museum of Ideas",
@@ -61,11 +62,31 @@
     "skip": "Skip intro"
   },
   "rooms": {
-    "entrance": { "area": "Room 01", "name": "The Entrance", "sub": "Start here. Walk ahead through the portal." },
-    "collection": { "area": "Room 02", "name": "Completed Works", "sub": "Games and apps that are live, published or in testing." },
-    "lab": { "area": "Room 03", "name": "The Laboratory", "sub": "Prototypes, concepts and work in development. Not finished products." },
-    "clients": { "area": "Room 04", "name": "Client Exhibition", "sub": "Websites built for real businesses, and what I can build for you." },
-    "creator": { "area": "Room 05", "name": "The Creator's Room", "sub": "The person behind the work, and how to reach him." }
+    "entrance": {
+      "area": "Room 01",
+      "name": "The Entrance",
+      "sub": "Start here. Walk ahead through the portal."
+    },
+    "collection": {
+      "area": "Room 02",
+      "name": "Completed Works",
+      "sub": "Games and apps that are live, published or in testing."
+    },
+    "lab": {
+      "area": "Room 03",
+      "name": "The Laboratory",
+      "sub": "Prototypes, concepts and work in development. Not finished products."
+    },
+    "clients": {
+      "area": "Room 04",
+      "name": "Client Exhibition",
+      "sub": "Websites built for real businesses, and what I can build for you."
+    },
+    "creator": {
+      "area": "Room 05",
+      "name": "The Creator's Room",
+      "sub": "The person behind the work, and how to reach him."
+    }
   },
   "status": {
     "published": "Published",
@@ -102,11 +123,26 @@
     "title": "What I can build for you",
     "lede": "Each capability is backed by work in this museum.",
     "clientWork": "Client work",
-    "software": { "t": "Software development", "d": "Web and mobile apps that hold up in real use, from a Flutter marketplace to a live business website." },
-    "product": { "t": "Product design", "d": "Research, flows and interfaces designed around the person using them, in Figma and in code." },
-    "ai": { "t": "AI assisted development", "d": "I write and change code myself and use AI coding assistants to move faster. I also evaluate AI output professionally." },
-    "games": { "t": "Game development", "d": "Roblox experiences designed, scripted and published in Roblox Studio with Luau." },
-    "creative": { "t": "Creative technology", "d": "Tools and interactive pieces where code meets taste, including this museum." }
+    "software": {
+      "t": "Software development",
+      "d": "Web and mobile apps that hold up in real use, from a Flutter marketplace to a live business website."
+    },
+    "product": {
+      "t": "Product design",
+      "d": "Research, flows and interfaces designed around the person using them, in Figma and in code."
+    },
+    "ai": {
+      "t": "AI assisted development",
+      "d": "I write and change code myself and use AI coding assistants to move faster. I also evaluate AI output professionally."
+    },
+    "games": {
+      "t": "Game development",
+      "d": "Roblox experiences designed, scripted and published in Roblox Studio with Luau."
+    },
+    "creative": {
+      "t": "Creative technology",
+      "d": "Tools and interactive pieces where code meets taste, including this museum."
+    }
   },
   "creator": {
     "founder": "Founder and creative director, PitchIT",
@@ -133,12 +169,33 @@
     "educationT": "Education",
     "skillsT": "Skills",
     "shippedT": "Shipped work",
-    "exp0": { "role": "Freelance Software Developer and Product Designer", "org": "Self employed, paid client work", "when": "Aug 2026 to present" },
-    "exp1": { "role": "AI Data Annotation Specialist", "org": "Elevate Labs", "when": "Jan 2026 to present" },
-    "exp2": { "role": "IT and Product Technician", "org": "Smile Tech, Lagos, Nigeria", "when": "Jul 2018 to Dec 2020" },
-    "edu0": { "what": "Undergraduate studies", "when": "In progress" },
-    "edu1": { "what": "Higher Diploma in Software Engineering", "when": "Apr 2021 to Nov 2025" },
-    "edu2": { "what": "Secondary education", "when": "Mar 2018 to Jan 2020" }
+    "exp0": {
+      "role": "Freelance Software Developer and Product Designer",
+      "org": "Self employed, paid client work",
+      "when": "Aug 2026 to present"
+    },
+    "exp1": {
+      "role": "AI Data Annotation Specialist",
+      "org": "Elevate Labs",
+      "when": "Jan 2026 to present"
+    },
+    "exp2": {
+      "role": "IT and Product Technician",
+      "org": "Smile Tech, Lagos, Nigeria",
+      "when": "Jul 2018 to Dec 2020"
+    },
+    "edu0": {
+      "what": "Undergraduate studies",
+      "when": "In progress"
+    },
+    "edu1": {
+      "what": "Higher Diploma in Software Engineering",
+      "when": "Apr 2021 to Nov 2025"
+    },
+    "edu2": {
+      "what": "Secondary education",
+      "when": "Mar 2018 to Jan 2020"
+    }
   },
   "skills": {
     "Frontend": "Frontend",
@@ -167,20 +224,51 @@
     "end": "Explore freely",
     "open": "Open details",
     "stepOf": "Stop {n} of {total}",
-    "s1": { "t": "Welcome", "d": "This museum holds the work of David Somadina Obichukwu, known as xTc. Five rooms run in a line. The tour stops at the main pieces; you can leave it at any time and walk on your own." },
-    "s2": { "t": "Completed Works", "d": "The second room holds work that is out in the world: games live on Roblox and apps you can try. Each installation has a plaque with its status." },
-    "s3": { "d": "A team brawler on Roblox, live and still being developed. The plunger is the weapon; knocking rivals off the map is the goal." },
-    "s4": { "d": "A published horror memory game on Roblox. A single candle stands for the haunted rooms players have to memorise." },
-    "s5": { "d": "A marketplace for every kind of work in Nigeria. The working demo runs in the browser, linked from the details." },
-    "s6": { "d": "A private Android journal in testing. Everything stays on the phone: no account, no internet." },
-    "s7": { "d": "A book and comics platform in development, with a live preview. Built, partly; the rest is clearly marked as still to come." },
-    "s8": { "t": "The Laboratory", "d": "Room three is for work that is not finished: games and tools in development, prototypes and concepts. Blue labels mark concepts and explorations." },
-    "s9": { "d": "A tycoon and heist game in development on Roblox. The images are concept artwork." },
-    "s10": { "d": "An AI assisted editing studio. The Python and FFmpeg engine exists; the studio around it is the plan." },
-    "s11": { "d": "A real client website, live for a recording studio in Awka. The other frames hold client sites that are built and waiting to launch." },
-    "s12": { "d": "Five things David can build for you, each backed by work in this museum." },
-    "s13": { "d": "The last room is about the person. This is a real photograph of David." },
-    "s14": { "d": "Email, GitHub, X and the CV are all here. Thank you for visiting." }
+    "s1": {
+      "t": "Welcome",
+      "d": "This museum holds the work of David Somadina Obichukwu, known as xTc. Five rooms run in a line. The tour stops at the main pieces; you can leave it at any time and walk on your own."
+    },
+    "s2": {
+      "t": "Completed Works",
+      "d": "The second room holds work that is out in the world: games live on Roblox and apps you can try. Each installation has a plaque with its status."
+    },
+    "s3": {
+      "d": "A team brawler on Roblox, live and still being developed. The plunger is the weapon; knocking rivals off the map is the goal."
+    },
+    "s4": {
+      "d": "A published horror memory game on Roblox. A single candle stands for the haunted rooms players have to memorise."
+    },
+    "s5": {
+      "d": "A marketplace for every kind of work in Nigeria. The working demo runs in the browser, linked from the details."
+    },
+    "s6": {
+      "d": "A private Android journal in testing. Everything stays on the phone: no account, no internet."
+    },
+    "s7": {
+      "d": "A book and comics platform in development, with a live preview. Built, partly; the rest is clearly marked as still to come."
+    },
+    "s8": {
+      "t": "The Laboratory",
+      "d": "Room three is for work that is not finished: games and tools in development, prototypes and concepts. Blue labels mark concepts and explorations."
+    },
+    "s9": {
+      "d": "A tycoon and heist game in development on Roblox. The images are concept artwork."
+    },
+    "s10": {
+      "d": "An AI assisted editing studio. The Python and FFmpeg engine exists; the studio around it is the plan."
+    },
+    "s11": {
+      "d": "A real client website, live for a recording studio in Awka. The other frames hold client sites that are built and waiting to launch."
+    },
+    "s12": {
+      "d": "Five things David can build for you, each backed by work in this museum."
+    },
+    "s13": {
+      "d": "The last room is about the person. This is a real photograph of David."
+    },
+    "s14": {
+      "d": "Email, GitHub, X and the CV are all here. Thank you for visiting."
+    }
   },
   "settings": {
     "sensitivity": "Look sensitivity",

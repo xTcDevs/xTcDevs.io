@@ -138,6 +138,10 @@ body.has-joy .prompt { left: auto; right: 16px; transform: none; }
   .inspect-hint { bottom: calc(72vh + 12px); }
   .hud__btn kbd { display: none; }
   .hud__room { font-size: .92rem; padding: 8px 12px; }
+  /* phones: room name on the first row, tools on the second, so they never collide */
+  .hud__tools { top: calc(max(14px, env(safe-area-inset-top)) + 50px); left: 14px; max-width: none; justify-content: flex-start; }
+  .hud__btn { min-height: 40px; padding: 0 12px; font-size: .8rem; }
+  .hud__hint { white-space: normal; text-align: center; width: max-content; max-width: calc(100vw - 32px); }
 }
 
 /* SHEETS (map, settings) */
@@ -198,3 +202,6 @@ body.is-inspecting .joy, body.is-touring .joy { opacity: 0 !important; pointer-e
    on phones the panel is a bottom sheet, so the card waits until it is closed. */
 body.is-touring.is-inspecting .tour { left: calc((100vw - min(520px, 100vw)) / 2); width: min(560px, calc(100vw - min(520px, 100vw) - 28px)); }
 @media (max-width: 900px) { body.is-touring.is-inspecting .tour { display: none; } }
+
+body.is-gallery #stage, body.is-gallery .fade { display: none; }
+body.has-joy .hud__hint { bottom: calc(max(26px, env(safe-area-inset-bottom)) + 190px); }

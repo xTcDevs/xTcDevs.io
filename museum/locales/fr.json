@@ -25,7 +25,8 @@
     "conceptArt": "Illustrations de concept, pas des captures d'un produit fini.",
     "noImages": "Pas encore d'images.",
     "links": "Liens",
-    "screenshotOf": "Image de {title}"
+    "screenshotOf": "Image de {title}",
+    "touchHint": "Faites glisser pour regarder · utilisez le joystick pour marcher · touchez une œuvre pour l'ouvrir"
   },
   "entrance": {
     "museumName": "Musée des Idées",
@@ -56,19 +57,57 @@
     "failedT": "Le musée n'a pas pu s'ouvrir",
     "failed": "Un problème est survenu pendant la construction du musée 3D. Vous pouvez parcourir les mêmes œuvres sous forme de liste ou ouvrir le portfolio Classique."
   },
-  "opening": { "line": "Bienvenue au Musée des Idées xTc", "skip": "Passer l'intro" },
+  "opening": {
+    "line": "Bienvenue au Musée des Idées xTc",
+    "skip": "Passer l'intro"
+  },
   "rooms": {
-    "entrance": { "area": "Salle 01", "name": "L'Entrée", "sub": "Commencez ici. Avancez à travers le portail." },
-    "collection": { "area": "Salle 02", "name": "Œuvres achevées", "sub": "Jeux et applications en ligne, publiés ou en test." },
-    "lab": { "area": "Salle 03", "name": "Le Laboratoire", "sub": "Prototypes, concepts et travaux en cours. Pas des produits finis." },
-    "clients": { "area": "Salle 04", "name": "Exposition clients", "sub": "Des sites construits pour de vraies entreprises, et ce que je peux construire pour vous." },
-    "creator": { "area": "Salle 05", "name": "La Salle du Créateur", "sub": "La personne derrière le travail, et comment la joindre." }
+    "entrance": {
+      "area": "Salle 01",
+      "name": "L'Entrée",
+      "sub": "Commencez ici. Avancez à travers le portail."
+    },
+    "collection": {
+      "area": "Salle 02",
+      "name": "Œuvres achevées",
+      "sub": "Jeux et applications en ligne, publiés ou en test."
+    },
+    "lab": {
+      "area": "Salle 03",
+      "name": "Le Laboratoire",
+      "sub": "Prototypes, concepts et travaux en cours. Pas des produits finis."
+    },
+    "clients": {
+      "area": "Salle 04",
+      "name": "Exposition clients",
+      "sub": "Des sites construits pour de vraies entreprises, et ce que je peux construire pour vous."
+    },
+    "creator": {
+      "area": "Salle 05",
+      "name": "La Salle du Créateur",
+      "sub": "La personne derrière le travail, et comment la joindre."
+    }
   },
   "status": {
-    "published": "Publié", "live": "En ligne", "demo": "Démo fonctionnelle", "mvp": "MVP en test", "ready": "Prêt à lancer",
-    "dev": "En développement", "prototype": "Prototype", "explore": "Exploration UI/UX", "concept": "Concept"
+    "published": "Publié",
+    "live": "En ligne",
+    "demo": "Démo fonctionnelle",
+    "mvp": "MVP en test",
+    "ready": "Prêt à lancer",
+    "dev": "En développement",
+    "prototype": "Prototype",
+    "explore": "Exploration UI/UX",
+    "concept": "Concept"
   },
-  "cats": { "games": "Jeux", "apps": "Applications", "web": "Sites web", "uiux": "UI/UX", "ai": "IA", "concepts": "Concepts", "client": "Travail client" },
+  "cats": {
+    "games": "Jeux",
+    "apps": "Applications",
+    "web": "Sites web",
+    "uiux": "UI/UX",
+    "ai": "IA",
+    "concepts": "Concepts",
+    "client": "Travail client"
+  },
   "links": {
     "caseStudy": "Lire l'étude de cas",
     "Try the demo": "Essayer la démo",
@@ -84,11 +123,26 @@
     "title": "Ce que je peux construire pour vous",
     "lede": "Chaque compétence s'appuie sur un travail exposé dans ce musée.",
     "clientWork": "Travail client",
-    "software": { "t": "Développement logiciel", "d": "Des applications web et mobiles qui tiennent à l'usage, d'une place de marché Flutter à un site d'entreprise en ligne." },
-    "product": { "t": "Design produit", "d": "Recherche, parcours et interfaces pensés pour la personne qui les utilise, dans Figma et dans le code." },
-    "ai": { "t": "Développement assisté par l'IA", "d": "J'écris et modifie le code moi même et j'utilise des assistants de code IA pour avancer plus vite. J'évalue aussi des réponses d'IA de façon professionnelle." },
-    "games": { "t": "Développement de jeux", "d": "Des expériences Roblox conçues, scriptées et publiées dans Roblox Studio avec Luau." },
-    "creative": { "t": "Technologie créative", "d": "Des outils et des pièces interactives où le code rencontre le goût, y compris ce musée." }
+    "software": {
+      "t": "Développement logiciel",
+      "d": "Des applications web et mobiles qui tiennent à l'usage, d'une place de marché Flutter à un site d'entreprise en ligne."
+    },
+    "product": {
+      "t": "Design produit",
+      "d": "Recherche, parcours et interfaces pensés pour la personne qui les utilise, dans Figma et dans le code."
+    },
+    "ai": {
+      "t": "Développement assisté par l'IA",
+      "d": "J'écris et modifie le code moi même et j'utilise des assistants de code IA pour avancer plus vite. J'évalue aussi des réponses d'IA de façon professionnelle."
+    },
+    "games": {
+      "t": "Développement de jeux",
+      "d": "Des expériences Roblox conçues, scriptées et publiées dans Roblox Studio avec Luau."
+    },
+    "creative": {
+      "t": "Technologie créative",
+      "d": "Des outils et des pièces interactives où le code rencontre le goût, y compris ce musée."
+    }
   },
   "creator": {
     "founder": "Fondateur et directeur créatif, PitchIT",
@@ -115,14 +169,42 @@
     "educationT": "Formation",
     "skillsT": "Compétences",
     "shippedT": "Travaux livrés",
-    "exp0": { "role": "Développeur logiciel et designer produit indépendant", "org": "Indépendant, missions clients rémunérées", "when": "Août 2026 à aujourd'hui" },
-    "exp1": { "role": "Spécialiste de l'annotation de données IA", "org": "Elevate Labs", "when": "Janv. 2026 à aujourd'hui" },
-    "exp2": { "role": "Technicien informatique et produit", "org": "Smile Tech, Lagos, Nigeria", "when": "Juil. 2018 à déc. 2020" },
-    "edu0": { "what": "Études de premier cycle", "when": "En cours" },
-    "edu1": { "what": "Diplôme supérieur en génie logiciel", "when": "Avr. 2021 à nov. 2025" },
-    "edu2": { "what": "Études secondaires", "when": "Mars 2018 à janv. 2020" }
+    "exp0": {
+      "role": "Développeur logiciel et designer produit indépendant",
+      "org": "Indépendant, missions clients rémunérées",
+      "when": "Août 2026 à aujourd'hui"
+    },
+    "exp1": {
+      "role": "Spécialiste de l'annotation de données IA",
+      "org": "Elevate Labs",
+      "when": "Janv. 2026 à aujourd'hui"
+    },
+    "exp2": {
+      "role": "Technicien informatique et produit",
+      "org": "Smile Tech, Lagos, Nigeria",
+      "when": "Juil. 2018 à déc. 2020"
+    },
+    "edu0": {
+      "what": "Études de premier cycle",
+      "when": "En cours"
+    },
+    "edu1": {
+      "what": "Diplôme supérieur en génie logiciel",
+      "when": "Avr. 2021 à nov. 2025"
+    },
+    "edu2": {
+      "what": "Études secondaires",
+      "when": "Mars 2018 à janv. 2020"
+    }
   },
-  "skills": { "Frontend": "Frontend", "Mobile": "Mobile", "Design": "Design", "AI": "IA", "Games": "Jeux", "Tools": "Outils" },
+  "skills": {
+    "Frontend": "Frontend",
+    "Mobile": "Mobile",
+    "Design": "Design",
+    "AI": "IA",
+    "Games": "Jeux",
+    "Tools": "Outils"
+  },
   "contact": {
     "title": "Prendre contact",
     "cta": "Travaillons ensemble",
@@ -136,30 +218,78 @@
     "form": "Formulaire de contact du portfolio Classique"
   },
   "tour": {
-    "prev": "Retour", "next": "Suivant", "finish": "Terminer", "end": "Explorer librement", "open": "Ouvrir les détails",
+    "prev": "Retour",
+    "next": "Suivant",
+    "finish": "Terminer",
+    "end": "Explorer librement",
+    "open": "Ouvrir les détails",
     "stepOf": "Étape {n} sur {total}",
-    "s1": { "t": "Bienvenue", "d": "Ce musée réunit le travail de David Somadina Obichukwu, connu sous le nom de xTc. Cinq salles se suivent. La visite s'arrête devant les pièces principales ; vous pouvez la quitter à tout moment et marcher librement." },
-    "s2": { "t": "Œuvres achevées", "d": "La deuxième salle présente le travail déjà dans le monde : des jeux en ligne sur Roblox et des applications à essayer. Chaque installation porte une plaque avec son statut." },
-    "s3": { "d": "Un jeu de bagarre en équipe sur Roblox, en ligne et toujours développé. La ventouse est l'arme ; faire tomber les rivaux de la carte est le but." },
-    "s4": { "d": "Un jeu d'horreur et de mémoire publié sur Roblox. Une seule bougie évoque les pièces hantées que les joueurs doivent mémoriser." },
-    "s5": { "d": "Une place de marché pour tous les types de travail au Nigeria. La démo fonctionnelle tourne dans le navigateur, accessible depuis les détails." },
-    "s6": { "d": "Un journal Android privé en test. Tout reste sur le téléphone : pas de compte, pas d'internet." },
-    "s7": { "d": "Une plateforme de livres et de bandes dessinées en développement, avec un aperçu en ligne. En partie construite ; le reste est clairement indiqué comme à venir." },
-    "s8": { "t": "Le Laboratoire", "d": "La troisième salle accueille le travail inachevé : jeux et outils en développement, prototypes et concepts. Les étiquettes bleues signalent les concepts et les explorations." },
-    "s9": { "d": "Un jeu de tycoon et de casse en développement sur Roblox. Les images sont des illustrations de concept." },
-    "s10": { "d": "Un studio de montage assisté par l'IA. Le moteur Python et FFmpeg existe ; le studio autour reste le projet." },
-    "s11": { "d": "Un vrai site client, en ligne pour un studio d'enregistrement à Awka. Les autres cadres montrent des sites clients construits et en attente de lancement." },
-    "s12": { "d": "Cinq choses que David peut construire pour vous, chacune appuyée par un travail de ce musée." },
-    "s13": { "d": "La dernière salle parle de la personne. Voici une vraie photographie de David." },
-    "s14": { "d": "E mail, GitHub, X et le CV sont ici. Merci de votre visite." }
+    "s1": {
+      "t": "Bienvenue",
+      "d": "Ce musée réunit le travail de David Somadina Obichukwu, connu sous le nom de xTc. Cinq salles se suivent. La visite s'arrête devant les pièces principales ; vous pouvez la quitter à tout moment et marcher librement."
+    },
+    "s2": {
+      "t": "Œuvres achevées",
+      "d": "La deuxième salle présente le travail déjà dans le monde : des jeux en ligne sur Roblox et des applications à essayer. Chaque installation porte une plaque avec son statut."
+    },
+    "s3": {
+      "d": "Un jeu de bagarre en équipe sur Roblox, en ligne et toujours développé. La ventouse est l'arme ; faire tomber les rivaux de la carte est le but."
+    },
+    "s4": {
+      "d": "Un jeu d'horreur et de mémoire publié sur Roblox. Une seule bougie évoque les pièces hantées que les joueurs doivent mémoriser."
+    },
+    "s5": {
+      "d": "Une place de marché pour tous les types de travail au Nigeria. La démo fonctionnelle tourne dans le navigateur, accessible depuis les détails."
+    },
+    "s6": {
+      "d": "Un journal Android privé en test. Tout reste sur le téléphone : pas de compte, pas d'internet."
+    },
+    "s7": {
+      "d": "Une plateforme de livres et de bandes dessinées en développement, avec un aperçu en ligne. En partie construite ; le reste est clairement indiqué comme à venir."
+    },
+    "s8": {
+      "t": "Le Laboratoire",
+      "d": "La troisième salle accueille le travail inachevé : jeux et outils en développement, prototypes et concepts. Les étiquettes bleues signalent les concepts et les explorations."
+    },
+    "s9": {
+      "d": "Un jeu de tycoon et de casse en développement sur Roblox. Les images sont des illustrations de concept."
+    },
+    "s10": {
+      "d": "Un studio de montage assisté par l'IA. Le moteur Python et FFmpeg existe ; le studio autour reste le projet."
+    },
+    "s11": {
+      "d": "Un vrai site client, en ligne pour un studio d'enregistrement à Awka. Les autres cadres montrent des sites clients construits et en attente de lancement."
+    },
+    "s12": {
+      "d": "Cinq choses que David peut construire pour vous, chacune appuyée par un travail de ce musée."
+    },
+    "s13": {
+      "d": "La dernière salle parle de la personne. Voici une vraie photographie de David."
+    },
+    "s14": {
+      "d": "E mail, GitHub, X et le CV sont ici. Merci de votre visite."
+    }
   },
   "settings": {
-    "sensitivity": "Sensibilité du regard", "quality": "Qualité du rendu", "qAuto": "Automatique", "qHigh": "Élevée", "qLow": "Légère (mieux sur téléphone)",
-    "reduced": "Réduire les animations", "joystick": "Afficher le joystick à l'écran", "sound": "Son", "soundOn": "Son activé",
-    "ambience": "Ambiance", "effects": "Sons d'interaction", "volume": "Volume", "keysT": "Commandes",
+    "sensitivity": "Sensibilité du regard",
+    "quality": "Qualité du rendu",
+    "qAuto": "Automatique",
+    "qHigh": "Élevée",
+    "qLow": "Légère (mieux sur téléphone)",
+    "reduced": "Réduire les animations",
+    "joystick": "Afficher le joystick à l'écran",
+    "sound": "Son",
+    "soundOn": "Son activé",
+    "ambience": "Ambiance",
+    "effects": "Sons d'interaction",
+    "volume": "Volume",
+    "keysT": "Commandes",
     "keys": "W A S D ou flèches : se déplacer · Maj : marcher plus vite · Souris : regarder · E : examiner · M : plan · T : visite · Échap : ce menu"
   },
-  "gallery": { "to3d": "Parcourir le musée en 3D", "title": "Le musée, salle par salle" },
+  "gallery": {
+    "to3d": "Parcourir le musée en 3D",
+    "title": "Le musée, salle par salle"
+  },
   "projects": {
     "toilet-wars": {
       "desc": "Un jeu de bagarre multijoueur compétitif sur Roblox : les Red Plungers contre les Blue Scrubbers, de 1 contre 1 à 4 contre 4.",

@@ -43,6 +43,7 @@ boot().catch((err) => fatal(err));
 
 async function boot() {
   fillLangSelects();
+  if (coarse) $(".js-hint").dataset.t = "ui.touchHint";
   await setLang(initialLang(), { persist: false });
   const res = await fetch(`${ROOT}data/museum.json`, { cache: "no-cache" });
   if (!res.ok) throw new Error(`museum data: HTTP ${res.status}`);
@@ -194,7 +195,7 @@ function loop() {
   animateExhibits(app.exhibits, time, dt, prefs.reduced, app.inspecting);
   if (app.mapOpen) drawMe();
   adapt(dt);
-  app.renderer.render(app.scene, app.camera);
+  if (app.mode !== "gallery") app.renderer.render(app.scene, app.camera); // the list view hides the scene, so stop drawing it
 }
 
 // ------------------------------------------------------------------ entering and leaving
@@ -212,9 +213,9 @@ async function enterMuseum({ tour = false, skipIntro = false, restore = null } =
   }
   $("#gallery").hidden = true; document.body.classList.remove("is-gallery");
   $("#hud").hidden = false;
-  updateJoystick();
   const c = app.controls;
   app.mode = "intro";
+  updateJoystick();
   const finish = () => {
     $("#opening").hidden = true;
     app.mode = "explore"; c.state.enabled = true;
@@ -702,6 +703,8 @@ function wireUi() {
   });
   addEventListener("hashchange", () => {
     const h = parseHash();
+    if (h.view === "list" && app.mode !== "gallery") { closePanel(true); endTour(); closeSheets(); return showGallery(); }
+    if (app.mode === "gallery" && (h.room || h.exhibit) && app.webgl) { closePanel(true); $("#gallery").hidden = true; document.body.classList.remove("is-gallery"); return enterMuseum({ skipIntro: true, restore: h }); }
     if (h.exhibit && app.ready && app.mode === "explore") { const ex = app.exhibits.find((x) => x.id === h.exhibit); if (ex && app.inspecting !== ex) travel(ex.eye.x, ex.eye.z, 0, () => inspect(ex, { instant: true })); }
   });
 }
