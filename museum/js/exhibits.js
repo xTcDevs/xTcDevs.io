@@ -142,7 +142,7 @@ const STYLES = {
     model.position.y = 1.05; model.rotation.z = 0.18; g.add(model);
     const scr = slideScreen(6.0, 3.375, p.images, { frameMat: mats.darkMetal }); scr.mesh.position.set(0, 2.9, -4.4); g.add(scr.mesh);
     for (const sx of [-1, 1]) { const l = box(0.04, 3.6, 0.04, mats.ember); l.position.set(sx * 3.15, 2.9, -4.35); g.add(l); }
-    return { group: g, model, screens: [scr], spin: 0.45, solid: { r: 0.7 }, view: { dist: 3.0, y: 1.7, look: 1.35 } };
+    return { group: g, model, screens: [scr], spin: 0.45, solid: { r: 0.7 }, view: { dist: 3.9, y: 1.9, look: 2.0 } };
   },
   candle(p, mats, ctx) {
     const g = new THREE.Group();
