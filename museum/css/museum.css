@@ -156,8 +156,8 @@ body.has-joy .prompt { left: auto; right: 16px; transform: none; }
 .map .dot { fill: var(--ivory); cursor: pointer; }
 .map .dot:hover, .map .dot:focus { fill: var(--blue); outline: none; }
 .map .dot.is-plan { fill: var(--blue-soft); }
-.map text { fill: var(--ivory); font: 700 1.1px var(--sans); pointer-events: none; }
-.map .label-area { fill: var(--ember); font-size: .9px; letter-spacing: .1px; }
+.map text { fill: var(--ivory); font: 600 1.75px var(--sans); pointer-events: none; }
+.map .label-area { fill: var(--ember); font-weight: 800; font-size: 1.5px; letter-spacing: .15px; }
 .map .me { fill: var(--ember); }
 .settings { padding: 18px 22px 24px; display: grid; gap: 14px; }
 .field { display: grid; gap: 6px; border: 0; padding: 0; margin: 0; }
@@ -192,3 +192,4 @@ input[type=range] { width: 100%; accent-color: var(--ember); }
 body.is-inspecting .hud__hint, body.is-touring .hud__hint,
 body.is-inspecting .crosshair, body.is-touring .crosshair,
 body.is-inspecting .joy, body.is-touring .joy { opacity: 0 !important; pointer-events: none; }
+#map.sheet { width: min(1040px, calc(100vw - 24px)); }

@@ -447,14 +447,14 @@ function openMap() {
   const rooms = ROOMS.map((r) => `
     <g class="room-g"><rect class="room ${r.id === app.room ? "is-here" : ""}" tabindex="0" role="button" data-room="${r.id}" aria-label="${esc(`${r.area} ${t(`rooms.${r.id}.name`)}`)}"
       x="${-r.z0}" y="${r.x0}" width="${r.z0 - r.z1}" height="${r.x1 - r.x0}" rx="0.6"/>
-    <text class="label-area" x="${-r.z0 + 1}" y="${r.x0 + 2}">${r.area}</text>
-    <text x="${-r.z0 + 1}" y="${r.x0 + 3.4}">${esc(t(`rooms.${r.id}.name`))}</text></g>`).join("");
+    <text class="label-area" text-anchor="middle" x="${-(r.z0 + r.z1) / 2}" y="${r.x1 + 2.2}">${r.area}</text>
+    <text text-anchor="middle" x="${-(r.z0 + r.z1) / 2}" y="${r.x1 + 4.4}">${esc(t(`rooms.${r.id}.name`))}</text></g>`).join("");
   const corrs = CORRIDORS.map((c) => `<rect class="corr" x="${-c.z0}" y="${c.x - c.w / 2}" width="${c.z0 - c.z1}" height="${c.w}"/>`).join("");
   const dots = app.exhibits.map((ex) => {
     const plan = ex.project && PLANNED.has(ex.project.status);
     return `<circle class="dot ${plan ? "is-plan" : ""}" tabindex="0" role="button" data-ex="${ex.id}" aria-label="${esc(exhibitTitle(ex))}" cx="${-ex.spot.z}" cy="${ex.spot.x}" r="0.9"><title>${esc(exhibitTitle(ex))}</title></circle>`;
   }).join("");
-  box.innerHTML = `<svg viewBox="-2 -16 150 32" role="img" aria-label="${esc(t("ui.mapTitle"))}">${corrs}${rooms}${dots}<path class="me" id="me" d="M0 -1.2 L0.9 1 L0 0.4 L-0.9 1 Z"/></svg>`;
+  box.innerHTML = `<svg viewBox="-2 -16 150 37" role="img" aria-label="${esc(t("ui.mapTitle"))}">${corrs}${rooms}${dots}<path class="me" id="me" d="M0 -1.2 L0.9 1 L0 0.4 L-0.9 1 Z"/></svg>`;
   const go = (el) => {
     if (el.dataset.room) { const r = ROOMS.find((q) => q.id === el.dataset.room); travel(r.entry[0], r.entry[1], r.entry[2]); }
     if (el.dataset.ex) { const ex = app.exhibits.find((e) => e.id === el.dataset.ex); travel(ex.eye.x, ex.eye.z, app.controls.lookAtAngles(ex.eye, ex.target).yaw, () => inspect(ex, { instant: true })); }
@@ -471,7 +471,7 @@ function openMap() {
 function drawMe() {
   const me = document.getElementById("me"); if (!me) return;
   const s = app.controls.state;
-  me.setAttribute("transform", `translate(${-s.pos.z} ${s.pos.x}) rotate(${-90 - (s.yaw * 180) / Math.PI})`);
+  me.setAttribute("transform", `translate(${-s.pos.z} ${s.pos.x}) rotate(${90 - (s.yaw * 180) / Math.PI})`);
 }
 
 function travel(x, z, yaw, then) {
