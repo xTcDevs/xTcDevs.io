@@ -195,11 +195,11 @@ export function buildSigns(scene, t) {
   ], 8.7, -9, -Math.PI / 2);
   // The way on: a small sign over each threshold, readable from the room before it.
   for (const c of CORRIDORS) {
-    const l = () => [{ text: `→  ${t(`rooms.${c.to}.name`)}`, size: 0.13, weight: 600, color: IVORY, tracking: 0.05 }];
-    const tx = textTexture(3, 0.36, l(), { align: "center", pad: 0.05 });
+    const signLines = () => [{ text: `→  ${t(`rooms.${c.to}.name`)}`, size: 0.13, weight: 600, color: IVORY, tracking: 0.05 }];
+    const tx = textTexture(3, 0.36, signLines(), { align: "center", pad: 0.05 });
     const s = new THREE.Mesh(new THREE.PlaneGeometry(3, 0.36), new THREE.MeshBasicMaterial({ map: tx, transparent: true }));
     s.position.set(c.x, c.h + 0.45, c.z0 + 0.22); scene.add(s);
-    signs.push({ redraw: () => tx.redraw(l()) });
+    signs.push({ redraw: () => tx.redraw(signLines()) });
   }
   return signs;
 }

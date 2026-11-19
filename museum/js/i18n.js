@@ -38,7 +38,7 @@ export function t(key, vars) {
 }
 
 // Project text: translated override when present, otherwise the English source data.
-export function pt(project, field) {
+export function projectText(project, field) {
   const v = lookup(dict, `projects.${project.id}.${field}`);
   return v !== undefined ? v : project[field];
 }

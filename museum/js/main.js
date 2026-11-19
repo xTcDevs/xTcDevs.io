@@ -2,7 +2,7 @@
 import * as THREE from "three";
 import { RoomEnvironment } from "../vendor/RoomEnvironment.js";
 import { ROOMS, CORRIDORS, SPOTS, EYE, roomAt, setSolids, CLASSIC_FOR_ROOM } from "./layout.js";
-import { LANGS, t, pt, setLang, initialLang, onLangChange, lang } from "./i18n.js";
+import { LANGS, t, projectText, setLang, initialLang, onLangChange, lang } from "./i18n.js";
 import { makeMaterials, buildWorld, buildSigns, makeLightRig, architectureSolids } from "./world.js";
 import { buildExhibits, animateExhibits } from "./exhibits.js";
 import { createControls } from "./controls.js";
@@ -370,8 +370,8 @@ function panelHtml(ex) {
       <p class="kicker">${esc(t(`rooms.${p.room}.area`))} · ${esc(room)}</p>
       <h2 id="panel-title">${esc(p.title)}</h2>
       <div class="meta"><span class="chip chip--status ${plan ? "is-plan" : ""}">${esc(t(`status.${p.status}`))}</span>${p.cats.map((k) => `<span class="chip chip--quiet">${esc(t(`cats.${k}`))}</span>`).join("")}${p.client ? `<span class="chip chip--quiet">${esc(t("cats.client"))}</span>` : ""}</div>
-      ${pt(p, "tagline") ? `<p class="lede"><em>${esc(pt(p, "tagline"))}</em></p>` : ""}
-      <p class="lede">${esc(pt(p, "lede"))}</p>
+      ${projectText(p, "tagline") ? `<p class="lede"><em>${esc(projectText(p, "tagline"))}</em></p>` : ""}
+      <p class="lede">${esc(projectText(p, "lede"))}</p>
       ${plan ? `<p class="concept-note">${esc(t(p.status === "concept" || p.status === "explore" ? "ui.conceptNote" : "ui.devNote"))}</p>` : ""}
       ${p.tech && p.tech.length ? `<h3>${esc(t("ui.tech"))}</h3><ul class="tags">${p.tech.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       ${imgs ? `<h3>${esc(t(p.concept ? "ui.conceptImages" : "ui.screens"))}</h3><div class="shots ${p.phone ? "shots--phone" : ""}">${imgs}</div>${p.concept ? `<p class="concept-note">${esc(t("ui.conceptArt"))}</p>` : ""}` : `<p class="concept-note">${esc(t("ui.noImages"))}</p>`}
@@ -385,7 +385,7 @@ function panelHtml(ex) {
       <p class="lede">${esc(t("caps.lede"))}</p>
       ${["software", "product", "ai", "games", "creative"].map((k) => `<h3>${esc(t(`caps.${k}.t`))}</h3><p>${esc(t(`caps.${k}.d`))}</p>`).join("")}
       <h3>${esc(t("caps.clientWork"))}</h3>
-      <ul class="timeline">${clients.map((p) => `<li><b>${esc(p.title)}</b><span>${esc(t(`status.${p.status}`))} · ${esc(pt(p, "desc"))}</span></li>`).join("")}</ul>
+      <ul class="timeline">${clients.map((p) => `<li><b>${esc(p.title)}</b><span>${esc(t(`status.${p.status}`))} · ${esc(projectText(p, "desc"))}</span></li>`).join("")}</ul>
       <h3>${esc(t("creator.experienceT"))}</h3>
       <ul class="timeline">${c.experience.map((e, i) => `<li><b>${esc(t(`creator.exp${i}.role`))}</b><span>${esc(t(`creator.exp${i}.org`))} · ${esc(t(`creator.exp${i}.when`))}</span></li>`).join("")}</ul>
       <div class="links"><a class="btn btn--ember" href="${esc(ROOT + c.cv)}" download>${esc(t("contact.cv"))}</a><a class="btn btn--line" href="${ROOT}index.html#contact">${esc(t("contact.form"))}</a></div>`;
@@ -561,7 +561,7 @@ function renderGallery() {
   const d = app.data;
   const card = (id, title, sub, img) => `<button class="g-card" type="button" data-open="${id}">${img ? `<img src="${esc(ROOT + img)}" alt="" loading="lazy">` : `<span class="mono">${esc(title[0])}</span>`}<div><b>${esc(title)}</b><span>${esc(sub)}</span></div></button>`;
   const rooms = ROOMS.filter((r) => r.id !== "entrance").map((r) => {
-    let cards = d.projects.filter((p) => p.room === r.id).map((p) => card(p.id, p.title, `${t(`status.${p.status}`)} · ${pt(p, "desc")}`, p.images[0]));
+    let cards = d.projects.filter((p) => p.room === r.id).map((p) => card(p.id, p.title, `${t(`status.${p.status}`)} · ${projectText(p, "desc")}`, p.images[0]));
     if (r.id === "clients") cards.push(card("capabilities", t("caps.title"), t("caps.lede")));
     if (r.id === "creator") cards = [card("creator-portrait", d.creator.name, t("creator.role"), d.creator.portrait.replace("1000", "640")), card("creator-story", t("creator.backgroundT"), t("creator.backgroundSub")), card("creator-contact", t("contact.title"), d.creator.email)];
     return `<section class="g-room"><p class="kicker">${esc(r.area)}</p><h2>${esc(t(`rooms.${r.id}.name`))}</h2><p>${esc(t(`rooms.${r.id}.sub`))}</p><div class="g-grid">${cards.join("")}</div></section>`;
