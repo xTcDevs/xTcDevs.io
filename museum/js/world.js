@@ -115,20 +115,20 @@ export function buildWorld(scene, mats, quality) {
 // static ones into one mesh per material per room turns hundreds of draw calls into a few dozen,
 // which is what keeps phones smooth. Animated parts live in sub groups and are left alone.
 export function mergeStatic(group) {
-  const buckets = new Map();
-  for (const m of [...group.children]) {
+  const buckets = new Map(); // material -> [{ mesh, geo }]
+  for (const m of group.children) {
     if (!m.isMesh || !m.geometry.index) continue;
     m.updateMatrix();
     const geo = m.geometry.clone().applyMatrix4(m.matrix);
     for (const name of Object.keys(geo.attributes)) if (!["position", "normal", "uv"].includes(name)) geo.deleteAttribute(name);
     if (!buckets.has(m.material)) buckets.set(m.material, []);
-    buckets.get(m.material).push(geo);
-    group.remove(m); m.geometry.dispose();
+    buckets.get(m.material).push({ mesh: m, geo });
   }
-  for (const [mat, geos] of buckets) {
-    const merged = mergeGeometries(geos, false);
-    geos.forEach((gg) => gg.dispose());
-    if (!merged) continue;
+  for (const [mat, items] of buckets) {
+    const merged = items.length > 1 ? mergeGeometries(items.map((i) => i.geo), false) : null;
+    items.forEach((i) => i.geo.dispose());
+    if (!merged) continue; // nothing to gain, or the merge failed: keep the original meshes
+    for (const { mesh } of items) { group.remove(mesh); mesh.geometry.dispose(); }
     const mesh = new THREE.Mesh(merged, mat); mesh.name = `${group.name}-merged`; group.add(mesh);
   }
 }

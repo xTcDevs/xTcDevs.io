@@ -37,7 +37,7 @@ export function createAudio() {
     for (let i = 0; i < len; i++) { const w = Math.random() * 2 - 1; if (brown) { last = (last + 0.02 * w) / 1.02; d[i] = last * 3.2; } else d[i] = w; }
     return buf;
   }
-  function loop(buf) { const s = ctx.createBufferSource(); s.buffer = buf; s.loop = true; s.start(); return s; }
+  function loopingSource(buf) { const s = ctx.createBufferSource(); s.buffer = buf; s.loop = true; s.start(); return s; }
   function impulse(seconds) {
     const len = Math.max(1, Math.floor(ctx.sampleRate * seconds)), buf = ctx.createBuffer(2, len, ctx.sampleRate);
     for (let ch = 0; ch < 2; ch++) { const d = buf.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 3.2); }
@@ -60,7 +60,7 @@ export function createAudio() {
       // room tone: soft brown noise through a low pass, and a quiet drone tuned per room
       roomTone = ctx.createBiquadFilter(); roomTone.type = "lowpass"; roomTone.frequency.value = 380;
       const rtGain = ctx.createGain(); rtGain.gain.value = 0.16;
-      loop(noiseBuffer(3, true)).connect(roomTone); roomTone.connect(rtGain); rtGain.connect(ambBus);
+      loopingSource(noiseBuffer(3, true)).connect(roomTone); roomTone.connect(rtGain); rtGain.connect(ambBus);
       [1, 1.5, 2.003].forEach((m, k) => {
         const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = 55 * m;
         const g = ctx.createGain(); g.gain.value = [0.035, 0.014, 0.009][k];
@@ -72,16 +72,16 @@ export function createAudio() {
       const waterAmp = ctx.createGain(); waterAmp.gain.value = 0.32;
       const lfo = ctx.createOscillator(); lfo.frequency.value = 0.18; const lfoDepth = ctx.createGain(); lfoDepth.gain.value = 0.18;
       lfo.connect(lfoDepth); lfoDepth.connect(waterAmp.gain); lfo.start();
-      loop(noiseBuffer(4, true)).connect(water); water.connect(waterAmp); waterAmp.connect(outdoorGain);
+      loopingSource(noiseBuffer(4, true)).connect(water); water.connect(waterAmp); waterAmp.connect(outdoorGain);
       const wind = ctx.createBiquadFilter(); wind.type = "bandpass"; wind.frequency.value = 420; wind.Q.value = 0.6;
       const windAmp = ctx.createGain(); windAmp.gain.value = 0.05;
       const wlfo = ctx.createOscillator(); wlfo.frequency.value = 0.07; const wDepth = ctx.createGain(); wDepth.gain.value = 180;
       wlfo.connect(wDepth); wDepth.connect(wind.frequency); wlfo.start();
-      loop(noiseBuf).connect(wind); wind.connect(windAmp); windAmp.connect(outdoorGain);
+      loopingSource(noiseBuf).connect(wind); wind.connect(windAmp); windAmp.connect(outdoorGain);
       // movement air: band passed noise whose level follows walking speed (only audible when fast)
       airFilter = ctx.createBiquadFilter(); airFilter.type = "bandpass"; airFilter.frequency.value = 900; airFilter.Q.value = 0.5;
       airGain = ctx.createGain(); airGain.gain.value = 0;
-      loop(noiseBuf).connect(airFilter); airFilter.connect(airGain); airGain.connect(moveBus);
+      loopingSource(noiseBuf).connect(airFilter); airFilter.connect(airGain); airGain.connect(moveBus);
       applyRoom(room, true);
       return true;
     } catch (err) {
