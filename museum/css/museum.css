@@ -205,3 +205,5 @@ body.is-touring.is-inspecting .tour { left: calc((100vw - min(520px, 100vw)) / 2
 
 body.is-gallery #stage, body.is-gallery .fade { display: none; }
 body.has-joy .hud__hint { bottom: calc(max(26px, env(safe-area-inset-bottom)) + 190px); }
+/* In list view the details panel must sit above the list, or its buttons cannot be clicked. */
+body.is-gallery .panel { z-index: 40; }
