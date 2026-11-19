@@ -1,7 +1,7 @@
 // Exhibition installations. Each project gets its own installation style; all text on the
 // plaques comes from data/museum.json and the locale files, so nothing is hard coded here.
 import * as THREE from "three";
-import { SPOTS } from "./layout.js";
+import { SPOTS, ROOMS } from "./layout.js";
 import { textTexture, imageTexture, noiseTexture, IVORY, EMBER, MUTED, BLUE } from "./textures.js";
 
 const ROOT = "../";
@@ -62,24 +62,71 @@ function makePlaque(p, t, w = 1.0, h = 0.42) {
 
 function pedestal(mats, r = 0.6, h = 1.0) {
   const g = new THREE.Group();
-  const body = cyl(r, r * 1.05, h, mats.darkMetal, 48); body.position.y = h / 2; g.add(body);
+  const body = cyl(r, r * 1.05, h, mats.graphiteStone, 48); body.position.y = h / 2; g.add(body);
   const rim = new THREE.Mesh(new THREE.TorusGeometry(r * 1.0, 0.012, 8, 64), mats.ember); rim.rotation.x = Math.PI / 2; rim.position.y = h + 0.002; g.add(rim);
   return g;
 }
 
 function bench(mats, w = 2.4, d = 1.0, h = 0.92) {
   const g = new THREE.Group();
-  const top = box(w, 0.06, d, mats.stone); top.position.y = h; g.add(top);
-  for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const leg = box(0.05, h, 0.05, mats.metal); leg.position.set(sx * (w / 2 - 0.08), h / 2, sz * (d / 2 - 0.08)); g.add(leg); }
-  const edge = box(w, 0.012, 0.02, mats.blue); edge.position.set(0, h + 0.03, d / 2); g.add(edge);
+  const top = box(w, 0.08, d, mats.travertine); top.position.y = h; g.add(top);
+  for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const leg = box(0.05, h, 0.05, mats.bronze); leg.position.set(sx * (w / 2 - 0.08), h / 2, sz * (d / 2 - 0.08)); g.add(leg); }
+  const edge = box(w, 0.012, 0.02, mats.ember); edge.position.set(0, h + 0.045, d / 2); g.add(edge);
   return g;
 }
 
 function lectern(mats, plaque) {
   const g = new THREE.Group();
-  const post = box(0.5, 1.0, 0.36, mats.darkMetal); post.position.y = 0.5; g.add(post);
+  const post = box(0.5, 1.0, 0.36, mats.travertine); post.position.y = 0.5; g.add(post);
   plaque.mesh.scale.setScalar(0.62); plaque.mesh.position.set(0, 1.05, 0.05); plaque.mesh.rotation.x = -0.75; g.add(plaque.mesh);
   return g;
+}
+
+
+// ------------------------------------------------------------- project branding
+// The real logo or icon of a project, mounted as a backlit panel in a bronze frame. The image
+// is fitted inside the panel at its original proportions (never stretched, cropped or recoloured)
+// on the brand's own background colour. Projects without an official logo get a typographic
+// nameplate instead: their title and status, set in the museum's type. Returns {group, w, h}.
+function brandInstallation(p, mats, t, { maxW = 2.0, maxH = 1.7 } = {}) {
+  const g = new THREE.Group();
+  const b = p.brand || { kind: "type" };
+  if (b.kind === "logo" || b.kind === "icon") {
+    const bg = new THREE.MeshBasicMaterial({ color: new THREE.Color(b.bg || "#0b0b0c"), toneMapped: false });
+    const backing = plane(maxW, maxH, bg); g.add(backing);
+    const frame = box(maxW + 0.14, maxH + 0.14, 0.08, mats.bronze); frame.position.z = -0.05; g.add(frame);
+    const glow = box(maxW + 0.3, maxH + 0.3, 0.02, mats.amber); glow.position.z = -0.1; g.add(glow);
+    const logoMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, toneMapped: false, opacity: 0 });
+    const logo = plane(1, 1, logoMat); logo.position.z = 0.004; g.add(logo);
+    imageTexture(ROOT + b.src, (tx) => {
+      const img = tx.image; if (!img || !img.width) return;
+      // contain fit with a margin so the mark breathes inside its panel
+      const pad = b.kind === "icon" ? 0.06 : 0.14;
+      const aw = maxW * (1 - pad * 2), ah = maxH * (1 - pad * 2), ir = img.width / img.height;
+      const w = ir > aw / ah ? aw : ah * ir, h = ir > aw / ah ? aw / ir : ah;
+      logo.scale.set(w, h, 1); logoMat.map = tx; logoMat.opacity = 1; logoMat.needsUpdate = true;
+    });
+    return { group: g, redraw: () => {} };
+  }
+  // typographic nameplate (projects without an official logo)
+  const lines = () => [
+    { text: p.title, size: 0.2, weight: 500, font: "serif", color: IVORY, gap: 0.05, lh: 1.05 },
+    { text: t(`status.${p.status}`), size: 0.07, weight: 700, color: PLANNED_STATUS.has(p.status) ? "#9db6ff" : "#ff9a6b", tracking: 0.16, upper: true },
+  ];
+  const tex = textTexture(maxW, maxH * 0.62, lines(), { bg: "#17171a", pad: 0.14, align: "center" });
+  const plate = plane(maxW, maxH * 0.62, new THREE.MeshBasicMaterial({ map: tex })); g.add(plate);
+  const frame = box(maxW + 0.1, maxH * 0.62 + 0.1, 0.06, mats.bronze); frame.position.z = -0.04; g.add(frame);
+  return { group: g, redraw: () => tex.redraw(lines()) };
+}
+const PLANNED_STATUS = new Set(["concept", "explore", "prototype", "dev", "ready"]);
+
+// Distance from an exhibit spot back to the wall behind it (for mounting niches and branding).
+function wallBehind(spot) {
+  const room = ROOMS.find((r) => spot.x >= r.x0 && spot.x <= r.x1 && spot.z <= r.z0 && spot.z >= r.z1);
+  if (!room) return 4.6;
+  const bx = -Math.sin(spot.face), bz = -Math.cos(spot.face);
+  if (Math.abs(bx) > 0.5) return (bx > 0 ? room.x1 - spot.x : spot.x - room.x0) - 0.22;
+  return (bz > 0 ? room.z0 - spot.z : spot.z - room.z1) - 0.22;
 }
 
 // ------------------------------------------------------------- installation styles
@@ -132,7 +179,8 @@ const STYLES = {
       const s = slideScreen(0.82, 1.6, [u], { frameMat: mats.darkMetal });
       const a = (k - 1.5) * 0.42;
       s.mesh.position.set(Math.sin(a) * 3.2, 2.5 + (k % 2) * 0.3, -2.6 - Math.cos(a) * 1.2); s.mesh.rotation.y = -a * 0.8; g.add(s.mesh);
-      const wire = box(0.008, 6, 0.008, mats.metal); wire.position.set(s.mesh.position.x, 3.3 + 3, s.mesh.position.z); g.add(wire);
+      // a slim bronze stand under each screen (no wires crossing the logo on the niche behind)
+      const stand = box(0.025, s.mesh.position.y - 0.8, 0.025, mats.bronze); stand.position.set(s.mesh.position.x, (s.mesh.position.y - 0.8) / 2, s.mesh.position.z - 0.03); g.add(stand);
       screens.push(s);
     });
     return { group: g, model, screens, spin: 0.6, bob: 0.06, solid: { r: 0.62 }, view: { dist: 3.2, y: 1.75, look: 1.6 } };
@@ -298,6 +346,31 @@ export function buildExhibits(scene, mats, data, t) {
     } else {
       plaque.mesh.position.set(0, 0.62, 0.66); plaque.mesh.scale.setScalar(0.95); built.group.add(plaque.mesh);
     }
+    // Branding and wall media, mounted on the wall (or niche) behind the installation.
+    const spot = SPOTS[p.id], back = wallBehind(spot);
+    const iconLike = p.brand && p.brand.kind === "icon";
+    let bi;
+    if (p.room === "collection") {
+      if (p.style === "moon" && p.images.length) { // the bench installation gets a full niche screen
+        const big = slideScreen(5.4, 3.04, p.images, { frameMat: mats.darkMetal }); big.mesh.position.set(0, 2.85, -(back - 0.25)); built.group.add(big.mesh);
+        (built.screens ||= []).push(big);
+      }
+      bi = brandInstallation(p, mats, t, iconLike ? { maxW: 1.9, maxH: 1.9 } : { maxW: 2.6, maxH: 1.7 });
+      bi.group.position.set(0, iconLike ? 5.55 : 5.45, -(back - 0.2));
+    } else if (p.room === "lab") {
+      const hasWallMedia = p.images.length && !["moon", "timeline", "land"].includes(p.style);
+      if (p.images.length && !hasWallMedia) { // repeat the featured image large on the wall behind the bench
+        const wallScr = slideScreen(3.6, 2.03, p.images, { frameMat: mats.darkMetal }); wallScr.mesh.position.set(0, 2.5, -(back - 0.12)); built.group.add(wallScr.mesh);
+        (built.screens ||= []).push(wallScr);
+      }
+      bi = brandInstallation(p, mats, t, { maxW: 2.8, maxH: 1.6 });
+      bi.group.position.set(0, p.images.length ? 4.35 : 2.9, -(back - 0.12));
+    } else {
+      bi = brandInstallation(p, mats, t, p.brand && p.brand.kind === "logo" ? { maxW: 1.5, maxH: 1.6 } : { maxW: 2.4, maxH: 1.4 });
+      bi.group.position.set(0, 5.0, -(back - 0.1));
+    }
+    built.group.add(bi.group);
+    const plaqueRedraw = plaque.redraw; plaque.redraw = () => { plaqueRedraw(); bi.redraw(); };
     const ex = place(p.id, built, plaque);
     ex.project = p;
     ex.kind = "project";

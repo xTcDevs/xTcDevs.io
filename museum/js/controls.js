@@ -15,8 +15,15 @@ export function createControls(camera, canvas, opts) {
     flight: null,      // active camera flight
     locked: false,     // camera held by inspect / tour
     walking: 0,
+    travelled: 0,      // metres walked, for footsteps
   };
-  const speed = { walk: 3.0, run: 5.4 };
+  // Visitor selectable walking speeds (metres per second). Shift multiplies by RUN.
+  const SPEEDS = { relaxed: 2.0, normal: 3.4, fast: 5.6, express: 9.5 };
+  const RUN = 1.5;
+  let walkSpeed = SPEEDS.normal;
+  // Movement is split into steps no longer than this, so even Express speed cannot carry the
+  // visitor through a thin wall, a glass partition or an exhibit in a single frame.
+  const MAX_STEP = 0.12;
 
   // ------------------------------------------------------------------ keyboard
   const KEYMAP = { KeyW: "f", ArrowUp: "f", KeyS: "b", ArrowDown: "b", KeyA: "l", KeyD: "r", ArrowLeft: "tl", ArrowRight: "tr", ShiftLeft: "run", ShiftRight: "run", KeyQ: "tl", KeyE2: "" };
@@ -121,7 +128,7 @@ export function createControls(camera, canvas, opts) {
       let mx = (k.has("r") ? 1 : 0) - (k.has("l") ? 1 : 0) + state.joy.x;
       let mz = (k.has("f") ? 1 : 0) - (k.has("b") ? 1 : 0) - state.joy.y;
       const len = Math.hypot(mx, mz); if (len > 1) { mx /= len; mz /= len; }
-      const max = k.has("run") ? speed.run : speed.walk;
+      const max = k.has("run") ? walkSpeed * RUN : walkSpeed;
       // smooth acceleration so movement feels deliberate, not twitchy
       const target = new THREE.Vector2(mx * max, mz * max);
       state.vel.lerp(target, 1 - Math.exp(-dt * 9));
@@ -130,12 +137,23 @@ export function createControls(camera, canvas, opts) {
       const dx = (fwd.x * state.vel.y + right.x * state.vel.x) * dt;
       const dz = (fwd.z * state.vel.y + right.z * state.vel.x) * dt;
       const p = state.pos;
-      if (walkable(p.x + dx, p.z + dz)) { p.x += dx; p.z += dz; }
-      else if (walkable(p.x + dx, p.z)) p.x += dx;      // slide along walls
-      else if (walkable(p.x, p.z + dz)) p.z += dz;
+      const steps = Math.max(1, Math.ceil(Math.hypot(dx, dz) / MAX_STEP));
+      const sx = dx / steps, sz = dz / steps;
+      const x0 = p.x, z0 = p.z;
+      for (let i = 0; i < steps; i++) {
+        if (walkable(p.x + sx, p.z + sz)) { p.x += sx; p.z += sz; }
+        else if (walkable(p.x + sx, p.z)) p.x += sx;      // slide along walls
+        else if (walkable(p.x, p.z + sz)) p.z += sz;
+        else break;
+      }
+      // distance actually covered (after collisions); footsteps are timed from this
+      state.travelled += Math.hypot(p.x - x0, p.z - z0);
       const moving = state.vel.length();
       state.walking = moving;
-      p.y = EYE + (reducedMotion ? 0 : Math.sin(performance.now() / 160) * 0.018 * Math.min(1, moving / 3));
+      state.speedRatio = moving / SPEEDS.normal;
+      // head bob follows the stride (distance walked), and calms down at the faster speeds
+      const bob = 0.018 * Math.min(1, moving / 3) * Math.min(1, 4 / Math.max(4, moving));
+      p.y = EYE + (reducedMotion ? 0 : Math.sin(state.travelled * Math.PI * 1.35) * bob);
     }
     camera.position.copy(state.pos);
     camera.rotation.set(state.pitch, state.yaw, 0, "YXZ");
@@ -143,6 +161,8 @@ export function createControls(camera, canvas, opts) {
 
   return {
     state, update, flyTo, bindJoystick, lookAtAngles,
+    setSpeed(name) { if (SPEEDS[name]) walkSpeed = SPEEDS[name]; },
+    speedOf: (name) => SPEEDS[name] || SPEEDS.normal,
     teleport(x, z, yaw = 0) { state.flight = null; state.pos.set(x, EYE, z); state.yaw = yaw; state.pitch = 0; state.vel.set(0, 0); },
     releasePointer() { if (document.pointerLockElement === canvas) document.exitPointerLock(); },
   };

@@ -64,7 +64,12 @@
    ],
    "case": "projects/toilet-wars.html",
    "room": "collection",
-   "style": "plunger"
+   "style": "plunger",
+   "brand": {
+    "src": "assets/img/toilet-wars/icon.webp",
+    "kind": "icon",
+    "bg": "#0b2a55"
+   }
   },
   {
    "id": "haunting-mother",
@@ -99,7 +104,11 @@
    ],
    "case": "projects/haunting-mother.html",
    "room": "collection",
-   "style": "candle"
+   "style": "candle",
+   "brand": {
+    "src": "assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "pitchit",
@@ -143,7 +152,13 @@
    ],
    "case": "projects/pitchit.html",
    "room": "collection",
-   "style": "pin"
+   "style": "pin",
+   "brand": {
+    "src": "assets/img/pitchit/logo-full.webp",
+    "kind": "logo",
+    "icon": "assets/img/pitchit/icon.png",
+    "bg": "#f6f1ea"
+   }
   },
   {
    "id": "echomind",
@@ -187,7 +202,11 @@
    ],
    "case": "projects/echomind.html",
    "room": "collection",
-   "style": "orbs"
+   "style": "orbs",
+   "brand": {
+    "src": "assets/img/echomind/home-400.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "bookverse",
@@ -255,7 +274,12 @@
    ],
    "case": "projects/bookverse.html",
    "room": "collection",
-   "style": "books"
+   "style": "books",
+   "brand": {
+    "src": "assets/img/bookverse/icon.webp",
+    "kind": "icon",
+    "bg": "#2a241f"
+   }
   },
   {
    "id": "steal-the-moon",
@@ -295,8 +319,12 @@
    "phone": false,
    "links": [],
    "case": "projects/steal-the-moon.html",
-   "room": "lab",
-   "style": "moon"
+   "room": "collection",
+   "style": "moon",
+   "brand": {
+    "src": "assets/img/concepts/steal-the-moon-640.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "ai-studio",
@@ -340,7 +368,11 @@
    "links": [],
    "case": "projects/ai-studio.html",
    "room": "lab",
-   "style": "timeline"
+   "style": "timeline",
+   "brand": {
+    "src": "assets/img/concepts/ai-studio-640.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "personal-ai",
@@ -376,7 +408,10 @@
    "links": [],
    "case": "projects/personal-ai.html",
    "room": "lab",
-   "style": "core"
+   "style": "core",
+   "brand": {
+    "kind": "type"
+   }
   },
   {
    "id": "ai-land",
@@ -414,7 +449,11 @@
    "links": [],
    "case": "projects/ai-land.html",
    "room": "lab",
-   "style": "land"
+   "style": "land",
+   "brand": {
+    "src": "assets/img/concepts/ai-land-640.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "drawing-board",
@@ -450,7 +489,10 @@
    "links": [],
    "case": "projects/drawing-board.html",
    "room": "lab",
-   "style": "board"
+   "style": "board",
+   "brand": {
+    "kind": "type"
+   }
   },
   {
    "id": "fintech",
@@ -482,7 +524,10 @@
    "links": [],
    "case": "projects/fintech.html",
    "room": "lab",
-   "style": "card"
+   "style": "card",
+   "brand": {
+    "kind": "type"
+   }
   },
   {
    "id": "anthony-studios",
@@ -542,7 +587,11 @@
    ],
    "case": "projects/anthony-studios.html",
    "room": "clients",
-   "style": "frame"
+   "style": "frame",
+   "brand": {
+    "src": "assets/img/anthony/index-640.webp",
+    "kind": "featured"
+   }
   },
   {
    "id": "zaga",
@@ -599,7 +648,12 @@
    ],
    "case": "projects/zaga.html",
    "room": "clients",
-   "style": "frame"
+   "style": "frame",
+   "brand": {
+    "src": "assets/img/zaga/logo-white.webp",
+    "kind": "logo",
+    "bg": "#0b0b0c"
+   }
   },
   {
    "id": "princess-uc",
@@ -649,7 +703,11 @@
    "links": [],
    "case": "projects/princess-uc.html",
    "room": "clients",
-   "style": "frame"
+   "style": "frame",
+   "brand": {
+    "src": "assets/img/princess-uc/home-640.webp",
+    "kind": "featured"
+   }
   }
  ],
  "creator": {

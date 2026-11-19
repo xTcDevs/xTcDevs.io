@@ -4,49 +4,48 @@
 
 export const EYE = 1.65;
 
-// x0 < x1, z0 > z1 (z0 is the near edge, z1 the far edge)
+// x0 < x1, z0 > z1 (z0 is the near edge, z1 the far edge). outdoor rooms have no roof.
 export const ROOMS = [
-  { id: "entrance",   area: "01", x0: -9,  x1: 9,  z0: 0,    z1: -18,  h: 9,  entry: [0, -4, 0] },
-  { id: "collection", area: "02", x0: -14, x1: 14, z0: -24,  z1: -58,  h: 10, entry: [0, -27, 0] },
-  { id: "lab",        area: "03", x0: -12, x1: 12, z0: -64,  z1: -90,  h: 6,  entry: [0, -67, 0] },
-  { id: "clients",    area: "04", x0: -12, x1: 12, z0: -96,  z1: -120, h: 8,  entry: [0, -99, 0] },
-  { id: "creator",    area: "05", x0: -9,  x1: 9,  z0: -126, z1: -144, h: 7,  entry: [0, -129, 0] },
+  { id: "entrance",   area: "01", x0: -11, x1: 11, z0: 0,    z1: -20,  h: 11, entry: [0, -4, 0] },
+  { id: "collection", area: "02", x0: -15, x1: 15, z0: -26,  z1: -70,  h: 8,  vault: 3.6, entry: [0, -29, 0] },
+  { id: "lab",        area: "03", x0: -13, x1: 13, z0: -76,  z1: -102, h: 6.5, entry: [0, -79, 0] },
+  { id: "clients",    area: "04", x0: -12, x1: 12, z0: -108, z1: -130, h: 7.5, entry: [0, -111, 0] },
+  { id: "creator",    area: "05", x0: -22, x1: 22, z0: -136, z1: -178, h: 12, outdoor: true, entry: [0, -139.5, 0] },
 ];
 
 // Thresholds between rooms. w is the opening width.
 export const CORRIDORS = [
-  { from: "entrance",   to: "collection", x: 0, z0: -18,  z1: -24,  w: 5, h: 5.5 },
-  { from: "collection", to: "lab",        x: 0, z0: -58,  z1: -64,  w: 4, h: 4.5 },
-  { from: "lab",        to: "clients",    x: 0, z0: -90,  z1: -96,  w: 4, h: 4.5 },
-  { from: "clients",    to: "creator",    x: 0, z0: -120, z1: -126, w: 3, h: 4 },
+  { from: "entrance",   to: "collection", x: 0, z0: -20,  z1: -26,  w: 6, h: 6 },
+  { from: "collection", to: "lab",        x: 0, z0: -70,  z1: -76,  w: 5, h: 5 },
+  { from: "lab",        to: "clients",    x: 0, z0: -102, z1: -108, w: 5, h: 5 },
+  { from: "clients",    to: "creator",    x: 0, z0: -130, z1: -136, w: 6, h: 5 },
 ];
 
-// Where each exhibit stands. focus = the point the visitor walks up to; face = yaw the
-// installation faces (radians, 0 looks toward +z, i.e. back at the visitor walking in).
-// view = camera pose when inspecting [x, y, z, yaw, pitch].
+// Where each exhibit stands. face = yaw the installation faces (radians, 0 looks toward +z,
+// i.e. back at the visitor walking in). Wall exhibits stand 5.5 m out from their wall.
 export const SPOTS = {
-  // Area 02, the main collection
-  "toilet-wars":     { x: -8.5, z: -33, face: Math.PI / 2 },
-  "haunting-mother": { x: 8.5,  z: -33, face: -Math.PI / 2 },
-  "pitchit":         { x: -8.5, z: -46, face: Math.PI / 2 },
-  "echomind":        { x: 8.5,  z: -46, face: -Math.PI / 2 },
-  "bookverse":       { x: 0,    z: -40, face: 0 },
+  // Area 02, the main collection: three bays per side, BookVerse on the axis.
+  "toilet-wars":     { x: -9.5, z: -34, face: Math.PI / 2 },
+  "haunting-mother": { x: 9.5,  z: -34, face: -Math.PI / 2 },
+  "pitchit":         { x: -9.5, z: -48, face: Math.PI / 2 },
+  "echomind":        { x: 9.5,  z: -48, face: -Math.PI / 2 },
+  "steal-the-moon":  { x: 9.5,  z: -62, face: -Math.PI / 2 },
+  "bookverse":       { x: -9.5, z: -62, face: Math.PI / 2 },
   // Area 03, the laboratory
-  "steal-the-moon":  { x: -8,   z: -69, face: Math.PI / 2 },
-  "ai-studio":       { x: 8,    z: -69, face: -Math.PI / 2 },
-  "personal-ai":     { x: -8,   z: -77, face: Math.PI / 2 },
-  "ai-land":         { x: 8,    z: -77, face: -Math.PI / 2 },
-  "drawing-board":   { x: -8,   z: -85, face: Math.PI / 2 },
-  "fintech":         { x: 8,    z: -85, face: -Math.PI / 2 },
+  "ai-studio":       { x: -8,   z: -82, face: Math.PI / 2 },
+  "personal-ai":     { x: 8,    z: -82, face: -Math.PI / 2 },
+  "ai-land":         { x: -8,   z: -93, face: Math.PI / 2 },
+  "drawing-board":   { x: 8,    z: -93, face: -Math.PI / 2 },
+  "fintech":         { x: 0,    z: -98.5, face: 0 },
   // Area 04, client exhibition
-  "anthony-studios": { x: -9.5, z: -102, face: Math.PI / 2 },
-  "princess-uc":     { x: 9.5,  z: -102, face: -Math.PI / 2 },
-  "zaga":            { x: -9.5, z: -113, face: Math.PI / 2 },
-  "capabilities":    { x: 9.5,  z: -113, face: -Math.PI / 2 },
-  // Area 05, the creator's room
-  "creator-portrait": { x: -6.6, z: -134, face: Math.PI / 2 },
-  "creator-story":    { x: 6.6,  z: -131, face: -Math.PI / 2 },
-  "creator-contact":  { x: 0,    z: -139, face: 0 },
+  "anthony-studios": { x: -9.5, z: -114, face: Math.PI / 2 },
+  "princess-uc":     { x: 9.5,  z: -114, face: -Math.PI / 2 },
+  "zaga":            { x: -9.5, z: -125, face: Math.PI / 2 },
+  "capabilities":    { x: 9.5,  z: -125, face: -Math.PI / 2 },
+  // Area 05, the waterfront terrace
+  "creator-portrait": { x: -11, z: -151, face: Math.PI / 2 },
+  "creator-story":    { x: 11,  z: -151, face: -Math.PI / 2 },
+  "creator-contact":  { x: 0,   z: -169, face: 0 },
 };
 
 export function roomAt(x, z) {
@@ -55,7 +54,7 @@ export function roomAt(x, z) {
   return null;
 }
 
-// Walkable test with a body radius. Exhibit bases are solid discs.
+// Walkable test with a body radius. Exhibit bases are solid discs or boxes.
 const MARGIN = 0.45;
 let solids = [];
 export function setSolids(list) { solids = list; }

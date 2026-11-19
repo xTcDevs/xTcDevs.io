@@ -26,7 +26,9 @@
     "noImages": "Noch keine Bilder.",
     "links": "Links",
     "screenshotOf": "Bild aus {title}",
-    "touchHint": "Ziehen zum Umsehen · Joystick zum Gehen · Exponat antippen zum Öffnen"
+    "touchHint": "Ziehen zum Umsehen · Joystick zum Gehen · Exponat antippen zum Öffnen",
+    "resetView": "Ansicht zurücksetzen",
+    "logoOf": "Logo von {title}"
   },
   "entrance": {
     "museumName": "Museum der Ideen",
@@ -55,7 +57,10 @@
     "exhibits": "Exponate werden aufgestellt",
     "lighting": "Licht wird eingeschaltet",
     "failedT": "Das Museum konnte nicht geöffnet werden",
-    "failed": "Beim Aufbau des 3D Museums ist etwas schiefgegangen. Sie können dieselben Exponate als Liste ansehen oder das klassische Portfolio öffnen."
+    "failed": "Beim Aufbau des 3D Museums ist etwas schiefgegangen. Sie können dieselben Exponate als Liste ansehen oder das klassische Portfolio öffnen.",
+    "lostT": "Die 3D Ansicht wurde angehalten",
+    "lost": "Ihr Gerät hat die 3D Grafik unterbrochen (das kann nach dem Ruhezustand oder bei knappem Speicher passieren). Versuchen Sie es erneut, sehen Sie dieselben Exponate als Liste an oder öffnen Sie das klassische Portfolio.",
+    "retry": "Erneut versuchen"
   },
   "opening": {
     "line": "Willkommen im xTc Museum der Ideen",
@@ -70,12 +75,12 @@
     "collection": {
       "area": "Raum 02",
       "name": "Fertige Arbeiten",
-      "sub": "Spiele und Apps, die live, veröffentlicht oder im Test sind."
+      "sub": "Spiele und Apps, die live, veröffentlicht, im Test oder als echte Produkte im Bau sind."
     },
     "lab": {
       "area": "Raum 03",
       "name": "Das Labor",
-      "sub": "Prototypen, Konzepte und Arbeit in Entwicklung. Keine fertigen Produkte."
+      "sub": "Prototypen, Konzepte und Werkzeuge in Entwicklung. Keine fertigen Produkte."
     },
     "clients": {
       "area": "Raum 04",
@@ -85,7 +90,7 @@
     "creator": {
       "area": "Raum 05",
       "name": "Der Raum des Schöpfers",
-      "sub": "Der Mensch hinter der Arbeit, und wie Sie ihn erreichen."
+      "sub": "Die Terrasse am Wasser: der Mensch hinter der Arbeit, und wie Sie ihn erreichen."
     }
   },
   "status": {
@@ -230,7 +235,7 @@
     },
     "s2": {
       "t": "Fertige Arbeiten",
-      "d": "Der zweite Raum zeigt Arbeit, die schon in der Welt ist: Spiele live auf Roblox und Apps zum Ausprobieren. Jede Installation hat ein Schild mit ihrem Status."
+      "d": "Der zweite Raum zeigt die Hauptsammlung: Spiele live auf Roblox, Apps zum Ausprobieren und echte Produkte, die noch entstehen. Jede Installation trägt das Logo des Projekts, wenn es eines gibt, und ein Schild mit ihrem Status."
     },
     "s3": {
       "d": "Ein Team Brawler auf Roblox, live und weiter in Entwicklung. Der Pümpel ist die Waffe; Gegner von der Karte zu stoßen ist das Ziel."
@@ -249,10 +254,10 @@
     },
     "s8": {
       "t": "Das Labor",
-      "d": "Der dritte Raum gehört unfertiger Arbeit: Spiele und Werkzeuge in Entwicklung, Prototypen und Konzepte. Blaue Schilder kennzeichnen Konzepte und Studien."
+      "d": "Der dritte Raum gehört unfertiger Arbeit: KI Werkzeuge in Entwicklung, Prototypen und Konzepte. Blaue Schilder kennzeichnen Konzepte und Studien."
     },
     "s9": {
-      "d": "Ein Tycoon und Heist Spiel in Entwicklung auf Roblox. Die Bilder sind Konzeptgrafiken."
+      "d": "Ein Tycoon und Heist Spiel, das in Roblox Studio entsteht. Es ist ein echtes Spiel in Entwicklung, noch nicht veröffentlicht; die Bilder sind Konzeptgrafiken."
     },
     "s10": {
       "d": "Ein KI gestütztes Schnittstudio. Die Engine aus Python und FFmpeg existiert; das Studio darum ist der Plan."
@@ -264,7 +269,7 @@
       "d": "Fünf Dinge, die David für Sie bauen kann, jedes belegt durch Arbeit in diesem Museum."
     },
     "s13": {
-      "d": "Im letzten Raum geht es um den Menschen. Das ist ein echtes Foto von David."
+      "d": "Das Museum endet draußen, auf einer Terrasse am Wasser. Das ist ein echtes Foto von David."
     },
     "s14": {
       "d": "E Mail, GitHub, X und der Lebenslauf sind hier. Danke für Ihren Besuch."
@@ -280,11 +285,13 @@
     "joystick": "Joystick auf dem Bildschirm zeigen",
     "sound": "Ton",
     "soundOn": "Ton an",
-    "ambience": "Atmosphäre",
+    "ambience": "Raumatmosphäre",
     "effects": "Interaktionsgeräusche",
     "volume": "Lautstärke",
     "keysT": "Steuerung",
-    "keys": "W A S D oder Pfeile: gehen · Umschalt: schneller gehen · Maus: schauen · E: ansehen · M: Plan · T: Führung · Esc: dieses Menü"
+    "keys": "W A S D oder Pfeile: gehen · Umschalt: schneller gehen · Maus: schauen · E: ansehen · R: Ansicht zurücksetzen · M: Plan · T: Führung · Esc: dieses Menü",
+    "movement": "Bewegungsgeräusche (Schritte)",
+    "soundUnavailable": "Ton ist in diesem Browser nicht verfügbar. Alles andere funktioniert wie gewohnt."
   },
   "gallery": {
     "to3d": "Das 3D Museum begehen",
@@ -358,5 +365,16 @@
       "lede": "Eine Website für Princess UC Crafts, das Handwerksatelier von Princess Uche Charity: Perlenketten und Brautsets, Fascinators, Hüte, Kronen, Fächer und Steinbesatz auf Kleidung, alles auf Bestellung. Die Website ist gebaut und wartet vor dem Start auf die Geschäftsdaten und weitere Fotos.",
       "tagline": "Handgemachte Stücke, endlich online."
     }
+  },
+  "speed": {
+    "title": "Gehgeschwindigkeit",
+    "relaxed": "Gemächlich",
+    "relaxedD": "Langsam, um die Architektur zu genießen",
+    "normal": "Normal",
+    "normalD": "Ein angenehmes Tempo",
+    "fast": "Schnell",
+    "fastD": "Effizienter erkunden",
+    "express": "Express",
+    "expressD": "Direkt von Exponat zu Exponat"
   }
 }

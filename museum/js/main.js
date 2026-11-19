@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { RoomEnvironment } from "../vendor/RoomEnvironment.js";
 import { ROOMS, CORRIDORS, SPOTS, EYE, roomAt, setSolids, CLASSIC_FOR_ROOM } from "./layout.js";
 import { LANGS, t, projectText, setLang, initialLang, onLangChange, lang } from "./i18n.js";
-import { makeMaterials, buildWorld, buildSigns, makeLightRig, architectureSolids } from "./world.js";
+import { makeMaterials, buildWorld, buildSigns, makeLightRig, architectureSolids, ATMOSPHERE } from "./world.js";
 import { buildExhibits, animateExhibits } from "./exhibits.js";
 import { createControls } from "./controls.js";
 import { createAudio } from "./audio.js";
@@ -19,7 +19,7 @@ const PLANNED = new Set(["concept", "explore", "prototype", "dev", "ready"]);
 const PREF_KEY = "xtc-museum-prefs";
 const coarse = matchMedia("(pointer: coarse)").matches;
 const prefs = Object.assign(
-  { sensitivity: 1, quality: "auto", reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, joystick: coarse, sound: false, ambience: true, effects: true, volume: 0.6 },
+  { sensitivity: 1, quality: "auto", reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, joystick: coarse, sound: false, ambience: true, movement: true, effects: true, volume: 0.6, speed: "normal" },
   readPrefs()
 );
 function readPrefs() { try { return JSON.parse(localStorage.getItem(PREF_KEY)) || {}; } catch (e) { return {}; } }
@@ -37,6 +37,9 @@ function hasWebGL() {
   try { const c = document.createElement("canvas"); return !!(window.WebGL2RenderingContext && c.getContext("webgl2")) || !!c.getContext("webgl"); }
   catch (e) { return false; }
 }
+
+// Test hook: only with ?debug in the address, so automated QA can read positions and timing.
+if (new URLSearchParams(location.search).has("debug")) window.__museum = app;
 
 // ------------------------------------------------------------------ boot
 boot().catch((err) => fatal(err));
@@ -66,6 +69,25 @@ async function boot() {
   if (app.webgl && !(navigator.connection && navigator.connection.saveData)) app.building = buildScene().catch((e) => { app.buildError = e; });
 }
 
+// The 3D graphics context was lost mid visit (driver reset, GPU memory pressure, a sleeping
+// laptop). Stop the render loop and offer a way on: try again, the list view or the Classic site.
+function contextLost() {
+  if (app.dead) return;
+  app.dead = true;
+  console.warn("[museum] 3D graphics context lost");
+  closeSheets();
+  if (app.controls) { app.controls.state.enabled = false; app.suppressPause = true; app.controls.releasePointer(); }
+  $("#hud").hidden = true; $("#tour").hidden = true; $("#panel").hidden = true; $("#opening").hidden = true;
+  $("#entrance").hidden = true;
+  const l = $("#loader"); l.hidden = false;
+  $(".loader__bar", l).hidden = true;
+  $(".js-loader-msg").textContent = t("loading.lostT");
+  $(".loader__err", l).hidden = false;
+  $(".js-loader-err").textContent = t("loading.lost");
+  $(".js-retry").hidden = false;
+  $(".js-retry").focus();
+}
+
 function fatal(err) {
   console.error("[museum]", err);
   $("#entrance").hidden = true;
@@ -86,20 +108,20 @@ async function buildScene() {
   renderer.setPixelRatio(pixelRatioFor(quality));
   renderer.setSize(innerWidth, innerHeight);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.05;
+  renderer.toneMappingExposure = 0.95;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   setAnisotropy(Math.min(8, renderer.capabilities.getMaxAnisotropy()));
   $("#stage").appendChild(renderer.domElement);
   renderer.domElement.setAttribute("aria-hidden", "true");
-  renderer.domElement.addEventListener("webglcontextlost", (e) => { e.preventDefault(); fatal(new Error("WebGL context lost")); });
+  renderer.domElement.addEventListener("webglcontextlost", (e) => { e.preventDefault(); contextLost(); });
 
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x050608);
-  scene.fog = new THREE.FogExp2(0x050608, 0.03);
+  scene.background = new THREE.Color(ATMOSPHERE.entrance.fog);
+  scene.fog = new THREE.FogExp2(ATMOSPHERE.entrance.fog, ATMOSPHERE.entrance.density);
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
-  scene.environmentIntensity = 0.32;
-  const camera = new THREE.PerspectiveCamera(coarse ? 74 : 66, innerWidth / innerHeight, 0.05, 90);
+  scene.environmentIntensity = 0.55;
+  const camera = new THREE.PerspectiveCamera(coarse ? 74 : 66, innerWidth / innerHeight, 0.05, 1500);
 
   progress(0.3, "loading.fonts");
   // Signage is drawn on canvases, so wait (briefly) for the web fonts.
@@ -110,8 +132,8 @@ async function buildScene() {
 
   progress(0.45, "loading.rooms");
   const mats = makeMaterials(quality);
-  buildWorld(scene, mats, quality);
-  app.signs = buildSigns(scene, t);
+  app.world = buildWorld(scene, mats, quality);
+  app.signs = buildSigns(scene, t, mats);
   app.rig = makeLightRig(scene);
   progress(0.7, "loading.exhibits");
   app.exhibits = buildExhibits(scene, mats, app.data, t);
@@ -126,10 +148,16 @@ async function buildScene() {
       if (!locked && app.mode === "explore" && !app.inspecting && !app.suppressPause && !$("#map").open) openSheet("#settings");
       app.suppressPause = false;
     },
-    onDragWhileLocked: (dx) => { if (canRotate(app.inspecting)) app.inspecting.model.rotation.y += dx * 0.01; },
+    onDragWhileLocked: (dx, dy) => {
+      if (!canRotate(app.inspecting)) return;
+      const m = app.inspecting.model;
+      m.rotation.y += dx * 0.01;
+      m.rotation.x = THREE.MathUtils.clamp(m.rotation.x + dy * 0.006, -0.6, 0.6); // a gentle tilt, never upside down
+    },
     onTap: () => { if (coarse && app.near && app.mode === "explore") inspect(app.near); },
   });
   controls.state.sensitivity = prefs.sensitivity;
+  controls.setSpeed(prefs.speed);
   controls.bindJoystick($("#joy"), $(".joy__knob"));
   Object.assign(app, { renderer, scene, camera, controls });
   controls.teleport(0, -4, 0);
@@ -170,18 +198,20 @@ function adapt(dt) {
 }
 
 function loop() {
+  if (app.dead) return; // the 3D context was lost: stop drawing, the recovery screen takes over
   requestAnimationFrame(loop);
   // Walking uses a small fixed cap so collisions stay reliable; camera flights follow the real clock
   // so the tour and inspect moves take the same time on slow devices.
   const rawDt = Math.min(0.25, app.clock.getDelta());
   const dt = Math.min(0.05, rawDt);
   const time = app.clock.elapsedTime;
+  app.simTime = (app.simTime || 0) + dt; // movement time actually simulated (for speed QA)
   const c = app.controls;
   if (app.mode === "entrance" && !c.state.flight) {
     // Slow drift in front of the gate behind the entrance screen.
     const a = prefs.reduced ? 0 : time * 0.06;
     c.state.pos.set(Math.sin(a) * 2.2, 2.1, -3 + Math.cos(a) * 0.6);
-    const ang = c.lookAtAngles(c.state.pos, new THREE.Vector3(0, 4.6, -17));
+    const ang = c.lookAtAngles(c.state.pos, new THREE.Vector3(0, 6.2, -19));
     c.state.yaw = ang.yaw; c.state.pitch = ang.pitch;
   }
   c.update(dt, prefs.reduced, rawDt);
@@ -189,10 +219,13 @@ function loop() {
     const room = roomAt(c.state.pos.x, c.state.pos.z);
     if (room && room !== app.room) setRoom(room);
     detectNear();
-    app.audio.step(dt, c.state.walking);
+    app.audio.step(dt, c.state.walking, c.state.travelled);
     saveHashSoon();
   }
   animateExhibits(app.exhibits, time, dt, prefs.reduced, app.inspecting);
+  app.world.update(dt, time, prefs.reduced);
+  easeAtmosphere(rawDt);
+  frameInspection(rawDt);
   if (app.mapOpen) drawMe();
   adapt(dt);
   if (app.mode !== "gallery") app.renderer.render(app.scene, app.camera); // the list view hides the scene, so stop drawing it
@@ -235,7 +268,7 @@ async function enterMuseum({ tour = false, skipIntro = false, restore = null } =
   $("#opening").hidden = false;
   c.state.pos.set(0, 2.6, -1); c.state.yaw = 0; c.state.pitch = 0.12;
   app.skipIntro = () => { c.state.flight = null; c.teleport(0, -4, 0); finish(); app.skipIntro = null; };
-  c.flyTo(new THREE.Vector3(0, EYE, -4.5), 0, 0.05, 4.2, () => { if (app.skipIntro) { app.skipIntro = null; finish(); } });
+  c.flyTo(new THREE.Vector3(0, EYE, -4.5), 0, 0.09, 4.2, () => { if (app.skipIntro) { app.skipIntro = null; finish(); } });
 }
 
 function backToEntrance() {
@@ -258,7 +291,20 @@ function setRoom(id, force) {
   $(".js-room").textContent = t(`rooms.${id}.name`);
   app.rig && app.rig.setRoom(id);
   app.audio.room(id);
+  app.atmo = ATMOSPHERE[id] || ATMOSPHERE.entrance;
   updateClassicLinks();
+}
+
+// Ease the haze and background colour toward the current room's, so thresholds feel like
+// passing from one space into the next instead of a cut.
+const fogTarget = new THREE.Color();
+function easeAtmosphere(dt) {
+  if (!app.atmo || !app.scene) return;
+  const k = 1 - Math.exp(-dt * 2.5);
+  fogTarget.setHex(app.atmo.fog);
+  app.scene.fog.color.lerp(fogTarget, k);
+  app.scene.fog.density += (app.atmo.density - app.scene.fog.density) * k;
+  app.scene.background.copy(app.scene.fog.color);
 }
 
 function updateClassicLinks() {
@@ -298,6 +344,29 @@ function detectNear() {
 // Only free standing objects turn under the visitor's hand; screens and walls stay put.
 const canRotate = (ex) => !!(ex && ex.model && ex.model.children.length);
 
+// Put the inspected object back the way it was and return the camera to its framing.
+function resetView() {
+  const ex = app.inspecting; if (!ex) return;
+  if (ex.model) { ex.model.rotation.y = ex.baseRotY; ex.model.rotation.x = 0; }
+  const c = app.controls, ang = c.lookAtAngles(ex.eye, ex.target);
+  if (prefs.reduced) { c.state.pos.copy(ex.eye); c.state.yaw = ang.yaw; c.state.pitch = ang.pitch; } else c.flyTo(ex.eye, ang.yaw, ang.pitch, 0.6);
+}
+
+// While the details panel is open, shift the picture so the object sits in the middle of the
+// part of the screen the panel leaves free: left of the side panel, above the phone sheet.
+const shift = { x: 0, y: 0 };
+function frameInspection(dt) {
+  let tx = 0, ty = 0;
+  const panel = $("#panel");
+  if (app.panelFor && !panel.hidden && app.mode !== "gallery") {
+    if (innerWidth <= 700) ty = panel.offsetHeight / 2; else tx = panel.offsetWidth / 2;
+  }
+  const k = prefs.reduced ? 1 : 1 - Math.exp(-dt * 6);
+  shift.x += (tx - shift.x) * k; shift.y += (ty - shift.y) * k;
+  if (Math.abs(shift.x) < 0.5 && Math.abs(shift.y) < 0.5 && !tx && !ty) { if (app.camera.view && app.camera.view.enabled) app.camera.clearViewOffset(); return; }
+  app.camera.setViewOffset(innerWidth, innerHeight, shift.x, shift.y, innerWidth, innerHeight);
+}
+
 function exhibitTitle(ex) {
   if (ex.project) return ex.project.title;
   return t({ capabilities: "caps.title", "creator-about": "creator.aboutT", "creator-background": "creator.backgroundT", "creator-contact": "contact.title" }[ex.kind]);
@@ -317,7 +386,7 @@ function inspect(ex, { instant = false } = {}) {
   if (instant || prefs.reduced) { c.state.flight = null; c.state.pos.copy(ex.eye); c.state.yaw = ang.yaw; c.state.pitch = ang.pitch; }
   else c.flyTo(ex.eye, ang.yaw, ang.pitch, 1.1);
   openPanel(ex);
-  $("#inspect-hint").hidden = !canRotate(ex) || (coarse && innerWidth < 700);
+  $("#inspect-hint").hidden = !canRotate(ex);
   app.audio.open();
   setHash({ exhibit: ex.id });
   updateClassicLinks();
@@ -366,7 +435,12 @@ function panelHtml(ex) {
     const imgs = (p.images || []).map((u) => `<a href="${esc(ROOT + u.replace(/-(640|400|800)\.webp$/, ".webp"))}" target="_blank" rel="noopener"><img src="${esc(ROOT + u)}" alt="${esc(t("ui.screenshotOf", { title: p.title }))}" loading="lazy"></a>`).join("");
     const links = [`<a class="btn btn--line" href="${esc(ROOT + p.case)}">${esc(t("links.caseStudy"))}</a>`]
       .concat((p.links || []).map((l) => `<a class="btn ${l.kind === "play" || l.kind === "demo" ? "btn--ember" : "btn--line"}" href="${esc(l.href.startsWith("http") ? l.href : ROOT + l.href.replace(/^\.\.\//, ""))}" ${l.href.startsWith("http") ? 'target="_blank" rel="noopener"' : ""}>${esc(linkLabel(l))}</a>`)).join("");
+    // the project's real logo or icon, shown whole on its brand colour (no logo: nothing invented)
+    const b = p.brand || {};
+    const brand = b.kind === "logo" || b.kind === "icon"
+      ? `<div class="panel__brand panel__brand--${b.kind}" style="background:${esc(b.bg || "#0b0b0c")}"><img src="${esc(ROOT + b.src)}" alt="${esc(t("ui.logoOf", { title: p.title }))}"></div>` : "";
     return `
+      ${brand}
       <p class="kicker">${esc(t(`rooms.${p.room}.area`))} · ${esc(room)}</p>
       <h2 id="panel-title">${esc(p.title)}</h2>
       <div class="meta"><span class="chip chip--status ${plan ? "is-plan" : ""}">${esc(t(`status.${p.status}`))}</span>${p.cats.map((k) => `<span class="chip chip--quiet">${esc(t(`cats.${k}`))}</span>`).join("")}${p.client ? `<span class="chip chip--quiet">${esc(t("cats.client"))}</span>` : ""}</div>
@@ -456,9 +530,9 @@ function openMap() {
   const corrs = CORRIDORS.map((c) => `<rect class="corr" x="${-c.z0}" y="${c.x - c.w / 2}" width="${c.z0 - c.z1}" height="${c.w}"/>`).join("");
   const dots = app.exhibits.map((ex) => {
     const plan = ex.project && PLANNED.has(ex.project.status);
-    return `<circle class="dot ${plan ? "is-plan" : ""}" tabindex="0" role="button" data-ex="${ex.id}" aria-label="${esc(exhibitTitle(ex))}" cx="${-ex.spot.z}" cy="${ex.spot.x}" r="0.9"><title>${esc(exhibitTitle(ex))}</title></circle>`;
+    return `<circle class="dot ${plan ? "is-plan" : ""}" tabindex="0" role="button" data-ex="${ex.id}" aria-label="${esc(exhibitTitle(ex))}" cx="${-ex.spot.z}" cy="${ex.spot.x}" r="1.1"><title>${esc(exhibitTitle(ex))}</title></circle>`;
   }).join("");
-  box.innerHTML = `<svg viewBox="-2 -16 150 37" role="img" aria-label="${esc(t("ui.mapTitle"))}">${corrs}${rooms}${dots}<path class="me" id="me" d="M0 -1.2 L0.9 1 L0 0.4 L-0.9 1 Z"/></svg>`;
+  box.innerHTML = `<svg viewBox="-2 -26 184 58" role="img" aria-label="${esc(t("ui.mapTitle"))}">${corrs}${rooms}${dots}<path class="me" id="me" d="M0 -1.2 L0.9 1 L0 0.4 L-0.9 1 Z"/></svg>`;
   const go = (el) => {
     if (el.dataset.room) { const r = ROOMS.find((q) => q.id === el.dataset.room); travel(r.entry[0], r.entry[1], r.entry[2]); }
     if (el.dataset.ex) { const ex = app.exhibits.find((e) => e.id === el.dataset.ex); travel(ex.eye.x, ex.eye.z, app.controls.lookAtAngles(ex.eye, ex.target).yaw, () => inspect(ex, { instant: true })); }
@@ -488,14 +562,16 @@ function travel(x, z, yaw, then) {
 }
 
 // ------------------------------------------------------------------ guided tour
+// Each stop names its text in the locale files (tour.sN), so stops can be reordered freely.
 const TOUR = [
-  { pose: [0, 1.75, -6, 0, 4.2, -17] },
-  { pose: [0, 2.3, -25.5, 0, 1.8, -44] },
-  { ex: "toilet-wars" }, { ex: "haunting-mother" }, { ex: "pitchit" }, { ex: "echomind" }, { ex: "bookverse" },
-  { pose: [0, 1.8, -65.5, 0, 1.3, -82] },
-  { ex: "steal-the-moon" }, { ex: "ai-studio" },
-  { ex: "anthony-studios" }, { ex: "capabilities" },
-  { ex: "creator-portrait" }, { ex: "creator-contact" },
+  { k: "s1", pose: [0, 1.75, -3, 0, 6.6, -19] },
+  { k: "s2", pose: [0, 2.3, -28.5, 0, 2.2, -50] },
+  { k: "s3", ex: "toilet-wars" }, { k: "s4", ex: "haunting-mother" }, { k: "s5", ex: "pitchit" }, { k: "s6", ex: "echomind" },
+  { k: "s7", ex: "bookverse" }, { k: "s9", ex: "steal-the-moon" },
+  { k: "s8", pose: [0, 1.8, -77.5, 0, 1.5, -96] },
+  { k: "s10", ex: "ai-studio" },
+  { k: "s11", ex: "anthony-studios" }, { k: "s12", ex: "capabilities" },
+  { k: "s13", ex: "creator-portrait" }, { k: "s14", ex: "creator-contact" },
 ];
 function startTour() {
   if (!app.ready) return;
@@ -516,17 +592,18 @@ function tourGo(i) {
   else { eye = new THREE.Vector3(step.pose[0], step.pose[1], step.pose[2]); target = new THREE.Vector3(step.pose[3], step.pose[4], step.pose[5]); }
   const ang = c.lookAtAngles(eye, target);
   const far = c.state.pos.distanceTo(eye) > 30;
+  const pace = TOUR_PACE[prefs.speed] || 1;
   if (prefs.reduced || far) {
     const jump = () => { c.state.pos.copy(eye); c.state.yaw = ang.yaw; c.state.pitch = ang.pitch; };
     if (far && !prefs.reduced) { const f = $("#fade"); f.classList.add("is-on"); setTimeout(() => { jump(); f.classList.remove("is-on"); }, 450); } else jump();
-  } else c.flyTo(eye, ang.yaw, ang.pitch, 1.6);
+  } else c.flyTo(eye, ang.yaw, ang.pitch, Math.max(0.9, 1.6 * pace) * Math.min(1.4, 0.6 + c.state.pos.distanceTo(eye) / 18));
   setRoom(roomAt(eye.x, eye.z) || app.room, true);
   tr.ex = ex;
   renderTour();
 }
 function renderTour() {
   const tr = app.tour; if (!tr) return;
-  const step = TOUR[tr.i], k = `tour.s${tr.i + 1}`;
+  const step = TOUR[tr.i], k = `tour.${step.k}`;
   $(".js-tour-step").textContent = t("tour.stepOf", { n: tr.i + 1, total: TOUR.length });
   $(".js-tour-title").textContent = step.ex && app.byId[step.ex] ? app.byId[step.ex].title : t(`${k}.t`);
   $(".js-tour-text").textContent = t(`${k}.d`);
@@ -612,6 +689,31 @@ function refreshLanguage(code) {
   qualityNote();
 }
 
+// ------------------------------------------------------------------ walking speed
+const SPEED_ORDER = ["relaxed", "normal", "fast", "express"];
+// The tour flies between stops a little quicker at the faster speeds; a floor of 0.9 s in tourGo
+// keeps every move smooth.
+const TOUR_PACE = { relaxed: 1.15, normal: 1, fast: 0.8, express: 0.62 };
+function setSpeed(name) {
+  if (!SPEED_ORDER.includes(name)) return;
+  prefs.speed = name; savePrefs();
+  if (app.controls) app.controls.setSpeed(name);
+  syncSpeedUi(); app.audio.tick();
+}
+function syncSpeedUi() {
+  if (!SPEED_ORDER.includes(prefs.speed)) prefs.speed = "normal";
+  $$(".speed__opt").forEach((b) => { const on = b.dataset.speed === prefs.speed; b.setAttribute("aria-checked", String(on)); b.tabIndex = on ? 0 : -1; b.classList.toggle("is-on", on); });
+  $(".js-speed-select").value = prefs.speed;
+}
+
+// The browser could not start audio: say so, and do not pretend sound is on.
+function soundUnavailable() {
+  prefs.sound = false;
+  const box = $(".js-sound"); box.checked = false; box.disabled = true;
+  $$(".js-amb, .js-move, .js-fx, .js-vol").forEach((el) => { el.disabled = true; });
+  $(".js-sound-note").hidden = false;
+}
+
 function applyPrefsToUi() {
   $(".js-sens").value = prefs.sensitivity;
   $(".js-quality").value = prefs.quality;
@@ -620,6 +722,8 @@ function applyPrefsToUi() {
   $(".js-sound").checked = prefs.sound;
   $(".js-amb").checked = prefs.ambience;
   $(".js-fx").checked = prefs.effects;
+  $(".js-move").checked = prefs.movement;
+  syncSpeedUi();
   $(".js-vol").value = prefs.volume;
   document.body.classList.toggle("is-reduced", prefs.reduced);
 }
@@ -655,6 +759,8 @@ function saveHashSoon() {
 // ------------------------------------------------------------------ wiring
 function wireUi() {
   $(".js-enter").addEventListener("click", () => enterMuseum());
+  $(".js-retry").addEventListener("click", () => location.reload());
+  $(".js-reset-view").addEventListener("click", resetView);
   $(".js-enter-tour").addEventListener("click", () => enterMuseum({ tour: true, skipIntro: true }));
   $$(".js-gallery").forEach((b) => b.addEventListener("click", showGallery));
   $(".js-gallery-to-3d").addEventListener("click", () => { closePanel(true); $("#gallery").hidden = true; document.body.classList.remove("is-gallery"); if (!app.webgl) { qualityNote(true); return showGallery(); } enterMuseum({ skipIntro: true }); });
@@ -679,10 +785,23 @@ function wireUi() {
   });
   $(".js-reduced").addEventListener("change", (e) => { prefs.reduced = e.target.checked; savePrefs(); applyPrefsToUi(); });
   $(".js-joy").addEventListener("change", (e) => { prefs.joystick = e.target.checked; savePrefs(); updateJoystick(); });
-  const sound = () => { app.audio.set({ on: prefs.sound, ambience: prefs.ambience, effects: prefs.effects, volume: prefs.volume }); savePrefs(); };
+  const sound = () => {
+    const ok = app.audio.set({ on: prefs.sound, ambience: prefs.ambience, movement: prefs.movement, effects: prefs.effects, volume: prefs.volume });
+    if (!ok) soundUnavailable(); else savePrefs();
+  };
   $(".js-sound").addEventListener("change", (e) => { prefs.sound = e.target.checked; sound(); });
   $(".js-amb").addEventListener("change", (e) => { prefs.ambience = e.target.checked; sound(); });
   $(".js-fx").addEventListener("change", (e) => { prefs.effects = e.target.checked; sound(); });
+  $(".js-move").addEventListener("change", (e) => { prefs.movement = e.target.checked; sound(); });
+  // walking speed: the picker on the entrance screen and the select in the menu stay in step
+  $$(".speed__opt").forEach((b) => b.addEventListener("click", () => setSpeed(b.dataset.speed)));
+  $(".js-speed-picker").addEventListener("keydown", (e) => {
+    if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(e.key)) return;
+    e.preventDefault();
+    const i = SPEED_ORDER.indexOf(prefs.speed), j = (i + (e.key === "ArrowLeft" || e.key === "ArrowUp" ? -1 : 1) + 4) % 4;
+    setSpeed(SPEED_ORDER[j]); $(`.speed__opt[data-speed="${SPEED_ORDER[j]}"]`).focus();
+  });
+  $(".js-speed-select").addEventListener("change", (e) => setSpeed(e.target.value));
   $(".js-vol").addEventListener("input", (e) => { prefs.volume = +e.target.value; sound(); });
   // Sound stays off until the visitor asks for it; the saved choice applies only after a click.
   if (prefs.sound) addEventListener("pointerdown", () => sound(), { once: true });
@@ -692,7 +811,9 @@ function wireUi() {
     if (app.mode !== "explore" && app.mode !== "intro") return;
     if (e.code === "KeyE" || e.code === "Enter" && app.near && document.activeElement === document.body) {
       if (app.inspecting && !app.tour) closePanel(); else if (app.near && !app.tour) inspect(app.near);
-    } else if (e.code === "KeyM") { $("#map").open ? closeSheets() : openMap(); }
+    } else if (e.code === "KeyR" && app.inspecting) resetView();
+    else if (app.inspecting && canRotate(app.inspecting) && (e.code === "ArrowLeft" || e.code === "ArrowRight")) { e.preventDefault(); app.inspecting.model.rotation.y += e.code === "ArrowLeft" ? -0.12 : 0.12; }
+    else if (e.code === "KeyM") { $("#map").open ? closeSheets() : openMap(); }
     else if (e.code === "KeyT" && !app.tour && app.mode === "explore") startTour();
     else if (e.code === "Escape") {
       if ($$("dialog.sheet").some((d) => d.open)) return; // the dialog closes itself

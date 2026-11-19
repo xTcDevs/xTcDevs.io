@@ -4,7 +4,7 @@ Run: python3 tools/build_cases.py   then   python3 tools/build_locales.py
 """
 import html, json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from cases import CASES, EXISTING, CATS, STATUS_RANK, STAGES, MUSEUM_ROOMS, MUSEUM_STYLE, MUSEUM_EXISTING, MUSEUM_CREATOR
+from cases import CASES, EXISTING, CATS, STATUS_RANK, STAGES, MUSEUM_ROOMS, MUSEUM_STYLE, MUSEUM_BRAND, MUSEUM_EXISTING, MUSEUM_CREATOR
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://xtcdev.netlify.app"
@@ -345,7 +345,11 @@ def build_museum_data():
     projects = []
     for room, ids in MUSEUM_ROOMS.items():
         for pid in ids:
-            d = entry(pid); d["room"] = room; d["style"] = MUSEUM_STYLE[pid]; projects.append(d)
+            d = entry(pid); d["room"] = room; d["style"] = MUSEUM_STYLE[pid]
+            # brand: the real logo or icon when one exists, otherwise the featured image (never invented)
+            br = MUSEUM_BRAND.get(pid)
+            d["brand"] = dict(br) if br else ({"src": d["images"][0], "kind": "featured"} if d["images"] else {"kind": "type"})
+            projects.append(d)
     data = {"generated_from": "tools/cases.py", "status_labels": STATUS, "projects": projects, "creator": {
         **{k: v for k, v in MUSEUM_CREATOR.items() if k not in ("social", "experience", "education")},
         "social": [{"name": n, "href": h, "handle": u} for n, h, u in MUSEUM_CREATOR["social"]],

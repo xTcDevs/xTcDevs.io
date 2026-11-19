@@ -324,10 +324,21 @@ CASES = [
 # Classic site and the museum share one source of truth. Rooms and installation styles
 # live here; project text comes from CASES / EXISTING above.
 MUSEUM_ROOMS = {
-    "collection": ["toilet-wars", "haunting-mother", "pitchit", "echomind", "bookverse"],
-    "lab": ["steal-the-moon", "ai-studio", "personal-ai", "ai-land", "drawing-board", "fintech"],
+    # Steal the Moon is a real Roblox game in active development, so it is exhibited with the
+    # main collection; its status stays "dev" (In development), never shown as finished.
+    "collection": ["toilet-wars", "haunting-mother", "pitchit", "echomind", "bookverse", "steal-the-moon"],
+    "lab": ["ai-studio", "personal-ai", "ai-land", "drawing-board", "fintech"],
     "clients": ["anthony-studios", "zaga", "princess-uc"],
 }
+# Real project branding found in the project sources. kind "logo" = full logo, "icon" = app or
+# game icon. Projects missing here have no official logo; the museum uses their featured image.
+MUSEUM_BRAND = {
+    "toilet-wars": {"src": "assets/img/toilet-wars/icon.webp", "kind": "icon", "bg": "#0b2a55"},
+    "pitchit": {"src": "assets/img/pitchit/logo-full.webp", "kind": "logo", "icon": "assets/img/pitchit/icon.png", "bg": "#f6f1ea"},
+    "bookverse": {"src": "assets/img/bookverse/icon.webp", "kind": "icon", "bg": "#2a241f"},
+    "zaga": {"src": "assets/img/zaga/logo-white.webp", "kind": "logo", "bg": "#0b0b0c"},
+}
+
 MUSEUM_STYLE = {
     "toilet-wars": "plunger", "haunting-mother": "candle", "pitchit": "pin", "echomind": "orbs", "bookverse": "books",
     "steal-the-moon": "moon", "ai-studio": "timeline", "personal-ai": "core", "ai-land": "land", "drawing-board": "board",

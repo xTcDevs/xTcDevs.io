@@ -160,8 +160,8 @@ body.has-joy .prompt { left: auto; right: 16px; transform: none; }
 .map .dot { fill: var(--ivory); cursor: pointer; }
 .map .dot:hover, .map .dot:focus { fill: var(--blue); outline: none; }
 .map .dot.is-plan { fill: var(--blue-soft); }
-.map text { fill: var(--ivory); font: 600 1.75px var(--sans); pointer-events: none; }
-.map .label-area { fill: var(--ember); font-weight: 800; font-size: 1.5px; letter-spacing: .15px; }
+.map text { fill: var(--ivory); font: 600 2.1px var(--sans); pointer-events: none; }
+.map .label-area { fill: var(--ember); font-weight: 800; font-size: 1.8px; letter-spacing: .18px; }
 .map .me { fill: var(--ember); }
 .settings { padding: 18px 22px 24px; display: grid; gap: 14px; }
 .field { display: grid; gap: 6px; border: 0; padding: 0; margin: 0; }
@@ -207,3 +207,32 @@ body.is-gallery #stage, body.is-gallery .fade { display: none; }
 body.has-joy .hud__hint { bottom: calc(max(26px, env(safe-area-inset-bottom)) + 190px); }
 /* In list view the details panel must sit above the list, or its buttons cannot be clicked. */
 body.is-gallery .panel { z-index: 40; }
+
+/* Inspection: a narrower side panel on desktop and a shorter sheet on phones, so the object keeps
+   most of the screen (the camera framing shifts to the free space, see frameInspection). */
+@media (min-width: 701px) { .panel { width: min(460px, 40vw); } }
+.panel__brand { display: flex; align-items: center; justify-content: center; height: 120px; margin: 4px 56px 18px 0; border-radius: 14px; border: 1px solid rgba(164, 122, 76, .55); }
+.panel__brand img { max-height: 92px; max-width: 70%; object-fit: contain; }
+.panel__brand--icon img { max-height: 104px; border-radius: 18px; }
+.inspect-hint { display: flex; align-items: center; gap: 12px; pointer-events: auto; }
+.inspect-hint__reset { border: 1px solid var(--line-2); background: var(--ink-2); color: var(--ivory); border-radius: 999px; padding: 6px 12px; font: 600 .82rem var(--sans); cursor: pointer; min-height: 36px; }
+.inspect-hint__reset:hover, .inspect-hint__reset:focus-visible { border-color: var(--ember); }
+@media (max-width: 700px) {
+  .panel { height: 54vh; }
+  .inspect-hint { bottom: calc(54vh + 10px); left: 50%; transform: translateX(-50%); white-space: nowrap; }
+  .inspect-hint kbd { display: none; }
+}
+@media (hover: none) { .inspect-hint__reset kbd { display: none; } }
+
+/* Walking speed picker on the entrance screen */
+.speed { border: 0; margin: 18px 0 4px; padding: 0; min-width: 0; }
+.speed legend { font: 800 .72rem var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; padding: 0; }
+.speed__opts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.speed__opt { text-align: left; display: flex; flex-direction: column; gap: 3px; padding: 10px 12px; min-height: 64px; border-radius: 14px; border: 1px solid var(--line-2); background: rgba(255, 255, 255, .03); color: var(--ivory); cursor: pointer; font: inherit; transition: border-color .2s, background .2s; }
+.speed__opt b { font: 700 .9rem var(--sans); }
+.speed__opt span { font-size: .74rem; line-height: 1.3; color: var(--muted); }
+.speed__opt:hover { border-color: rgba(255, 106, 61, .5); }
+.speed__opt.is-on { border-color: var(--ember); background: rgba(255, 106, 61, .12); }
+.speed__opt:focus-visible { outline: 2px solid var(--ember); outline-offset: 2px; }
+@media (max-width: 560px) { .speed__opts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.sound-note { margin: 4px 0 6px; padding: 8px 12px; border-radius: 10px; background: rgba(255, 106, 61, .12); color: var(--ivory); font-size: .86rem; }

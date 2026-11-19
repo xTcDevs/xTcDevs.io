@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/museum.css?v=20261119">
+  <link rel="stylesheet" href="css/museum.css?v=20261120">
   <script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
 </head>
 <body>
@@ -48,6 +48,15 @@
             <li><span>04</span><span data-t="rooms.clients.name">Client Exhibition</span></li>
             <li><span>05</span><span data-t="rooms.creator.name">The Creator's Room</span></li>
           </ul>
+          <fieldset class="speed js-speed-picker">
+            <legend data-t="speed.title">Walking speed</legend>
+            <div class="speed__opts" role="radiogroup" aria-label="Walking speed" data-t-attr="aria-label:speed.title">
+              <button type="button" role="radio" class="speed__opt" data-speed="relaxed" aria-checked="false"><b data-t="speed.relaxed">Relaxed</b><span data-t="speed.relaxedD">Slow, to take in the architecture</span></button>
+              <button type="button" role="radio" class="speed__opt" data-speed="normal" aria-checked="true"><b data-t="speed.normal">Normal</b><span data-t="speed.normalD">A comfortable walk</span></button>
+              <button type="button" role="radio" class="speed__opt" data-speed="fast" aria-checked="false"><b data-t="speed.fast">Fast</b><span data-t="speed.fastD">Explore more efficiently</span></button>
+              <button type="button" role="radio" class="speed__opt" data-speed="express" aria-checked="false"><b data-t="speed.express">Express</b><span data-t="speed.expressD">Go straight between exhibits</span></button>
+            </div>
+          </fieldset>
           <div class="choice__actions">
             <button class="btn btn--ember js-enter" type="button" data-t="entrance.enter">Enter museum</button>
             <button class="btn btn--line js-enter-tour" type="button" data-t="entrance.tour">Take the guided tour</button>
@@ -74,7 +83,7 @@
     <div class="loader__bar"><i class="js-loader-bar"></i></div>
     <div class="loader__err" hidden>
       <p class="js-loader-err"></p>
-      <div class="choice__actions"><button class="btn btn--line js-gallery" type="button" data-t="entrance.gallery">Browse the museum as a list</button><a class="btn btn--quiet" href="../index.html" data-t="entrance.classic">Open the Classic portfolio</a></div>
+      <div class="choice__actions"><button class="btn btn--ember js-retry" type="button" data-t="loading.retry" hidden>Try again</button><button class="btn btn--line js-gallery" type="button" data-t="entrance.gallery">Browse the museum as a list</button><a class="btn btn--quiet" href="../index.html" data-t="entrance.classic">Open the Classic portfolio</a></div>
     </div>
   </div>
 
@@ -118,7 +127,7 @@
     <button class="panel__close js-close-panel" type="button" aria-label="Close" data-t-attr="aria-label:ui.close">×</button>
     <div class="panel__body js-panel-body"></div>
   </aside>
-  <p class="inspect-hint" id="inspect-hint" hidden data-t="ui.dragRotate">Drag to rotate the object</p>
+  <div class="inspect-hint" id="inspect-hint" hidden><span data-t="ui.dragRotate">Drag to rotate the object</span><button class="inspect-hint__reset js-reset-view" type="button"><span data-t="ui.resetView">Reset view</span> <kbd>R</kbd></button></div>
 
   <!-- MAP -->
   <dialog class="sheet" id="map" aria-labelledby="map-title">
@@ -132,6 +141,13 @@
     <header class="sheet__head"><h2 id="set-title" data-t="ui.paused">Paused</h2><button class="sheet__x js-close" type="button" aria-label="Close" data-t-attr="aria-label:ui.close">×</button></header>
     <div class="settings">
       <label class="field"><span data-t="ui.language">Language</span><select class="js-lang"></select></label>
+      <label class="field"><span data-t="speed.title">Walking speed</span>
+        <select class="js-speed-select">
+          <option value="relaxed" data-t="speed.relaxed">Relaxed</option>
+          <option value="normal" data-t="speed.normal">Normal</option>
+          <option value="fast" data-t="speed.fast">Fast</option>
+          <option value="express" data-t="speed.express">Express</option>
+        </select></label>
       <label class="field"><span data-t="settings.sensitivity">Look sensitivity</span><input type="range" min="0.3" max="2.5" step="0.1" value="1" class="js-sens"></label>
       <label class="field"><span data-t="settings.quality">Rendering quality</span>
         <select class="js-quality">
@@ -144,7 +160,9 @@
       <fieldset class="field">
         <legend data-t="settings.sound">Sound</legend>
         <label class="check"><input type="checkbox" class="js-sound"><span data-t="settings.soundOn">Sound on</span></label>
-        <label class="check"><input type="checkbox" class="js-amb" checked><span data-t="settings.ambience">Ambience</span></label>
+        <p class="sound-note js-sound-note" role="status" hidden data-t="settings.soundUnavailable">Sound is not available in this browser.</p>
+        <label class="check"><input type="checkbox" class="js-amb" checked><span data-t="settings.ambience">Environmental ambience</span></label>
+        <label class="check"><input type="checkbox" class="js-move" checked><span data-t="settings.movement">Movement sounds (footsteps)</span></label>
         <label class="check"><input type="checkbox" class="js-fx" checked><span data-t="settings.effects">Interaction sounds</span></label>
         <label class="field"><span data-t="settings.volume">Volume</span><input type="range" min="0" max="1" step="0.05" value="0.6" class="js-vol"></label>
       </fieldset>
@@ -175,6 +193,6 @@
   </main>
 
   <noscript><p class="noscript">The 3D museum needs JavaScript. <a href="../index.html">Open the Classic portfolio</a>.</p></noscript>
-  <script type="module" src="js/main.js?v=20261119"></script>
+  <script type="module" src="js/main.js?v=20261120"></script>
 </body>
 </html>

@@ -26,7 +26,9 @@
     "noImages": "Todavía no hay imágenes.",
     "links": "Enlaces",
     "screenshotOf": "Imagen de {title}",
-    "touchHint": "Arrastra para mirar · usa el joystick para caminar · toca una obra para abrirla"
+    "touchHint": "Arrastra para mirar · usa el joystick para caminar · toca una obra para abrirla",
+    "resetView": "Restablecer la vista",
+    "logoOf": "Logotipo de {title}"
   },
   "entrance": {
     "museumName": "Museo de Ideas",
@@ -55,7 +57,10 @@
     "exhibits": "Colocando las obras",
     "lighting": "Encendiendo las luces",
     "failedT": "No se pudo abrir el museo",
-    "failed": "Algo salió mal al construir el museo 3D. Puedes ver las mismas obras como lista o abrir el portafolio Clásico."
+    "failed": "Algo salió mal al construir el museo 3D. Puedes ver las mismas obras como lista o abrir el portafolio Clásico.",
+    "lostT": "La vista 3D se detuvo",
+    "lost": "Tu dispositivo interrumpió los gráficos 3D (puede pasar tras la suspensión o cuando falta memoria). Inténtalo de nuevo, ve las mismas obras como lista o abre el portafolio Clásico.",
+    "retry": "Intentar de nuevo"
   },
   "opening": {
     "line": "Bienvenido al Museo de Ideas xTc",
@@ -70,12 +75,12 @@
     "collection": {
       "area": "Sala 02",
       "name": "Obras terminadas",
-      "sub": "Juegos y aplicaciones publicados, en línea o en pruebas."
+      "sub": "Juegos y aplicaciones en línea, publicados, en pruebas o en construcción como productos reales."
     },
     "lab": {
       "area": "Sala 03",
       "name": "El Laboratorio",
-      "sub": "Prototipos, conceptos y trabajo en desarrollo. No son productos terminados."
+      "sub": "Prototipos, conceptos y herramientas en desarrollo. No son productos terminados."
     },
     "clients": {
       "area": "Sala 04",
@@ -85,7 +90,7 @@
     "creator": {
       "area": "Sala 05",
       "name": "La Sala del Creador",
-      "sub": "La persona detrás del trabajo, y cómo contactarla."
+      "sub": "La terraza junto al agua: la persona detrás del trabajo, y cómo contactarla."
     }
   },
   "status": {
@@ -230,7 +235,7 @@
     },
     "s2": {
       "t": "Obras terminadas",
-      "d": "La segunda sala muestra trabajo que ya está en el mundo: juegos en línea en Roblox y aplicaciones que puedes probar. Cada instalación tiene una placa con su estado."
+      "d": "La segunda sala reúne la colección principal: juegos en línea en Roblox, aplicaciones que puedes probar y productos reales que aún se están construyendo. Cada instalación lleva el logotipo del proyecto cuando existe, y una placa con su estado."
     },
     "s3": {
       "d": "Un juego de peleas por equipos en Roblox, en línea y todavía en desarrollo. El desatascador es el arma; sacar a los rivales del mapa es el objetivo."
@@ -249,10 +254,10 @@
     },
     "s8": {
       "t": "El Laboratorio",
-      "d": "La tercera sala es para el trabajo sin terminar: juegos y herramientas en desarrollo, prototipos y conceptos. Las etiquetas azules marcan conceptos y exploraciones."
+      "d": "La tercera sala es para el trabajo sin terminar: herramientas de IA en desarrollo, prototipos y conceptos. Las etiquetas azules marcan conceptos y exploraciones."
     },
     "s9": {
-      "d": "Un juego de tycoon y atracos en desarrollo en Roblox. Las imágenes son arte conceptual."
+      "d": "Un juego de tycoon y atracos que se está construyendo en Roblox Studio. Es un juego real en desarrollo, aún sin publicar; las imágenes son arte conceptual."
     },
     "s10": {
       "d": "Un estudio de edición asistido por IA. El motor en Python y FFmpeg existe; el estudio a su alrededor es el plan."
@@ -264,7 +269,7 @@
       "d": "Cinco cosas que David puede construir para ti, cada una respaldada por trabajo de este museo."
     },
     "s13": {
-      "d": "La última sala trata de la persona. Esta es una fotografía real de David."
+      "d": "El museo termina al aire libre, en una terraza junto al agua. Esta es una fotografía real de David."
     },
     "s14": {
       "d": "Correo, GitHub, X y el CV están aquí. Gracias por tu visita."
@@ -280,11 +285,13 @@
     "joystick": "Mostrar joystick en pantalla",
     "sound": "Sonido",
     "soundOn": "Sonido activado",
-    "ambience": "Ambiente",
+    "ambience": "Ambiente del lugar",
     "effects": "Sonidos de interacción",
     "volume": "Volumen",
     "keysT": "Controles",
-    "keys": "W A S D o flechas: moverse · Mayús: caminar más rápido · Ratón: mirar · E: examinar · M: mapa · T: visita · Esc: este menú"
+    "keys": "W A S D o flechas: moverse · Mayús: caminar más rápido · Ratón: mirar · E: examinar · R: restablecer la vista · M: mapa · T: visita · Esc: este menú",
+    "movement": "Sonidos de movimiento (pasos)",
+    "soundUnavailable": "El sonido no está disponible en este navegador. Todo lo demás funciona con normalidad."
   },
   "gallery": {
     "to3d": "Recorrer el museo en 3D",
@@ -358,5 +365,16 @@
       "lede": "Un sitio web para Princess UC Crafts, el taller artesanal de Princess Uche Charity: collares y juegos nupciales de abalorios, tocados, sombreros, coronas, abanicos y pedrería en ropa, todo por encargo. El sitio está construido y espera los datos del negocio y más fotos antes de lanzarse.",
       "tagline": "Piezas hechas a mano, por fin en línea."
     }
+  },
+  "speed": {
+    "title": "Velocidad al caminar",
+    "relaxed": "Tranquila",
+    "relaxedD": "Lenta, para disfrutar la arquitectura",
+    "normal": "Normal",
+    "normalD": "Un paseo cómodo",
+    "fast": "Rápida",
+    "fastD": "Explorar con más eficiencia",
+    "express": "Exprés",
+    "expressD": "Ir directo de una obra a otra"
   }
 }
