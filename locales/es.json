@@ -202,7 +202,8 @@
     "r3": "Diseñador UI/UX",
     "r4": "Desarrollador de videojuegos",
     "scroll": "Bajar a los proyectos",
-    "title": "Convertir ideas en <em>experiencias digitales.</em>"
+    "title": "Convertir ideas en <em>experiencias digitales.</em>",
+    "ctaMuseum": "Recorrer el museo 3D"
   },
   "meta": {
     "echomind": {
@@ -232,7 +233,8 @@
     "contact": "Contacto",
     "home": "Inicio",
     "playground": "Patio de juegos",
-    "work": "Proyectos"
+    "work": "Proyectos",
+    "museum": "Museo 3D"
   },
   "nf": {
     "home": "Ir al inicio",

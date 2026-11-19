@@ -1,0 +1,232 @@
+{
+  "ui": {
+    "skipToClassic": "Aller au portfolio Classique",
+    "language": "Langue",
+    "museumNav": "Musée",
+    "map": "Plan",
+    "tour": "Visite",
+    "menu": "Menu",
+    "classic": "Portfolio Classique",
+    "clickToLook": "Cliquez pour regarder autour · W A S D pour avancer",
+    "inspect": "Examiner",
+    "contactVerb": "Prendre contact",
+    "close": "Fermer",
+    "dragRotate": "Faites glisser pour tourner l'objet",
+    "mapTitle": "Plan du musée",
+    "mapHelp": "Choisissez une salle ou une œuvre pour vous y rendre.",
+    "paused": "En pause",
+    "resume": "Reprendre",
+    "entrance": "Retour à l'entrée",
+    "conceptNote": "Il s'agit d'un concept ou d'une étude de design, pas d'un produit fini. Les images sont des illustrations de concept ou des explorations d'interface.",
+    "devNote": "Ce travail est encore en construction. Ce qui est décrit ici est le projet ; le statut plus haut indique où il en est.",
+    "tech": "Réalisé avec",
+    "screens": "Écrans",
+    "conceptImages": "Images de concept",
+    "conceptArt": "Illustrations de concept, pas des captures d'un produit fini.",
+    "noImages": "Pas encore d'images.",
+    "links": "Liens",
+    "screenshotOf": "Image de {title}"
+  },
+  "entrance": {
+    "museumName": "Musée des Idées",
+    "kicker": "Une exposition du travail de David Somadina Obichukwu",
+    "title": "Choisissez comment découvrir le travail",
+    "intro": "Cinq salles de jeux, d'applications, de sites clients, d'expériences et la personne qui les crée. Parcourez les en 3D, ou lisez le même travail sous forme de portfolio classique.",
+    "optionA": "Option A",
+    "optionB": "Option B",
+    "museumT": "Entrer dans le musée 3D",
+    "museumD": "Traversez cinq salles d'exposition, approchez chaque installation et ouvrez son histoire sans quitter le bâtiment. Idéal avec souris et clavier ; commandes tactiles sur téléphone.",
+    "enter": "Entrer dans le musée",
+    "tour": "Suivre la visite guidée",
+    "classicT": "Lire le portfolio Classique",
+    "classicD": "Le site rapide et accessible : chaque projet, les études de cas, le CV et les coordonnées sur une seule page.",
+    "classic": "Ouvrir le portfolio Classique",
+    "gallery": "Parcourir le musée sous forme de liste",
+    "help": "Déplacez vous avec W A S D ou les flèches. Cliquez pour regarder avec la souris. E pour examiner, M pour le plan, Échap pour le menu.",
+    "noWebgl": "Ce navigateur ne peut pas afficher la 3D, le musée s'ouvre donc sous forme de liste.",
+    "lightMode": "Le mode léger est activé sur cet appareil pour garder le musée fluide.",
+    "roomsT": "Dans ce bâtiment"
+  },
+  "loading": {
+    "building": "Construction du musée",
+    "fonts": "Pose de la signalétique",
+    "rooms": "Élévation des salles",
+    "exhibits": "Installation des œuvres",
+    "lighting": "Allumage des lumières",
+    "failedT": "Le musée n'a pas pu s'ouvrir",
+    "failed": "Un problème est survenu pendant la construction du musée 3D. Vous pouvez parcourir les mêmes œuvres sous forme de liste ou ouvrir le portfolio Classique."
+  },
+  "opening": { "line": "Bienvenue au Musée des Idées xTc", "skip": "Passer l'intro" },
+  "rooms": {
+    "entrance": { "area": "Salle 01", "name": "L'Entrée", "sub": "Commencez ici. Avancez à travers le portail." },
+    "collection": { "area": "Salle 02", "name": "Œuvres achevées", "sub": "Jeux et applications en ligne, publiés ou en test." },
+    "lab": { "area": "Salle 03", "name": "Le Laboratoire", "sub": "Prototypes, concepts et travaux en cours. Pas des produits finis." },
+    "clients": { "area": "Salle 04", "name": "Exposition clients", "sub": "Des sites construits pour de vraies entreprises, et ce que je peux construire pour vous." },
+    "creator": { "area": "Salle 05", "name": "La Salle du Créateur", "sub": "La personne derrière le travail, et comment la joindre." }
+  },
+  "status": {
+    "published": "Publié", "live": "En ligne", "demo": "Démo fonctionnelle", "mvp": "MVP en test", "ready": "Prêt à lancer",
+    "dev": "En développement", "prototype": "Prototype", "explore": "Exploration UI/UX", "concept": "Concept"
+  },
+  "cats": { "games": "Jeux", "apps": "Applications", "web": "Sites web", "uiux": "UI/UX", "ai": "IA", "concepts": "Concepts", "client": "Travail client" },
+  "links": {
+    "caseStudy": "Lire l'étude de cas",
+    "Try the demo": "Essayer la démo",
+    "Source on GitHub": "Code sur GitHub",
+    "Android test build": "Version de test Android",
+    "PitchIT website": "Site de PitchIT",
+    "Visit the live site": "Voir le site en ligne",
+    "EchoMind website": "Site d'EchoMind",
+    "Play on Roblox": "Jouer sur Roblox",
+    "Open the live preview": "Ouvrir l'aperçu en ligne"
+  },
+  "caps": {
+    "title": "Ce que je peux construire pour vous",
+    "lede": "Chaque compétence s'appuie sur un travail exposé dans ce musée.",
+    "clientWork": "Travail client",
+    "software": { "t": "Développement logiciel", "d": "Des applications web et mobiles qui tiennent à l'usage, d'une place de marché Flutter à un site d'entreprise en ligne." },
+    "product": { "t": "Design produit", "d": "Recherche, parcours et interfaces pensés pour la personne qui les utilise, dans Figma et dans le code." },
+    "ai": { "t": "Développement assisté par l'IA", "d": "J'écris et modifie le code moi même et j'utilise des assistants de code IA pour avancer plus vite. J'évalue aussi des réponses d'IA de façon professionnelle." },
+    "games": { "t": "Développement de jeux", "d": "Des expériences Roblox conçues, scriptées et publiées dans Roblox Studio avec Luau." },
+    "creative": { "t": "Technologie créative", "d": "Des outils et des pièces interactives où le code rencontre le goût, y compris ce musée." }
+  },
+  "creator": {
+    "founder": "Fondateur et directeur créatif, PitchIT",
+    "hello": "Bonjour, je suis David.",
+    "role": "Développeur logiciel, designer produit et développeur de jeux, connu en ligne sous le nom de xTc.",
+    "intro": "Je construis des produits de bout en bout : je trouve l'idée, je conçois ce qu'on doit ressentir en l'utilisant, et je la construis jusqu'à ce qu'elle fonctionne.",
+    "aboutT": "À propos de David",
+    "whatT": "Ce que je fais",
+    "what": "Je travaille entre logiciel, design produit et jeux. Je sais lire, écrire et déboguer du code seul, et j'utilise les assistants de code IA comme des outils, pas comme un substitut à la compréhension de ce qui est livré.",
+    "interestsT": "Centres d'intérêt",
+    "interests": "Les places de marché et l'économie informelle, les logiciels calmes et privés, les jeux, les outils créatifs et les systèmes qui les font tourner.",
+    "approachT": "Approche",
+    "approach": "Partir d'un vrai problème, concevoir l'expérience, puis construire et tester jusqu'à ce que ça tienne. L'IA accélère les brouillons et le débogage ; je relis, modifie et teste ce qu'elle produit.",
+    "directionT": "Cap",
+    "direction": "Faire grandir PitchIT, livrer les projets en cours et rejoindre des équipes et des clients qui veulent des produits construits avec soin.",
+    "basedT": "Basé au",
+    "based": "Nigeria. Ouvert à la relocalisation et au télétravail",
+    "langsT": "Langues",
+    "langs": "Anglais (courant), igbo (langue maternelle)",
+    "portraitAlt": "Portrait de David Somadina Obichukwu",
+    "backgroundT": "Parcours",
+    "backgroundSub": "Expérience, formation et compétences",
+    "experienceT": "Expérience",
+    "educationT": "Formation",
+    "skillsT": "Compétences",
+    "shippedT": "Travaux livrés",
+    "exp0": { "role": "Développeur logiciel et designer produit indépendant", "org": "Indépendant, missions clients rémunérées", "when": "Août 2026 à aujourd'hui" },
+    "exp1": { "role": "Spécialiste de l'annotation de données IA", "org": "Elevate Labs", "when": "Janv. 2026 à aujourd'hui" },
+    "exp2": { "role": "Technicien informatique et produit", "org": "Smile Tech, Lagos, Nigeria", "when": "Juil. 2018 à déc. 2020" },
+    "edu0": { "what": "Études de premier cycle", "when": "En cours" },
+    "edu1": { "what": "Diplôme supérieur en génie logiciel", "when": "Avr. 2021 à nov. 2025" },
+    "edu2": { "what": "Études secondaires", "when": "Mars 2018 à janv. 2020" }
+  },
+  "skills": { "Frontend": "Frontend", "Mobile": "Mobile", "Design": "Design", "AI": "IA", "Games": "Jeux", "Tools": "Outils" },
+  "contact": {
+    "title": "Prendre contact",
+    "cta": "Travaillons ensemble",
+    "lede": "Recrutement, commande d'un produit ou envie de collaborer ? Écrivez moi et je vous répondrai.",
+    "email": "Envoyer un e mail",
+    "copy": "Copier l'adresse e mail",
+    "copied": "Copié",
+    "elsewhere": "Ailleurs",
+    "moreT": "Plus",
+    "cv": "Télécharger le CV (PDF)",
+    "form": "Formulaire de contact du portfolio Classique"
+  },
+  "tour": {
+    "prev": "Retour", "next": "Suivant", "finish": "Terminer", "end": "Explorer librement", "open": "Ouvrir les détails",
+    "stepOf": "Étape {n} sur {total}",
+    "s1": { "t": "Bienvenue", "d": "Ce musée réunit le travail de David Somadina Obichukwu, connu sous le nom de xTc. Cinq salles se suivent. La visite s'arrête devant les pièces principales ; vous pouvez la quitter à tout moment et marcher librement." },
+    "s2": { "t": "Œuvres achevées", "d": "La deuxième salle présente le travail déjà dans le monde : des jeux en ligne sur Roblox et des applications à essayer. Chaque installation porte une plaque avec son statut." },
+    "s3": { "d": "Un jeu de bagarre en équipe sur Roblox, en ligne et toujours développé. La ventouse est l'arme ; faire tomber les rivaux de la carte est le but." },
+    "s4": { "d": "Un jeu d'horreur et de mémoire publié sur Roblox. Une seule bougie évoque les pièces hantées que les joueurs doivent mémoriser." },
+    "s5": { "d": "Une place de marché pour tous les types de travail au Nigeria. La démo fonctionnelle tourne dans le navigateur, accessible depuis les détails." },
+    "s6": { "d": "Un journal Android privé en test. Tout reste sur le téléphone : pas de compte, pas d'internet." },
+    "s7": { "d": "Une plateforme de livres et de bandes dessinées en développement, avec un aperçu en ligne. En partie construite ; le reste est clairement indiqué comme à venir." },
+    "s8": { "t": "Le Laboratoire", "d": "La troisième salle accueille le travail inachevé : jeux et outils en développement, prototypes et concepts. Les étiquettes bleues signalent les concepts et les explorations." },
+    "s9": { "d": "Un jeu de tycoon et de casse en développement sur Roblox. Les images sont des illustrations de concept." },
+    "s10": { "d": "Un studio de montage assisté par l'IA. Le moteur Python et FFmpeg existe ; le studio autour reste le projet." },
+    "s11": { "d": "Un vrai site client, en ligne pour un studio d'enregistrement à Awka. Les autres cadres montrent des sites clients construits et en attente de lancement." },
+    "s12": { "d": "Cinq choses que David peut construire pour vous, chacune appuyée par un travail de ce musée." },
+    "s13": { "d": "La dernière salle parle de la personne. Voici une vraie photographie de David." },
+    "s14": { "d": "E mail, GitHub, X et le CV sont ici. Merci de votre visite." }
+  },
+  "settings": {
+    "sensitivity": "Sensibilité du regard", "quality": "Qualité du rendu", "qAuto": "Automatique", "qHigh": "Élevée", "qLow": "Légère (mieux sur téléphone)",
+    "reduced": "Réduire les animations", "joystick": "Afficher le joystick à l'écran", "sound": "Son", "soundOn": "Son activé",
+    "ambience": "Ambiance", "effects": "Sons d'interaction", "volume": "Volume", "keysT": "Commandes",
+    "keys": "W A S D ou flèches : se déplacer · Maj : marcher plus vite · Souris : regarder · E : examiner · M : plan · T : visite · Échap : ce menu"
+  },
+  "gallery": { "to3d": "Parcourir le musée en 3D", "title": "Le musée, salle par salle" },
+  "projects": {
+    "toilet-wars": {
+      "desc": "Un jeu de bagarre multijoueur compétitif sur Roblox : les Red Plungers contre les Blue Scrubbers, de 1 contre 1 à 4 contre 4.",
+      "lede": "Toilet Wars est un jeu d'arène multijoueur en équipe sur Roblox. Deux équipes, les Red Plungers et les Blue Scrubbers, s'arrosent à coups de ventouses, de lanceurs de papier toilette et de bombes de chasse d'eau, puis font tomber leurs rivaux de la carte. Le jeu est public sur Roblox et je continue de le développer.",
+      "tagline": "Tirer la chasse ou être emporté."
+    },
+    "haunting-mother": {
+      "desc": "Un jeu d'horreur et de mémoire multijoueur publié sur Roblox. Étudiez chaque pièce, puis repérez ce qui a changé.",
+      "lede": "Haunting Mother est un jeu d'énigmes et d'horreur multijoueur sur Roblox. Les joueurs explorent trois maisons hantées, mémorisent chaque pièce contre la montre, puis doivent repérer ce qui a changé. À jouer entre amis, dans le noir, le son à fond."
+    },
+    "pitchit": {
+      "desc": "Une place de marché pour tous les types de travail au Nigeria, avec une démo utilisable ici même.",
+      "lede": "PitchIT est une place de marché pour tous les types de travail au Nigeria : ouvriers agricoles, vendeurs de poisson, aide au marché, artisans, déménageurs, agents d'entretien, courses et professionnels. Ceux qui ont besoin d'un travail publient une offre. Ceux qui peuvent le faire envoient une proposition. Le client dépose le montant convenu avant le début du travail."
+    },
+    "echomind": {
+      "desc": "Un journal Android privé pour remarquer ce que l'on ressent vraiment. Sans compte, sans internet.",
+      "lede": "EchoMind est une application de journal et d'humeur pour Android. Notez comment vous vous sentez, écrivez librement ou à partir d'une question du jour, et retrouvez tout dans votre Journey. Tout reste sur votre téléphone. Pas de compte, pas d'abonnement et pas de connexion internet."
+    },
+    "bookverse": {
+      "desc": "Une plateforme de livres et de bandes dessinées pour découvrir, lire et plus tard publier toutes sortes d'histoires. En développement, avec un aperçu en ligne.",
+      "lede": "BookVerse est une plateforme de livres numériques pour les lecteurs qui passent d'un format à l'autre : romans, manga, manhwa, manhua, webtoons, BD, romans graphiques, web novels et light novels, livres audio, poésie et non fiction. Une première version est en ligne en aperçu. Le lecteur, le catalogue complet, le Top Books et l'atelier d'écriture sont encore en construction.",
+      "tagline": "Un seul lieu pour toutes les histoires."
+    },
+    "steal-the-moon": {
+      "desc": "Un jeu multijoueur de tycoon et de casse sur Roblox : prenez une base, collectez, défendez et volez jusqu'à la lune.",
+      "lede": "Steal the Moon est un jeu multijoueur de tycoon et de casse en développement sur Roblox. Les joueurs prennent une base, collectent des ressources, améliorent, défendent ce qu'ils ont et volent les autres joueurs, en route vers le plus grand casse imaginable : la lune elle même.",
+      "tagline": "Construisez. Puis prenez la lune."
+    },
+    "ai-studio": {
+      "desc": "Un studio créatif personnel pour le montage vidéo et photo assisté par l'IA. Le moteur Python et FFmpeg fonctionne ; le studio complet est la vision.",
+      "lede": "Un studio créatif personnel propulsé par l'IA qui réunit montage vidéo, retouche photo et travail audio. Je lui donne des images et une direction créative, et il prend des décisions de montage en comprenant ce qui se passe dans le plan. Aujourd'hui, un moteur expérimental en Python et FFmpeg existe ; le studio autour reste le projet.",
+      "tagline": "Des images en entrée, un montage réfléchi en sortie."
+    },
+    "personal-ai": {
+      "desc": "Une IA locale d'abord qui sert de développeur, designer, chercheur et assistant, selon mes propres règles.",
+      "lede": "Un système d'IA personnel qui agit comme une intelligence centrale : développeur, designer, chercheur et assistant pour les e mails et la productivité, avec sa propre interface de bureau animée et sa voix, puis plus tard un compagnon mobile. Il tourne d'abord sur mon propre ordinateur et il est conçu pour que je garde le contrôle de ce qu'il apprend et de ce qu'il peut faire.",
+      "tagline": "Un assistant, sur ma machine, selon mes règles."
+    },
+    "ai-land": {
+      "desc": "Un concept pour planifier un terrain dans un espace 3D interactif : ajouter, déplacer et retirer des structures, puis comparer des scénarios.",
+      "lede": "Un concept de produit pour l'aménagement de terrain assisté par l'IA. Les utilisateurs travailleraient sur un modèle virtuel d'une parcelle, ajouteraient, retireraient et repositionneraient des structures, et compareraient différents scénarios avant toute construction. Rien n'est encore implémenté ; c'est un concept vers lequel j'apprends.",
+      "tagline": "Essayez un plan avant de le construire."
+    },
+    "drawing-board": {
+      "desc": "Un outil de réflexion spatiale pour fondateurs : poser une idée sur une toile et la travailler avec l'IA.",
+      "lede": "Un concept de produit : un outil de réflexion spatiale pour fondateurs. Au lieu d'un long fil de discussion, les idées vivent sur une toile où elles peuvent être arrangées, reliées et travaillées avec l'IA.",
+      "tagline": "Penser sur une toile, pas dans un chat."
+    },
+    "fintech": {
+      "desc": "Des explorations UI/UX pour des produits financiers : tableaux de bord, transactions, comptes, authentification et alertes.",
+      "lede": "Une série d'explorations d'interface pour des produits financiers : tableaux de bord bancaires, mises en page de transactions, gestion de comptes, authentification et parcours du quotidien, construits avec l'aide de l'IA et pensés d'abord pour les utilisateurs nigérians. Ce sont des études de design et de front end. Je n'ai pas construit de banque, de processeur de paiement ni d'infrastructure bancaire de production.",
+      "tagline": "Des interfaces qui méritent la confiance."
+    },
+    "anthony-studios": {
+      "desc": "Le site en ligne de Macreamy Studios, un studio d'enregistrement musical à Awka, au Nigeria.",
+      "lede": "Un site d'entreprise responsive pour Macreamy Studios, le studio d'enregistrement de Macreamy Anthony Studios à Awka, dans l'Anambra. Il présente le studio, ses services et ses médias, et il est en ligne sur macreamystudios.com.",
+      "tagline": "Un site qui sonne comme le studio."
+    },
+    "zaga": {
+      "desc": "Le site d'une maison de mode avec une boutique où chaque pièce existe en dix couleurs. Construit, en attente des derniers détails du client.",
+      "lede": "Le site de Zaga, une maison de mode qui conçoit, taille et fabrique des vêtements : une boutique de prêt à porter, du sur mesure et de la production pour d'autres marques. Le site est construit et attend les prix, les coordonnées et l'histoire de la marque avant son lancement.",
+      "tagline": "Portez la couronne."
+    },
+    "princess-uc": {
+      "desc": "Le site d'une activité de parures faites main : bibis, chapeaux, couronnes, perles, éventails et strass sur vêtements.",
+      "lede": "Un site pour Princess UC Crafts, l'atelier d'artisanat de Princess Uche Charity : colliers et parures de mariée en perles, bibis, chapeaux, couronnes, éventails et travail de strass sur vêtements, le tout sur commande. Le site est construit et attend les informations de l'entreprise et plus de photos avant son lancement.",
+      "tagline": "Des pièces faites main, enfin en ligne."
+    }
+  }
+}

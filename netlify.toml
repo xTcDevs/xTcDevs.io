@@ -65,3 +65,24 @@
   for = "/demo/pitchit/canvaskit/*"
   [headers.values]
     Cache-Control = "public, max-age=2592000, immutable"
+# 3D museum: app code, translations and data revalidate on every visit; the vendored Three.js build rarely changes
+[[headers]]
+  for = "/museum/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/museum/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/museum/locales/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+[[headers]]
+  for = "/museum/vendor/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

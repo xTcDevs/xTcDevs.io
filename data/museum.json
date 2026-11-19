@@ -1,0 +1,754 @@
+{
+ "generated_from": "tools/cases.py",
+ "status_labels": {
+  "published": "Published",
+  "live": "Live",
+  "demo": "Working demo",
+  "mvp": "MVP in testing",
+  "ready": "Ready to launch",
+  "dev": "In development",
+  "prototype": "Prototype",
+  "explore": "UI/UX exploration",
+  "concept": "Concept"
+ },
+ "projects": [
+  {
+   "id": "toilet-wars",
+   "title": "Toilet Wars",
+   "status": "live",
+   "stage": "completed",
+   "cats": [
+    "games"
+   ],
+   "client": false,
+   "desc": "A competitive multiplayer knockback brawler on Roblox: Red Plungers against Blue Scrubbers, 1v1 up to 4v4.",
+   "lede": "Toilet Wars is a team based multiplayer arena game on Roblox. Two teams, the Red Plungers and the Blue Scrubbers, soak each other with plungers, toilet paper launchers and flush bombs, then knock their rivals off the map. It is public on Roblox and I keep developing it.",
+   "tagline": "Flush or be flushed.",
+   "facts": [
+    [
+     "Type",
+     "Multiplayer arena game on Roblox"
+    ],
+    [
+     "Built with",
+     "Roblox Studio, Luau"
+    ],
+    [
+     "Teams",
+     "1v1 up to 4v4, bots fill empty slots"
+    ],
+    [
+     "My role",
+     "Concept, game direction, design and development"
+    ]
+   ],
+   "tech": [
+    "Roblox Studio",
+    "Luau",
+    "AI coding assistant",
+    "Roblox experience settings"
+   ],
+   "images": [
+    "assets/img/toilet-wars/action-640.webp",
+    "assets/img/toilet-wars/maps-640.webp",
+    "assets/img/toilet-wars/cosmetics-640.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [
+    {
+     "label": "Play on Roblox",
+     "href": "https://www.roblox.com/games/111542210820745/Toilet-Wars",
+     "kind": "play"
+    }
+   ],
+   "case": "projects/toilet-wars.html",
+   "room": "collection",
+   "style": "plunger"
+  },
+  {
+   "id": "haunting-mother",
+   "title": "Haunting Mother",
+   "status": "published",
+   "stage": "completed",
+   "cats": [
+    "games"
+   ],
+   "client": false,
+   "desc": "A published multiplayer horror memory game on Roblox. Study every room, then spot what changed.",
+   "lede": "Haunting Mother is a multiplayer horror puzzle game on Roblox. Players explore three haunted houses, memorize each room against the clock, then have to spot what changed. Best played with friends, in the dark, with the sound up.",
+   "tagline": "",
+   "facts": [],
+   "tech": [
+    "Roblox Studio",
+    "Luau"
+   ],
+   "images": [
+    "assets/img/haunting-mother/h3-memorize-mothers-bedroom-800.webp",
+    "assets/img/haunting-mother/h1-explore-living-room-800.webp",
+    "assets/img/haunting-mother/h1-what-changed-bedroom-800.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [
+    {
+     "label": "Play on Roblox",
+     "href": "https://www.roblox.com/games/111171456570495/Haunting-Mother",
+     "kind": "play"
+    }
+   ],
+   "case": "projects/haunting-mother.html",
+   "room": "collection",
+   "style": "candle"
+  },
+  {
+   "id": "pitchit",
+   "title": "PitchIT",
+   "status": "demo",
+   "stage": "dev",
+   "cats": [
+    "apps",
+    "uiux"
+   ],
+   "client": false,
+   "desc": "A marketplace for every kind of work in Nigeria, with a demo you can use right here.",
+   "lede": "PitchIT is a marketplace for every kind of work in Nigeria: farm hands, fish traders, market help, artisans, movers, cleaners, errands and professionals. People who need work done post a job. People who can do it send offers. The customer funds the agreed amount before the work starts.",
+   "tagline": "",
+   "facts": [],
+   "tech": [
+    "Flutter",
+    "Supabase",
+    "Paystack",
+    "OpenStreetMap"
+   ],
+   "images": [
+    "assets/img/pitchit/sign-in-400.webp",
+    "assets/img/pitchit/my-jobs-400.webp",
+    "assets/img/pitchit/messages-400.webp",
+    "assets/img/pitchit/profile-400.webp"
+   ],
+   "concept": false,
+   "phone": true,
+   "links": [
+    {
+     "label": "Try the demo",
+     "href": "../demo/pitchit/index.html",
+     "kind": "demo"
+    },
+    {
+     "label": "PitchIT website",
+     "href": "https://pitchit-ng.netlify.app/",
+     "kind": "external"
+    }
+   ],
+   "case": "projects/pitchit.html",
+   "room": "collection",
+   "style": "pin"
+  },
+  {
+   "id": "echomind",
+   "title": "EchoMind",
+   "status": "mvp",
+   "stage": "dev",
+   "cats": [
+    "apps",
+    "uiux"
+   ],
+   "client": false,
+   "desc": "A private Android journal for noticing how you really feel. No account, no internet.",
+   "lede": "EchoMind is a journaling and mood app for Android. Check in with how you feel, write freely or from a daily prompt, and look back on everything in your Journey. All of it stays on your phone. There is no account, no subscription and no internet connection.",
+   "tagline": "",
+   "facts": [],
+   "tech": [
+    "Flutter",
+    "Dart",
+    "SQLite",
+    "Android"
+   ],
+   "images": [
+    "assets/img/echomind/home-400.webp",
+    "assets/img/echomind/check-in-400.webp",
+    "assets/img/echomind/insights-400.webp",
+    "assets/img/echomind/journey-400.webp"
+   ],
+   "concept": false,
+   "phone": true,
+   "links": [
+    {
+     "label": "EchoMind website",
+     "href": "https://echomind-journal.netlify.app/",
+     "kind": "external"
+    },
+    {
+     "label": "Android test build",
+     "href": "https://drive.google.com/file/d/11pOpnL2KPW6oT8HNIXUb8hxgN_xKMRUb/view?usp=drive_link",
+     "kind": "external"
+    }
+   ],
+   "case": "projects/echomind.html",
+   "room": "collection",
+   "style": "orbs"
+  },
+  {
+   "id": "bookverse",
+   "title": "BookVerse",
+   "status": "dev",
+   "stage": "dev",
+   "cats": [
+    "web",
+    "apps",
+    "uiux"
+   ],
+   "client": false,
+   "desc": "A book and comics platform for discovering, reading and later publishing every kind of story. In development, with a live preview.",
+   "lede": "BookVerse is a digital book platform for readers who move between formats: novels, manga, manhwa, manhua, webtoons, comics, graphic novels, web and light novels, audiobooks, poetry and non fiction. A first release is live as a preview. The reader, the full catalogue, Top Books and the writer studio are still being built.",
+   "tagline": "One place for every kind of story.",
+   "facts": [
+    [
+     "Type",
+     "Web platform"
+    ],
+    [
+     "Built with",
+     "React 19, React Router 7, TypeScript, Supabase"
+    ],
+    [
+     "Live preview",
+     "Hosted on Netlify"
+    ],
+    [
+     "My role",
+     "Product owner, design direction and development"
+    ]
+   ],
+   "tech": [
+    "React 19",
+    "React Router 7",
+    "TypeScript",
+    "Supabase",
+    "Netlify",
+    "Vitest",
+    "Playwright",
+    "axe"
+   ],
+   "images": [
+    "assets/img/bookverse/home-640.webp",
+    "assets/img/bookverse/explore-640.webp",
+    "assets/img/bookverse/genres-640.webp",
+    "assets/img/bookverse/nonfiction-640.webp",
+    "assets/img/bookverse/write-640.webp",
+    "assets/img/bookverse/book-640.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [
+    {
+     "label": "Open the live preview",
+     "href": "https://bookverse-1.netlify.app/",
+     "kind": "external"
+    },
+    {
+     "label": "Source on GitHub",
+     "href": "https://github.com/xTcDevs/BookVerse",
+     "kind": "github"
+    }
+   ],
+   "case": "projects/bookverse.html",
+   "room": "collection",
+   "style": "books"
+  },
+  {
+   "id": "steal-the-moon",
+   "title": "Steal the Moon",
+   "status": "dev",
+   "stage": "dev",
+   "cats": [
+    "games"
+   ],
+   "client": false,
+   "desc": "A multiplayer tycoon and heist game on Roblox: claim a base, collect, defend and rob your way toward the moon.",
+   "lede": "Steal the Moon is a multiplayer tycoon and heist game in development on Roblox. Players claim a base, collect resources, upgrade, defend what they have and rob other players, on the way to the biggest heist imaginable: the moon itself.",
+   "tagline": "Build up. Then take the moon.",
+   "facts": [
+    [
+     "Type",
+     "Multiplayer tycoon and heist game on Roblox"
+    ],
+    [
+     "Built with",
+     "Roblox Studio, Luau"
+    ],
+    [
+     "My role",
+     "Concept, game design and development"
+    ]
+   ],
+   "tech": [
+    "Roblox Studio",
+    "Luau",
+    "AI coding assistant"
+   ],
+   "images": [
+    "assets/img/concepts/steal-the-moon-640.webp"
+   ],
+   "concept": true,
+   "phone": false,
+   "links": [],
+   "case": "projects/steal-the-moon.html",
+   "room": "lab",
+   "style": "moon"
+  },
+  {
+   "id": "ai-studio",
+   "title": "xTc Personal AI Studio",
+   "status": "prototype",
+   "stage": "dev",
+   "cats": [
+    "ai"
+   ],
+   "client": false,
+   "desc": "A personal creative studio for AI assisted video and photo editing. The Python and FFmpeg engine runs; the full studio is the vision.",
+   "lede": "A personal AI powered creative studio that brings video editing, photo editing and audio work into one place. I give it footage and a creative direction, and it makes editing decisions with an understanding of what happens in the clip. Today an experimental Python and FFmpeg engine exists; the studio around it is still the plan.",
+   "tagline": "Footage in, a considered edit out.",
+   "facts": [
+    [
+     "Type",
+     "Creative technology, AI tools"
+    ],
+    [
+     "Built with",
+     "Python, FFmpeg"
+    ],
+    [
+     "Today",
+     "Experimental processing engine"
+    ],
+    [
+     "My role",
+     "Creative direction, product design and development"
+    ]
+   ],
+   "tech": [
+    "Python",
+    "FFmpeg"
+   ],
+   "images": [
+    "assets/img/concepts/ai-studio-640.webp"
+   ],
+   "concept": true,
+   "phone": false,
+   "links": [],
+   "case": "projects/ai-studio.html",
+   "room": "lab",
+   "style": "timeline"
+  },
+  {
+   "id": "personal-ai",
+   "title": "xTc Personal AI System",
+   "status": "concept",
+   "stage": "concepts",
+   "cats": [
+    "ai",
+    "concepts"
+   ],
+   "client": false,
+   "desc": "A local first AI that works as coder, designer, researcher and assistant, on terms I control.",
+   "lede": "A personal AI system that acts as one central intelligence: coder, designer, researcher and email and productivity assistant, with its own animated desktop interface and voice, and later a mobile companion. It runs on my own laptop first and is built so that I stay in control of what it learns and what it can do.",
+   "tagline": "One assistant, on my machine, on my terms.",
+   "facts": [
+    [
+     "Type",
+     "Personal AI system"
+    ],
+    [
+     "Status",
+     "Concept: brief written, design first"
+    ],
+    [
+     "My role",
+     "Product owner and creative director"
+    ]
+   ],
+   "tech": [],
+   "images": [],
+   "concept": false,
+   "phone": false,
+   "links": [],
+   "case": "projects/personal-ai.html",
+   "room": "lab",
+   "style": "core"
+  },
+  {
+   "id": "ai-land",
+   "title": "AI Land Development Platform",
+   "status": "concept",
+   "stage": "concepts",
+   "cats": [
+    "ai",
+    "concepts"
+   ],
+   "client": false,
+   "desc": "A concept for planning land in an interactive 3D space: add, move and remove structures, then compare scenarios.",
+   "lede": "A product concept for AI assisted land planning. Users would work with a virtual model of a piece of land, add, remove and reposition structures, and compare different development scenarios before anything is built. Nothing has been implemented yet; this is a concept I am learning toward.",
+   "tagline": "Try a plan before you build it.",
+   "facts": [
+    [
+     "Type",
+     "AI and real estate technology, product concept"
+    ],
+    [
+     "Implemented",
+     "Nothing yet"
+    ],
+    [
+     "My role",
+     "Concept and product design"
+    ]
+   ],
+   "tech": [],
+   "images": [
+    "assets/img/concepts/ai-land-640.webp"
+   ],
+   "concept": true,
+   "phone": false,
+   "links": [],
+   "case": "projects/ai-land.html",
+   "room": "lab",
+   "style": "land"
+  },
+  {
+   "id": "drawing-board",
+   "title": "AI Drawing Board",
+   "status": "concept",
+   "stage": "concepts",
+   "cats": [
+    "ai",
+    "concepts"
+   ],
+   "client": false,
+   "desc": "A spatial thinking tool for founders: lay out an idea on a canvas and think it through with AI.",
+   "lede": "A product concept for a spatial thinking tool for founders. Instead of a long chat thread, ideas live on a canvas where they can be arranged, connected and worked through with AI.",
+   "tagline": "Think on a canvas, not in a chat.",
+   "facts": [
+    [
+     "Type",
+     "Product concept"
+    ],
+    [
+     "Status",
+     "Concept: brief written"
+    ],
+    [
+     "My role",
+     "Product owner"
+    ]
+   ],
+   "tech": [],
+   "images": [],
+   "concept": false,
+   "phone": false,
+   "links": [],
+   "case": "projects/drawing-board.html",
+   "room": "lab",
+   "style": "board"
+  },
+  {
+   "id": "fintech",
+   "title": "FinTech and Banking Interfaces",
+   "status": "explore",
+   "stage": "concepts",
+   "cats": [
+    "uiux",
+    "apps"
+   ],
+   "client": false,
+   "desc": "UI/UX explorations for money products: dashboards, transactions, accounts, authentication and alerts.",
+   "lede": "A series of interface explorations for financial products: banking dashboards, transaction layouts, account management, authentication and everyday workflows, built with AI assistance and designed for Nigerian users first. These are design and front end studies. I have not built a bank, a payment processor or production banking infrastructure.",
+   "tagline": "Interfaces that earn trust with money.",
+   "facts": [
+    [
+     "Type",
+     "UI/UX and product exploration"
+    ],
+    [
+     "My role",
+     "UI/UX design and front end, built with AI assistance"
+    ]
+   ],
+   "tech": [],
+   "images": [],
+   "concept": false,
+   "phone": false,
+   "links": [],
+   "case": "projects/fintech.html",
+   "room": "lab",
+   "style": "card"
+  },
+  {
+   "id": "anthony-studios",
+   "title": "Macreamy Anthony Studios",
+   "status": "live",
+   "stage": "completed",
+   "cats": [
+    "web"
+   ],
+   "client": true,
+   "desc": "The live website of Macreamy Studios, a music recording studio in Awka, Nigeria.",
+   "lede": "A responsive business website for Macreamy Studios, the recording studio of Macreamy Anthony Studios in Awka, Anambra. It presents the studio, its services and its media, and it is live at macreamystudios.com.",
+   "tagline": "A studio website that sounds like the studio.",
+   "facts": [
+    [
+     "Type",
+     "Client business website"
+    ],
+    [
+     "Built with",
+     "HTML, CSS, JavaScript, GSAP"
+    ],
+    [
+     "Live at",
+     "macreamystudios.com"
+    ],
+    [
+     "My role",
+     "Design and development"
+    ]
+   ],
+   "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "GSAP",
+    "Responsive design"
+   ],
+   "images": [
+    "assets/img/anthony/index-640.webp",
+    "assets/img/anthony/services-640.webp",
+    "assets/img/anthony/media-640.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [
+    {
+     "label": "Visit the live site",
+     "href": "https://macreamystudios.com/",
+     "kind": "external"
+    },
+    {
+     "label": "Source on GitHub",
+     "href": "https://github.com/xTcDevs/maccreamy",
+     "kind": "github"
+    }
+   ],
+   "case": "projects/anthony-studios.html",
+   "room": "clients",
+   "style": "frame"
+  },
+  {
+   "id": "zaga",
+   "title": "Zaga",
+   "status": "ready",
+   "stage": "dev",
+   "cats": [
+    "web",
+    "uiux"
+   ],
+   "client": true,
+   "desc": "A fashion house website with a shop where every piece comes in ten colours. Built, waiting on the client's final details.",
+   "lede": "The website for Zaga, a fashion house that designs, tailors and manufactures clothing: a ready to wear shop, bespoke tailoring and production for other brands. The site is built and waits on the brand's prices, contact details and story before launch.",
+   "tagline": "Wear the crown.",
+   "facts": [
+    [
+     "Type",
+     "Client brand website and shop"
+    ],
+    [
+     "Built with",
+     "HTML, CSS, JavaScript, Python image tools"
+    ],
+    [
+     "Launch",
+     "After the client adds prices and contact details"
+    ],
+    [
+     "My role",
+     "Design and development"
+    ]
+   ],
+   "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "rembg",
+    "Pillow"
+   ],
+   "images": [
+    "assets/img/zaga/home-640.webp",
+    "assets/img/zaga/shop-640.webp",
+    "assets/img/zaga/bespoke-640.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [
+    {
+     "label": "Source on GitHub",
+     "href": "https://github.com/xTcDevs/zaga",
+     "kind": "github"
+    }
+   ],
+   "case": "projects/zaga.html",
+   "room": "clients",
+   "style": "frame"
+  },
+  {
+   "id": "princess-uc",
+   "title": "Princess UC Crafts",
+   "status": "ready",
+   "stage": "dev",
+   "cats": [
+    "web",
+    "uiux"
+   ],
+   "client": true,
+   "desc": "A website for a handmade adornments business: fascinators, hats, crowns, beads, hand fans and stoning on clothes.",
+   "lede": "A website for Princess UC Crafts, Princess Uche Charity's handcraft studio: beaded necklaces and bridal sets, fascinators, hats, crowns, hand fans and stone work on clothing, all made to order. The site is built and waits on the business details and more photos before launch.",
+   "tagline": "Handmade pieces, finally online.",
+   "facts": [
+    [
+     "Type",
+     "Client small business website"
+    ],
+    [
+     "Built with",
+     "HTML, CSS, JavaScript"
+    ],
+    [
+     "Launch",
+     "After the client adds contact details and photos"
+    ],
+    [
+     "My role",
+     "Design and development"
+    ]
+   ],
+   "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Responsive design"
+   ],
+   "images": [
+    "assets/img/princess-uc/home-640.webp",
+    "assets/img/princess-uc/collections-640.webp",
+    "assets/img/princess-uc/gallery-640.webp",
+    "assets/img/princess-uc/stoning-640.webp"
+   ],
+   "concept": false,
+   "phone": false,
+   "links": [],
+   "case": "projects/princess-uc.html",
+   "room": "clients",
+   "style": "frame"
+  }
+ ],
+ "creator": {
+  "name": "David Somadina Obichukwu",
+  "handle": "xTc",
+  "portrait": "assets/img/portrait/david-1000.webp",
+  "email": "obichukwudavid15@gmail.com",
+  "cv": "cv/David_Somadina_Obichukwu_CV.pdf",
+  "skills": {
+   "Frontend": [
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS"
+   ],
+   "Mobile": [
+    "Flutter",
+    "Dart"
+   ],
+   "Design": [
+    "UI/UX design",
+    "Figma",
+    "Prototyping",
+    "Design systems"
+   ],
+   "AI": [
+    "AI assisted development",
+    "AI response evaluation",
+    "RLHF",
+    "Data annotation"
+   ],
+   "Games": [
+    "Roblox Studio",
+    "Luau",
+    "Multiplayer systems"
+   ],
+   "Tools": [
+    "Git",
+    "GitHub",
+    "Supabase",
+    "Firebase",
+    "Python",
+    "FFmpeg"
+   ]
+  },
+  "capabilities": [
+   "software",
+   "product",
+   "ai",
+   "games",
+   "creative"
+  ],
+  "social": [
+   {
+    "name": "GitHub",
+    "href": "https://github.com/xTcDevs",
+    "handle": "xTcDevs"
+   },
+   {
+    "name": "X",
+    "href": "https://x.com/xtcDev01",
+    "handle": "@xtcDev01"
+   }
+  ],
+  "experience": [
+   {
+    "role": "Freelance Software Developer and Product Designer",
+    "org": "Self employed, paid client work",
+    "when": "Aug 2026 to present"
+   },
+   {
+    "role": "AI Data Annotation Specialist",
+    "org": "Elevate Labs",
+    "when": "Jan 2026 to present"
+   },
+   {
+    "role": "IT and Product Technician",
+    "org": "Smile Tech, Lagos, Nigeria",
+    "when": "Jul 2018 to Dec 2020"
+   }
+  ],
+  "education": [
+   {
+    "what": "Undergraduate studies",
+    "where": "Nnamdi Azikiwe University",
+    "when": "In progress"
+   },
+   {
+    "what": "Higher Diploma in Software Engineering",
+    "where": "IPMC Ghana",
+    "when": "Apr 2021 to Nov 2025"
+   },
+   {
+    "what": "Secondary education",
+    "where": "Anchorage Field Schools, Lagos",
+    "when": "Mar 2018 to Jan 2020"
+   }
+  ]
+ }
+}

@@ -2,9 +2,9 @@
 """Generates the case study pages and the homepage work section from tools/cases.py.
 Run: python3 tools/build_cases.py   then   python3 tools/build_locales.py
 """
-import html, pathlib, re, sys
+import html, json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from cases import CASES, EXISTING, CATS, STATUS_RANK, STAGES
+from cases import CASES, EXISTING, CATS, STATUS_RANK, STAGES, MUSEUM_ROOMS, MUSEUM_STYLE, MUSEUM_EXISTING, MUSEUM_CREATOR
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://xtcdev.netlify.app"
@@ -229,6 +229,7 @@ def nav_html(root, active):
         </div>
         <a href="{home}#capabilities" data-i18n="nav.capabilities">What I do</a>
         <a href="{home}#about" data-i18n="nav.about">About</a>
+        <a class="nav__museum" href="{root}museum/" data-i18n="nav.museum">3D Museum</a>
         <a href="{root}{CV_PATH}" download data-cv-link data-i18n="nav.cv">CV</a>
         <a class="nav__cta" href="{home}#contact" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -318,9 +319,45 @@ def build_sitemap():
     body = "\n".join(f"  <url><loc>{SITE}{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{body}\n</urlset>\n')
 
+def build_museum_data():
+    """data/museum.json: the one data file the 3D museum reads. Project text is English;
+    translations live in museum/locales/<lang>.json and fall back to this file."""
+    by_id = {c["id"]: c for c in CASES}
+    def entry(pid):
+        if pid in by_id:
+            c = by_id[pid]
+            tech = next((items for kind, *rest in c["sections"] if kind == "stack" for items in [rest[1]]), [])
+            images = []
+            if c.get("hero"): images.append(c["hero"][0])
+            for kind, *rest in c["sections"]:
+                if kind == "gallery":
+                    images += [b for b, _ in rest[1] if b not in images]
+            links = [{"label": lab, "href": h, "kind": ic} for (lab, h, k, ic) in c["ctas"]]
+            return {"id": pid, "title": c["title"], "status": c["status"], "stage": c["stage"], "cats": c["cats"],
+                    "client": c.get("client", False), "desc": c["desc"], "lede": c["lede"], "tagline": c.get("tagline", ""),
+                    "facts": [[k, v] for k, v in c["facts"]], "tech": tech, "images": [i + "-640.webp" for i in images][:6],
+                    "concept": c.get("hero_concept", False), "phone": False, "links": links, "case": f"projects/{pid}.html"}
+        e, m = EXISTING[pid], MUSEUM_EXISTING[pid]
+        return {"id": pid, "title": e["title"], "status": e["status"], "stage": e["stage"], "cats": e["cats"], "client": False,
+                "desc": e["desc"], "lede": m["lede"], "tagline": "", "facts": [], "tech": m["tech"],
+                "images": [i + ".webp" for i in m["images"]], "concept": False, "phone": m["phone"],
+                "links": [{"label": l, "href": h, "kind": k} for l, h, k in m["links"]], "case": e["href"]}
+    projects = []
+    for room, ids in MUSEUM_ROOMS.items():
+        for pid in ids:
+            d = entry(pid); d["room"] = room; d["style"] = MUSEUM_STYLE[pid]; projects.append(d)
+    data = {"generated_from": "tools/cases.py", "status_labels": STATUS, "projects": projects, "creator": {
+        **{k: v for k, v in MUSEUM_CREATOR.items() if k not in ("social", "experience", "education")},
+        "social": [{"name": n, "href": h, "handle": u} for n, h, u in MUSEUM_CREATOR["social"]],
+        "experience": [{"role": r, "org": o, "when": w} for r, o, w in MUSEUM_CREATOR["experience"]],
+        "education": [{"what": r, "where": o, "when": w} for r, o, w in MUSEUM_CREATOR["education"]]}}
+    (ROOT / "data").mkdir(exist_ok=True)
+    (ROOT / "data/museum.json").write_text(json.dumps(data, ensure_ascii=False, indent=1))
+    print(f"wrote data/museum.json ({len(projects)} exhibits)")
+
 if __name__ == "__main__":
     try:
-        build_pages(); build_stage_pages(); build_home(); build_chrome(); build_sitemap()
+        build_pages(); build_stage_pages(); build_home(); build_chrome(); build_sitemap(); build_museum_data()
     except OSError as err:  # missing template, unreadable index.html, or a file that could not be written
         sys.exit(f"build_cases: could not read or write {getattr(err, 'filename', '') or 'a file'}: {err.strerror or err}")
     except ValueError as err:  # a project id in cases.py that is missing from the order list

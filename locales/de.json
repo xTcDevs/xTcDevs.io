@@ -202,7 +202,8 @@
     "r3": "UI/UX Designer",
     "r4": "Spieleentwickler",
     "scroll": "Weiter zu den Projekten",
-    "title": "Aus Ideen werden <em>digitale Erlebnisse.</em>"
+    "title": "Aus Ideen werden <em>digitale Erlebnisse.</em>",
+    "ctaMuseum": "Das 3D Museum begehen"
   },
   "meta": {
     "echomind": {
@@ -232,7 +233,8 @@
     "contact": "Kontakt",
     "home": "Start",
     "playground": "Spielplatz",
-    "work": "Projekte"
+    "work": "Projekte",
+    "museum": "3D Museum"
   },
   "nf": {
     "home": "Zur Startseite",

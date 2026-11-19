@@ -317,3 +317,72 @@ CASES = [
     ],
   },
 ]
+
+
+# ---------------------------------------------------------------- 3D museum
+# The museum reads data/museum.json, generated from this file by build_cases.py, so the
+# Classic site and the museum share one source of truth. Rooms and installation styles
+# live here; project text comes from CASES / EXISTING above.
+MUSEUM_ROOMS = {
+    "collection": ["toilet-wars", "haunting-mother", "pitchit", "echomind", "bookverse"],
+    "lab": ["steal-the-moon", "ai-studio", "personal-ai", "ai-land", "drawing-board", "fintech"],
+    "clients": ["anthony-studios", "zaga", "princess-uc"],
+}
+MUSEUM_STYLE = {
+    "toilet-wars": "plunger", "haunting-mother": "candle", "pitchit": "pin", "echomind": "orbs", "bookverse": "books",
+    "steal-the-moon": "moon", "ai-studio": "timeline", "personal-ai": "core", "ai-land": "land", "drawing-board": "board",
+    "fintech": "card", "anthony-studios": "frame", "zaga": "frame", "princess-uc": "frame",
+}
+# The three hand written case pages keep their text in HTML, so their museum facts are listed here
+# (copied from those pages: projects/pitchit.html, echomind.html, haunting-mother.html).
+MUSEUM_EXISTING = {
+    "pitchit": {
+        "lede": "PitchIT is a marketplace for every kind of work in Nigeria: farm hands, fish traders, market help, artisans, movers, cleaners, errands and professionals. People who need work done post a job. People who can do it send offers. The customer funds the agreed amount before the work starts.",
+        "tech": ["Flutter", "Supabase", "Paystack", "OpenStreetMap"],
+        "links": [("Try the demo", "../demo/pitchit/index.html", "demo"), ("PitchIT website", "https://pitchit-ng.netlify.app/", "external")],
+        "images": ["assets/img/pitchit/sign-in-400", "assets/img/pitchit/my-jobs-400", "assets/img/pitchit/messages-400", "assets/img/pitchit/profile-400"],
+        "phone": True,
+    },
+    "echomind": {
+        "lede": "EchoMind is a journaling and mood app for Android. Check in with how you feel, write freely or from a daily prompt, and look back on everything in your Journey. All of it stays on your phone. There is no account, no subscription and no internet connection.",
+        "tech": ["Flutter", "Dart", "SQLite", "Android"],
+        "links": [("EchoMind website", "https://echomind-journal.netlify.app/", "external"), ("Android test build", "https://drive.google.com/file/d/11pOpnL2KPW6oT8HNIXUb8hxgN_xKMRUb/view?usp=drive_link", "external")],
+        "images": ["assets/img/echomind/home-400", "assets/img/echomind/check-in-400", "assets/img/echomind/insights-400", "assets/img/echomind/journey-400"],
+        "phone": True,
+    },
+    "haunting-mother": {
+        "lede": "Haunting Mother is a multiplayer horror puzzle game on Roblox. Players explore three haunted houses, memorize each room against the clock, then have to spot what changed. Best played with friends, in the dark, with the sound up.",
+        "tech": ["Roblox Studio", "Luau"],
+        "links": [("Play on Roblox", "https://www.roblox.com/games/111171456570495/Haunting-Mother", "play")],
+        "images": ["assets/img/haunting-mother/h3-memorize-mothers-bedroom-800", "assets/img/haunting-mother/h1-explore-living-room-800", "assets/img/haunting-mother/h1-what-changed-bedroom-800"],
+        "phone": False,
+    },
+}
+# The Creator's Room. Facts match the Classic About, Experience and Contact sections and the CV.
+MUSEUM_CREATOR = {
+    "name": "David Somadina Obichukwu",
+    "handle": "xTc",
+    "portrait": "assets/img/portrait/david-1000.webp",
+    "email": "obichukwudavid15@gmail.com",
+    "cv": "cv/David_Somadina_Obichukwu_CV.pdf",
+    "social": [("GitHub", "https://github.com/xTcDevs", "xTcDevs"), ("X", "https://x.com/xtcDev01", "@xtcDev01")],
+    "experience": [
+        ("Freelance Software Developer and Product Designer", "Self employed, paid client work", "Aug 2026 to present"),
+        ("AI Data Annotation Specialist", "Elevate Labs", "Jan 2026 to present"),
+        ("IT and Product Technician", "Smile Tech, Lagos, Nigeria", "Jul 2018 to Dec 2020"),
+    ],
+    "education": [
+        ("Undergraduate studies", "Nnamdi Azikiwe University", "In progress"),
+        ("Higher Diploma in Software Engineering", "IPMC Ghana", "Apr 2021 to Nov 2025"),
+        ("Secondary education", "Anchorage Field Schools, Lagos", "Mar 2018 to Jan 2020"),
+    ],
+    "skills": {
+        "Frontend": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+        "Mobile": ["Flutter", "Dart"],
+        "Design": ["UI/UX design", "Figma", "Prototyping", "Design systems"],
+        "AI": ["AI assisted development", "AI response evaluation", "RLHF", "Data annotation"],
+        "Games": ["Roblox Studio", "Luau", "Multiplayer systems"],
+        "Tools": ["Git", "GitHub", "Supabase", "Firebase", "Python", "FFmpeg"],
+    },
+    "capabilities": ["software", "product", "ai", "games", "creative"],
+}
