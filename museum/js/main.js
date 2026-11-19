@@ -533,7 +533,7 @@ function renderTour() {
   $(".js-tour-next").textContent = t(tr.i === TOUR.length - 1 ? "tour.finish" : "tour.next");
   let open = $(".js-tour-open");
   if (tr.ex) {
-    if (!open) { open = document.createElement("button"); open.type = "button"; open.className = "btn btn--line js-tour-open"; $(".tour__actions").insertBefore(open, $(".js-tour-end")); open.addEventListener("click", () => { if (app.tour && app.tour.ex) { openPanel(app.tour.ex); app.inspecting = app.tour.ex; } }); }
+    if (!open) { open = document.createElement("button"); open.type = "button"; open.className = "btn btn--line js-tour-open"; $(".tour__actions").insertBefore(open, $(".js-tour-end")); open.addEventListener("click", () => { if (app.tour && app.tour.ex) { openPanel(app.tour.ex); app.inspecting = app.tour.ex; document.body.classList.add("is-inspecting"); } }); }
     open.textContent = t("tour.open");
   } else if (open) open.remove();
 }

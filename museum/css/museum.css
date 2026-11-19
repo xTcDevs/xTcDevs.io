@@ -193,3 +193,8 @@ body.is-inspecting .hud__hint, body.is-touring .hud__hint,
 body.is-inspecting .crosshair, body.is-touring .crosshair,
 body.is-inspecting .joy, body.is-touring .joy { opacity: 0 !important; pointer-events: none; }
 #map.sheet { width: min(1040px, calc(100vw - 24px)); }
+
+/* Tour plus open details: on wide screens the tour card moves into the space left of the panel;
+   on phones the panel is a bottom sheet, so the card waits until it is closed. */
+body.is-touring.is-inspecting .tour { left: calc((100vw - min(520px, 100vw)) / 2); width: min(560px, calc(100vw - min(520px, 100vw) - 28px)); }
+@media (max-width: 900px) { body.is-touring.is-inspecting .tour { display: none; } }
