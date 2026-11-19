@@ -105,10 +105,10 @@ export function createControls(camera, canvas, opts) {
 
   // ------------------------------------------------------------------ per frame
   const fwd = new THREE.Vector3(), right = new THREE.Vector3();
-  function update(dt, reducedMotion) {
+  function update(dt, reducedMotion, flightDt = dt) {
     if (state.flight) {
       const f = state.flight;
-      f.t += dt / f.d;
+      f.t += flightDt / f.d;
       const k = ease(Math.min(1, f.t));
       state.pos.lerpVectors(f.from.p, f.to.p, k);
       state.yaw = f.from.yaw + (f.to.yaw - f.from.yaw) * k;

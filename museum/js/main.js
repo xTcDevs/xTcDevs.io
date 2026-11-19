@@ -170,7 +170,10 @@ function adapt(dt) {
 
 function loop() {
   requestAnimationFrame(loop);
-  const dt = Math.min(0.05, app.clock.getDelta());
+  // Walking uses a small fixed cap so collisions stay reliable; camera flights follow the real clock
+  // so the tour and inspect moves take the same time on slow devices.
+  const rawDt = Math.min(0.25, app.clock.getDelta());
+  const dt = Math.min(0.05, rawDt);
   const time = app.clock.elapsedTime;
   const c = app.controls;
   if (app.mode === "entrance" && !c.state.flight) {
@@ -180,7 +183,7 @@ function loop() {
     const ang = c.lookAtAngles(c.state.pos, new THREE.Vector3(0, 4.6, -17));
     c.state.yaw = ang.yaw; c.state.pitch = ang.pitch;
   }
-  c.update(dt, prefs.reduced);
+  c.update(dt, prefs.reduced, rawDt);
   if (app.mode === "explore") {
     const room = roomAt(c.state.pos.x, c.state.pos.z);
     if (room && room !== app.room) setRoom(room);
